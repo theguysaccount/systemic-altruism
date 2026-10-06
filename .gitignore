@@ -6,4 +6,9 @@ dist/
 *.log
 .DS_Store
 review-queue/
+.cache/
+data/registry-next/
 .vercel
+
+__pycache__/
+*.pyc

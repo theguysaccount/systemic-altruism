@@ -2,13 +2,15 @@
 
 [Live tracker](https://charities.systemicaltruism.com/) · [Method](https://charities.systemicaltruism.com/methodology/) · [Open dataset](https://charities.systemicaltruism.com/api/v1/charities.json)
 
-An open-source charity tracker that makes the proposed pathway to structural change visible: rules, incentives, institutions, knowledge and community power.
+A beta charity tracker with a broad searchable IRS registry and an evidence-linked assessment cohort. It makes the proposed pathway to structural change visible: rules, incentives, institutions, knowledge and community power.
 
 **This is a working first release, not a validated effectiveness ranking.** The 40 starting profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations.
 
 ## What works
 
-- Search and filter 40 profiles across five cause areas.
+- Search more than a million IRS-listed 501(c)(3) organizations by name, city or EIN, with filing-address location and NTEE cause filters.
+- Inspect public identity and classification records; registry-only organizations have no systemic scores.
+- Search and filter 40 assessment profiles across five cause areas.
 - Adjust six priority weights and share a reproducible view URL.
 - Compare up to three profiles side by side, including evidence gaps.
 - Save a watchlist in browser-local storage.
@@ -20,7 +22,7 @@ The current external-selection subset covers four GiveWell top programs, five Gi
 
 ## Run locally
 
-Requires Node.js 20+; no production JavaScript dependencies or API keys.
+Requires Node.js 24; no production JavaScript dependencies or API keys. The read-only registry endpoint queries a bundled compressed, read-only SQLite snapshot and never calls a paid model or third-party ratings API.
 
 ```sh
 npm run build
@@ -29,9 +31,9 @@ npm run check
 npm run preview
 ```
 
-Visit http://localhost:4173. `PUBLIC_ORIGIN=https://your-domain.example npm run build` sets canonical and social URLs. The build outputs a portable static `dist/` directory. Vercel runs build, tests and the release checker before every publication. An optional GitHub Actions template is in `docs/github-actions-check.yml`; it is not installed because the current GitHub authorization does not include workflow-write scope. The public read-only data endpoint is `/api/v1/charities.json`.
+Visit http://localhost:4173. `PUBLIC_ORIGIN=https://your-domain.example npm run build` sets canonical and social URLs. The build outputs `dist/` for public pages and assets; `api/registry.js` serves the bundled read-only registry on Vercel. The included Node preview server runs both locally. A static-only host can serve the assessment cohort but needs an equivalent registry endpoint for directory search. Vercel runs build, tests and the release checker before every publication. An optional GitHub Actions template is in `docs/github-actions-check.yml`; it is not installed because the current GitHub authorization does not include workflow-write scope. The public read-only data endpoint is `/api/v1/charities.json`.
 
-Public pages each have a distinct, checked 1200×630 share image. Cards are committed in `public/share/` to keep hosting builds dependency-free. To intentionally regenerate them after a route/title change, install Pillow from its normal package registry, run a build, then `python3 scripts/share-cards.py` and build again. `CHECK_ORIGIN=https://your-live-origin npm run check` verifies all deployed pages and card bytes.
+Public pages each have a distinct, checked 1200×630 share image. Cards are committed in `public/share/` to keep hosting builds dependency-free. To intentionally regenerate them after a route/title change, install Pillow from its normal package registry, run `SKIP_SHARE_CARDS=1 npm run build`, then `python3 scripts/share-cards.py` and build again. New artwork uses versioned image filenames to refresh social previews. `CHECK_ORIGIN=https://your-live-origin npm run check` verifies all deployed pages and card bytes.
 
 ## Scoring and uncertainty
 
@@ -41,9 +43,9 @@ The displayed lower bound sums reviewed weighted values. The upper bound allows 
 
 ## Evidence tooling and AI support
 
-`scripts/registry-lookup.mjs` does a bounded live ProPublica identity lookup locally; it never publishes raw responses or treats registration as impact evidence. The direct IRS sources listed in `THIRD_PARTY_NOTICES.md` are the preferred foundation for a future redistributable registry.
+`scripts/registry-lookup.mjs` does a bounded live ProPublica identity lookup locally; it never publishes raw responses or treats registration as impact evidence. The website registry now comes directly from a dated IRS Business Master File extract, not ProPublica data. `npm run import:registry` discovers the current official four regional CSV files, verifies their combined count against the posting page, selects subsection 03 and status 01/02, deduplicates by EIN, and rebuilds the compressed read-only database. Raw CSVs, temporary import files and officer/address fields stay out of the repository. The compressed public identity database is versioned with its manifest. Server instances unpack this fixed snapshot into documented temporary space, verify its checksum and open it read-only; no visitor data is written into it. Python 3 with its standard library is sufficient for imports. The manifest records the snapshot date, source hashes, exact coverage, counts and selection. A new snapshot needs review, tests and a deployment before becoming public.
 
-`scripts/extract-evidence.mjs` is a zero-network source-packet builder and local response validator. It reads a titled public text excerpt, prepares a provider-neutral extraction instruction, checks exact quotations and source URLs in an optional local model response, and writes an **unapproved** local review draft. It cannot change the public dataset or scores, and a citation match does not prove the claim is accurate. No model API integration, key, or paid request is part of this release. Future grant-supported work can add provider adapters and measured model evaluations after maintainer authorization.
+`scripts/extract-evidence.mjs` is a zero-network source-packet builder and local response validator. It reads a titled public text excerpt, prepares a provider-neutral extraction instruction, checks exact quotations and source URLs in an optional local model response, and writes an **unapproved** local review draft. It cannot change the public dataset or scores, and a citation match does not prove the claim is accurate. No model API integration, key, or paid model request is part of this release. Registry search is a separate first-party read-only HTTP endpoint. Future grant-supported work can add provider adapters and measured model evaluations after maintainer authorization.
 
 ## Contribute
 
