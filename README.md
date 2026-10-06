@@ -1,5 +1,7 @@
 # Systemic Altruism
 
+[Live tracker](https://charities.systemicaltruism.com/) · [Method](https://charities.systemicaltruism.com/methodology/) · [Open dataset](https://charities.systemicaltruism.com/api/v1/charities.json)
+
 An open-source charity tracker that makes the proposed pathway to structural change visible: rules, incentives, institutions, knowledge and community power.
 
 **This is a working first release, not a validated effectiveness ranking.** The 40 starting profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations.
@@ -27,7 +29,7 @@ npm run check
 npm run preview
 ```
 
-Visit http://localhost:4173. `PUBLIC_ORIGIN=https://your-domain.example npm run build` sets canonical and social URLs. The build outputs a portable static `dist/` directory. The public read-only data endpoint is `/api/v1/charities.json`.
+Visit http://localhost:4173. `PUBLIC_ORIGIN=https://your-domain.example npm run build` sets canonical and social URLs. The build outputs a portable static `dist/` directory. Vercel runs build, tests and the release checker before every publication. An optional GitHub Actions template is in `docs/github-actions-check.yml`; it is not installed because the current GitHub authorization does not include workflow-write scope. The public read-only data endpoint is `/api/v1/charities.json`.
 
 Public pages each have a distinct, checked 1200×630 share image. Cards are committed in `public/share/` to keep hosting builds dependency-free. To intentionally regenerate them after a route/title change, install Pillow from its normal package registry, run a build, then `python3 scripts/share-cards.py` and build again. `CHECK_ORIGIN=https://your-live-origin npm run check` verifies all deployed pages and card bytes.
 
