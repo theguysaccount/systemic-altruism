@@ -1,0 +1,14 @@
+{
+  "name": "systemic-altruism",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An open, evidence-linked tracker of charities' potential for structural change.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check-release.mjs",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,1942 @@
+{
+  "schemaVersion": "0.1.0",
+  "reviewedAt": "2026-10-06",
+  "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
+  "scoreStatus": "editorial_hypothesis",
+  "coverage": "40 starting-cohort organizations; not an exhaustive charity ranking",
+  "charities": [
+    {
+      "id": "against-malaria-foundation",
+      "name": "Against Malaria Foundation",
+      "category": "Global health",
+      "website": "https://www.againstmalaria.com/",
+      "mechanism": "Prevention delivery",
+      "summary": "Funds and monitors distributions of insecticide-treated mosquito nets through implementing partners.",
+      "externalEvaluator": "GiveWell current top charity: insecticide-treated net program",
+      "evaluatorUrl": "https://www.givewell.org/charities/top-charities",
+      "sources": [
+        {
+          "url": "https://www.againstmalaria.com/",
+          "title": "Against Malaria Foundation \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/top-charities",
+          "title": "GiveWell current top charity: insecticide-treated net program",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 1,
+        "reach": 3,
+        "durability": 1,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets malaria exposure through a preventive service.",
+        "reach": "Partner distribution systems can reach national and regional populations.",
+        "durability": "Nets require replacement; this is not a permanent change in rules.",
+        "scalability": "A standard preventive product can be distributed through existing partners.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent program evaluation",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Strong evidence for nets does not show permanent malaria elimination or the effect of every unrestricted donation.",
+      "falsifiableClaim": "Tracked distribution areas should show sustained net use and reduced malaria burden relative to comparable areas.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell current top charity: insecticide-treated net program",
+      "evaluatorLabel": "GiveWell top program",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "malaria-consortium",
+      "name": "Malaria Consortium",
+      "category": "Global health",
+      "website": "https://www.malariaconsortium.org/",
+      "mechanism": "Health-system implementation",
+      "summary": "Supports seasonal malaria chemoprevention, including implementation with national health authorities.",
+      "externalEvaluator": "GiveWell current top charity: seasonal malaria chemoprevention program",
+      "evaluatorUrl": "https://www.givewell.org/charities/top-charities",
+      "sources": [
+        {
+          "url": "https://www.malariaconsortium.org/",
+          "title": "Malaria Consortium \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/top-charities",
+          "title": "GiveWell current top charity: seasonal malaria chemoprevention program",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 3,
+        "durability": 1,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Combines preventive medicine with health-service delivery systems.",
+        "reach": "National implementation partners extend reach beyond individual clinics.",
+        "durability": "Protection depends on repeated seasonal rounds and continuing supplies.",
+        "scalability": "A standardized delivery protocol supports expansion with national programs.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent program evaluation",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "GiveWell's recommendation is program-specific; it is not a rating of all Malaria Consortium activities.",
+      "falsifiableClaim": "New supported districts should maintain delivery quality and lower childhood malaria during high-risk seasons.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell current top charity: seasonal malaria chemoprevention program",
+      "evaluatorLabel": "GiveWell top program",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "helen-keller-intl",
+      "name": "Helen Keller Intl",
+      "category": "Global health",
+      "website": "https://helenkellerintl.org/",
+      "mechanism": "Nutrition delivery and capacity",
+      "summary": "Supports vitamin A supplementation alongside broader nutrition and health work.",
+      "externalEvaluator": "GiveWell current top charity: vitamin A supplementation program",
+      "evaluatorUrl": "https://www.givewell.org/charities/top-charities",
+      "sources": [
+        {
+          "url": "https://helenkellerintl.org/",
+          "title": "Helen Keller Intl \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/top-charities",
+          "title": "GiveWell current top charity: vitamin A supplementation program",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 3,
+        "durability": 1,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Micronutrient delivery can strengthen recurring health-service routines.",
+        "reach": "Works through government and community distribution channels.",
+        "durability": "Supplementation must recur; it does not itself remove all causes of malnutrition.",
+        "scalability": "Established distribution channels permit replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent program evaluation",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "GiveWell's recommendation covers vitamin A supplementation. Wider nutrition programs require separate review.",
+      "falsifiableClaim": "Supported delivery areas should maintain supplementation coverage and independently measured health gains.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell current top charity: vitamin A supplementation program",
+      "evaluatorLabel": "GiveWell top program",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "new-incentives",
+      "name": "New Incentives",
+      "category": "Global health",
+      "website": "https://www.newincentives.org/",
+      "mechanism": "Vaccination demand incentives",
+      "summary": "Provides small cash incentives to caregivers for routine childhood vaccination in northern Nigeria.",
+      "externalEvaluator": "GiveWell current top charity: vaccination incentive program",
+      "evaluatorUrl": "https://www.givewell.org/charities/top-charities",
+      "sources": [
+        {
+          "url": "https://www.newincentives.org/",
+          "title": "New Incentives \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/top-charities",
+          "title": "GiveWell current top charity: vaccination incentive program",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Changes the immediate incentive to use an existing public health service.",
+        "reach": "The focal program targets a region within one national health system.",
+        "durability": "Vaccination provides lasting protection, while enrollment incentives need funding.",
+        "scalability": "A repeatable clinic-linked model offers expansion with monitoring.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent program evaluation",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Vaccination uptake evidence does not establish durable redesign of Nigeria's health financing or all future program effects.",
+      "falsifiableClaim": "Additional clinics should improve verified vaccination uptake without reducing service quality.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell current top charity: vaccination incentive program",
+      "evaluatorLabel": "GiveWell top program",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "evidence-action",
+      "name": "Evidence Action",
+      "category": "Global health",
+      "website": "https://www.evidenceaction.org/",
+      "mechanism": "Government delivery systems",
+      "summary": "Scales health interventions including deworming, safe water, nutrition and maternal health, using government partnerships.",
+      "externalEvaluator": "GiveWell historical review: Deworm the World; not current top-charity designation",
+      "evaluatorUrl": "https://www.givewell.org/charities/deworm-world-initiative",
+      "sources": [
+        {
+          "url": "https://www.evidenceaction.org/how-we-work",
+          "title": "Evidence Action \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/deworm-world-initiative",
+          "title": "GiveWell historical review: Deworm the World; not current top-charity designation",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Works to embed tested health interventions in public delivery systems.",
+        "reach": "Government partnerships extend reach across large service populations.",
+        "durability": "Public adoption could persist, but supply and maintenance are recurring needs.",
+        "scalability": "Identifies and expands replicable low-cost interventions.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent historical program review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Programs differ in evidence and cost effectiveness. Deworm the World is a historical GiveWell review, not a current top-charity designation.",
+      "falsifiableClaim": "Government partners should sustain coverage and intervention quality after technical assistance is reduced.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell historical review: Deworm the World; not current top-charity designation",
+      "evaluatorLabel": "GiveWell historical program review",
+      "selectionType": "historical_evaluator_review",
+      "evaluatorStatus": "historical_program_review"
+    },
+    {
+      "id": "sightsavers",
+      "name": "Sightsavers",
+      "category": "Global health",
+      "website": "https://www.sightsavers.org/",
+      "mechanism": "Disease elimination and inclusion",
+      "summary": "Combines eye health services, neglected tropical disease work and disability-rights advocacy with health-worker training.",
+      "externalEvaluator": "GiveWell historical review: deworming; not current top-charity designation",
+      "evaluatorUrl": "https://www.givewell.org/charities/sightsavers",
+      "sources": [
+        {
+          "url": "https://www.sightsavers.org/",
+          "title": "Sightsavers \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/sightsavers",
+          "title": "GiveWell historical review: deworming; not current top-charity designation",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Health capacity and inclusion advocacy target barriers beyond one-off treatment.",
+        "reach": "Works across countries and public-health partnerships.",
+        "durability": "Skills, inclusion rules and disease-elimination capacity can persist; recurrent services still need funding.",
+        "scalability": "Training and public-system partnerships are replicable.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent historical program review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Historical GiveWell review covers deworming rather than the whole organization. Elimination and inclusion outcomes need program-specific attribution.",
+      "falsifiableClaim": "Public partners should retain eye-health capacity and improve independently measured access for people with disabilities.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell historical review: deworming; not current top-charity designation",
+      "evaluatorLabel": "GiveWell historical program review",
+      "selectionType": "historical_evaluator_review",
+      "evaluatorStatus": "historical_program_review"
+    },
+    {
+      "id": "partners-in-health",
+      "name": "Partners In Health",
+      "category": "Global health",
+      "website": "https://www.pih.org/",
+      "mechanism": "Public health-system strengthening",
+      "summary": "Works with public-sector partners to deliver care and strengthen staffing, infrastructure and community health systems.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.pih.org/our-approach",
+          "title": "Partners In Health \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 2,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets public health-system capacity and access.",
+        "reach": "Partners in several countries can extend capacity beyond individual care episodes.",
+        "durability": "Facilities and trained staff may persist, subject to public budgets and retention.",
+        "scalability": "Intensive staffing and infrastructure constrain rapid replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Organization-reported approach only in this seed. Public-system durability and the marginal donation's effect have not been independently audited.",
+      "falsifiableClaim": "Partner systems should retain staffing and improve service access after initial investment.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "medecins-sans-frontieres",
+      "name": "M\u00e9decins Sans Fronti\u00e8res",
+      "category": "Global health",
+      "website": "https://www.msf.org/",
+      "mechanism": "Humanitarian care and access advocacy",
+      "summary": "Provides medical humanitarian assistance and advocates around barriers to access to medicines and health care.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.msf.org/",
+          "title": "M\u00e9decins Sans Fronti\u00e8res \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 4,
+        "durability": 1,
+        "scalability": 2,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Immediate medical response predominates, with an additional access-advocacy pathway.",
+        "reach": "International crisis operations span many health contexts.",
+        "durability": "Emergency service delivery depends on continuing access and resources.",
+        "scalability": "Specialist staffing and insecure settings limit straightforward replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Mixed service and advocacy portfolio. Emergency health benefits should not be judged solely by long-term institutional change.",
+      "falsifiableClaim": "Operations should show quality care reaching underserved people, while access advocacy should separately document policy adoption.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "givedirectly",
+      "name": "GiveDirectly",
+      "category": "Poverty & opportunity",
+      "website": "https://www.givedirectly.org/",
+      "mechanism": "Recipient-controlled cash and public learning",
+      "summary": "Transfers unconditional cash to people in poverty and develops evidence and government partnerships for cash-transfer programs.",
+      "externalEvaluator": "GiveWell historical top charity (2012\u20132022); no longer current top-charity designation",
+      "evaluatorUrl": "https://www.givewell.org/charities/give-directly/November-2020-version",
+      "sources": [
+        {
+          "url": "https://www.givedirectly.org/",
+          "title": "GiveDirectly \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givewell.org/charities/give-directly/November-2020-version",
+          "title": "GiveWell historical top charity (2012\u20132022); no longer current top-charity designation",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": 3
+      },
+      "rationales": {
+        "depth": "Cash changes household resource constraints; government learning offers a wider pathway.",
+        "reach": "Operates cash programs across multiple contexts and governments.",
+        "durability": "Assets and autonomy may last, while transfer programs require resources.",
+        "scalability": "Digital transfers offer a repeatable delivery channel.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Recipients control spending of unconditional transfers; this is resource agency, not proof of control over the organization."
+      },
+      "evidenceLevel": "Independent historical program review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Cash-transfer evidence is stronger than claims that cash permanently solves structural poverty. GiveWell no longer maintains this historical review.",
+      "falsifiableClaim": "Recipient outcomes should improve relative to controls, and government adoption should be verified separately.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "GiveWell historical top charity (2012\u20132022); no longer current top-charity designation",
+      "evaluatorLabel": "GiveWell historical program review",
+      "selectionType": "historical_evaluator_review",
+      "evaluatorStatus": "historical_program_review"
+    },
+    {
+      "id": "brac",
+      "name": "BRAC",
+      "category": "Poverty & opportunity",
+      "website": "https://www.brac.net/",
+      "mechanism": "Graduation, institutions and livelihoods",
+      "summary": "Combines livelihood support, financial inclusion, education, health and social development, including graduation from extreme poverty.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.brac.net/",
+          "title": "BRAC \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A multi-part livelihood and institutional model addresses several poverty constraints.",
+        "reach": "Works through national-scale programs and international replication.",
+        "durability": "Skills, productive assets and social infrastructure can outlast initial assistance.",
+        "scalability": "Program models are replicated, but depend on local institutions and implementation quality.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "BRAC is a group with varied programs and entities. This seed reviewed the approach, not independent effects or every affiliate.",
+      "falsifiableClaim": "Graduation participants should retain gains after support ends, and replications should preserve measured outcomes.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "oxfam",
+      "name": "Oxfam International",
+      "category": "Poverty & opportunity",
+      "website": "https://www.oxfam.org/en",
+      "mechanism": "Inequality policy and community action",
+      "summary": "Combines humanitarian assistance with campaigns and policy work on inequality, rights, essential services and economic justice.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.oxfam.org/en",
+          "title": "Oxfam International \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Explicitly targets economic rules and inequity alongside direct assistance.",
+        "reach": "An international confederation connects local and international policy work.",
+        "durability": "Policy and rights changes may persist but can be reversed.",
+        "scalability": "Research, advocacy and local partnerships can spread across jurisdictions.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "This is a confederation-level profile, not a rating of a single legal charity. Attribution and affiliate governance require separate audit.",
+      "falsifiableClaim": "Campaigns should identify adopted reforms, affected populations and credible evidence of contribution.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "one-acre-fund",
+      "name": "One Acre Fund",
+      "category": "Poverty & opportunity",
+      "website": "https://oneacrefund.org/",
+      "mechanism": "Smallholder market access",
+      "summary": "Provides smallholder farmers with agricultural inputs, training and services intended to increase productivity and income.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://oneacrefund.org/",
+          "title": "One Acre Fund \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets farm-service and input barriers without a demonstrated wholesale change in land or trade rules.",
+        "reach": "Delivery networks serve farmers across multiple African countries.",
+        "durability": "Skills can persist, while inputs, credit and extension services recur.",
+        "scalability": "A repeatable package can expand with local delivery capacity.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Income figures are organization reported in the reviewed source. Market effects, farmer debt and long-term counterfactuals require audit.",
+      "falsifiableClaim": "Farmers should show net income gains after accounting for input costs, debt and climate variability.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "pratham",
+      "name": "Pratham Education Foundation",
+      "category": "Poverty & opportunity",
+      "website": "https://www.pratham.org/",
+      "mechanism": "Public education practice change",
+      "summary": "Develops education programs and works with communities and government partners, including Teaching at the Right Level.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.pratham.org/",
+          "title": "Pratham Education Foundation \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets instructional practices and education-system implementation.",
+        "reach": "Government and community partnerships can reach beyond directly served classrooms.",
+        "durability": "Teacher capabilities and changed routines may persist.",
+        "scalability": "Teaching methods can be replicated, subject to training and implementation quality.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "The seed inspected Pratham's stated model. Independent learning evaluations and persistence at government scale need explicit linkage.",
+      "falsifiableClaim": "Public-system adaptations should improve independently measured foundational learning and sustain gains.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "village-enterprise",
+      "name": "Village Enterprise",
+      "category": "Poverty & opportunity",
+      "website": "https://villageenterprise.org/",
+      "mechanism": "Livelihood graduation",
+      "summary": "Supports people in rural Africa with business grants, training, mentorship and savings groups.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://villageenterprise.org/",
+          "title": "Village Enterprise \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets interacting household livelihood barriers rather than national economic rules.",
+        "reach": "Focus is selected rural communities and partner programs.",
+        "durability": "Businesses, skills and savings may persist; shocks can reverse gains.",
+        "scalability": "A structured graduation package is replicable with mentors and targeting.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Organization description only in this seed; do not infer a current evaluator recommendation or lasting poverty elimination.",
+      "falsifiableClaim": "Participant consumption and income gains should persist after grants and mentoring end.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "results-educational-fund",
+      "name": "RESULTS Educational Fund",
+      "category": "Poverty & opportunity",
+      "website": "https://results.org/",
+      "mechanism": "Public policy capacity and citizen voice",
+      "summary": "Supports anti-poverty policy research, education and civic advocacy capacity, within the RESULTS organization.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://results.org/who-we-are",
+          "title": "RESULTS Educational Fund \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets public policy and anti-poverty resource allocation.",
+        "reach": "A nationwide advocacy network links local voice with national policy.",
+        "durability": "Policy adoption and participation capacity can persist, but appropriations recur.",
+        "scalability": "Education and organizing methods can be replicated.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "The website also covers RESULTS, a distinct 501(c)(4). This profile concerns the charitable Educational Fund; do not assign lobbying outcomes across entities.",
+      "falsifiableClaim": "Documented policy changes should identify the Educational Fund's specific contribution and benefits to affected people.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "center-budget-policy-priorities",
+      "name": "Center on Budget and Policy Priorities",
+      "category": "Poverty & opportunity",
+      "website": "https://www.cbpp.org/",
+      "mechanism": "Budget and social-policy research",
+      "summary": "Produces research and policy analysis on fiscal choices and programs affecting low- and moderate-income people.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.cbpp.org/",
+          "title": "Center on Budget and Policy Priorities \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets tax, budget and social-policy rules.",
+        "reach": "National and state policy work can affect broad eligible populations.",
+        "durability": "Policy design can persist across service cycles but faces legislative reversal.",
+        "scalability": "Reusable analysis and policy proposals can spread through partner networks.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Research publication is an output, not demonstrated policy adoption or causal poverty reduction. No evaluator rating was verified.",
+      "falsifiableClaim": "Policy uptake should be linked to evidence of contribution and independently measured distributional effects.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "clean-air-task-force",
+      "name": "Clean Air Task Force",
+      "category": "Climate & environment",
+      "website": "https://www.catf.us/",
+      "mechanism": "Technology policy and energy systems",
+      "summary": "Advances policy, technical analysis and stakeholder engagement for low-carbon technologies and energy-system change.",
+      "externalEvaluator": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorUrl": "https://www.givinggreen.earth/research/clean-air-task-force-top-climate-nonprofit-spotlight",
+      "sources": [
+        {
+          "url": "https://www.catf.us/",
+          "title": "Clean Air Task Force \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givinggreen.earth/research/clean-air-task-force-top-climate-nonprofit-spotlight",
+          "title": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets deployment rules and the energy-technology system.",
+        "reach": "U.S., European and global engagement offers multi-jurisdiction potential.",
+        "durability": "Regulation, public investment and deployed infrastructure can persist but face reversals.",
+        "scalability": "Policy and technical work can unlock deployment by actors beyond the charity.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Giving Green's recommendation concerns charitable activities of the 501(c)(3), not the distinct 501(c)(4). Modeled emissions effects are uncertain.",
+      "falsifiableClaim": "Supported policy changes should lead to additional deployment and verified emissions reductions.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorLabel": "Giving Green 2025\u201326",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "future-cleantech-architects",
+      "name": "Future Cleantech Architects",
+      "category": "Climate & environment",
+      "website": "https://fcarchitects.org/",
+      "mechanism": "Research-informed industrial policy",
+      "summary": "Uses technical research and policy engagement to advance clean innovation in hard-to-abate sectors.",
+      "externalEvaluator": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorUrl": "https://www.givinggreen.earth/research/future-cleantech-architects-top-climate-nonprofit-spotlight",
+      "sources": [
+        {
+          "url": "https://fcarchitects.org/",
+          "title": "Future Cleantech Architects \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givinggreen.earth/research/future-cleantech-architects-top-climate-nonprofit-spotlight",
+          "title": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets technology and policy bottlenecks in industrial systems.",
+        "reach": "EU policy pathways may extend beyond direct research clients.",
+        "durability": "Standards, funding frameworks and technology adoption can persist.",
+        "scalability": "Research and policy frameworks can influence many producers.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Technology readiness and policy adoption do not alone prove net emissions impact. Attribution and funding additionality remain uncertain.",
+      "falsifiableClaim": "Policy uptake should produce additional clean innovation and deployment in the intended sectors.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorLabel": "Giving Green 2025\u201326",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "good-food-institute",
+      "name": "Good Food Institute",
+      "category": "Climate & environment",
+      "website": "https://gfi.org/",
+      "mechanism": "Alternative-protein ecosystem",
+      "summary": "Supports science, industry and policy for alternative proteins, including public research funding and market development.",
+      "externalEvaluator": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorUrl": "https://www.givinggreen.earth/research/good-food-institute-nonprofit-spotlight",
+      "sources": [
+        {
+          "url": "https://gfi.org/",
+          "title": "Good Food Institute \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givinggreen.earth/research/good-food-institute-nonprofit-spotlight",
+          "title": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets the technology, policy and market structures of protein production.",
+        "reach": "International research and industry networks offer broad reach.",
+        "durability": "Shared research and industry capabilities can persist.",
+        "scalability": "Research and policy can affect firms and products beyond the organization.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Alternative-protein growth does not necessarily displace animal products; substitution, affordability and environmental performance require measurement.",
+      "falsifiableClaim": "Supported products and policies should cause additional displacement of conventional animal products.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorLabel": "Giving Green 2025\u201326",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "opportunity-green",
+      "name": "Opportunity Green",
+      "category": "Climate & environment",
+      "website": "https://www.opportunitygreen.org/",
+      "mechanism": "Legal and international market reform",
+      "summary": "Uses policy, legal work and industry coalitions to address aviation and maritime emissions.",
+      "externalEvaluator": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorUrl": "https://www.givinggreen.earth/research/opportunity-green-top-climate-nonprofit-spotlight",
+      "sources": [
+        {
+          "url": "https://www.opportunitygreen.org/",
+          "title": "Opportunity Green \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givinggreen.earth/research/opportunity-green-top-climate-nonprofit-spotlight",
+          "title": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets legal, financial and market rules in hard-to-abate transport.",
+        "reach": "International shipping and aviation frameworks can reach multiple jurisdictions.",
+        "durability": "Adopted rules and infrastructure may persist, subject to compliance.",
+        "scalability": "A shared regulation or financing rule can affect many firms.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Coalition influence and future technology uptake are difficult to attribute. Adoption is distinct from enforcement and emissions impact.",
+      "falsifiableClaim": "Adopted transport rules should be implemented and change verified fuel use or emissions.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorLabel": "Giving Green 2025\u201326",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "project-innerspace",
+      "name": "Project InnerSpace",
+      "category": "Climate & environment",
+      "website": "https://projectinnerspace.org/",
+      "mechanism": "Geothermal ecosystem and de-risking",
+      "summary": "Develops tools, coordination and de-risking approaches to expand geothermal energy.",
+      "externalEvaluator": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorUrl": "https://www.givinggreen.earth/research/project-innerspace-top-climate-nonprofit-spotlight",
+      "sources": [
+        {
+          "url": "https://projectinnerspace.org/",
+          "title": "Project InnerSpace \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://www.givinggreen.earth/research/project-innerspace-top-climate-nonprofit-spotlight",
+          "title": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets deployment bottlenecks and shared energy infrastructure.",
+        "reach": "The proposed geothermal pathway is global, with local project dependencies.",
+        "durability": "Shared data and deployed energy assets can persist.",
+        "scalability": "Reusable tools may lower barriers for developers outside the charity.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Geothermal opportunity is not demonstrated deployment; geology, finance and technology risks remain substantial.",
+      "falsifiableClaim": "Tools and finance work should lead to additional viable projects and operational clean generation.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "Giving Green Top Climate Nonprofit, 2025\u20132026",
+      "evaluatorLabel": "Giving Green 2025\u201326",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "carbon180",
+      "name": "Carbon180",
+      "category": "Climate & environment",
+      "website": "https://carbon180.org/",
+      "mechanism": "Carbon-removal policy and accountability",
+      "summary": "Develops federal carbon-removal policy, field-building and frameworks for measurement and environmental justice.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://carbon180.org/",
+          "title": "Carbon180 \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets public procurement, incentives and accountability for a carbon-removal field.",
+        "reach": "U.S. federal policy can influence a national market.",
+        "durability": "Standards and procurement rules can persist but funding and politics change.",
+        "scalability": "Shared policy and measurement frameworks can affect many projects.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "No current evaluator recommendation was verified here. Carbon removed must be additional, durably stored and net of lifecycle emissions.",
+      "falsifiableClaim": "Adopted policy should fund additional verified durable removal with accountable community safeguards.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "rmi",
+      "name": "RMI",
+      "category": "Climate & environment",
+      "website": "https://rmi.org/",
+      "mechanism": "Energy market and implementation change",
+      "summary": "Works on clean energy, market creation, finance, policy and efficiency across sectors and regions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://rmi.org/",
+          "title": "RMI \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets energy production, demand, investment and market structures.",
+        "reach": "Multi-sector international work creates potential reach beyond individual projects.",
+        "durability": "Energy assets and institutional capabilities can persist.",
+        "scalability": "Tools, market design and partnerships can be reused.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "A broad portfolio prevents one organization-wide causal estimate from this review. Self-reported reach is not additional emissions avoided.",
+      "falsifiableClaim": "Projects should demonstrate additional adoption and independently validated lifecycle emissions changes.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "animal-welfare-observatory",
+      "name": "Animal Welfare Observatory",
+      "category": "Animal welfare",
+      "website": "https://animalwelfareobservatory.org/",
+      "mechanism": "Corporate accountability and policy",
+      "summary": "Uses investigations, corporate engagement and policy work to improve welfare standards for farmed animals in Spain and Europe.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 cohort",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/animal-welfare-observatory/",
+      "sources": [
+        {
+          "url": "https://animalwelfareobservatory.org/",
+          "title": "Animal Welfare Observatory \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/animal-welfare-observatory/",
+          "title": "ACE Recommended Charity, 2025 cohort",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets supply-chain practices and welfare standards.",
+        "reach": "Retailer and European policy pathways extend beyond directly contacted farms.",
+        "durability": "Corporate commitments require enforcement and can backslide.",
+        "scalability": "Shared corporate standards can spread through suppliers.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "ACE notes compliance and counterfactual uncertainty, including uncertainty around some fish stunning practices.",
+      "falsifiableClaim": "Companies should implement commitments, with measured welfare improvements rather than pledge counts.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 cohort",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "aquatic-life-institute",
+      "name": "Aquatic Life Institute",
+      "category": "Animal welfare",
+      "website": "https://www.ali.fish/",
+      "mechanism": "Certification and aquatic-animal policy",
+      "summary": "Engages companies, certification schemes, policymakers and coalitions to embed aquatic-animal welfare in food systems.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/aquatic-life-institute/",
+      "sources": [
+        {
+          "url": "https://www.ali.fish/",
+          "title": "Aquatic Life Institute \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/aquatic-life-institute/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets interacting sourcing, certification and legal rules.",
+        "reach": "Global seafood certification and coalition pathways offer international reach.",
+        "durability": "Embedded standards can persist but require auditing and enforcement.",
+        "scalability": "Certification requirements may affect suppliers beyond direct partners.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Standards adoption differs from implementation and welfare outcomes; species-specific welfare evidence remains uneven.",
+      "falsifiableClaim": "Certification and sourcing reforms should change audited farm practices and animal welfare.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "ciftlik-hayvanlarini-koruma",
+      "name": "\u00c7iftlik Hayvanlar\u0131n\u0131 Koruma Derne\u011fi",
+      "category": "Animal welfare",
+      "website": "https://kafessizturkiye.com/",
+      "mechanism": "Cage-free corporate campaigns",
+      "summary": "Works on cage-free eggs and farmed-fish welfare in T\u00fcrkiye through corporate engagement and research.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/ciftlik-hayvanlarini-koruma-dernegi/",
+      "sources": [
+        {
+          "url": "https://kafessizturkiye.com/",
+          "title": "\u00c7iftlik Hayvanlar\u0131n\u0131 Koruma Derne\u011fi \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/ciftlik-hayvanlarini-koruma-dernegi/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets company procurement and farm welfare practices.",
+        "reach": "Focal programs concern Turkish industry.",
+        "durability": "Voluntary commitments can persist but depend on compliance.",
+        "scalability": "One purchaser's standards can propagate through suppliers.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Corporate pledges are not implemented welfare gains. Review scope and T\u00fcrkiye-specific conditions limit extrapolation.",
+      "falsifiableClaim": "Target firms should verify cage-free implementation and measurable welfare improvements.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "dansk-vegetarisk-forening",
+      "name": "Dansk Vegetarisk Forening",
+      "category": "Animal welfare",
+      "website": "https://vegetarisk.dk/",
+      "mechanism": "Plant-based public policy",
+      "summary": "Works on food-system reform, policy and institutional support for plant-based diets in Denmark and Europe.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/dansk-vegetarisk-forening/",
+      "sources": [
+        {
+          "url": "https://vegetarisk.dk/",
+          "title": "Dansk Vegetarisk Forening \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/dansk-vegetarisk-forening/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets public funding and food-policy rules.",
+        "reach": "National policy and European learning offer reach beyond individual meals.",
+        "durability": "Policy and institution changes may persist but can be reversed.",
+        "scalability": "Public procurement and policy models can be adapted elsewhere.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Policy wins may have multiple contributors; changes in consumption and production need separate measurement.",
+      "falsifiableClaim": "Plant-based policy should lead to sustained additional replacement of animal products.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "good-food-fund",
+      "name": "Good Food Fund",
+      "category": "Animal welfare",
+      "website": "https://www.goodfoodchina.net/en",
+      "mechanism": "Institutional food reform and capacity",
+      "summary": "Works with chefs, educators and institutions to support plant-based diets and food-system change in China.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/good-food-fund/",
+      "sources": [
+        {
+          "url": "https://www.goodfoodchina.net/en",
+          "title": "Good Food Fund \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/good-food-fund/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets food institutions and professional practices.",
+        "reach": "Programs focus on selected Chinese networks and institutions.",
+        "durability": "Skills and menus may persist, but behavioral durability is unclear.",
+        "scalability": "Training and institutional methods can be replicated.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review; limited quantified outcome evidence",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "ACE reports limited behavioral data and could not derive reliable suffering-averted estimates; audience reach is not diet change.",
+      "falsifiableClaim": "Partner institutions should document sustained animal-product replacement, beyond event attendance.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "shrimp-welfare-project",
+      "name": "Shrimp Welfare Project",
+      "category": "Animal welfare",
+      "website": "https://www.shrimpwelfareproject.org/",
+      "mechanism": "Industry practice and humane technology",
+      "summary": "Works with shrimp farmers and producers on humane stunning and welfare improvements.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/shrimp-welfare-project/",
+      "sources": [
+        {
+          "url": "https://www.shrimpwelfareproject.org/",
+          "title": "Shrimp Welfare Project \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/shrimp-welfare-project/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets recurring industrial handling and slaughter practices.",
+        "reach": "Producer engagement spans several shrimp-producing regions.",
+        "durability": "Installed equipment and routines may persist if maintained.",
+        "scalability": "Technology and supplier protocols can spread across production sites.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Shrimp sentience and welfare magnitudes are uncertain; equipment deployment differs from correct use and verified benefit.",
+      "falsifiableClaim": "Facilities should correctly use equipment and independently verify meaningful welfare improvement.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "sinergia-animal",
+      "name": "Sinergia Animal",
+      "category": "Animal welfare",
+      "website": "https://sinergiaanimal.org/",
+      "mechanism": "Corporate welfare and food reform",
+      "summary": "Works in the Global South on corporate welfare commitments and institutional reduction of animal products.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/sinergia-animal/",
+      "sources": [
+        {
+          "url": "https://sinergiaanimal.org/",
+          "title": "Sinergia Animal \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/sinergia-animal/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets corporate procurement and institutional food choices.",
+        "reach": "Regional teams engage industry in multiple countries.",
+        "durability": "Voluntary commitments need monitoring to remain durable.",
+        "scalability": "Supply-chain commitments and institutional menus can expand through networks.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Different country programs require separate evidence; pledges and menu availability are not automatically welfare or consumption effects.",
+      "falsifiableClaim": "Corporate targets should implement audited commitments and institutions should measure sustained diet change.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "sociedade-vegetariana-brasileira",
+      "name": "Sociedade Vegetariana Brasileira",
+      "category": "Animal welfare",
+      "website": "https://svb.org.br/",
+      "mechanism": "Institutional diets and food policy",
+      "summary": "Promotes plant-based diets in Brazil through institutional food programs, policy and movement building.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/sociedade-vegetariana-brasileira-svb/",
+      "sources": [
+        {
+          "url": "https://svb.org.br/",
+          "title": "Sociedade Vegetariana Brasileira \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/sociedade-vegetariana-brasileira-svb/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets institutional meals, policy and social norms.",
+        "reach": "Public food programs and Brazilian policy can reach large populations.",
+        "durability": "Procurement and menu routines may persist with institutional adoption.",
+        "scalability": "Food-program templates can be replicated.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Diet shifts, substitution and implementation require direct measurement. Current review does not establish permanent food-system transformation.",
+      "falsifiableClaim": "Institutions should verify sustained reduction of animal-product procurement and consumption.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "the-humane-league",
+      "name": "The Humane League",
+      "category": "Animal welfare",
+      "website": "https://thehumaneleague.org/",
+      "mechanism": "Global corporate welfare and movement",
+      "summary": "Uses corporate campaigns and network building, including the Open Wing Alliance, to advance farmed-animal welfare.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/the-humane-league/",
+      "sources": [
+        {
+          "url": "https://thehumaneleague.org/",
+          "title": "The Humane League \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/the-humane-league/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets supply-chain welfare rules rather than individual animal rescue.",
+        "reach": "International corporate and movement networks create broad reach.",
+        "durability": "Corporate commitments require fulfillment and continued accountability.",
+        "scalability": "Shared campaigns and multinational standards can affect many suppliers.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "Welfare commitments do not equal compliance, and welfare reform does not by itself end animal agriculture.",
+      "falsifiableClaim": "Corporate commitments should be fulfilled and independently linked to improved welfare.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "wild-animal-initiative",
+      "name": "Wild Animal Initiative",
+      "category": "Animal welfare",
+      "website": "https://www.wildanimalinitiative.org/",
+      "mechanism": "Research field-building",
+      "summary": "Funds and conducts research and academic outreach to develop wild-animal welfare science.",
+      "externalEvaluator": "ACE Recommended Charity, 2025 list",
+      "evaluatorUrl": "https://animalcharityevaluators.org/charity-review/wild-animal-initiative/",
+      "sources": [
+        {
+          "url": "https://www.wildanimalinitiative.org/",
+          "title": "Wild Animal Initiative \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        },
+        {
+          "url": "https://animalcharityevaluators.org/charity-review/wild-animal-initiative/",
+          "title": "ACE Recommended Charity, 2025 list",
+          "type": "evaluation",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets the knowledge and research capacity needed for future interventions.",
+        "reach": "Wild-animal welfare research has potential global application.",
+        "durability": "Published methods and academic capacity can persist.",
+        "scalability": "Research knowledge is reusable beyond a single project.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Independent evaluator review; downstream impact uncertain",
+      "confidence": "Medium for mechanism; limited for systemic attribution",
+      "limitations": "A research field's potential scale is not demonstrated welfare benefit. Interventions may have ecological harms or unknown tradeoffs.",
+      "falsifiableClaim": "Research should yield validated welfare measures and safe interventions with measured benefits.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "ACE Recommended Charity, 2025 list",
+      "evaluatorLabel": "ACE 2025",
+      "selectionType": "current_evaluator_selection",
+      "evaluatorStatus": "current_recommendation"
+    },
+    {
+      "id": "world-resources-institute",
+      "name": "World Resources Institute",
+      "category": "Justice & public goods",
+      "website": "https://www.wri.org/",
+      "mechanism": "Shared data and environmental policy",
+      "summary": "Combines research, public tools and work with governments and other partners on environmental and development systems.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.wri.org/",
+          "title": "World Resources Institute \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets decision infrastructure and policy across interconnected resource systems.",
+        "reach": "International partnerships and public tools offer cross-border reach.",
+        "durability": "Reusable data and institutions may persist but require maintenance.",
+        "scalability": "Data platforms and policy methods can serve users beyond direct partners.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Public data use and policy activity are not causal environmental gains. Programs need separate outcome reviews.",
+      "falsifiableClaim": "Use of tools should lead to documented additional decisions and independently measured environmental outcomes.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "transparency-international",
+      "name": "Transparency International",
+      "category": "Justice & public goods",
+      "website": "https://www.transparency.org/en/",
+      "mechanism": "Anti-corruption institutions",
+      "summary": "Works through research, advocacy and a global movement to improve anti-corruption rules and accountability.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.transparency.org/en/",
+          "title": "Transparency International \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets governance rules and corruption incentives.",
+        "reach": "International networks and national chapters offer multi-jurisdiction reach.",
+        "durability": "Legal and accountability reforms may persist but face capture and reversal.",
+        "scalability": "Shared standards and tools can be adapted by local organizations.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Perception indices do not directly measure corruption prevented. Chapters and legal entities differ.",
+      "falsifiableClaim": "Reforms should improve independently measured accountability and reduce verified corruption risks.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "international-budget-partnership",
+      "name": "International Budget Partnership",
+      "category": "Justice & public goods",
+      "website": "https://internationalbudget.org/",
+      "mechanism": "Public budget accountability",
+      "summary": "Supports civil society and research on budget transparency, participation and accountability.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://internationalbudget.org/",
+          "title": "International Budget Partnership \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets public-resource governance and budget decision rules.",
+        "reach": "Budget research and partners operate across countries.",
+        "durability": "Public transparency and participation rules may persist if enforced.",
+        "scalability": "Survey tools and civic methods can be reused.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Budget openness is an intermediate outcome; improved services and distribution require separate evidence.",
+      "falsifiableClaim": "Budget reforms should increase meaningful participation and improve traceable public spending outcomes.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "brennan-center",
+      "name": "Brennan Center for Justice",
+      "category": "Justice & public goods",
+      "website": "https://www.brennancenter.org/",
+      "mechanism": "Democracy and justice policy",
+      "summary": "Uses research, legal and policy work on democracy, voting, justice and constitutional institutions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.brennancenter.org/",
+          "title": "Brennan Center for Justice \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets institutional and legal rules.",
+        "reach": "National and state reforms can affect broad U.S. populations.",
+        "durability": "Legal precedents and statutory rules may persist but can be reversed.",
+        "scalability": "Research and legal strategies can be adapted across jurisdictions.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Policy positions and litigation activity are not proof of adopted reform or causal democratic benefit.",
+      "falsifiableClaim": "Reforms should be adopted, implemented and linked to measurable access or accountability gains.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "equal-justice-initiative",
+      "name": "Equal Justice Initiative",
+      "category": "Justice & public goods",
+      "website": "https://eji.org/",
+      "mechanism": "Legal justice and public understanding",
+      "summary": "Combines legal representation with work on racial injustice, criminal justice and public education.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://eji.org/",
+          "title": "Equal Justice Initiative \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 2,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Combines individual legal remedy with challenges to justice-system practices.",
+        "reach": "Legal precedents and public education can extend beyond directly represented clients.",
+        "durability": "Legal relief, precedent and durable educational institutions can persist.",
+        "scalability": "Litigation is labor intensive and context-specific.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Organization description only here; client outcomes, precedent effects and wider education impacts need separate evidence.",
+      "falsifiableClaim": "Legal work should yield verified relief or enforceable systemic changes, with long-term follow-up.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "wikimedia-foundation",
+      "name": "Wikimedia Foundation",
+      "category": "Justice & public goods",
+      "website": "https://wikimediafoundation.org/",
+      "mechanism": "Open knowledge infrastructure",
+      "summary": "Supports Wikipedia and other Wikimedia projects, volunteer communities and access to free knowledge.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://wikimediafoundation.org/",
+          "title": "Wikimedia Foundation \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": 3
+      },
+      "rationales": {
+        "depth": "Creates and sustains shared public knowledge infrastructure.",
+        "reach": "Projects are available across countries and languages.",
+        "durability": "Content and open infrastructure can persist, subject to maintenance and community health.",
+        "scalability": "Digital public resources can be reused with relatively low marginal access cost.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Volunteer communities participate in creating and governing content; organizational budget control and representation need separate audit."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Reach is not proof of learning or social benefit; language gaps, content accuracy and community representation matter.",
+      "falsifiableClaim": "Users should have sustained access to reliable knowledge, with independently assessed accuracy and representation.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    },
+    {
+      "id": "electronic-frontier-foundation",
+      "name": "Electronic Frontier Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.eff.org/",
+      "mechanism": "Digital rights and public technology",
+      "summary": "Works on litigation, policy, advocacy and technology tools for privacy, free expression and digital rights.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.eff.org/",
+          "title": "Electronic Frontier Foundation \u2014 documented approach",
+          "type": "official",
+          "accessedAt": "2026-10-06"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets legal rules and technology infrastructure affecting digital rights.",
+        "reach": "Internet tools and precedent can affect users beyond one jurisdiction.",
+        "durability": "Legal protections and reusable tools can persist but require defense and maintenance.",
+        "scalability": "Public digital tools and legal analysis can be reused at low marginal access cost.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: decision rights and accountability to affected people have not been audited."
+      },
+      "evidenceLevel": "Organization reported",
+      "confidence": "Low for systemic attribution; organization description only",
+      "limitations": "Successful litigation or tool distribution alone does not quantify population-level rights improvements.",
+      "falsifiableClaim": "Legal wins should be implemented and tools should demonstrate effective protection in independent audits.",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-06",
+      "evaluationScope": "Documented intervention design; not a complete audit of this organization.",
+      "selectionStatement": "No independent evaluator status verified in this seed review",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified"
+    }
+  ],
+  "reviewMethod": "AI-assisted source research and qualitative mechanism sketches; no independent human validation yet"
+}

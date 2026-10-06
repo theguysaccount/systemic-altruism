@@ -1,0 +1,34 @@
+name: Evidence or organization proposal
+description: Submit a public source, a scoped claim and its uncertainty.
+title: "[Evidence] "
+body:
+  - type: input
+    id: organization
+    attributes:
+      label: Organization and specific program
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Public source URLs, title and dates
+      description: No private beneficiary information or restricted raw databases.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Precise claim or correction
+      description: Explain what the source actually establishes and what it does not.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Axis rationale, uncertainty and next test
+    validations:
+      required: true
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Affiliations or conflicts to disclose
