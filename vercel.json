@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build && npm test && npm run check",
+  "buildCommand": "npm run build && npm test && npm run check && node social-motion/build.mjs",
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": true,
