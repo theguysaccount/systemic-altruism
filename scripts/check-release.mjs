@@ -4,6 +4,7 @@ const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
 if(!routes.some(r=>r.path==='/directory/'))throw new Error('Missing public charity directory');
+for(const path of ['/funders/','/toolkit/'])if(!routes.some(r=>r.path===path))throw new Error(`Missing decision tool: ${path}`);
 if(registry.recordCount<1_000_000)throw new Error('Incomplete charity registry');
 for(const r of routes){
   const html=await readFile(`dist${r.path}index.html`,'utf8');
@@ -26,6 +27,12 @@ for(const r of routes){
   }
 }
 if(origin){
+  for(const file of ['funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css']){
+    const response=await fetch(origin+'/'+file);
+    if(!response.ok)throw new Error(`Live tool asset missing: ${file}`);
+    const local=await readFile('dist/'+file),live=Buffer.from(await response.arrayBuffer());
+    if(createHash('sha256').update(local).digest('hex')!==createHash('sha256').update(live).digest('hex'))throw new Error(`Live tool asset mismatch: ${file}`);
+  }
   const response=await fetch(origin+'/api/registry?q=food+bank&state=NY&cause=K&limit=3');
   if(!response.ok)throw new Error(`Live registry: ${response.status}`);
   const result=await response.json();

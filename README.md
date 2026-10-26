@@ -8,6 +8,8 @@ A beta charity tracker with a broad searchable IRS registry and an evidence-link
 
 ## What works
 
+- [Funder brief builder](https://charities.systemicaltruism.com/funders/): select a current charity, compare up to two alternatives in its broad cause, check mission fit, and copy or download a source-linked draft. Share links include selections and a priority lens, excluding mission text, notes and fit checks. No funder outreach is automated.
+- [Charity outcome planner](https://charities.systemicaltruism.com/toolkit/): define a systemic mechanism, observable outcome, evidence plan, community role, stop rule and reviewer; export Markdown or JSON, or copy the plan. Drafts stay in browser-local storage. Optional full-cost scenarios are arithmetic assumptions, not measured or forecast impact.
 - Search more than a million IRS-listed 501(c)(3) organizations by name, city or EIN, with filing-address location and NTEE cause filters.
 - Inspect public identity and classification records; registry-only organizations have no systemic scores.
 - Search and filter 40 assessment profiles across five cause areas.
@@ -34,6 +36,8 @@ npm run preview
 Visit http://localhost:4173. `PUBLIC_ORIGIN=https://your-domain.example npm run build` sets canonical and social URLs. The build outputs `dist/` for public pages and assets; `api/registry.js` serves the bundled read-only registry on Vercel. The included Node preview server runs both locally. A static-only host can serve the assessment cohort but needs an equivalent registry endpoint for directory search. Vercel runs build, tests and the release checker before every publication. An optional GitHub Actions template is in `docs/github-actions-check.yml`; it is not installed because the current GitHub authorization does not include workflow-write scope. The public read-only data endpoint is `/api/v1/charities.json`.
 
 Public pages each have a distinct, checked 1200×630 share image. Cards are committed in `public/share/` to keep hosting builds dependency-free. To intentionally regenerate them after a route/title change, install Pillow from its normal package registry, run `SKIP_SHARE_CARDS=1 npm run build`, then `python3 scripts/share-cards.py` and build again. New artwork uses versioned image filenames to refresh social previews. `CHECK_ORIGIN=https://your-live-origin npm run check` verifies all deployed pages and card bytes.
+
+Use `python3 scripts/share-cards.py --only /funders/ /toolkit/` to generate selected new cards while preserving reviewed artwork elsewhere. The homepage's animated Open Graph asset is added by `node social-motion/build.mjs`, which remains part of the Vercel build command.
 
 ## Scoring and uncertainty
 

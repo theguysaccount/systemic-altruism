@@ -1,5 +1,5 @@
 """Create new branded, page-specific social artwork (never edit a source image)."""
-import json, hashlib, math
+import json, hashlib, math, argparse
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
@@ -26,7 +26,12 @@ def wrap(draw,text,face,width):
  if current:lines.append(current)
  return lines
 paper='#f5f5ed';green='#164b38';ink='#172b28';lime='#d5ed74';muted='#5b6a65'
+parser=argparse.ArgumentParser()
+parser.add_argument('--only',nargs='+',help='Create cards only for these route paths; preserve existing artwork elsewhere.')
+args=parser.parse_args()
+created=0
 for route in routes:
+ if args.only and route['path'] not in args.only:continue
  im=Image.new('RGB',(1200,630),paper);d=ImageDraw.Draw(im)
  # Full-height network panel, with a quiet technical grid and an intentional path.
  d.rectangle((810,0,1200,630),fill=green)
@@ -48,7 +53,7 @@ for route in routes:
   caption=f"{registry['recordCount']:,} organizations. One open index."
   second='Search by name, location, cause or EIN.'
  else:
-  topic=(c['category'].upper() if c else {'/methodology/':'THE METHOD','/data/':'OPEN DATA','/about/':'ABOUT THE PROJECT'}.get(path,'THE CHARITY TRACKER'))
+  topic=(c['category'].upper() if c else {'/methodology/':'THE METHOD','/data/':'OPEN DATA','/about/':'ABOUT THE PROJECT','/funders/':'FOR PEOPLE WRITING THE CHECKS','/toolkit/':'SHARED TOOLS FOR CHARITIES'}.get(path,'THE CHARITY TRACKER'))
   size=65;lines=wrap(d,route['title'],font(size,'serif'),670)
   while len(lines)>4:
    size-=3;lines=wrap(d,route['title'],font(size,'serif'),670)
@@ -87,5 +92,6 @@ for route in routes:
  d.text((869,507),'EVIDENCE BEFORE CERTAINTY',font=font(13,'bold'),fill=lime)
  d.text((869,534),'An open map of possible change.',font=font(14),fill='#dbe8d0')
  im.save(out/(route['card']+'.png'),optimize=True)
+ created+=1
 # Preserve earlier card URLs for existing cached previews; new pages use v2 URLs.
-print(f'Created {len(routes)} intentional 1200×630 share cards')
+print(f'Created {created} intentional 1200×630 share cards')
