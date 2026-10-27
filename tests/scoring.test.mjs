@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,118);assert.equal(new Set(data.charities.map(c=>c.id)).size,118);
+  assert.equal(data.charities.length,137);assert.equal(new Set(data.charities.map(c=>c.id)).size,137);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -110,4 +110,22 @@ test('second goal batch separates named code, support models and unresolved caus
   assert.match(batch.find(c=>c.id==='new-economy-coalition').rationales.agency,/member-elected/);
   assert.match(batch.find(c=>c.id==='interactivity-foundation').limitations,/direct HTTP returned 403/);
   assert.equal(batch.find(c=>c.id==='tactical-tech').openSource,undefined);
+});
+test('third goal batch preserves current ownership, restrictive-license and mixed-rights boundaries',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-03');assert.equal(batch.length,19);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
+    assert.ok(c.sources.some(s=>s.type==='official'));assert.ok(c.sources.every(s=>s.accessedAt==='2026-10-27'));
+    assert.ok(c.falsifiableClaim.length>70);assert.equal(c.checklistAlignment.adoption,'not_verified');
+    assert.ok(c.evaluationScope.length>70);assert.ok(c.limitations.length>180);
+  }
+  assert.equal(batch.filter(c=>c.openSource?.status==='license_verified').length,10);
+  assert.match(batch.find(c=>c.id==='villagereach').limitations,/transitioned to Vitalliance/);
+  assert.match(batch.find(c=>c.id==='cadasta-foundation').limitations,/Esri ArcGIS/);
+  assert.match(batch.find(c=>c.id==='cadasta-foundation').evaluationScope,/Corus International/);
+  assert.match(batch.find(c=>c.id==='radicalxchange-foundation').limitations,/CC BY-NC 2.0/);
+  assert.match(batch.find(c=>c.id==='document-foundation').limitations,/GPL, LGPL and third-party/);
+  assert.match(batch.find(c=>c.id==='open-food-facts').limitations,/ODbL/);
+  assert.match(batch.find(c=>c.id==='center-for-democracy-and-technology').limitations,/direct HTTP returned 403/);
 });

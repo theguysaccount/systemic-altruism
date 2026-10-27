@@ -23,7 +23,7 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,25);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,35);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
@@ -45,6 +45,17 @@ test('focus metadata never changes an assessment or asserts checklist affiliatio
   assert.deepEqual(assess(c.scores),assess({...c,checklistAlignment:undefined,tooling:undefined}.scores));
   assert.match(focusProfile(c,s=>s),/Explicit checklist adoption: not verified/);
   assert.equal(focusProfile({},s=>s),'');
+});
+test('source-visible noncommercial tools and historical platform roles cannot receive open-source badges',()=>{
+  const c=data.charities.find(c=>c.openSource);
+  for(const label of ['CC BY-NC 2.0','CC-BY-NC-4.0','Noncommercial source license']){
+    const clone=structuredClone(c);clone.openSource.projects[0].licenseLabel=label;assert.equal(hasVerifiedOpenSource(clone),false);
+  }
+  for(const id of ['radicalxchange-foundation','villagereach','cadasta-foundation','open-culture-foundation','free-software-foundation','wordpress-foundation']){
+    const c=data.charities.find(c=>c.id===id);assert.equal(matchesFocus(c,'tooling'),true);assert.equal(matchesFocus(c,'opensource'),false);
+  }
+  assert.match(data.charities.find(c=>c.id==='gnome-foundation').openSource.projects[0].licenseLabel,/LGPL-2.0-or-later/);
+  assert.match(data.charities.find(c=>c.id==='free-software-foundation-europe').openSource.projects[0].scope,/Codeberg/);
 });
 test('every focus claim is dated and linked to that profile’s actual sources',()=>{
   const kinds=['software','capacity','shared_infrastructure'];

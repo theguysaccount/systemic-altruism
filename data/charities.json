@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.2",
+  "schemaVersion": "0.4.3",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "118 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 02. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "137 scoped assessment profiles toward a first-edition goal of 200, including 19 source-linked additions in goal batch 03. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -7811,6 +7811,1857 @@
           "https://www.interactivityfoundation.org/about/",
           "https://www.interactivityfoundation.org/donate/",
           "https://www.interactivityfoundation.org/what-we-do/cdp/"
+        ]
+      }
+    },
+    {
+      "id": "document-foundation",
+      "name": "The Document Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.documentfoundation.org/",
+      "mechanism": "Steward a reusable office-software commons and its contributor infrastructure",
+      "summary": "The German charitable foundation supports LibreOffice and its contributor ecosystem, offering nonprofit teams a reusable alternative to proprietary office tooling. The hypothesis concerns infrastructure and reduced dependency, not measured charity outcomes.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.documentfoundation.org/",
+          "title": "The Document Foundation: mission and projects",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.documentfoundation.org/statutes/",
+          "title": "Foundation statutes and charitable purposes",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/LibreOffice/core",
+          "title": "LibreOffice core: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/LibreOffice/core/blob/master/README.md",
+          "title": "LibreOffice core README and project relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/LibreOffice/core/blob/master/COPYING.MPL",
+          "title": "LibreOffice core: inspected MPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/LibreOffice/core/blob/master/COPYING.LGPL",
+          "title": "LibreOffice core: additional LGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable software and document standards can alter dependency on a vendor, rather than pay for one organization’s recurring license bill; implementation barriers remain.",
+        "reach": "Office software is cross-sector infrastructure that charities, public bodies and individuals can adapt; breadth is a design property, not evidence of attributable welfare gains.",
+        "durability": "Published source, formats and contributor institutions can outlast a single grant, although compatibility, security and maintenance require continuing work.",
+        "scalability": "A shared codebase can be reused at relatively low distribution cost, while migration, training and support still consume resources.",
+        "additionality": "No current marginal funding bottleneck or counterfactual allocation between the foundation, commercial contributors and volunteers was audited.",
+        "agency": "Contributor membership does not establish binding decision rights for affected nonprofit users or communities; those rights remain unreviewed."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "This is not an office-suite usability, accessibility or security audit. TDF is not the sole LibreOffice developer. The inspected MPL file is one license text: GPL, LGPL and third-party notices also exist, so it is not a blanket MPL license certification for every component. Migration and support costs can erase nominal savings; German charitable status does not establish eligibility for every donor.",
+      "falsifiableClaim": "Would comparable nonprofit teams switching to supported LibreOffice retain accessible, interoperable workflows and lower total dependency costs after two years, compared with teams receiving ordinary software grants?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The German charitable foundation’s LibreOffice stewardship and community infrastructure, not all commercial contributors or the separate value of every component.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "LibreOffice stewardship and contributor infrastructure can supply reusable document tools for nonprofit operations; the foundation supports, rather than solely produces, this commons.",
+        "sourceUrls": [
+          "https://www.documentfoundation.org/",
+          "https://www.documentfoundation.org/statutes/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "LibreOffice core",
+            "repositoryUrl": "https://github.com/LibreOffice/core",
+            "licenseUrl": "https://github.com/LibreOffice/core/blob/master/COPYING.MPL",
+            "licenseLabel": "MPL-2.0 text; GPL/LGPL and third-party notices also present",
+            "licenseBlobSha": "a612ad9813b006ce81d1ee438dd784da99a54007",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named MPL text in the official GitHub source copy, alongside README and LGPL text. This is a mixed-license suite, not uniform relicensing of all files, dependencies, formats, trademarks or hosted support."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable document software can reduce dependence on proprietary gatekeepers and support shared work. This is a partial mechanism match, not proof that all organizational coordination improves.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.documentfoundation.org/",
+          "https://www.documentfoundation.org/statutes/"
+        ]
+      }
+    },
+    {
+      "id": "gnome-foundation",
+      "name": "GNOME Foundation",
+      "category": "Justice & public goods",
+      "website": "https://foundation.gnome.org/",
+      "mechanism": "Support shared desktop infrastructure, contributors and nonprofit software institutions",
+      "summary": "The US nonprofit foundation supplies legal, financial and community infrastructure for GNOME. GTK is a scoped example of reusable application infrastructure, not a claim that the foundation alone develops every GNOME project.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://foundation.gnome.org/",
+          "title": "GNOME Foundation: mission and community support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://foundation.gnome.org/legal-and-trademarks/",
+          "title": "GNOME Foundation: legal identity and trademarks",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://gtk.org/docs/architecture/",
+          "title": "GTK architecture and GNOME relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/GNOME/gtk",
+          "title": "GTK: inspected GitHub source copy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/GNOME/gtk/blob/main/README.md",
+          "title": "GTK README: project, license and canonical development",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/GNOME/gtk/blob/main/COPYING",
+          "title": "GTK: inspected license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/GNOME/gtk/blob/main/gtk/gtkmain.c",
+          "title": "GTK source header: version 2 or later licensing",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared application infrastructure can change who controls desktop tooling and developer entry costs, without itself changing every social institution.",
+        "reach": "A reusable toolkit and desktop ecosystem can enable many public-interest applications, not just a single service provider.",
+        "durability": "Public source and contributor institutions can persist across projects, with ongoing maintenance and ecosystem compatibility still necessary.",
+        "scalability": "Common libraries can be incorporated into many applications without rebuilding the foundation each time; specialist integration remains costly.",
+        "additionality": "No current foundation funding bottleneck or displacement of other corporate, volunteer or project contributions was established.",
+        "agency": "Membership and contributor governance do not by themselves show binding rights for communities affected by applications built on GTK."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal page identifies a California 501(c)(3), EIN 04-3572618; this review does not audit its accounts or governance. GTK development is hosted by GNOME and performed by its team and contributors, not solely by the foundation. The inspected COPYING text says GNU Library GPL version 2 and the source header permits version 2 or later; other component and dependency terms vary. No accessibility, security or nonprofit adoption outcome is certified.",
+      "falsifiableClaim": "Do public-interest teams using supported GNOME and GTK infrastructure sustain accessible applications with less vendor lock-in and lower lifecycle costs than comparable teams using proprietary alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "GNOME Foundation’s nonprofit stewardship and support role, with GTK as a named software example; not a combined score for every GNOME, Flatpak or Flathub contributor or service.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Legal, financial and community support for reusable desktop tools and application infrastructure can reduce duplicated work by nonprofit developers.",
+        "sourceUrls": [
+          "https://foundation.gnome.org/",
+          "https://foundation.gnome.org/legal-and-trademarks/",
+          "https://gtk.org/docs/architecture/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "GTK",
+            "repositoryUrl": "https://github.com/GNOME/gtk",
+            "licenseUrl": "https://github.com/GNOME/gtk/blob/main/COPYING",
+            "licenseLabel": "LGPL-2.0-or-later; component and dependency notices vary",
+            "licenseBlobSha": "5bc8fb2c8f757e34a0d8f4644f589d57609e213f",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected COPYING, README and a version-2-or-later source header in GNOME’s GitHub copy; canonical development is on GNOME GitLab. Foundation stewardship is not sole authorship or a security/support certification for the ecosystem."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared application infrastructure can reduce proprietary bottlenecks and make collective technical work reusable. This partial mapping does not establish user control or downstream outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://foundation.gnome.org/",
+          "https://foundation.gnome.org/legal-and-trademarks/",
+          "https://gtk.org/docs/architecture/"
+        ]
+      }
+    },
+    {
+      "id": "kde-ev",
+      "name": "KDE e.V.",
+      "category": "Justice & public goods",
+      "website": "https://ev.kde.org/",
+      "mechanism": "Provide legal, financial and community infrastructure for a software commons",
+      "summary": "The German nonprofit association represents and supports the KDE community. Okular illustrates reusable document infrastructure that nonprofit teams can use, while KDE e.V. is not treated as the sole developer.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://ev.kde.org/",
+          "title": "KDE e.V.: nonprofit support for the community",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://ev.kde.org/whatiskdeev/",
+          "title": "What is KDE e.V.: legal and support role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/okular",
+          "title": "Okular: inspected GitHub source copy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/okular/blob/master/README.md",
+          "title": "Okular README and canonical KDE development",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/okular/blob/master/LICENSES/GPL-2.0-or-later.txt",
+          "title": "Okular: inspected GPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Supporting shared software institutions can reduce dependency on proprietary vendors, though ordinary tool adoption is not a complete institutional reform.",
+        "reach": "General-purpose document and desktop tools can enable many kinds of organizations and developers rather than one local program.",
+        "durability": "Reusable source and an enduring contributor institution can preserve capability, but compatibility, funding and maintenance are continuing requirements.",
+        "scalability": "Shared tools can be distributed and adapted widely while training, integration and support remain local costs.",
+        "additionality": "No marginal grant use, funding gap or displacement of KDE’s other community and commercial contributions was audited.",
+        "agency": "Association membership and developer participation are not evidence of binding rights for affected document users or nonprofit beneficiaries."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "KDE e.V. is a registered German nonprofit association, not the same entity as every KDE project or the separate Krita Foundation. Okular’s LICENSES directory contains multiple license texts; the selected GPL-2.0-or-later file does not relicense every file or dependency. No PDF accessibility, security, adoption or impact audit occurred. Canonical development is on KDE Invent; this inspection used KDE’s GitHub copy.",
+      "falsifiableClaim": "Would nonprofit teams supported in adopting KDE document tooling maintain accessible workflows and lower dependency costs over two years compared with similar teams receiving commercial tool subsidies?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "KDE e.V.’s legal, financial and contributor support role, with Okular as one scoped example; not the separately incorporated foundations or entire downstream software portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Community infrastructure and reusable document tools can help nonprofit teams avoid duplicating software work and reduce dependence on a single supplier.",
+        "sourceUrls": [
+          "https://ev.kde.org/",
+          "https://ev.kde.org/whatiskdeev/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Okular",
+            "repositoryUrl": "https://github.com/KDE/okular",
+            "licenseUrl": "https://github.com/KDE/okular/blob/master/LICENSES/GPL-2.0-or-later.txt",
+            "licenseLabel": "GPL-2.0-or-later text; per-file and other component licenses differ",
+            "licenseBlobSha": "3b6070fcd0c53e0e40d54f61cbe4e0e95b23a431",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named license text and README in KDE’s GitHub copy; canonical development is on KDE Invent. The repository contains several license families, and association support is not sole authorship or a certification of document safety."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared software can reduce proprietary gatekeeper dependence and coordinate developer effort across organizations. These are partial mechanism links, not verified community agency or social effects.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://ev.kde.org/",
+          "https://ev.kde.org/whatiskdeev/"
+        ]
+      }
+    },
+    {
+      "id": "internet-security-research-group",
+      "name": "Internet Security Research Group",
+      "category": "Justice & public goods",
+      "website": "https://www.abetterinternet.org/",
+      "mechanism": "Make shared security infrastructure easier and cheaper to operate",
+      "summary": "ISRG is the US nonprofit behind Let’s Encrypt and other Internet infrastructure projects. Its systemic hypothesis is to make baseline technical protections practical for many implementers, including charities.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.abetterinternet.org/about/",
+          "title": "ISRG: nonprofit identity and projects",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://letsencrypt.org/about/",
+          "title": "Let’s Encrypt: certificate infrastructure and ISRG relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/letsencrypt/boulder",
+          "title": "Boulder: inspected certificate-authority repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/letsencrypt/boulder/blob/main/LICENSE.txt",
+          "title": "Boulder: inspected MPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Automated shared certificate infrastructure reduces cost and operational barriers to encrypted websites; it changes a technical default rather than all causes of online harm.",
+        "reach": "Shared Internet infrastructure can serve many sectors and organizations instead of a single charity’s website.",
+        "durability": "Reusable code and standards persist, but certificate issuance, renewal, trust and incident response depend on continuing operations.",
+        "scalability": "Automation and common infrastructure can serve many websites with less repeated manual work, while reliability and governance remain substantial costs.",
+        "additionality": "A current marginal funding bottleneck, donor substitution and the counterfactual contribution of other certificate providers were not assessed.",
+        "agency": "Open protocols and public code do not establish affected users’ binding rights over infrastructure governance or service policies."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "ISRG identifies itself as a California public-benefit 501(c)(3), EIN 46-3344200. Boulder’s MPL-2.0 software terms are distinct from certificate-service policies, dependencies and trust decisions. HTTPS is not a guarantee of a trustworthy website, endpoint safety or anonymity. This is not a cryptographic, operational security or financial audit, and software reach is not measured social impact.",
+      "falsifiableClaim": "Does expanding supported automated certificate infrastructure measurably reduce insecure nonprofit service deployments and operating burden compared with existing certificate options, without concentrating unacceptable operational risk?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "ISRG’s nonprofit Internet infrastructure model, with Let’s Encrypt and Boulder as the scoped mechanism; not a separate charity count for each ISRG project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Automated certificate services and reusable authority software can reduce a recurring technical burden for nonprofit website operators.",
+        "sourceUrls": [
+          "https://www.abetterinternet.org/about/",
+          "https://letsencrypt.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Boulder",
+            "repositoryUrl": "https://github.com/letsencrypt/boulder",
+            "licenseUrl": "https://github.com/letsencrypt/boulder/blob/main/LICENSE.txt",
+            "licenseLabel": "MPL-2.0",
+            "licenseBlobSha": "fa274d92d74d73bfdec7d27ccc8bac36c1219701",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Checked the named certificate-authority software license and non-archived repository status. This does not cover every dependency, the terms of hosted certificates, trust policy, operational safety or ISRG’s other projects."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared protocols and low-barrier infrastructure can reduce exclusion by technical gatekeepers and coordinate baseline protections. This does not establish broader institutional reform or secure outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.abetterinternet.org/about/",
+          "https://letsencrypt.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts",
+      "category": "Global health",
+      "website": "https://world.openfoodfacts.org/",
+      "mechanism": "Build a reusable food-information commons for public-interest research and tools",
+      "summary": "The French nonprofit association maintains a collaborative food-products database and reusable software. Shared infrastructure could lower research and public-information costs; database size does not demonstrate better health.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://world.openfoodfacts.org/",
+          "title": "Open Food Facts: collaborative database and tools",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://world.openfoodfacts.org/legal",
+          "title": "Open Food Facts: association identity and separate data/content terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://blog.openfoodfacts.org/en/news/why-open-food-facts-is-independent-and-open-and-why-that-matters",
+          "title": "Why Open Food Facts is independent and open",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openfoodfacts/openfoodfacts-server",
+          "title": "Open Food Facts server: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openfoodfacts/openfoodfacts-server/blob/main/LICENSE",
+          "title": "Open Food Facts server: inspected AGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A shared data and software commons can reduce information bottlenecks and duplicated collection, but information alone need not alter food-system incentives.",
+        "reach": "The infrastructure can be reused by researchers, public-interest implementers and consumers across many products and jurisdictions.",
+        "durability": "Reusable code and data can persist, while product changes, moderation, hosting and data-quality work require constant renewal.",
+        "scalability": "A common database and server code can support many downstream applications without every team rebuilding data infrastructure.",
+        "additionality": "No current marginal funding gap or comparison with other public food-data investments was audited.",
+        "agency": "Volunteer contribution and open access do not establish binding decision rights for communities exposed to food-system harms."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal page identifies a French Loi 1901 nonprofit association. AGPL-3.0 applies to the inspected server software, not all data or images: the legal page separately specifies ODbL, Database Contents License and image/content terms. Crowd-contributed records can be incomplete or wrong, including allergen and nutrition fields. This is not medical advice, a food-safety certification, an accuracy audit or proof of causal health benefit.",
+      "falsifiableClaim": "Do public-interest teams reusing this commons produce more accurate, usable food-information interventions at lower lifecycle cost than teams collecting their own data, and do users benefit without increased misinformation risk?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The French Open Food Facts association and its shared server/data infrastructure; not Open Food Foundation or a clinical assessment of consumer apps.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable food-data software and a shared product database can support nonprofit research and public-information applications with less duplicated collection work.",
+        "sourceUrls": [
+          "https://world.openfoodfacts.org/",
+          "https://world.openfoodfacts.org/legal",
+          "https://blog.openfoodfacts.org/en/news/why-open-food-facts-is-independent-and-open-and-why-that-matters"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Food Facts server",
+            "repositoryUrl": "https://github.com/openfoodfacts/openfoodfacts-server",
+            "licenseUrl": "https://github.com/openfoodfacts/openfoodfacts-server/blob/main/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named server software license and repository status. Database, individual contents, photos, trademarks and hosted API/service terms have separate conditions; no accuracy, medical or food-safety audit was performed."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "A shared food-information commons can reduce data gatekeeping and coordinate collection across implementers. This is a partial design link, not proof of reliable data or healthier behavior.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://world.openfoodfacts.org/",
+          "https://world.openfoodfacts.org/legal",
+          "https://blog.openfoodfacts.org/en/news/why-open-food-facts-is-independent-and-open-and-why-that-matters"
+        ]
+      }
+    },
+    {
+      "id": "chayn",
+      "name": "Chayn",
+      "category": "Justice & public goods",
+      "website": "https://www.chayn.co/",
+      "mechanism": "Make survivor-support resources and digital delivery infrastructure reusable",
+      "summary": "Chayn CIO is a UK charity developing trauma-informed resources and digital support, including Bloom. This assessment concerns scalable support infrastructure and shared knowledge, not demonstrated clinical effectiveness.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.chayn.co/",
+          "title": "Chayn: survivor-support resources and Bloom",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.chayn.co/about",
+          "title": "Chayn: current CIO identity and operating model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/chaynHQ/bloom-frontend",
+          "title": "Bloom frontend: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/chaynHQ/bloom-frontend/blob/develop/LICENCE.md",
+          "title": "Bloom frontend: inspected MIT license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable survivor-support knowledge and delivery tools can alter access barriers rather than fund only individual sessions; they do not replace protective institutions or specialist care.",
+        "reach": "Digital resources can support survivors and partner organizations in several settings, while language, connectivity and safeguarding constrain institutional reach.",
+        "durability": "Reusable materials and code can persist, but safe support, content revision and operational safeguarding need ongoing resources.",
+        "scalability": "Self-paced resources and shared delivery software can reach additional users without repeating every content-development cost; human support remains important.",
+        "additionality": "The current costed funding bottleneck and whether new donations would expand safe access rather than substitute for other support were not audited.",
+        "agency": "The about page describes survivor involvement and volunteer access to strategy, board and budget meetings; binding affected-community decision rights were not independently established."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The about page identifies Chayn CIO, UK charity 1196098, following an earlier company structure. The MIT check covers Bloom’s frontend only, not every resource, backend or service. No clinical efficacy, safeguarding, privacy or security audit occurred. Digital access can create risks on monitored devices and cannot guarantee anonymity, safety or a substitute for emergency or specialist support. Participation claims do not settle governance power.",
+      "falsifiableClaim": "For comparable partner settings, does supported use of Chayn resources improve safe access and survivor-valued outcomes beyond existing provision, without increasing privacy, retraumatization or exclusion risks?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "Chayn CIO’s resource and digital-support model, with Bloom frontend as one scoped tool; not a clinical treatment recommendation or a combined score for all partner services.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared survivor-support resources and Bloom delivery code can reduce repeated design work for organizations offering trauma-informed digital support.",
+        "sourceUrls": [
+          "https://www.chayn.co/",
+          "https://www.chayn.co/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Bloom frontend",
+            "repositoryUrl": "https://github.com/chaynHQ/bloom-frontend",
+            "licenseUrl": "https://github.com/chaynHQ/bloom-frontend/blob/develop/LICENCE.md",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "58b270f51e18cc824e884d23e98f5b78b0a352e1",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the MIT license in Chayn’s named frontend repository and its non-archived status. This does not license all educational content or backends, or certify clinical effectiveness, safeguarding, anonymity, security or hosted-service terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Low-barrier shared resources and partner delivery can reduce access gatekeeping and coordinate support knowledge. This partial mapping does not establish safety, clinical impact or binding survivor control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.chayn.co/",
+          "https://www.chayn.co/about"
+        ]
+      }
+    },
+    {
+      "id": "free-software-foundation",
+      "name": "Free Software Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.fsf.org/",
+      "mechanism": "Support software-freedom institutions, licensing knowledge and shared developer infrastructure",
+      "summary": "The US nonprofit advocates software freedom and supports GNU-related infrastructure and education. The proposed leverage is enabling many implementers to reuse and modify tools, rather than developing one charity-specific application.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.fsf.org/about/",
+          "title": "FSF: nonprofit mission and GNU infrastructure support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.fsf.org/about/financial",
+          "title": "FSF: financial-disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.fsf.org/about/what-is-free-software",
+          "title": "FSF: software-freedom model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Licensing education, campaigns and shared infrastructure target control over software rather than merely purchasing access, while practical institutional effects depend on uptake.",
+        "reach": "Software freedoms and developer infrastructure apply across sectors and can enable nonprofit implementers beyond a single program.",
+        "durability": "Reusable knowledge, licenses and institutions can persist, but advocacy, legal expertise and infrastructure still need continuing maintenance.",
+        "scalability": "Shared resources can be reused widely, while technical migration and institutional adoption require substantial complementary work.",
+        "additionality": "Current marginal funding needs, competing software-freedom investments and displacement of volunteer or other donor contributions were not audited.",
+        "agency": "Associate membership or software modification rights are not evidence of binding affected-community governance over the foundation or downstream deployments."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The FSF is distinct from the separately incorporated Free Software Foundation Europe. This pass inspected the support and education model, not a named current GNU repository and license snapshot, so no license-checked badge is assigned; that is not a finding that code is closed. Financial links were not audited. Licensing resources are not legal advice, and this profile does not endorse every leadership position or establish improved charity outcomes.",
+      "falsifiableClaim": "Does additional nonprofit support for software-freedom infrastructure lead implementers to sustain useful, interoperable tools and meaningful exit options more reliably than comparable investments in ordinary software procurement?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The US Free Software Foundation’s nonprofit support, education and infrastructure role; not a second count of FSFE or an attribution of all GNU development to foundation staff.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared licensing knowledge, education and GNU-related developer infrastructure can enable public-interest teams to reuse and maintain software.",
+        "sourceUrls": [
+          "https://www.fsf.org/about/",
+          "https://www.fsf.org/about/financial",
+          "https://www.fsf.org/about/what-is-free-software"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Software-freedom infrastructure can challenge proprietary gatekeeping and coordinate reusable contributions. This partial mechanism mapping does not establish downstream user power or nonprofit performance.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.fsf.org/about/",
+          "https://www.fsf.org/about/financial",
+          "https://www.fsf.org/about/what-is-free-software"
+        ]
+      }
+    },
+    {
+      "id": "free-software-foundation-europe",
+      "name": "Free Software Foundation Europe",
+      "category": "Justice & public goods",
+      "website": "https://fsfe.org/",
+      "mechanism": "Make software licensing practice and digital-policy capacity easier to share",
+      "summary": "FSFE is a German charitable registered association supporting software freedom through policy, education and practical tooling. REUSE is its scoped example of making per-file licensing information easier to maintain.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://fsfe.org/about/about.en.html",
+          "title": "FSFE: mission and association",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://fsfe.org/about/legal/legal.en.html",
+          "title": "FSFE: legal structure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://reuse.software/",
+          "title": "REUSE: practical licensing initiative",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/fsfe/reuse-tool",
+          "title": "REUSE tool: inspected GitHub source copy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/fsfe/reuse-tool/blob/main/README.md",
+          "title": "REUSE README: canonical development and per-file licensing",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/fsfe/reuse-tool/blob/main/LICENSES/GPL-3.0-or-later.txt",
+          "title": "REUSE tool: inspected GPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/fsfe/reuse-tool/blob/main/src/reuse/__init__.py",
+          "title": "REUSE source header and license families",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Practical license metadata and digital-policy work can reduce reuse barriers and institutional lock-in, though metadata is not itself a complete rights reform.",
+        "reach": "Licensing practice and tooling are reusable across nonprofit and other software teams in many sectors.",
+        "durability": "Open source and documented practices persist, but law, dependencies, standards and compliance work continue to change.",
+        "scalability": "Automation can apply the same checks across many files and projects, reducing repeated manual effort without replacing legal judgment.",
+        "additionality": "No current marginal funding bottleneck or counterfactual between REUSE, policy work and other compliance investments was established.",
+        "agency": "Association membership and source participation do not establish binding governance rights for communities affected by downstream systems."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "FSFE e.V. is a German charitable registered association, separate from the US FSF. REUSE’s original source code is GPL-3.0-or-later; documentation, configuration and included material also use other licenses. Its README points to Codeberg for source development; this check used the FSFE GitHub copy. Passing a tool check does not establish copyright ownership, legal compliance or security. Policy outcomes and donation additionality were not independently evaluated.",
+      "falsifiableClaim": "Do nonprofit software teams using supported REUSE workflows reduce unresolved licensing barriers and sustain external reuse more effectively than comparable teams relying on ad hoc documentation, without mistaking automated checks for legal assurance?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "FSFE’s charitable policy, education and tool-support model, with REUSE as a named example; not the US FSF or a legal assessment of downstream projects.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "REUSE helps nonprofit developers maintain machine-readable per-file licensing information so others can more readily inspect and reuse their work.",
+        "sourceUrls": [
+          "https://fsfe.org/about/about.en.html",
+          "https://fsfe.org/about/legal/legal.en.html",
+          "https://reuse.software/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "REUSE tool",
+            "repositoryUrl": "https://github.com/fsfe/reuse-tool",
+            "licenseUrl": "https://github.com/fsfe/reuse-tool/blob/main/LICENSES/GPL-3.0-or-later.txt",
+            "licenseLabel": "GPL-3.0-or-later for original code; other file licenses apply",
+            "licenseBlobSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named GPL text, README and source header in FSFE’s GitHub copy; README identifies Codeberg development. Documentation and other files have separate licenses. A compliance helper is not a legal opinion, security audit or guarantee of ownership."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared licensing practice can lower reuse gatekeeping and coordinate contributions between organizations. This partial mapping does not prove lawful reuse, legal reform or beneficiary control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://fsfe.org/about/about.en.html",
+          "https://fsfe.org/about/legal/legal.en.html",
+          "https://reuse.software/"
+        ]
+      }
+    },
+    {
+      "id": "signal-technology-foundation",
+      "name": "Signal Technology Foundation",
+      "category": "Justice & public goods",
+      "website": "https://signal.org/",
+      "mechanism": "Support shared private-communication infrastructure outside an advertising model",
+      "summary": "The US nonprofit foundation supports Signal’s communication software and services. The design hypothesis is that shared infrastructure can improve public-interest teams’ communication options, not that any tool guarantees safety.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://signal.org/donate/",
+          "title": "Signal Technology Foundation: nonprofit identity and support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/signalapp/Signal-Server",
+          "title": "Signal Server: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/signalapp/Signal-Server/blob/main/LICENSE",
+          "title": "Signal Server: inspected AGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A non-advertising communication infrastructure model can change technical and business-model defaults, without removing every institutional source of surveillance.",
+        "reach": "General-purpose communication infrastructure can serve nonprofits, communities and other users across many contexts.",
+        "durability": "Reusable source and protocols can persist, but network operations, client compatibility and security response depend on continuing work.",
+        "scalability": "Common software and services can support many groups without each organization building a messenger; reliable infrastructure and access still cost resources.",
+        "additionality": "No current costed funding gap or counterfactual effect of a marginal donation relative to other privacy infrastructure was audited.",
+        "agency": "Source availability and privacy-oriented design do not establish affected users’ binding decision rights over foundation or service governance."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The donation page identifies Signal Technology Foundation as a US 501(c)(3), EIN 82-4506840. The inspected AGPL license covers Signal-Server, not every client, protocol, dependency or hosted-service condition. Foundation support is not sole code authorship. This is not a cryptographic, financial or threat-model audit: endpoints, social coercion, access and user behavior still create risks. No guarantee of anonymity, safety or attributable civic benefit is made.",
+      "falsifiableClaim": "For comparable public-interest groups, does sustained access to supported Signal infrastructure improve safe, usable coordination beyond existing alternatives without increasing exclusion or unrecognized endpoint and social risks?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "Signal Technology Foundation’s nonprofit support model, with Signal-Server as a scoped software example; not an aggregate rating of every operating entity, client or downstream use.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared communication software and network support can spare nonprofit teams from building and maintaining their own messaging infrastructure.",
+        "sourceUrls": [
+          "https://signal.org/donate/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Signal Server",
+            "repositoryUrl": "https://github.com/signalapp/Signal-Server",
+            "licenseUrl": "https://github.com/signalapp/Signal-Server/blob/main/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "33fd343a735ebfb712a54f1cd8475949a4563815",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected Signal-Server’s license and non-archived repository status. Foundation support is distinct from sole authorship; client, protocol, dependency and hosted-network terms are separate, and no cryptographic, anonymity or operational safety guarantee is implied."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Alternative communication infrastructure can reduce dependence on advertising-oriented gatekeepers and support collective work. This partial match does not establish safety, user governance or positive effects for every use.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://signal.org/donate/"
+        ]
+      }
+    },
+    {
+      "id": "open-culture-foundation",
+      "name": "Open Culture Foundation",
+      "category": "Justice & public goods",
+      "website": "https://ocf.tw/en/",
+      "mechanism": "Supply fiscal, administrative and civic-tech capacity to open-technology communities",
+      "summary": "The Taiwanese nonprofit foundation supports open-technology communities through legal and administrative infrastructure, collaboration and advocacy. Its enabling role is assessed without counting every supported community as its own software product.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://ocf.tw/en/",
+          "title": "OCF: Taiwanese nonprofit identity and programs",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://ocf.tw/en/p/what_is_ocf_en.html",
+          "title": "OCF: mission, fiscal sponsorship and community support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared legal and administrative capacity can reduce barriers to maintaining open civic infrastructure, rather than funding only isolated applications.",
+        "reach": "A support platform can enable multiple communities and partners, although reach is grounded in a particular regional institutional setting.",
+        "durability": "Administrative knowledge and community capacity can persist, while sponsorship, compliance and coordination remain recurring obligations.",
+        "scalability": "Shared services can reduce repeated overhead for new projects, but local legal work and community trust do not scale like software distribution.",
+        "additionality": "No costed marginal demand for sponsorship or counterfactual against alternative community support was audited.",
+        "agency": "Community partnership and fiscal sponsorship do not establish binding affected-community rights across the foundation’s decisions or every sponsored project."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The homepage identifies the Taiwanese foundation 財團法人開放文化基金會, tax number 38552170; this is not a verification of US donor eligibility. Fiscal support does not mean sole development or ownership of each community’s work. No named beneficiary-tool repository and license was inspected in this pass, so the website’s own code/content footer is not used to award a software badge. Project counts and openness claims are not evidence of causal civic benefit.",
+      "falsifiableClaim": "Do comparable civic-tech communities receiving OCF’s shared legal and administrative support maintain useful public infrastructure longer and with less duplicated overhead than communities using independent arrangements?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The Taiwanese Open Culture Foundation’s nonprofit support and fiscal-sponsorship model, not a combined assessment of all sponsored communities or a blanket software-license finding.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Fiscal sponsorship, financial administration and cross-community coordination can help public-interest technology groups focus on useful work instead of rebuilding support functions.",
+        "sourceUrls": [
+          "https://ocf.tw/en/",
+          "https://ocf.tw/en/p/what_is_ocf_en.html"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared legal capacity can lower entry barriers and help independent civic-tech communities coordinate. This partial mapping does not establish open licenses for every project or binding community governance.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://ocf.tw/en/",
+          "https://ocf.tw/en/p/what_is_ocf_en.html"
+        ]
+      }
+    },
+    {
+      "id": "framasoft",
+      "name": "Framasoft",
+      "category": "Justice & public goods",
+      "website": "https://framasoft.org/en/",
+      "mechanism": "Develop reusable alternatives to concentrated digital-service platforms",
+      "summary": "The French nonprofit association supports digital autonomy through education, services and software. PeerTube is the scoped example: reusable federated video infrastructure that public-interest publishers can operate or adapt.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://framasoft.org/en/",
+          "title": "Framasoft: nonprofit mission and digital-autonomy work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://framasoft.org/en/legals/",
+          "title": "Framasoft: French association identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://joinpeertube.org/",
+          "title": "PeerTube: software and Framasoft development relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Chocobozzz/PeerTube",
+          "title": "PeerTube: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Chocobozzz/PeerTube/blob/develop/README.md",
+          "title": "PeerTube README: Framasoft role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Chocobozzz/PeerTube/blob/develop/LICENSE",
+          "title": "PeerTube: inspected AGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Federated reusable infrastructure and digital-autonomy education can change reliance on concentrated platforms, though operating alternatives does not eliminate their surrounding incentives.",
+        "reach": "Reusable video infrastructure can enable many public-interest publishers and organizations rather than one content campaign.",
+        "durability": "Forkable source and interoperable infrastructure can preserve options over time, with maintenance and operational competence still necessary.",
+        "scalability": "A shared software base can serve many independent deployments without each team rebuilding video distribution from scratch.",
+        "additionality": "No current marginal funding bottleneck, displacement of other contributors or counterfactual platform investment was assessed.",
+        "agency": "Independent hosting and open contribution do not establish binding decision rights for affected viewers or communities within the association or each deployment."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal notice identifies a French Loi 1901 association, SIRET 50071577600026. The selected scope is PeerTube, not an assumption that Framasoft currently maintains every historical project. AGPL code does not make hosting, moderation, bandwidth or compliance free. Content rights, abuse, privacy, accessibility and operational safety require separate review. Federation and an ad-free design do not prove healthier attention patterns or charity outcomes.",
+      "falsifiableClaim": "Do public-interest publishers adopting supported PeerTube retain usable, affordable distribution and meaningful exit options over two years compared with centralized hosting, without worsening moderation, access or privacy harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "Framasoft’s nonprofit digital-autonomy model, with PeerTube as the inspected tool; not every historical Framasoft-associated project or all independent PeerTube instances.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "PeerTube provides reusable federated video software that nonprofit publishers can adapt instead of building their own distribution platform.",
+        "sourceUrls": [
+          "https://framasoft.org/en/",
+          "https://framasoft.org/en/legals/",
+          "https://joinpeertube.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "PeerTube",
+            "repositoryUrl": "https://github.com/Chocobozzz/PeerTube",
+            "licenseUrl": "https://github.com/Chocobozzz/PeerTube/blob/develop/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "dbbe3558157f5861bff35dcb37b328b679b0ccfd",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected PeerTube’s license, README identifying Framasoft development and non-archived repository status. Other historical projects are outside this check; content rights, dependencies, moderation, bandwidth and hosted-service terms are separate."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "Independent video infrastructure can reduce platform gatekeeping and create alternatives to advertising-oriented attention systems. This partial mapping is not evidence that deployed feeds or moderation produce better outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://framasoft.org/en/",
+          "https://framasoft.org/en/legals/",
+          "https://joinpeertube.org/"
+        ]
+      }
+    },
+    {
+      "id": "open-food-foundation",
+      "name": "Open Food Foundation",
+      "category": "Poverty & opportunity",
+      "website": "https://openfoodnetwork.org/open-food-foundation/",
+      "mechanism": "Share cooperative food-commerce infrastructure across local enterprises",
+      "summary": "The Australian nonprofit charity supports Open Food Network’s shared software and ecosystem. The hypothesis is that reusable coordination tools can help local food enterprises, not that an online shop automatically produces fairer food systems.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openfoodnetwork.org/open-food-foundation/",
+          "title": "Open Food Foundation: Australian charity identity and oversight",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openfoodnetwork.org/software-platform/",
+          "title": "Open Food Network: shared software platform",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openfoodfoundation/openfoodnetwork",
+          "title": "Open Food Network: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openfoodfoundation/openfoodnetwork/blob/master/LICENCE.txt",
+          "title": "Open Food Network: inspected AGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared commerce and coordination infrastructure can alter market-access barriers for local food enterprises, but cannot alone redistribute bargaining power or guarantee affordability.",
+        "reach": "A common platform can enable several food hubs and local organizations, while logistics, connectivity and jurisdiction constrain its reach.",
+        "durability": "Reusable code and shared practices persist, but software maintenance, local operations and distribution relationships need continuing support.",
+        "scalability": "The same software can support new hubs without duplicating platform development, while physical logistics and local capacity are not low-cost copies.",
+        "additionality": "No current marginal foundation funding bottleneck or counterfactual against supporting local hubs directly was audited.",
+        "agency": "Cooperative language and community participation do not establish binding affected-producer or consumer rights across the foundation and all local operators."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation page identifies an Australian registered charity, ACN 160582696; current tax eligibility was not independently checked. Local Open Food Network entities and enterprises have distinct governance and service conditions. AGPL software terms do not settle payments, logistics, food safety or data responsibilities. Platform adoption is not evidence of fair prices, producer income, reduced waste or improved food access.",
+      "falsifiableClaim": "Do comparable food hubs using supported Open Food Network infrastructure improve durable producer access and consumer affordability after all operating costs, compared with existing commerce arrangements?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The Australian Open Food Foundation’s nonprofit stewardship of shared Open Food Network infrastructure, not all local entities or a separate count for each platform deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared ordering, shopfront and coordination software can reduce repeated technical work for nonprofit food hubs and community enterprises.",
+        "sourceUrls": [
+          "https://openfoodnetwork.org/open-food-foundation/",
+          "https://openfoodnetwork.org/software-platform/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Food Network",
+            "repositoryUrl": "https://github.com/openfoodfoundation/openfoodnetwork",
+            "licenseUrl": "https://github.com/openfoodfoundation/openfoodnetwork/blob/master/LICENCE.txt",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "2def0e8831c25daae02b8b87cd439da27f1ac1c1",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the shared platform’s license and repository status. Foundation stewardship is not ownership of every local enterprise or instance; payments, service terms, dependencies, data and physical food operations require separate review."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common commerce infrastructure can coordinate local food networks and reduce dependence on proprietary platforms. This partial mapping does not establish equitable prices, livelihoods or community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openfoodnetwork.org/open-food-foundation/",
+          "https://openfoodnetwork.org/software-platform/"
+        ]
+      }
+    },
+    {
+      "id": "wordpress-foundation",
+      "name": "WordPress Foundation",
+      "category": "Justice & public goods",
+      "website": "https://wordpressfoundation.org/",
+      "mechanism": "Support public education and institutional continuity around a publishing commons",
+      "summary": "The US nonprofit foundation’s stated role is to support access to software and education around WordPress. This profile assesses that institutional support role without attributing all WordPress development or commercial hosting to the foundation.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://wordpressfoundation.org/",
+          "title": "WordPress Foundation: nonprofit mission and education",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://wordpressfoundation.org/projects/",
+          "title": "WordPress Foundation: project relationships and community context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Education and institutional support around reusable publishing tools can lower access barriers and vendor dependence, but do not themselves guarantee pluralistic media or organizational change.",
+        "reach": "General-purpose publishing knowledge and infrastructure can enable many charities and public-interest groups rather than one website.",
+        "durability": "Reusable knowledge and institutions can persist, while maintenance and community continuity still require ongoing support.",
+        "scalability": "Shared education and institutional support can be reused across organizations, but adoption, hosting and operational support remain local work.",
+        "additionality": "No current costed marginal foundation funding need or distinction from other ecosystem support was audited.",
+        "agency": "Community size, volunteer activity and public software availability do not establish binding decision rights for affected publishers or users over the foundation."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation identifies itself as a 501(c)(3). Its role is distinct from Automattic, WordPress.com and the broader WordPress.org development ecosystem. The projects page includes dated activity figures; these are not treated as current adoption or causal impact evidence. No named current repository/license snapshot was checked for this foundation scope, so no license-checked badge is awarded. This is not a governance, trademark, security or hosting-quality audit.",
+      "falsifiableClaim": "Does marginal support for the foundation’s education and institutional role improve nonprofit publishers’ durable capabilities and exit options beyond what the wider ecosystem would provide without it?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "WordPress Foundation’s nonprofit education and institutional support model, not commercial WordPress.com services or sole authorship and control of every WordPress ecosystem contribution.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Education and institutional support for a reusable publishing ecosystem can help nonprofit teams build and maintain their own communications capability.",
+        "sourceUrls": [
+          "https://wordpressfoundation.org/",
+          "https://wordpressfoundation.org/projects/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Publishing capability and shared institutional support can lower access gatekeeping and coordinate reusable community knowledge. This partial mapping does not establish governance rights or effective public communication.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://wordpressfoundation.org/",
+          "https://wordpressfoundation.org/projects/"
+        ]
+      }
+    },
+    {
+      "id": "villagereach",
+      "name": "VillageReach",
+      "category": "Global health",
+      "website": "https://www.villagereach.org/",
+      "mechanism": "Help public-health institutions build and use information-system capacity",
+      "summary": "The US nonprofit works with health systems on information, supply chains and service delivery. This assessment focuses on implementation and institutional capacity, not historical ownership of a software project.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.villagereach.org/",
+          "title": "VillageReach: current health-system work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.villagereach.org/our-impact/governance-and-financials/",
+          "title": "VillageReach: nonprofit identity and governance disclosures",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.villagereach.org/what-we-do/information-systems/",
+          "title": "VillageReach: information systems and OpenLMIS management transition",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Institutional information and supply-system capacity can change how health services allocate resources, beyond directly delivering one intervention.",
+        "reach": "Shared public-health systems can affect several facilities and programs rather than a single service location.",
+        "durability": "Institutional skills and routines can persist, but staff, data quality, software and budgets require continuing support.",
+        "scalability": "Implementation knowledge can be adapted across systems, while procurement, interoperability and local operational capacity limit replication speed.",
+        "additionality": "No current marginal funding bottleneck or counterfactual between VillageReach support and alternative public-health capacity investments was audited.",
+        "agency": "Government partnership and local implementation do not establish affected patients’ binding decision rights over information systems or the nonprofit."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The governance page identifies a US 501(c)(3), EIN 91-2083484. Crucially, the current information-systems page says OpenLMIS management transitioned to Vitalliance Corporation; this profile does not label VillageReach its current maintainer or award a historical-license badge. Information-system deployment is not proof of health gains. Data protection, clinical safety, equity, procurement and long-term government capacity need separate review; financial disclosures were not audited.",
+      "falsifiableClaim": "Do comparable health districts receiving VillageReach information-system implementation support sustain more reliable, equitable service availability than districts receiving existing capacity support, after transition costs and donor support end?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "VillageReach’s current nonprofit health-system information and implementation work; not current management of OpenLMIS or a combined assessment of Vitalliance and government partners.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Implementation support and shared information-system practice can help health organizations use operational data without each team rebuilding the same capacity.",
+        "sourceUrls": [
+          "https://www.villagereach.org/",
+          "https://www.villagereach.org/our-impact/governance-and-financials/",
+          "https://www.villagereach.org/what-we-do/information-systems/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Better shared operational information can improve institutional coordination and reduce information bottlenecks. This partial mapping does not establish clinical impact, government accountability or patient control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.villagereach.org/",
+          "https://www.villagereach.org/our-impact/governance-and-financials/",
+          "https://www.villagereach.org/what-we-do/information-systems/"
+        ]
+      }
+    },
+    {
+      "id": "cadasta-foundation",
+      "name": "Cadasta Foundation",
+      "category": "Poverty & opportunity",
+      "website": "https://cadasta.org/",
+      "mechanism": "Equip land-rights organizations with mapping and records-management capacity",
+      "summary": "Cadasta supports land-rights partners with geospatial technology and training. Its current site says it joined Corus International in 2026 as an independent subsidiary; the current platform uses Esri infrastructure.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://cadasta.org/about-us/",
+          "title": "Cadasta: mission and 2026 Corus relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://cadasta.org/technology/",
+          "title": "Cadasta: current Esri-based technology platform",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://cadasta.org/terms-of-use/",
+          "title": "Cadasta: tools, scope and terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared land-record and partner capacity can reduce information barriers to rights recognition, but a digital record is not a change in legal title or enforcement.",
+        "reach": "Technology and training can support multiple local organizations and communities, with reach constrained by institutions, access and legal context.",
+        "durability": "Skills and records can persist, but platform access, data stewardship, updates and legal enforcement need continuing resources.",
+        "scalability": "Shared tools and training can be adapted across partners, while trusted data collection and rights recognition remain context-specific work.",
+        "additionality": "No current marginal funding bottleneck or counterfactual effect of support after the Corus relationship was audited.",
+        "agency": "Community-centered descriptions do not establish binding rights over data disclosure, platform decisions or institutional governance for affected landholders."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "This is the scoped nonprofit subsidiary described by Cadasta, not a score for the whole Corus group or an independent verification of donor tax eligibility. The current technology page specifies Esri ArcGIS products; older open-code descriptions are not used to award a current open-source badge. Mapping does not establish legal ownership or tenure security. Sensitive location data can expose people to dispossession or surveillance; consent, ownership, enforcement and platform dependence need independent review.",
+      "falsifiableClaim": "Do comparable land-rights partners receiving Cadasta support achieve more durable, community-valued tenure protections than existing documentation approaches, without increasing data exposure, exclusion or platform dependency?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "Cadasta Foundation’s current nonprofit land-rights technology and capacity role as an independent Corus International subsidiary, not the whole group or an assumption of unchanged historic platform licensing.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared geospatial tools, data workflows and training can help land-rights organizations document claims and manage records without building all technical capacity internally.",
+        "sourceUrls": [
+          "https://cadasta.org/about-us/",
+          "https://cadasta.org/technology/",
+          "https://cadasta.org/terms-of-use/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared documentation capacity can address land-information gatekeeping and coordination failures. This partial mapping does not establish legal recognition, equitable enforcement or binding community data control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://cadasta.org/about-us/",
+          "https://cadasta.org/technology/",
+          "https://cadasta.org/terms-of-use/"
+        ]
+      }
+    },
+    {
+      "id": "radicalxchange-foundation",
+      "name": "RadicalxChange Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.radicalxchange.org/",
+      "mechanism": "Prototype and share participatory governance mechanisms",
+      "summary": "The US nonprofit foundation supports research, tools and convening around plural and participatory institutions. The current quadratic-voting application is a scoped prototype, not proof of fair governance or an unrestricted open-source grant.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.radicalxchange.org/about/",
+          "title": "RadicalxChange Foundation Ltd: nonprofit mission and scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.radicalxchange.org/tools/",
+          "title": "RadicalxChange: current governance tools and external projects",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://quadraticvote.radicalxchange.org/",
+          "title": "RadicalxChange quadratic-voting application",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/RadicalxChange/quadratic-voting",
+          "title": "Quadratic voting: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/RadicalxChange/quadratic-voting/blob/main/LICENSE",
+          "title": "Quadratic voting: inspected CC BY-NC 2.0 license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://opensource.org/osd",
+          "title": "Open Source Definition: noncommercial restriction distinction",
+          "type": "research",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Prototyping decision and participation rules directly targets institutional mechanisms rather than only changing individual behavior; fairness and legitimacy remain unproven.",
+        "reach": "Governance designs can be adapted across organizations and communities, but adoption and public authority are substantial constraints.",
+        "durability": "Documented methods and prototypes can persist, while legitimate institutions require ongoing stewardship, safeguards and mandate.",
+        "scalability": "Reusable designs and applications reduce prototyping costs, but institutional adoption and anti-manipulation work are not simple software copies.",
+        "additionality": "No current marginal funding bottleneck or comparison with other participatory-governance investments was audited.",
+        "agency": "Participation in a vote or prototype is not proof of binding authority, inclusive agenda-setting, minority protection or control over real resources."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The about page identifies RadicalxChange Foundation Ltd as a US 501(c)(3); the wider community is not identical to the legal entity. The selected current quadratic-voting repository uses CC BY-NC 2.0: visible source with a noncommercial restriction is not treated as open-source licensing, so no badge is assigned. Referenced external tools such as Polis are not attributed to RxC as owner. Prototype cases do not establish causal fairness, resistance to manipulation or legitimate institutional power.",
+      "falsifiableClaim": "In comparable real decisions, do supported participatory mechanisms improve inclusive, durable decision quality and actual power-sharing beyond ordinary consultation, without increasing manipulation, capture or exclusion?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "RadicalxChange Foundation Ltd’s nonprofit governance research and tool-support model, with the current quadratic-voting application as an example; not the entire movement or ownership of linked external projects.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Governance prototypes and shared guidance can help public-interest organizations test participatory decisions, subject to application-specific licensing and institutional safeguards.",
+        "sourceUrls": [
+          "https://www.radicalxchange.org/about/",
+          "https://www.radicalxchange.org/tools/",
+          "https://quadraticvote.radicalxchange.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "vision"
+        ],
+        "rationale": "Experiments in collective decision rules and alternative institutions partially address coordination and shared institutional vision. This does not establish fair implementation, legitimate authority or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.radicalxchange.org/about/",
+          "https://www.radicalxchange.org/tools/",
+          "https://quadraticvote.radicalxchange.org/"
+        ]
+      }
+    },
+    {
+      "id": "story-of-stuff-project",
+      "name": "The Story of Stuff Project",
+      "category": "Climate & environment",
+      "website": "https://www.storyofstuff.org/",
+      "mechanism": "Combine public narratives with shared campaign and grassroots capacity",
+      "summary": "The US nonprofit combines explanatory storytelling with organizing resources and support for grassroots action on material consumption and environmental systems. The hypothesis concerns changing narratives and institutional incentives, not video views as impact.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.storyofstuff.org/about/",
+          "title": "Story of Stuff Project: mission and organizing model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.storyofstuff.org/donation-faq/",
+          "title": "Story of Stuff Project: nonprofit identity and donation FAQ",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://action.storyofstuff.org/donate/support-our-grassroots-allies/",
+          "title": "Story of Stuff Project: grassroots partner support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Narrative and campaigning target production, consumption and policy incentives rather than only helping individuals cope with environmental harms.",
+        "reach": "Shared stories and campaign resources can enable several local organizations and policy efforts, but actual institutional uptake is uncertain.",
+        "durability": "Reusable narratives and organizing knowledge can persist, while attention, campaigns and policy implementation require renewed work.",
+        "scalability": "Shared resources and partner support can reduce repeated campaign design costs, while organizing relationships and local power remain labor-intensive.",
+        "additionality": "No current marginal funding gap, allocation to grassroots partners or counterfactual campaign contribution was audited.",
+        "agency": "Grassroots collaboration and regranting do not establish binding affected-community decision rights over this nonprofit’s budgets or campaign agendas."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The donation FAQ identifies a US 501(c)(3), EIN 46-4334785; linked financial or tax documents were not audited. The grassroots-support source describes a model, not a verification of current grant volume or effectiveness. Educational materials and campaign support are not a software-license check. Views, memberships and grants do not establish causal shifts in norms or policy; representation, local priorities and policy tradeoffs require review.",
+      "falsifiableClaim": "Do comparable grassroots groups using the project’s shared narratives and capacity support achieve durable, community-valued institutional changes beyond existing organizing, rather than only higher content engagement?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The Story of Stuff Project’s nonprofit narrative, campaign-resource and grassroots-support model; not all allied campaigns, film audiences or independently attributed policy outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared explanatory materials, campaign resources and grassroots support can help local environmental organizations avoid duplicating communications and organizing work.",
+        "sourceUrls": [
+          "https://www.storyofstuff.org/about/",
+          "https://www.storyofstuff.org/donation-faq/",
+          "https://action.storyofstuff.org/donate/support-our-grassroots-allies/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination"
+        ],
+        "rationale": "Narratives about material systems and resources for collective action partially address shared story and coordination. This is not proof that audiences adopt an accurate story or that campaigns change institutions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.storyofstuff.org/about/",
+          "https://www.storyofstuff.org/donation-faq/",
+          "https://action.storyofstuff.org/donate/support-our-grassroots-allies/"
+        ]
+      }
+    },
+    {
+      "id": "center-for-democracy-and-technology",
+      "name": "Center for Democracy & Technology",
+      "category": "Justice & public goods",
+      "website": "https://cdt.org/",
+      "mechanism": "Build shared policy and research capacity for digital rights",
+      "summary": "The US nonprofit combines research, policy analysis and convening on digital rights and technology governance. The proposed leverage is shared institutional capacity, not ownership of all digital-rights tools or proof that policy wins are attributable to it.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://cdt.org/about/",
+          "title": "CDT: nonprofit mission and policy model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://cdt.org/donate/",
+          "title": "CDT: US nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://cdt.org/financials/",
+          "title": "CDT: financial-disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Research and policy work directly target technology rules and institutional incentives rather than merely offering individual workarounds.",
+        "reach": "Digital-rights rules can affect many sectors and organizations, though the breadth of a policy agenda does not establish causal influence.",
+        "durability": "Published knowledge can persist, but law, technology and political enforcement require continuing work.",
+        "scalability": "Shared research and convening can inform many implementers, while legal and policy work remains jurisdiction-specific and costly.",
+        "additionality": "No current costed marginal funding gap, donor substitution or causal contribution against other policy organizations was audited.",
+        "agency": "Consultation, convening and rights-oriented missions do not establish binding affected-community rights over the nonprofit’s agenda or decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary pages inspected via public web reader; direct HTTP access limits recorded",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Primary pages read through the public web reader identify a US 501(c)(3), EIN 52-1905358; direct HTTP returned 403 for donation and financial pages. This access limit was not bypassed and the financial index is not an audit. The scope does not automatically include separately constituted European entities. No named software license was checked. Funding disclosure, policy alignment and research output do not by themselves prove independence, impact or community control; this is not legal or security advice.",
+      "falsifiableClaim": "Does additional CDT research and convening materially improve rights-preserving technology rules and their implementation beyond what comparable coalitions would achieve, with affected communities able to contest harmful tradeoffs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The US Center for Democracy & Technology’s nonprofit policy, research and convening model, not every affiliated entity, coalition member or downstream policy result.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared policy analysis, research and coalition capacity can help public-interest organizations engage technology governance without each rebuilding specialist expertise.",
+        "sourceUrls": [
+          "https://cdt.org/about/",
+          "https://cdt.org/donate/",
+          "https://cdt.org/financials/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Technology-rule advocacy and coalition work partially address institutional gatekeepers and coordination. This does not establish enacted reform, independent influence or affected-community authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://cdt.org/about/",
+          "https://cdt.org/donate/",
+          "https://cdt.org/financials/"
+        ]
+      }
+    },
+    {
+      "id": "algorithmwatch",
+      "name": "AlgorithmWatch",
+      "category": "Justice & public goods",
+      "website": "https://algorithmwatch.org/en/",
+      "mechanism": "Create shared evidence and policy capacity for accountability of automated decisions",
+      "summary": "The German nonprofit company investigates automated decision systems, explains their effects and supports accountability frameworks. Shared research and public-interest capacity are the assessed mechanism, not a blanket certification that algorithms become fair.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://algorithmwatch.org/en/legal-notice/",
+          "title": "AlgorithmWatch: German legal entity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://algorithmwatch.org/en/vision-mission-values/",
+          "title": "AlgorithmWatch: vision, research and policy methods",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://algorithmwatch.org/en/algorithms-and-the-world-of-work/about-awow/",
+          "title": "AlgorithmWatch: work-related research and organizational partners",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Evidence and institutional accountability frameworks target how automated decisions are governed rather than only helping individuals navigate a system.",
+        "reach": "Shared investigations and policy resources can enable multiple organizations and decision settings, while jurisdiction and access constrain reach.",
+        "durability": "Research and institutional knowledge can persist, but changing models, laws and deployment contexts require continued scrutiny.",
+        "scalability": "Shared findings and methods can be reused, while investigations, data access and legitimate policy implementation require specialist local work.",
+        "additionality": "No current marginal funding bottleneck or counterfactual contribution relative to other algorithm-accountability organizations was audited.",
+        "agency": "Public-interest research, partner participation and accountability language do not establish binding rights for people subject to automated decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal notice identifies AW AlgorithmWatch gGmbH, Berlin register HRB 186522 B; this scope is distinct from AlgorithmWatch CH. The generic /en/about/ route redirects to a specific work-project page, not a full legal-entity profile. Website content licensing is not a named software-license inspection, so no open-source badge is assigned. Investigations and policy proposals do not establish causal fairness improvements, and sensitive-data access, representation and enforcement require separate review.",
+      "falsifiableClaim": "Do comparable public-interest groups using AlgorithmWatch evidence and methods secure durable, contestable improvements in automated decision governance beyond existing advocacy, without increasing exposure of affected people’s data?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "evaluationScope": "The German nonprofit AW AlgorithmWatch gGmbH’s research, public explanation and accountability-capacity model; not the Swiss organization or every partner project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared investigations, methods and policy knowledge can help civil-society organizations scrutinize automated decisions without each rebuilding all specialist expertise.",
+        "sourceUrls": [
+          "https://algorithmwatch.org/en/legal-notice/",
+          "https://algorithmwatch.org/en/vision-mission-values/",
+          "https://algorithmwatch.org/en/algorithms-and-the-world-of-work/about-awow/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "Scrutiny of automated information and decision systems can partially address attention incentives and institutional gatekeeping. This does not establish that every project changes feeds, power or decision outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://algorithmwatch.org/en/legal-notice/",
+          "https://algorithmwatch.org/en/vision-mission-values/",
+          "https://algorithmwatch.org/en/algorithms-and-the-world-of-work/about-awow/"
         ]
       }
     }

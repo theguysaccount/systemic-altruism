@@ -1270,17 +1270,11 @@
     {
       "id": "wordpress-foundation",
       "name": "WordPress Foundation",
-      "status": "queued",
-      "priority": "shared_infrastructure",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/wordpress-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1304,16 +1298,19 @@
     {
       "id": "ehealth-africa",
       "name": "eHealth Africa",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Current brand and privacy pages describe nonprofit health-technology work, but the operating/fundraising legal entity and parent relationship were not resolved in this pass; this is not an ineligibility finding.",
+      "sourceUrls": [
+        "https://ehealthafrica.org/about-us/",
+        "https://ehealthafrica.org/privacy-policy/",
+        "https://ehealthafrica.org/donate/"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
+        "Resolve current legal operating/fundraising entity and relationship to the unnamed parent in the April 2026 privacy policy.",
+        "Inspect current project and license evidence before classifying named software as open source."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -1321,34 +1318,22 @@
     {
       "id": "villagereach",
       "name": "VillageReach",
-      "status": "queued",
-      "priority": "software",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/villagereach/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "cadasta-foundation",
       "name": "Cadasta Foundation",
-      "status": "queued",
-      "priority": "capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/cadasta-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1372,17 +1357,11 @@
     {
       "id": "radicalxchange-foundation",
       "name": "RadicalxChange Foundation",
-      "status": "queued",
-      "priority": "coordination",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/radicalxchange-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1483,17 +1462,11 @@
     {
       "id": "story-of-stuff-project",
       "name": "The Story of Stuff Project",
-      "status": "queued",
-      "priority": "story",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/story-of-stuff-project/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1522,34 +1495,22 @@
     {
       "id": "center-for-democracy-and-technology",
       "name": "Center for Democracy & Technology",
-      "status": "queued",
-      "priority": "attention",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/center-for-democracy-and-technology/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "algorithmwatch",
       "name": "AlgorithmWatch",
-      "status": "queued",
-      "priority": "attention",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/algorithmwatch/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1618,6 +1579,157 @@
       ],
       "evidenceGaps": [],
       "relatedProfileId": "code-for-science-and-society"
+    },
+    {
+      "id": "document-foundation",
+      "name": "The Document Foundation",
+      "status": "included",
+      "profilePath": "/charities/document-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "gnome-foundation",
+      "name": "GNOME Foundation",
+      "status": "included",
+      "profilePath": "/charities/gnome-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "kde-ev",
+      "name": "KDE e.V.",
+      "status": "included",
+      "profilePath": "/charities/kde-ev/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "internet-security-research-group",
+      "name": "Internet Security Research Group",
+      "status": "included",
+      "profilePath": "/charities/internet-security-research-group/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts",
+      "status": "included",
+      "profilePath": "/charities/open-food-facts/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "chayn",
+      "name": "Chayn",
+      "status": "included",
+      "profilePath": "/charities/chayn/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "free-software-foundation",
+      "name": "Free Software Foundation",
+      "status": "included",
+      "profilePath": "/charities/free-software-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "free-software-foundation-europe",
+      "name": "Free Software Foundation Europe",
+      "status": "included",
+      "profilePath": "/charities/free-software-foundation-europe/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "signal-technology-foundation",
+      "name": "Signal Technology Foundation",
+      "status": "included",
+      "profilePath": "/charities/signal-technology-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "open-culture-foundation",
+      "name": "Open Culture Foundation",
+      "status": "included",
+      "profilePath": "/charities/open-culture-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "public-lab",
+      "name": "Public Lab",
+      "status": "deferred",
+      "priority": "software_or_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": "2026-10-27",
+      "reason": "The public site currently presents a static archive; the current operating or fundraising entity and active program relationship were not resolved. This is an evidence gap, not a finding of dissolution or ineligibility.",
+      "sourceUrls": [
+        "https://publiclab.org/",
+        "https://github.com/publiclab/publiclab-archive/blob/main/README.md"
+      ],
+      "evidenceGaps": [
+        "Resolve the current legal or fiscal operating and fundraising relationship from a current first-party source.",
+        "Distinguish active supported programs and repositories from the archived public website."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "framasoft",
+      "name": "Framasoft",
+      "status": "included",
+      "profilePath": "/charities/framasoft/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "open-food-foundation",
+      "name": "Open Food Foundation",
+      "status": "included",
+      "profilePath": "/charities/open-food-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-03",
+      "reason": "Current primary sources support this scoped preliminary mechanism assessment; inclusion is not independent validation or a donation recommendation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
     }
   ]
 }

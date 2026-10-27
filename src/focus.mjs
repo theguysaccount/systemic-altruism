@@ -6,7 +6,10 @@ export const normalizeFocus=value=>Object.hasOwn(focusOptions,value)?value:'all'
 export function hasVerifiedOpenSource(charity){
   const o=charity.openSource;
   const sameRepository=p=>(p.repositoryUrl?.startsWith('https://github.com/')&&p.licenseUrl?.startsWith(p.repositoryUrl+'/blob/'))||(p.repositoryUrl?.startsWith('https://gitlab.torproject.org/')&&p.licenseUrl?.startsWith(p.repositoryUrl+'/-/blob/'));
-  return Boolean(charity.tooling&&o?.status==='license_verified'&&/^\d{4}-\d{2}-\d{2}$/.test(o.reviewedAt)&&Array.isArray(o.projects)&&o.projects.length&&o.projects.every(p=>sameRepository(p)&&p.licenseLabel&&/^[a-f0-9]{40}$/.test(p.licenseBlobSha)));
+  // A checked source-visible file is not enough: known noncommercial restrictions
+  // cannot receive this badge. This is a narrow guard, not a license/legal classifier.
+  const restrictsCommercialUse=p=>/(?:CC[\s-]*BY[\s-]*NC|non[\s-]?commercial)/i.test(p.licenseLabel||'');
+  return Boolean(charity.tooling&&o?.status==='license_verified'&&/^\d{4}-\d{2}-\d{2}$/.test(o.reviewedAt)&&Array.isArray(o.projects)&&o.projects.length&&o.projects.every(p=>sameRepository(p)&&p.licenseLabel&&!restrictsCommercialUse(p)&&/^[a-f0-9]{40}$/.test(p.licenseBlobSha)));
 }
 export function matchesFocus(charity,focus='all'){
   if(focus==='all')return true;
