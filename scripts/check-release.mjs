@@ -12,6 +12,9 @@ const ledgerSummary=inspectReviewLedger(ledger,dataset);
 if(JSON.stringify(ledger.summary)!==JSON.stringify(ledgerSummary))throw new Error('Stale public review-ledger summary');
 const openDataHtml=await readFile('dist/data/index.html','utf8');
 if(!openDataHtml.includes('/api/v1/review-ledger.json')||!openDataHtml.includes(`${ledgerSummary.included} of ${ledgerSummary.target}`))throw new Error('Missing public goal progress and review ledger');
+for(const [count,noun] of [[ledgerSummary.deferred,'deferred candidate'],[ledgerSummary.excluded,'duplicate-project exclusion']]){
+  if(!openDataHtml.includes(`${count} ${noun}${count===1?'':'s'}`))throw new Error('Stale progress count label');
+}
 const homeHtml=await readFile('dist/index.html','utf8');
 if(!homeHtml.includes('id="focus-filter"')||!homeHtml.includes('not verified adoption'))throw new Error('Missing focused exploration or alignment limits');
 if(!homeHtml.includes('<option value="opensource">Open-source tools · license checked</option>')||!homeHtml.includes('not a security or impact audit'))throw new Error('Missing open-source view or verification limits');
