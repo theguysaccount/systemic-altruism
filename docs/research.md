@@ -25,6 +25,8 @@ Evidence, early measurement and open correction are review requirements, not a b
 
 The new default is named `systemic`. `balanced` retains its exact old weights; all other presets are unchanged. Complete explicit-weight links remain reproducible; earlier funder links with `lens=balanced` retain the original lens. No existing axis scores were promoted. Profiles missing the last two axes now have 90% weighted coverage rather than 85% solely because the denominator allocation changed; no evidence was added by that arithmetic. Preserve raw missing values, missing-data envelopes and causal limits. Machine-readable method provenance and weights are included in the public JSON, and release checks verify the API bytes, default/legacy options, dated source rendering and one distinct share image for every profile.
 
+Live browser testing caught a cache boundary that direct HTTP release checks could not: a returning browser combined the new scoring module with a still-fresh cached 40-profile JSON response. Both interactive entry points now share a loader that requests current assessment data with `cache: no-store`; regression tests cover that request contract and failed-response handling. Do not clear a test browser's cache as a substitute for verifying the returning-visitor path.
+
 ## Original 6 October 2026 seed audit (historical)
 
 Reviewed 6 October 2026. This is a proposed open research method and a 40-organization seed cohort, not an exhaustive ranking of all charities or an independent audit of their effectiveness. The seed is intended to make the hypothesis, evidence, uncertainty and next test visible.

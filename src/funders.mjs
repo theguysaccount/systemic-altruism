@@ -1,4 +1,5 @@
 import {axes, assess, presets, method} from './scoring.mjs';
+import {loadAssessments} from './assessment-data.mjs';
 import {peersFor, comparePotential, fitChecks, fitStatus, funderBrief, copyText} from './decision-tools.mjs';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -6,9 +7,7 @@ const query = new URLSearchParams(location.search);
 $('#funding-brief > div:last-child').insertAdjacentHTML('beforeend','<details class="brief-preview"><summary>Read or copy the complete brief</summary><button class="small-button" id="copy-brief">Copy brief text</button><pre id="brief-preview"></pre></details>');
 let dataset;
 try {
-  const response = await fetch('/api/v1/charities.json');
-  if (!response.ok) throw new Error('Unavailable');
-  dataset = await response.json();
+  dataset = await loadAssessments();
 } catch {
   $('#peer-results').innerHTML = '<p class="empty">The assessment dataset could not load. Please refresh or browse the <a href="/data/">open data page</a>.</p>';
 }

@@ -45,7 +45,7 @@ for(const r of routes){
   }
 }
 if(origin){
-  for(const file of ['app.mjs','scoring.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
+  for(const file of ['app.mjs','scoring.mjs','assessment-data.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
     const response=await fetch(origin+'/'+file);
     if(!response.ok)throw new Error(`Live tool asset missing: ${file}`);
     const local=await readFile('dist/'+file),live=Buffer.from(await response.arrayBuffer());

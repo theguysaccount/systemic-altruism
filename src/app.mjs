@@ -1,5 +1,6 @@
 import {axes,presets,assess,ordered,method} from './scoring.mjs';
-const data=await fetch('/api/v1/charities.json').then(r=>{if(!r.ok)throw new Error('Dataset unavailable');return r.json()});
+import {loadAssessments} from './assessment-data.mjs';
+const data=await loadAssessments();
 const records=data.charities;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

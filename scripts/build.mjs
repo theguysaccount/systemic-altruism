@@ -11,7 +11,7 @@ const origin=(process.env.PUBLIC_ORIGIN||'https://charities.systemicaltruism.com
 const github='https://github.com/theguysaccount/systemic-altruism';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});
-for(const file of ['styles.css','app.mjs','scoring.mjs','directory.mjs','registry-labels.mjs','decision-tools.mjs','funders.mjs','toolkit.mjs','workbenches.css'])await copyFile(new URL('src/'+file,root),new URL(file,dist));
+for(const file of ['styles.css','app.mjs','scoring.mjs','assessment-data.mjs','directory.mjs','registry-labels.mjs','decision-tools.mjs','funders.mjs','toolkit.mjs','workbenches.css'])await copyFile(new URL('src/'+file,root),new URL(file,dist));
 const routes=[];
 const footer=`<footer class="footer"><span>© 2026 Systemic Altruism · An open public-good project</span><div class="footer-links"><a href="/directory/">Charity index</a><a href="/methodology/">Methodology</a><a href="/data/">Open data</a><a href="/about/">About & privacy</a><a href="${github}">Source code ↗</a><a href="https://systemicaltruism.com/">The movement ↗</a></div></footer>`;
 function page(path,title,description,body,opts={}){
