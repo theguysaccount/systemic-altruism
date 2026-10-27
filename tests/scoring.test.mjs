@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,100);assert.equal(new Set(data.charities.map(c=>c.id)).size,100);
+  assert.equal(data.charities.length,118);assert.equal(new Set(data.charities.map(c=>c.id)).size,118);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -93,4 +93,21 @@ test('first goal batch adds 18 scoped assessments without promoting unsupported 
   assert.match(batch.find(c=>c.id==='mapaction').limitations,/no license file/);
   assert.equal(batch.find(c=>c.id==='long-now-foundation').tooling,undefined);
   assert.match(batch.find(c=>c.id==='people-powered').rationales.agency,/member-governance/);
+});
+test('second goal batch separates named code, support models and unresolved causal claims',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-02');assert.equal(batch.length,18);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
+    assert.ok(c.sources.some(s=>s.type==='official'));assert.ok(c.sources.every(s=>s.accessedAt==='2026-10-27'));
+    assert.ok(c.falsifiableClaim.length>70);assert.equal(c.checklistAlignment.adoption,'not_verified');
+  }
+  assert.equal(batch.filter(c=>c.openSource?.status==='license_verified').length,5);
+  assert.match(batch.find(c=>c.id==='code-for-science-and-society').evaluationScope,/not a second independently counted charity/);
+  assert.match(batch.find(c=>c.id==='python-software-foundation').openSource.projects[0].licenseLabel,/PSF-2.0/);
+  assert.match(batch.find(c=>c.id==='drupal-association').openSource.projects[0].scope,/Canonical development/);
+  assert.match(batch.find(c=>c.id==='resource-generation').evaluationScope,/501\(c\)\(4\)/);
+  assert.match(batch.find(c=>c.id==='new-economy-coalition').rationales.agency,/member-elected/);
+  assert.match(batch.find(c=>c.id==='interactivity-foundation').limitations,/direct HTTP returned 403/);
+  assert.equal(batch.find(c=>c.id==='tactical-tech').openSource,undefined);
 });

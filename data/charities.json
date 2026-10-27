@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.1",
+  "schemaVersion": "0.4.2",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "100 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 01. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "118 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 02. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -6224,6 +6224,1593 @@
           "https://www.witness.org/about/",
           "https://www.witness.org/about/annual-report/",
           "https://www.witness.org/programmatic-communications-coordinator-usa/"
+        ]
+      }
+    },
+    {
+      "id": "python-software-foundation",
+      "name": "Python Software Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.python.org/psf/",
+      "mechanism": "Shared language and package infrastructure for public-interest implementers",
+      "summary": "Supports Python, PyPI and the contributor ecosystem that nonprofit analysts, researchers and software builders can reuse.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.python.org/psf/about/",
+          "title": "PSF — current infrastructure and community activities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.python.org/psf/mission/",
+          "title": "PSF — nonprofit identity and formal mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/python/cpython",
+          "title": "CPython — named public repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/python/cpython/blob/main/LICENSE",
+          "title": "CPython — inspected license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Supports shared technical capabilities and public reuse rights rather than directly changing the institutions that produce poverty or exclusion.",
+        "reach": "Python and package infrastructure can enable many fields and organizations; widespread use is not proof of beneficial social outcomes.",
+        "durability": "Reusable licensed code and a contributor ecosystem can survive individual grants, while secure releases and package services require continuing work.",
+        "scalability": "Common software can be reused across many projects; skills, reliable maintenance and safe deployment remain real costs.",
+        "additionality": "Unknown: current PSF funding bottlenecks, alternative sponsors, maintenance capacity and the effect of another unrestricted donation were not audited.",
+        "agency": "Unknown: nonprofit membership and contributor participation do not establish consequential control by the communities affected by downstream Python applications."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "General-purpose software is not charity-exclusive and can enable harmful as well as beneficial uses. No security audit, dependency audit or assessment of all PyPI packages was performed. Maintaining public infrastructure is different from proving the additional impact of a donation.",
+      "falsifiableClaim": "Does additional PSF-supported maintenance measurably reduce critical infrastructure failures or nonprofit implementation costs compared with credible alternative funding?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US scientific and educational public charity’s Python/community infrastructure role; CPython is one inspected example, not an assessment of every Python package or user.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Language, packaging and community infrastructure available to nonprofit developers and researchers alongside other users.",
+        "sourceUrls": [
+          "https://www.python.org/psf/about/",
+          "https://www.python.org/psf/mission/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "CPython",
+            "repositoryUrl": "https://github.com/python/cpython",
+            "licenseUrl": "https://github.com/python/cpython/blob/main/LICENSE",
+            "licenseLabel": "PSF-2.0 with historical/third-party notices; documentation examples also 0BSD",
+            "licenseBlobSha": "20cf39097c68baa17cc566b64e76d34ebf034044",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named CPython root license inspected, including PSF-2.0, historical notices and the documentation-example exception. Python dependencies, PyPI packages, trademarks and services are not covered by this single check; PSF is not the sole developer."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared technical infrastructure lowers entry barriers and coordination costs for builders. It does not itself redistribute decision rights over the applications built with it.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.python.org/psf/about/",
+          "https://www.python.org/psf/mission/"
+        ]
+      }
+    },
+    {
+      "id": "drupal-association",
+      "name": "Drupal Association",
+      "category": "Justice & public goods",
+      "website": "https://www.drupal.org/association",
+      "mechanism": "Common publishing infrastructure and organizational support for an open software community",
+      "summary": "Supports Drupal’s community and development infrastructure, helping organizations build on a shared content-management platform.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.drupal.org/association/about",
+          "title": "Drupal Association — educational nonprofit identity and role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.drupal.org/association/accountability",
+          "title": "Drupal Association — financial disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/drupal/drupal/blob/11.x/README.md",
+          "title": "Drupal core — community development and canonical GitLab location",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/drupal/drupal",
+          "title": "Drupal core (11.x, official GitHub copy) — named public repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/drupal/drupal/blob/11.x/core/LICENSE.txt",
+          "title": "Drupal core (11.x, official GitHub copy) — inspected license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Supports common publishing capabilities and a reusable platform rather than automatically changing the governance of each adopting institution.",
+        "reach": "The CMS can serve charities and other institutions across sectors; platform adoption does not establish improvements in public welfare.",
+        "durability": "Licensed code and established community practices can persist, but security updates, hosting and institutional support remain ongoing obligations.",
+        "scalability": "Reusable modules and a shared platform support replication, while accessibility, migrations, expertise and local content operations can be expensive.",
+        "additionality": "Unknown: marginal association infrastructure needs, alternative revenue, grant restrictions and the counterfactual effect of another donation were not reviewed.",
+        "agency": "Unknown: community contribution and association governance were not audited as decision rights for the people served by adopting nonprofits."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The association is neither the sole code developer nor every commercial Drupal service. The inspected 11.x GitHub copy points to the canonical Drupal GitLab; a current mirror and license are not a support or security certification. A financial-report link is not our financial audit.",
+      "falsifiableClaim": "Does additional association infrastructure support reduce verified maintenance or participation barriers for nonprofit adopters beyond what would otherwise be provided?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The educational nonprofit association’s infrastructure/community role, distinct from commercial Drupal providers, individual contributors and the Drupal trademark owner.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared publishing/development infrastructure and community support usable by nonprofit website teams, not a promise of free implementation.",
+        "sourceUrls": [
+          "https://www.drupal.org/association/about",
+          "https://www.drupal.org/association/accountability"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Drupal core (11.x, official GitHub copy)",
+            "repositoryUrl": "https://github.com/drupal/drupal",
+            "licenseUrl": "https://github.com/drupal/drupal/blob/11.x/core/LICENSE.txt",
+            "licenseLabel": "GPL-2.0 license text; other components retain their notices",
+            "licenseBlobSha": "94fb84639c4b6ff359e47a124d8fb4a3aba7a386",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected core/LICENSE.txt on branch 11.x in the official GitHub copy. Canonical development is https://git.drupalcode.org/project/drupal. The association supports the community’s infrastructure, not sole authorship; modules, assets, trademarks, hosting and paid services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Common software and community infrastructure can make building and collaboration less dependent on a single vendor. Actual affordability and beneficiary influence remain separate questions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.drupal.org/association/about",
+          "https://www.drupal.org/association/accountability"
+        ]
+      }
+    },
+    {
+      "id": "code-for-science-and-society",
+      "name": "Code for Science & Society",
+      "category": "Justice & public goods",
+      "website": "https://www.codeforsociety.org/",
+      "mechanism": "Fiscal and operational infrastructure for public-interest technology projects",
+      "summary": "Provides fiscal sponsorship and organizational support for public-interest research and technology projects; OpenRefine is a documented sponsored example.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.codeforsociety.org/about",
+          "title": "CS&S — identity, mission and community-governance context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.codeforsociety.org/fsp",
+          "title": "CS&S — fiscal sponsorship services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.codeforsociety.org/fsp/projects/openrefine",
+          "title": "CS&S — current OpenRefine sponsorship listing",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenRefine/OpenRefine",
+          "title": "OpenRefine (sponsored example) — named public repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenRefine/OpenRefine/blob/master/LICENSE.txt",
+          "title": "OpenRefine (sponsored example) — inspected license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Addresses legal, financial and operational bottlenecks that can prevent public-interest projects from becoming sustainable institutions.",
+        "reach": "Its documented sponsorship model serves multiple research and technology communities rather than a single implementation.",
+        "durability": "Operational support can strengthen project continuity, but continuing finance, governance and sponsor health remain necessary.",
+        "scalability": "Common financial and administrative services can support additional projects, constrained by sponsor capacity, compliance and project readiness.",
+        "additionality": "Unknown: unrestricted sponsor funding, project-restricted donations, fee coverage, onboarding capacity and alternative sponsors have different counterfactuals and were not audited.",
+        "agency": "Unknown: stated community-centered strategy and work on participatory funding do not prove audited consequential rights for affected communities across every sponsored project."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Fiscal sponsorship is not sole software development or validation of a sponsored project’s outcomes. Sponsorship services and open software have separate terms. Do not attribute all partner benefits to CS&S or count OpenRefine again as an independent organization in this cohort.",
+      "falsifiableClaim": "Does incremental sponsorship support enable otherwise blocked public-interest projects to deliver sustained, useful services at lower full cost than feasible alternative arrangements?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US public charity, EIN 81-3791683, and its fiscal-support model. OpenRefine illustrates a current sponsored project, not a second independently counted charity or code solely authored by the sponsor.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Fiscal, financial, operational and governance support that allows public-interest technology projects to concentrate on their own work.",
+        "sourceUrls": [
+          "https://www.codeforsociety.org/about",
+          "https://www.codeforsociety.org/fsp",
+          "https://www.codeforsociety.org/fsp/projects/openrefine"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OpenRefine (sponsored example)",
+            "repositoryUrl": "https://github.com/OpenRefine/OpenRefine",
+            "licenseUrl": "https://github.com/OpenRefine/OpenRefine/blob/master/LICENSE.txt",
+            "licenseLabel": "BSD-3-Clause",
+            "licenseBlobSha": "d126f8ae6d7bad4f5240cd1d92171f4d174e3deb",
+            "role": "fiscal_sponsor",
+            "repositoryStatus": "not_archived",
+            "scope": "OpenRefine’s actual three-clause BSD file and current CS&S project listing inspected. CS&S provides fiscal support, not sole authorship; dependencies, input data, optional services and every other sponsored project require their own review."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared organizational infrastructure can lower the entry costs of building public-interest tools and connect contributors with support. Whether it shifts durable power to excluded communities needs direct review.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.codeforsociety.org/about",
+          "https://www.codeforsociety.org/fsp",
+          "https://www.codeforsociety.org/fsp/projects/openrefine"
+        ]
+      }
+    },
+    {
+      "id": "computational-democracy-project",
+      "name": "Computational Democracy Project",
+      "category": "Justice & public goods",
+      "website": "https://compdemocracy.org/",
+      "mechanism": "Reusable large-group consultation and opinion-analysis infrastructure",
+      "summary": "Designs and maintains Polis, with implementation support for civic groups, researchers, journalists and public institutions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://compdemocracy.org/",
+          "title": "CompDem — nonprofit identity, maintenance and service role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://compdemocracy.org/polis/",
+          "title": "CompDem — Polis participation and analysis model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://compdemocracy.org/open-source/",
+          "title": "CompDem — software openness and auditability rationale",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/compdemocracy/polis",
+          "title": "Polis — named public repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/compdemocracy/polis/blob/edge/LICENSE",
+          "title": "Polis — inspected license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Changes how public input can be gathered and interpreted; a consultation tool alone does not change who holds binding decision power.",
+        "reach": "A reusable consultation platform can support many institutions and topics, without proving representative participation or improved decisions.",
+        "durability": "Public code and reusable methods may outlast a single project, but institutional use, moderation and consequential follow-through are uncertain.",
+        "scalability": "Common software supports reuse and large groups, while recruitment, language access, moderation and interpretation remain implementation constraints.",
+        "additionality": "Unknown: current maintenance bottlenecks, paid-service revenue, restricted funding, alternative tools and marginal donation effects were not audited.",
+        "agency": "Unknown: submitting statements and votes is participation, not verified control of agenda-setting, data use, moderation or final institutional decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Self-selected samples, organized manipulation, exclusion and misleading interpretation can undermine a consultation. A statistical cluster is not a mandate. No algorithmic-fairness, security or impact audit was performed; hosted pol.is and conversation data have separate terms.",
+      "falsifiableClaim": "Do supported consultations produce more representative, accountable and consequential decisions than comparable processes without Polis, with documented safeguards against manipulation?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The 501(c)(3) nonprofit and its Polis development/support role, distinct from every organization running a conversation or using the separate hosted service.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Polis software, implementation knowledge and support for institutions conducting public-interest consultation.",
+        "sourceUrls": [
+          "https://compdemocracy.org/",
+          "https://compdemocracy.org/polis/",
+          "https://compdemocracy.org/open-source/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Polis",
+            "repositoryUrl": "https://github.com/compdemocracy/polis",
+            "licenseUrl": "https://github.com/compdemocracy/polis/blob/edge/LICENSE",
+            "licenseLabel": "AGPL-3.0; included third-party notices remain separate",
+            "licenseBlobSha": "bca73f7e2acb097404ff02c1833b52247218b654",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named Polis repository root license inspected on edge, including its additional dependency notices. This is not a license audit of all dependencies, a production-release endorsement, a security/fairness audit, or permission over conversation data and hosted-service terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared consultation infrastructure can lower the cost of gathering diverse perspectives and finding common ground. It does not establish consensus legitimacy or binding public authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://compdemocracy.org/",
+          "https://compdemocracy.org/polis/",
+          "https://compdemocracy.org/open-source/"
+        ]
+      }
+    },
+    {
+      "id": "democracy-club",
+      "name": "Democracy Club",
+      "category": "Justice & public goods",
+      "website": "https://democracyclub.org.uk/",
+      "mechanism": "Shared election information and data infrastructure for civic implementers",
+      "summary": "Builds UK candidate and polling-place data services that civil-society organizations can incorporate into their own voter information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://democracyclub.org.uk/about/",
+          "title": "Democracy Club — CIC identity, data services and civil-society use",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/DemocracyClub/yournextrepresentative",
+          "title": "YourNextRepresentative — named public repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/DemocracyClub/yournextrepresentative/blob/master/LICENSE.txt",
+          "title": "YourNextRepresentative — inspected license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reduces information and implementation barriers to democratic participation without itself changing electoral representation rules.",
+        "reach": "Common data can support many civic organizations and voters, but the documented infrastructure is principally UK election-specific.",
+        "durability": "Election data becomes stale quickly and requires repeated collection and correction; retained code does not eliminate ongoing operational needs.",
+        "scalability": "APIs, downloadable data and common code enable reuse, while other jurisdictions require new source relationships, coverage and quality checks.",
+        "additionality": "Unknown: current contract income, maintenance capacity, unfunded data gaps and the donation counterfactual relative to other civic information services were not audited.",
+        "agency": "Unknown: volunteer contributions and publicly accessible information do not establish affected voters’ control over organizational priorities or data decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Registration as a CIC is not a charity recommendation. Incorrect or incomplete election data can cause harm; live coverage, accessibility and official information must be checked for each use. Software, candidate data and API/service terms are distinct.",
+      "falsifiableClaim": "Do additional data-quality investments measurably reduce incorrect or missing voter information for underserved users beyond existing official and civic alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The UK Community Interest Company, number 09461226, and its election-data infrastructure; CIC status is not presented as registered-charity status or US tax deductibility.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared candidate-data software and election-information services usable by civic organizations and public-interest developers.",
+        "sourceUrls": [
+          "https://democracyclub.org.uk/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "YourNextRepresentative",
+            "repositoryUrl": "https://github.com/DemocracyClub/yournextrepresentative",
+            "licenseUrl": "https://github.com/DemocracyClub/yournextrepresentative/blob/master/LICENSE.txt",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "dba13ed2ddf783ee8118c6a581dbf75305f816a3",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named candidate-database software license inspected. Candidate records, geographic data, other Democracy Club projects and hosted/API terms must be checked separately; source availability is not a guarantee of timely or accurate election information."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Common election data can reduce duplicated collection and make civic information easier to build on. Reliable information is not proof of increased turnout or more accountable representation.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://democracyclub.org.uk/about/"
+        ]
+      }
+    },
+    {
+      "id": "center-for-civic-design",
+      "name": "Center for Civic Design",
+      "category": "Justice & public goods",
+      "website": "https://civicdesign.org/",
+      "mechanism": "Reusable accessibility and usability methods for public election administration",
+      "summary": "Creates civic-design research, templates and practical tools that help election offices and civic organizations make public interactions more usable.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://civicdesign.org/about/",
+          "title": "CCD — nonprofit identity, civic-design mission and working model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://civicdesign.org/ourwork/toolkits/",
+          "title": "CCD — tools, templates, accessibility and local-law limitations",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets the administrative interfaces and standards that shape whether people can use public institutions, rather than only explaining individual voting tasks.",
+        "reach": "Reusable design methods support election administrators and civic groups; evidence inspected does not establish universal coverage or equal benefit.",
+        "durability": "Templates and tested practices can be retained, but laws, systems, languages and user needs require updates and fresh validation.",
+        "scalability": "Shared resources reduce repeated design work; implementation, local legal fit and testing with disabled and multilingual users remain essential.",
+        "additionality": "Unknown: current unmet research or assistance needs, restrictions, implementation capacity and the counterfactual effect of additional funding were not audited.",
+        "agency": "Unknown: user research and accessibility commitments do not by themselves establish binding decision rights for affected voters within the organization or adopting offices."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Free-to-use/adapt tools are not automatically an audited open-source software portfolio. Election officials must check local law. No legal advice, election-system certification or causal turnout claim is provided; usability gains require context-specific testing.",
+      "falsifiableClaim": "Do adopted designs reduce observed errors and access barriers for disabled and multilingual voters compared with feasible alternatives, without introducing new exclusions?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The Maryland 501(c)(3) nonprofit, EIN 46-3535619, and its election-design support model, not a rating of every adopting election office.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Civic-design templates, usability methods and accessibility resources for election offices and civic engagement organizations.",
+        "sourceUrls": [
+          "https://civicdesign.org/about/",
+          "https://civicdesign.org/ourwork/toolkits/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Making official information and processes more usable can lower access barriers. This is a partial mechanism match, not proof of changing who controls public institutions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://civicdesign.org/about/",
+          "https://civicdesign.org/ourwork/toolkits/"
+        ]
+      }
+    },
+    {
+      "id": "participatory-budgeting-project",
+      "name": "Participatory Budgeting Project",
+      "category": "Justice & public goods",
+      "website": "https://www.participatorybudgeting.org/",
+      "mechanism": "Implementation support for consequential community allocation of public budgets",
+      "summary": "Helps communities and public institutions design participatory budgeting through training, practical materials and implementation assistance.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.participatorybudgeting.org/about/",
+          "title": "PBP — mission, participatory processes and organizational history",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.participatorybudgeting.org/technical-assistance/",
+          "title": "PBP — training, implementation and evaluation support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.participatorybudgeting.org/donate/",
+          "title": "PBP — organizational EIN disclosure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=453858268",
+          "title": "Tracker’s 2026-09-08 IRS snapshot — PBP identity corroboration only",
+          "type": "research",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The proposed mechanism changes budget-allocation rules by giving communities a formal role in public spending decisions.",
+        "reach": "Training and assistance can support multiple institutions and communities, principally in the US and Canada; project totals do not establish population-level benefits.",
+        "durability": "Participatory processes can become recurring practice, but budget holders, allocation size, legal authority and political support can change.",
+        "scalability": "Shared materials and training support replication, while accessible recruitment, facilitation, enforceable rules and delivery require local capacity.",
+        "additionality": "Unknown: current unrestricted needs, fee-funded assistance, alternatives and whether another grant expands consequential rather than nominal participation were not audited.",
+        "agency": "Unknown: allocating a defined budget can confer real authority, but the scope, representativeness, enforcement and organizational accountability of specific processes were not audited here."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Token budgets, exclusion, elite capture, non-delivery and displacement of other public participation can undermine benefits. Staff participation in organizational decisions is distinct from community control. The dated IRS record corroborates identity only; no outcome or tax-advice claim follows.",
+      "falsifiableClaim": "Do supported processes deliver verified community-chosen spending and equitable benefits with enduring decision rights, compared with realistic alternatives and full implementation costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "Participatory Budgeting Project Inc., the US nonprofit identified by EIN 45-3858268; the review covers its support model, not all participatory budgeting worldwide or the separate People Powered organization.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Training, planning materials, technical assistance and evaluation support for organizations implementing participatory budgets.",
+        "sourceUrls": [
+          "https://www.participatorybudgeting.org/about/",
+          "https://www.participatorybudgeting.org/technical-assistance/",
+          "https://www.participatorybudgeting.org/donate/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared implementation methods can help communities coordinate and gain a defined role in resource allocation. Actual public authority, fair participation and completed delivery must be established separately.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.participatorybudgeting.org/about/",
+          "https://www.participatorybudgeting.org/technical-assistance/",
+          "https://www.participatorybudgeting.org/donate/"
+        ]
+      }
+    },
+    {
+      "id": "healthy-democracy",
+      "name": "Healthy Democracy",
+      "category": "Justice & public goods",
+      "website": "https://healthydemocracy.org/",
+      "mechanism": "Deliberative civic-assembly design and practitioner capacity",
+      "summary": "Supports civic assemblies and citizens’ initiative reviews, and trains advocates and administrators in deliberative-process design.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://healthydemocracy.org/",
+          "title": "Healthy Democracy — nonprofit identity and current civic programs",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://healthydemocracy.org/home/services/capacity-building/",
+          "title": "Healthy Democracy — practitioner training and design support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://healthydemocracy.org/donate/",
+          "title": "Healthy Democracy — US 501(c)(3) identity disclosure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Proposes lottery-selected deliberative structures that can alter how public decisions are formed, rather than only educating individual voters.",
+        "reach": "Its methods can support multiple policy topics and institutions, without evidence here of representative access or consequential power in every setting.",
+        "durability": "Repeatable assembly designs may persist, but mandates, official uptake, budgets and ongoing public accountability are contingent.",
+        "scalability": "Practitioner training makes implementation more replicable; fair recruitment, accessibility, facilitation and institutional legitimacy are not automatic.",
+        "additionality": "Unknown: current funding restrictions, staff capacity, local demand and the counterfactual effect of another grant relative to other deliberative approaches were not audited.",
+        "agency": "Unknown: selection and discussion participation do not prove binding authority, control of the agenda or accountability to all people affected by an assembly’s recommendations."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "An advisory assembly can be ignored or used to legitimize predetermined decisions. Representation, compensation, nonresponse, minority rights and political follow-through need process-specific review. No fairness audit or independent systemic-impact attribution was performed.",
+      "falsifiableClaim": "Do supported assemblies achieve representative participation and documented consequential public decisions beyond comparable engagement processes, with durable accountability?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US nonpartisan 501(c)(3) nonprofit’s civic-assembly and capacity-building work, not a score of every assembly, host government or claimed policy outcome.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Assembly-design methods and training for civic organizations, advocates and public administrators.",
+        "sourceUrls": [
+          "https://healthydemocracy.org/",
+          "https://healthydemocracy.org/home/services/capacity-building/",
+          "https://healthydemocracy.org/donate/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Lottery selection, structured discussion and shared practitioner skills can broaden access to deliberation and collective problem-solving. These mechanisms are not evidence that institutions implement the recommendations.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://healthydemocracy.org/",
+          "https://healthydemocracy.org/home/services/capacity-building/",
+          "https://healthydemocracy.org/donate/"
+        ]
+      }
+    },
+    {
+      "id": "access-now",
+      "name": "Access Now",
+      "category": "Justice & public goods",
+      "website": "https://www.accessnow.org/",
+      "mechanism": "Digital-security capacity and rights infrastructure for civil society",
+      "summary": "Combines technical assistance for at-risk civil-society groups with grants, convening and digital-rights advocacy.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.accessnow.org/about-us/",
+          "title": "Access Now — helpline, grants, convening and advocacy model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.accessnow.org/financials/",
+          "title": "Access Now — 501(c)(3) identity and funding disclosures",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Builds the capacity of civil society to operate safely and advocate for rights; responding to a security incident is not itself proof of changing structural digital incentives.",
+        "reach": "The documented technical, grant and convening model serves civil society across regions and issue areas; service counts do not establish systemic change.",
+        "durability": "Skills and policy changes may persist, while security threats and direct technical assistance require continuing expert response.",
+        "scalability": "Shared knowledge and networks support transfer, but high-risk cases, language access and trusted relationships constrain purely software-like scaling.",
+        "additionality": "Unknown: unmet helpline demand, grant restrictions, staff bottlenecks, other providers and the marginal effect of another donation were not audited.",
+        "agency": "Unknown: grantee-driven funding claims and regional participation do not establish audited decision rights for all supported or affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "No security guarantee, incident-response certification or audit of specific recommended tools is provided. Funding transparency is not proof of independence in every case. This is a capacity-support profile, not a named-repository open-source check or validation of all advocacy positions.",
+      "falsifiableClaim": "Does incremental support reduce verified security-related disruption or enable otherwise blocked civil-society work, relative to credible alternatives and without increasing risks?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US 501(c)(3) organization’s civil-society support model and related international programs, not blanket certification of every separately registered office or every security tool it recommends.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Digital-security assistance, practical knowledge, grants and convening that can support other civil-society organizations.",
+        "sourceUrls": [
+          "https://www.accessnow.org/about-us/",
+          "https://www.accessnow.org/financials/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Support for at-risk implementers can lower barriers to participation and connect groups facing common digital-rights problems. Protection, collaboration and legal reform need their own outcome evidence.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.accessnow.org/about-us/",
+          "https://www.accessnow.org/financials/"
+        ]
+      }
+    },
+    {
+      "id": "tactical-tech",
+      "name": "Tactical Tech",
+      "category": "Justice & public goods",
+      "website": "https://tacticaltech.org/",
+      "mechanism": "Reusable digital-literacy and investigation capacity for civic organizations",
+      "summary": "Develops educational resources, exhibitions and training that help civil society examine technology, information and power.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://tacticaltech.org/imprint/",
+          "title": "Tactical Tech — Dutch nonprofit registration and governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://tacticaltech.org/how-we-work/",
+          "title": "Tactical Tech — collaborative methods, technology choices and reuse principles",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://tacticaltech.org/resources/",
+          "title": "Tactical Tech — educational resource topics and formats",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets the skills and information conditions that shape people’s ability to scrutinize technology and institutional power, not only individual technical fixes.",
+        "reach": "Adaptable formats and partnerships can support different civic groups and contexts, without proving equal access or beneficial outcomes at scale.",
+        "durability": "Reusable learning resources can persist, but digital practices, risks and information systems require ongoing updates and local support.",
+        "scalability": "Resource adaptation and training-of-trainers can reduce repeated work, while translation, safety and implementation quality remain context-dependent.",
+        "additionality": "Unknown: specific unfunded resource or training needs, alternative providers, restrictions and the counterfactual effect of new funding were not audited.",
+        "agency": "Unknown: collaborative and bottom-up methods do not establish audited binding community rights over strategy, resource ownership or program decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The stated preference for open-source tools is not evidence that Tactical Tech maintains or licenses those tools. Creative Commons and software rights vary by asset; no named code repository was license-checked in this profile. Literacy interventions do not by themselves change feed incentives or guarantee safety.",
+      "falsifiableClaim": "Do locally adapted resources produce sustained improvements in civic investigation or informed technology choices beyond available alternatives, without introducing new privacy or exclusion harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The registered Dutch Stichting identified in its imprint, RSIN 812331606, with a Berlin office; the review covers its educational/capacity model, not every third-party tool it uses.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Educational interventions, investigation resources and practitioner training for civil society and other implementers.",
+        "sourceUrls": [
+          "https://tacticaltech.org/imprint/",
+          "https://tacticaltech.org/how-we-work/",
+          "https://tacticaltech.org/resources/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "Critical digital literacy and reusable investigation skills can help people interpret manipulative information and lower knowledge barriers. This is not verification that the underlying attention economy has been redirected.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://tacticaltech.org/imprint/",
+          "https://tacticaltech.org/how-we-work/",
+          "https://tacticaltech.org/resources/"
+        ]
+      }
+    },
+    {
+      "id": "resource-generation",
+      "name": "Resource Generation",
+      "category": "Justice & public goods",
+      "website": "https://resourcegeneration.org/",
+      "mechanism": "Donor-practice organizing and resource redirection toward social movements",
+      "summary": "Organizes young people with wealth and class privilege through peer communities, donor-practice resources and redistribution commitments.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://resourcegeneration.org/",
+          "title": "RG — current organizing model and donor-practice resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://resourcegeneration.org/disclosure-notice/",
+          "title": "RG — nonprofit identity and EIN",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://resourcegeneration.org/who-we-are/history/",
+          "title": "RG — independent nonprofit history and separate RG Action entity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Seeks to alter donor norms and allocation of wealth and power; voluntary commitments are not binding changes to tax or ownership institutions.",
+        "reach": "Peer organizing can influence donors and the organizations they support, but the core constituency is a particular US age/wealth segment.",
+        "durability": "Changed habits and relationships could persist, while pledge fulfillment, durable redistribution and ongoing organizing require evidence.",
+        "scalability": "Chapter and peer-learning approaches can spread, constrained by relationships, accessibility and whether influence extends beyond existing participants.",
+        "additionality": "Unknown: members’ gross giving, incremental redistribution caused by RG, substitution between recipients and marginal organizational funding have not been separated or audited.",
+        "agency": "Unknown: stated commitments to follow community leadership do not establish audited decision rights for movement recipients over RG or over members’ resource allocations."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Reported member giving is not automatically giving caused by RG, a transfer of lasting power or a welfare gain. Do not count the same funds at donor, intermediary and recipient levels. This profile is not a rating of RG Action or an endorsement of every recipient or political position.",
+      "falsifiableClaim": "Does participation cause sustained additional resource transfers with recipient-led control, compared with similar donors’ plausible behavior without RG?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "Resource Generation’s US 501(c)(3), EIN 27-1847561, distinct from its RG Action 501(c)(4) sibling and from organizations receiving members’ donations.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Donor-practice resources and peer organizing that aim to improve how movement organizations receive support, rather than a software platform.",
+        "sourceUrls": [
+          "https://resourcegeneration.org/",
+          "https://resourcegeneration.org/disclosure-notice/",
+          "https://resourcegeneration.org/who-we-are/history/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status",
+          "coordination"
+        ],
+        "rationale": "Peer norms can redirect what affluent communities admire and encourage coordinated giving. Whether this produces additional recipient-led funding rather than reputational signaling remains a testable question.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://resourcegeneration.org/",
+          "https://resourcegeneration.org/disclosure-notice/",
+          "https://resourcegeneration.org/who-we-are/history/"
+        ]
+      }
+    },
+    {
+      "id": "new-economics-foundation",
+      "name": "New Economics Foundation",
+      "category": "Poverty & opportunity",
+      "website": "https://neweconomics.org/",
+      "mechanism": "Economic policy research and practical approaches to democratic ownership",
+      "summary": "Combines economic research and organizing around equitable transition, public services and community power.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://neweconomics.org/about",
+          "title": "NEF — independent-charity identity and working model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://neweconomics.org/about/our-missions",
+          "title": "NEF — ambitions for economic rules, security and democratic ownership",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Explicitly targets economic rules, ownership and public institutions rather than treating deprivation only after it occurs.",
+        "reach": "Its policy agenda can influence multiple economic and social issues, with a principally UK institutional context and uncertain realized reach.",
+        "durability": "Implemented rules or ownership changes could outlast a grant, but political adoption, institutional retention and causal attribution are unverified.",
+        "scalability": "Research and policy approaches can be shared, while implementation depends on law, political coalitions, administrative capacity and local conditions.",
+        "additionality": "Unknown: current neglected research or organizing needs, funding restrictions, competing policy work and the effect of an additional grant were not audited.",
+        "agency": "Unknown: community-power goals and participatory organizing do not prove audited consequential rights for affected communities over NEF or every proposed policy."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "A coherent economic vision is not evidence that all proposed reforms improve welfare. Trade-offs, feasibility, displacement and counterfactual political influence require independent analysis. No economic forecast, investment advice or recommendation of the separate consultancy is provided.",
+      "falsifiableClaim": "Can a specified NEF-supported reform be linked to sustained improvements in economic security or community control beyond a credible policy counterfactual?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The independent UK registered charity 1055254 and its research/organizing model; its commercial consultancy arm is not independently scored here.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Public economic research, policy approaches and organizing knowledge usable by civic groups pursuing institutional change.",
+        "sourceUrls": [
+          "https://neweconomics.org/about",
+          "https://neweconomics.org/about/our-missions"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "story"
+        ],
+        "rationale": "Concrete alternative economic arrangements can broaden what people imagine and how economic rules are framed. Agreement with that vision is not independent validation of its effects.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://neweconomics.org/about",
+          "https://neweconomics.org/about/our-missions"
+        ]
+      }
+    },
+    {
+      "id": "new-economy-coalition",
+      "name": "New Economy Coalition",
+      "category": "Poverty & opportunity",
+      "website": "https://neweconomy.net/",
+      "mechanism": "Shared organizing and resourcing infrastructure for regional solidarity economies",
+      "summary": "Connects organizations developing cooperative and community-controlled economic institutions through training, member coordination and movement resources.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://neweconomy.net/about/",
+          "title": "NEC — nonprofit identity, member governance and regional strategy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://neweconomy.net/programs-education-training/",
+          "title": "NEC — practitioner education, resources and member training",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Its stated strategy seeks changes in ownership, control and regional economic institutions rather than only providing individual assistance.",
+        "reach": "A cross-sector member network can connect organizations working on different needs, but actual influence and benefits are not established by network size.",
+        "durability": "Regional relationships and cooperative institutions may persist, while coalition support, resources and effective governance remain continuing needs.",
+        "scalability": "Shared training and peer infrastructure can travel between regions; implementation depends on local institutions, finance, skills and community legitimacy.",
+        "additionality": "Unknown: unmet member needs, regrant restrictions, overlap with other networks and the counterfactual effect of additional coalition funding were not audited.",
+        "agency": "Unknown: published member-elected and worker-self-direction arrangements are relevant evidence, but affected-community representation, enforcement and actual decision rights across the network need a scoped audit."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Member governance is not automatically governance by everyone affected by member organizations. A political-economic vision and a network are not proof of viable, equitable alternatives or net welfare gains. Do not attribute all members’ outcomes to the coalition or conflate it with NEF.",
+      "falsifiableClaim": "Does additional coalition support cause durable, accountable community-owned institutions or better member delivery beyond what regional organizations would achieve without it?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US 501(c)(3) membership coalition and its network-support model, not a score of every member enterprise; it is separate from the UK New Economics Foundation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Training, peer coordination, movement resourcing and shared learning for organizations pursuing community-controlled economic models.",
+        "sourceUrls": [
+          "https://neweconomy.net/about/",
+          "https://neweconomy.net/programs-education-training/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "vision"
+        ],
+        "rationale": "Coalition infrastructure can help organizations combine efforts and make alternative economic arrangements more practical to imagine. Whether coordination changes ownership or welfare remains an empirical question.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://neweconomy.net/about/",
+          "https://neweconomy.net/programs-education-training/"
+        ]
+      }
+    },
+    {
+      "id": "the-democracy-collaborative",
+      "name": "The Democracy Collaborative",
+      "category": "Poverty & opportunity",
+      "website": "https://www.democracycollaborative.org/",
+      "mechanism": "Community wealth-building methods and institutional ownership alternatives",
+      "summary": "Develops research, strategic guidance and practitioner networks for community wealth building and a democratic economy.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.democracycollaborative.org/whoweare",
+          "title": "TDC — organizational model and ownership-oriented theory of change",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.democracycollaborative.org/community-wealth-building",
+          "title": "TDC — practitioner support and institutional approaches",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.democracycollaborative.org/support",
+          "title": "TDC — nonprofit-support disclosure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=200387511",
+          "title": "Tracker’s 2026-09-08 IRS snapshot — TDC legal identity corroboration only",
+          "type": "research",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets ownership, procurement, finance and local institutions through community wealth-building arrangements and policy ideas.",
+        "reach": "Its models can connect several economic institutions and issues, but geographic spread and institutional uptake do not establish attributable benefits.",
+        "durability": "Changed ownership and institutional practices could last beyond research grants, but the durability and causal contribution of particular changes need verification.",
+        "scalability": "Shared models and practitioner guidance can support adoption; capital, procurement rules, competent institutions and community legitimacy are context-specific.",
+        "additionality": "Unknown: current research and implementation bottlenecks, alternatives, restrictions and the effect of another donation relative to independent local efforts were not audited.",
+        "agency": "Unknown: community ownership is a proposed design feature; actual beneficiary decision rights, protections and accountability in specific institutions and within TDC were not audited."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Ownership alternatives involve feasibility and distributional trade-offs; they are not universally beneficial by definition. Practitioner stories are not controlled impact studies. No blanket attribution of partner outcomes, endorsement of every published opinion or financial-return forecast is provided.",
+      "falsifiableClaim": "Can a specified supported ownership or procurement change be linked to durable improvements in community economic security and control beyond a credible local counterfactual?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The Democracy Collaborative Foundation Inc. research/implementation-support model, corroborated in the tracker’s dated IRS snapshot; third-party cooperatives, municipalities and anchor institutions are not subsidiaries or separately counted achievements here.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Economic-institution research, community wealth-building guidance and practitioner networks for local public-interest organizations.",
+        "sourceUrls": [
+          "https://www.democracycollaborative.org/whoweare",
+          "https://www.democracycollaborative.org/community-wealth-building",
+          "https://www.democracycollaborative.org/support"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination"
+        ],
+        "rationale": "Concrete institutional models can widen the set of futures people consider and help practitioners coordinate implementation. These are design pathways, not proof of an inevitable or superior economic outcome.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.democracycollaborative.org/whoweare",
+          "https://www.democracycollaborative.org/community-wealth-building",
+          "https://www.democracycollaborative.org/support"
+        ]
+      }
+    },
+    {
+      "id": "irex",
+      "name": "IREX",
+      "category": "Justice & public goods",
+      "website": "https://www.irex.org/",
+      "mechanism": "Media-literacy and educator capacity embedded in learning institutions",
+      "summary": "Provides Learn to Discern methods and educator networks that aim to strengthen critical engagement with information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.irex.org/partnerships",
+          "title": "IREX — charitable identity and partnership role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.irex.org/financials",
+          "title": "IREX — legal name and financial disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.irex.org/success-story/irex-strengthens-locally-led-learning-long-term-impact-ukraine",
+          "title": "IREX — September 2026 educator-network and curriculum integration report",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.irex.org/building-social-and-public-trust",
+          "title": "IREX — information-resilience approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Aims to embed critical-information practices in education and civic institutions, not only correct individual false claims after exposure.",
+        "reach": "A reusable method can serve educators and communities in different settings, without establishing equivalent effects across countries or populations.",
+        "durability": "Integration into curricula and educator networks could persist, but reported continuation and transfer of skills have not been independently verified here.",
+        "scalability": "Training and adaptable resources allow replication; contextual relevance, language, educator support and resistance to politicization are limiting factors.",
+        "additionality": "Unknown: current Learn to Discern-specific unmet needs, restricted program support, alternatives and the effect of additional funding were not audited.",
+        "agency": "Unknown: educator adaptation and local leadership claims do not establish audited binding decision rights for learners or affected communities over program priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Reported teacher perceptions and reach are not direct measures of lasting behavior change or a causal estimate of systemic resilience. Literacy does not itself change platform incentives. No new recommendation of IREX’s other programs, security practices or proprietary tools is implied.",
+      "falsifiableClaim": "Do locally adapted learning programs produce sustained, independently measured improvements in information judgment and behavior compared with credible alternatives after direct support ends?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "International Research and Exchanges Board, the US 501(c)(3), scoped here to Learn to Discern/media-literacy capacity and documented educator integration, not IREX’s entire global portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Media-literacy methods, educator development and implementation knowledge that civic and education organizations can adapt.",
+        "sourceUrls": [
+          "https://www.irex.org/partnerships",
+          "https://www.irex.org/financials",
+          "https://www.irex.org/success-story/irex-strengthens-locally-led-learning-long-term-impact-ukraine",
+          "https://www.irex.org/building-social-and-public-trust"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "coordination"
+        ],
+        "rationale": "Critical information skills and educator networks can improve how people engage with manipulative content and share practices. This does not verify that feeds, media incentives or public institutions have structurally changed.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.irex.org/partnerships",
+          "https://www.irex.org/financials",
+          "https://www.irex.org/success-story/irex-strengthens-locally-led-learning-long-term-impact-ukraine",
+          "https://www.irex.org/building-social-and-public-trust"
+        ]
+      }
+    },
+    {
+      "id": "earthpercent",
+      "name": "EarthPercent",
+      "category": "Climate & environment",
+      "website": "https://www.earthpercent.org/",
+      "mechanism": "Recurring music-industry revenue pathways for climate and nature organizations",
+      "summary": "Builds ways for artists and music businesses to direct portions of existing income to environmental grantmaking.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.earthpercent.org/",
+          "title": "EarthPercent — UK/US identities and current grantmaking model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.earthpercent.org/how-it-works",
+          "title": "EarthPercent — recurring revenue, fundraising mechanisms and partner roles",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Seeks to embed environmental funding in existing industry revenue flows rather than depend only on one-off appeals; this does not itself regulate emissions.",
+        "reach": "The model can connect multiple parts of the international music industry with environmental organizations, while its industry focus limits universal reach.",
+        "durability": "Recurring revenue arrangements could outlast individual campaigns, but pledge fulfillment, contracts, income volatility and operating support remain uncertain.",
+        "scalability": "Common mechanisms can be adopted by more artists and businesses, constrained by rights agreements, administration and genuine participant demand.",
+        "additionality": "Unknown: gross fundraising, funds that would otherwise be donated, recipient substitution, operating costs and marginal environmental outcomes have not been separated or audited.",
+        "agency": "Unknown: an expert advisory panel and consultation are not proof of affected communities’ binding control over grant priorities or industry arrangements."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Pledges, royalty directions, receipts, grants and environmental outcomes are distinct. Music-related symbolism is not a new legal status for nature or proof of emissions reductions. No rights agreement was entered, no funds moved, and no recipient effectiveness recommendation is implied.",
+      "falsifiableClaim": "Do recurring industry mechanisms cause sustained additional funding and independently evidenced environmental benefits after full costs and donor substitution, beyond feasible alternative fundraising?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The UK environmental charity 1188391 and its music-industry funding model; the separately identified US nonprofit is not counted again, and recipient projects have not been independently rated in this profile.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared revenue-collection and fundraising pathways intended to resource environmental organizations, not an open-source software product.",
+        "sourceUrls": [
+          "https://www.earthpercent.org/",
+          "https://www.earthpercent.org/how-it-works"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status",
+          "coordination"
+        ],
+        "rationale": "Artist participation and coordinated income-sharing can normalize environmental giving and redirect existing resources. The effect on prestige, additional funding and environmental outcomes remains unverified.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.earthpercent.org/",
+          "https://www.earthpercent.org/how-it-works"
+        ]
+      }
+    },
+    {
+      "id": "the-life-you-can-save",
+      "name": "The Life You Can Save",
+      "category": "Poverty & opportunity",
+      "website": "https://www.thelifeyoucansave.org/",
+      "mechanism": "Shared charity research and donor guidance aimed at redirecting philanthropy",
+      "summary": "Combines charity research, giving resources and funds to help donors support work addressing poverty, health and development.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.thelifeyoucansave.org/about-us/",
+          "title": "TLYCS — mission and donor-guidance model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.thelifeyoucansave.org/charity-evaluation-framework/",
+          "title": "TLYCS — published charity research framework",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.thelifeyoucansave.org/state-fundraising-disclosures/",
+          "title": "TLYCS — US organizational identity and solicitation disclosures",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Seeks to change how donations are chosen and allocated by making research and guidance accessible; it does not itself eliminate the institutions producing poverty.",
+        "reach": "Donor resources and funds can serve multiple causes within poverty and development, but attributed recipient outcomes cannot simply be added to intermediary impact.",
+        "durability": "Research and learned giving practices can persist, while recommendation updates, donor relationships and trustworthy operations need recurring work.",
+        "scalability": "Shared research can serve additional donors, with limits from evaluation quality, context, neglected opportunities and practical donation administration.",
+        "additionality": "Unknown: reported money moved, donor substitution, operating-fund leverage, recipient capacity and marginal outcomes have not been independently separated or audited.",
+        "agency": "Unknown: evidence-oriented selection and donor choice do not establish meaningful decision rights for people affected by the funded interventions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Reported fundraising multipliers and impact calculators are not treated as audited counterfactual welfare gains. A recipient’s independent program evidence does not validate the intermediary’s additionality. No restricted evaluation prose or ratings database was copied, and no blanket donation recommendation follows.",
+      "falsifiableClaim": "Does additional intermediary support cause better counterfactual giving and verified recipient outcomes after full costs, rather than merely relabel donations that would already occur?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US nonprofit operation identified in its state disclosures, distinct from its Australian counterpart and recipient charities. This assesses the intermediary model, not an independent endorsement of its recommendation list.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared research, donor education and giving resources that can help charities connect with evidence-oriented funding.",
+        "sourceUrls": [
+          "https://www.thelifeyoucansave.org/about-us/",
+          "https://www.thelifeyoucansave.org/charity-evaluation-framework/",
+          "https://www.thelifeyoucansave.org/state-fundraising-disclosures/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status",
+          "gatekeepers"
+        ],
+        "rationale": "Making informed giving a visible norm and reducing research barriers could redirect donor behavior. This is a partial interpretation, not proof of prestige-driven additional giving or equitable control of funding.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.thelifeyoucansave.org/about-us/",
+          "https://www.thelifeyoucansave.org/charity-evaluation-framework/",
+          "https://www.thelifeyoucansave.org/state-fundraising-disclosures/"
+        ]
+      }
+    },
+    {
+      "id": "interactivity-foundation",
+      "name": "Interactivity Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.interactivityfoundation.org/",
+      "mechanism": "Reusable discussion practice for public imagination and collaborative learning",
+      "summary": "Develops exploratory discussion methods, learning resources and programs for communities, educators and other facilitators.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.interactivityfoundation.org/about/",
+          "title": "IF — operating-foundation identity, exploratory mission and methods",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.interactivityfoundation.org/donate/",
+          "title": "IF — tax-exempt identity disclosure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.interactivityfoundation.org/what-we-do/cdp/",
+          "title": "IF — collaborative discussion/learning program",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Builds the civic skills and processes through which groups explore possible futures, without itself establishing binding public policy or ownership changes.",
+        "reach": "Methods can be used in communities, classrooms and workplaces; participation opportunities do not establish broad or representative access.",
+        "durability": "Retained facilitation skills and reusable resources could persist, but practice, trust and institutional uptake require continuing support.",
+        "scalability": "Training and resources support reuse across groups, while good facilitation, accessibility, disagreement and local context constrain replication.",
+        "additionality": "Unknown: current unmet program needs, endowment or operating constraints, alternatives and the effect of additional donations were not audited.",
+        "agency": "Unknown: inclusive discussion and co-imagination are not equivalent to binding community authority over the foundation or decisions made after discussions."
+      },
+      "evidenceLevel": "Organization reported; primary pages inspected in public web reader, direct HTTP access blocked during review",
+      "confidence": "Moderate for reported design; limited for current delivery and low for systemic attribution",
+      "limitations": "Constructive discussion is not proof of consequential action, consensus, improved welfare or reduced polarization. Non-advocacy describes the organization’s stated approach, not a guarantee of unbiased facilitation. No software repository license or all-resource reuse rights were verified. Primary pages were inspected through the public web reader; direct HTTP returned 403 during this review, so current resource accessibility should be confirmed before use.",
+      "falsifiableClaim": "Do supported discussion practices produce durable improvements in participants’ ability to explore alternatives and collaborate, with consequential follow-through beyond comparable facilitation?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "evaluationScope": "The US 501(c)(3) private operating foundation, not a generic grantmaking foundation; the review concerns its own discussion and learning programs rather than every facilitator or workplace adopting resources.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Discussion methods, learning resources and facilitator development usable by community organizations and education teams.",
+        "sourceUrls": [
+          "https://www.interactivityfoundation.org/about/",
+          "https://www.interactivityfoundation.org/donate/",
+          "https://www.interactivityfoundation.org/what-we-do/cdp/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination"
+        ],
+        "rationale": "Exploring multiple possible futures and practicing discussion can build shared imagination and collaborative skills. Their connection to institutional change must be tested rather than assumed.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.interactivityfoundation.org/about/",
+          "https://www.interactivityfoundation.org/donate/",
+          "https://www.interactivityfoundation.org/what-we-do/cdp/"
         ]
       }
     }

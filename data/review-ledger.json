@@ -1171,153 +1171,99 @@
     {
       "id": "access-now",
       "name": "Access Now",
-      "status": "queued",
-      "priority": "capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/access-now/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of digital-security capacity and rights infrastructure for civil society. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "tactical-tech",
       "name": "Tactical Tech",
-      "status": "queued",
-      "priority": "attention",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/tactical-tech/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of reusable digital-literacy and investigation capacity for civic organizations. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "participatory-budgeting-project",
       "name": "Participatory Budgeting Project",
-      "status": "queued",
-      "priority": "coordination",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/participatory-budgeting-project/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of implementation support for consequential community allocation of public budgets. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "healthy-democracy",
       "name": "Healthy Democracy",
-      "status": "queued",
-      "priority": "coordination",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/healthy-democracy/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of deliberative civic-assembly design and practitioner capacity. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "irex",
       "name": "IREX",
-      "status": "queued",
-      "priority": "attention",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/irex/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of media-literacy and educator capacity embedded in learning institutions. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "center-for-civic-design",
       "name": "Center for Civic Design",
-      "status": "queued",
-      "priority": "capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/center-for-civic-design/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of reusable accessibility and usability methods for public election administration. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "code-for-science-and-society",
       "name": "Code for Science & Society",
-      "status": "queued",
-      "priority": "shared_infrastructure",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/code-for-science-and-society/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of fiscal and operational infrastructure for public-interest technology projects. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "python-software-foundation",
       "name": "Python Software Foundation",
-      "status": "queued",
-      "priority": "shared_infrastructure",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/python-software-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of shared language and package infrastructure for public-interest implementers. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "drupal-association",
       "name": "Drupal Association",
-      "status": "queued",
-      "priority": "shared_infrastructure",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/drupal-association/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of common publishing infrastructure and organizational support for an open software community. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1443,50 +1389,40 @@
     {
       "id": "computational-democracy-project",
       "name": "Computational Democracy Project",
-      "status": "queued",
-      "priority": "software",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/computational-democracy-project/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of reusable large-group consultation and opinion-analysis infrastructure. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "democracy-club",
       "name": "Democracy Club",
-      "status": "queued",
-      "priority": "software",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/democracy-club/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of shared election information and data infrastructure for civic implementers. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "code-for-all",
       "name": "Code for All",
-      "status": "queued",
+      "status": "deferred",
       "priority": "coordination",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Official pages describe a nonprofit civic-tech network powered by Tech for Change, but its current legal operating or fiscal relationship was not resolved in this pass; this is an evidence gap, not an ineligibility finding.",
+      "sourceUrls": [
+        "https://codeforall.org/about-us",
+        "https://codeforall.org/donate"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
+        "Resolve the current legal operating entity or fiscal sponsor and relationship to Tech for Change.",
+        "Confirm present program delivery rather than relying only on older event/news pages."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -1494,67 +1430,52 @@
     {
       "id": "the-democracy-collaborative",
       "name": "The Democracy Collaborative",
-      "status": "queued",
-      "priority": "vision",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/the-democracy-collaborative/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of community wealth-building methods and institutional ownership alternatives. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "new-economy-coalition",
       "name": "New Economy Coalition",
-      "status": "queued",
-      "priority": "vision",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/new-economy-coalition/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of shared organizing and resourcing infrastructure for regional solidarity economies. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "new-economics-foundation",
       "name": "New Economics Foundation",
-      "status": "queued",
-      "priority": "vision",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/new-economics-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of economic policy research and practical approaches to democratic ownership. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "shareable",
       "name": "Shareable",
-      "status": "queued",
+      "status": "deferred",
       "priority": "coordination",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Current programs and resource rights were inspected. A dated IRS alias suggests a Sharing Inc. relationship, but the current first-party operating-brand/legal-entity link was not confirmed in this pass; do not count a tentative alias match.",
+      "sourceUrls": [
+        "https://www.shareable.net/about/",
+        "https://www.shareable.net/reprints/",
+        "https://charities.systemicaltruism.com/api/registry?q=Shareable"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
+        "Obtain current first-party corroboration of legal name/EIN or fiscal sponsorship.",
+        "Keep CC BY-NC-ND article rights separate from open-source software and inspect any named project before a software badge."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -1579,34 +1500,22 @@
     {
       "id": "resource-generation",
       "name": "Resource Generation",
-      "status": "queued",
-      "priority": "status",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/resource-generation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of donor-practice organizing and resource redirection toward social movements. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "the-life-you-can-save",
       "name": "The Life You Can Save",
-      "status": "queued",
-      "priority": "capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/the-life-you-can-save/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of shared charity research and donor guidance aimed at redirecting philanthropy. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1664,34 +1573,22 @@
     {
       "id": "interactivity-foundation",
       "name": "Interactivity Foundation",
-      "status": "queued",
-      "priority": "vision",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/interactivity-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of reusable discussion practice for public imagination and collaborative learning. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "earthpercent",
       "name": "EarthPercent",
-      "status": "queued",
-      "priority": "status",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and parent/fiscal sponsor.",
-        "Inspect current official mechanism sources, potential harms and counterfactual questions.",
-        "Check project scope and actual licenses before assigning open-source metadata."
-      ],
+      "status": "included",
+      "profilePath": "/charities/earthpercent/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-02",
+      "reason": "Included after scoped primary-source review of recurring music-industry revenue pathways for climate and nature organizations. Six preliminary rationales, source dates, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -1708,6 +1605,19 @@
       "evidenceGaps": [],
       "independentHumanReview": "not_applicable",
       "affectedCommunityReview": "not_applicable"
+    },
+    {
+      "id": "openrefine-as-independent-charity",
+      "name": "OpenRefine as an independently counted charity",
+      "status": "excluded",
+      "decisionAt": "2026-10-27",
+      "reason": "OpenRefine is used as a named sponsored software example in the CS&S assessment. Counting that same project again here would duplicate the scoped sponsor/project inclusion; this is not a judgment of software quality or independent funding potential.",
+      "sourceUrls": [
+        "https://www.codeforsociety.org/fsp/projects/openrefine",
+        "https://github.com/OpenRefine/OpenRefine"
+      ],
+      "evidenceGaps": [],
+      "relatedProfileId": "code-for-science-and-society"
     }
   ]
 }
