@@ -1,12 +1,14 @@
 import {readFile,access} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {method,presets} from '../src/scoring.mjs';
+import {hasVerifiedOpenSource} from '../src/focus.mjs';
 const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
 const dataset=JSON.parse(await readFile('data/charities.json','utf8'));
 const homeHtml=await readFile('dist/index.html','utf8');
 if(!homeHtml.includes('id="focus-filter"')||!homeHtml.includes('not verified adoption'))throw new Error('Missing focused exploration or alignment limits');
+if(!homeHtml.includes('<option value="opensource">Open-source tools · license checked</option>')||!homeHtml.includes('not a security or impact audit'))throw new Error('Missing open-source view or verification limits');
 if(routes.filter(r=>r.path.startsWith('/charities/')).length!==dataset.charities.length)throw new Error('Assessment route/count mismatch');
 const methodHtml=await readFile('dist/methodology/index.html','utf8');
 if(!methodHtml.includes(method.source.url)||!methodHtml.includes('not a numerical charity-rating formula'))throw new Error('Missing practice provenance/interpretation');
@@ -19,6 +21,9 @@ for(const c of dataset.charities){
   if(!html.includes(`Axis review: ${c.lastReviewed}`))throw new Error(`Profile review date mismatch: ${c.id}`);
   if(c.tooling&&!html.includes('Tools &amp; support for charities'))throw new Error(`Missing tooling rationale: ${c.id}`);
   if(c.checklistAlignment&&!html.includes('Explicit checklist adoption: not verified'))throw new Error(`Missing mapping limits: ${c.id}`);
+  if(hasVerifiedOpenSource(c))for(const p of c.openSource.projects){
+    if(!html.includes(p.licenseBlobSha)||!html.includes(p.licenseUrl)||!html.includes(p.repositoryUrl)||!html.includes('not a security audit'))throw new Error(`Missing scoped open-source evidence: ${c.id}`);
+  }
   for(const s of c.sources)if(!html.includes(`checked ${s.accessedAt}`))throw new Error(`Source review date mismatch: ${c.id}`);
 }
 for(const path of ['/','/directory/','/data/']){

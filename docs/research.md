@@ -1,5 +1,38 @@
 # Systemic Altruism research and seed audit
 
+## 27 October 2026, second update: inspected open-source infrastructure
+
+Added 12 scoped assessments, bringing the cohort to **82**: Kobo, HURIDOCS, OpenMRS Inc., Learning Equality, Sahana Software Foundation, Axim Collaborative, OpenAlex / OurResearch, NumFOCUS, Open Contracting Partnership, Open Ownership (Global Impact-sponsored), Open Supply Hub and Apache Software Foundation. Categories contain 14 health, 10 poverty/opportunity, 7 climate, 10 animal welfare and 41 justice/public-good profiles. The 19 evaluator-selection labels and 3 historical reviews are unchanged; 60 inclusions are illustrative. All 70 prior profile objects, including scores, source dates, review dates and classifications, were preserved exactly.
+
+Weights remain v0.2 **35 / 25 / 15 / 15 / 5 / 5**. The practice page was re-read through public HTTPS on 27 October; its seven steps still supply the qualitative reference, not a numerical formula. Method provenance retains the original 26 October source check and version. No score bonus is added for software licenses or checklist tags. Additionality and community agency are unreviewed for all 12 new profiles.
+
+### Repository-level openness, not a whole-organization badge
+
+The new `opensource` filter includes only profiles with an inspected actual license file for a named repository, a dated check, source links and a Git blob SHA identifying the checked license bytes. Each profile distinguishes maintainer, steward and fiscal sponsor. The snapshot is a dated observation, not continuous maintenance monitoring, a dependency/license-compliance review, a security audit or a legal opinion. Project code, dependencies, datasets, educational content, trademarks and hosted/API service terms can differ. Unclassified earlier profiles may also maintain open-source tools; this is incomplete review coverage, not an exclusion judgment.
+
+| Organization / scoped initiative | Inspected project | License-file finding | Role |
+| --- | --- | --- | --- |
+| Kobo | KoboToolbox KPI | AGPL-3.0 | Maintainer |
+| HURIDOCS | Uwazi | MIT | Maintainer |
+| OpenMRS Inc. | OpenMRS Core | MPL-2.0 plus Healthcare Disclaimer | Steward |
+| Learning Equality | Kolibri | MIT | Maintainer |
+| Sahana Software Foundation | Current Sahana Eden | MIT | Steward |
+| Axim Collaborative | Open edX platform | AGPL-3.0 | Steward |
+| OpenAlex / OurResearch | OpenAlex GUI | MIT | Maintainer |
+| NumFOCUS | NumPy, a documented sponsored example | BSD-3-Clause | Fiscal sponsor, not sole developer |
+| Open Contracting Partnership | OCDS Kit | BSD-3-Clause | Maintainer |
+| Open Ownership | BODS-Dagre visualization library | Apache-2.0 | Maintainer; initiative fiscally sponsored by Global Impact |
+| Open Supply Hub | Platform repository | MIT | Maintainer |
+| Apache Software Foundation | Apache Superset, an example project | Apache-2.0 | Steward |
+
+Actual primary repositories and license files are linked in each profile. GitHub's automatic detector returned `NOASSERTION` for OpenMRS and NumPy: actual file text was inspected instead of interpreting that value as closed source. OpenMRS includes an explicit MPL-2.0 identifier plus a healthcare warranty/liability disclaimer. NumPy's inspected root file contains the three-clause BSD grant. These checks do not certify every bundled dependency. The renamed Open edX repository resolves to `openedx/openedx-platform`; Axim is kept separate from commercial edX.org.
+
+Important current limits are retained: Sahana reports the May 2025 transition from legacy Eden to the professionally implemented Eden ASP base. NumFOCUS says new project applications are paused while administrative/financial systems are updated. Open Ownership's BODS development pause is distinguished from its still-public visualization library; archived BODSKit is not the selected example. Open Ownership is a sponsored initiative, not independently incorporated here, and is not a rating of Global Impact's entire portfolio. OurResearch's domain now redirects to OpenAlex; the record explicitly retains both names rather than inventing a second charity. Open Supply Hub's software license is separated from hosted download limits, paid features and data terms. Scientific/software foundations are general-purpose infrastructure, not falsely labeled charity-exclusive products.
+
+All 12 have partial editorial checklist mappings, mainly coordination and gatekeepers, producing 35 tooling classifications and 35 mapped profiles. No explicit adoption, affiliation or endorsement was verified. A partial match to the framework is not proof of solving its six sources or delivering welfare gains. Direct relief and independently evaluated programs remain important, and a high design range does not establish a superior donation.
+
+Research used the public web reader and direct public HTTPS/GitHub API reads because no cloud browser is connected. The optional provider-directory CLI was absent, so its required setup was checked and primary-source fallback used without installing software or requesting credentials. A direct recheck returned 200 for 22 of 26 non-GitHub official source pages; Kobo's organization page, OpenAlex transparency and the two Open Ownership pages returned 403. Available official reader/search content and repository files supplied scoped evidence; blocking an automated fetch is not evidence that an organization is inactive. No restricted ratings API, full third-party database, private beneficiary data, charity contact or transaction was used. No third-party code or artwork was copied. Each new public profile receives a distinct branded share card and the release gate checks all profile pages, source dates, metadata and exact live image/data/code bytes. Local validation passed 31 tests and all 89 pages. Browser testing confirmed the new filter, unchanged weights and license/adoption qualifications, with no horizontal overflow at 390 pixels on the board or Kobo profile. One temporary local browser tab was used only for necessary layout/interaction checks.
+
 ## 27 October 2026 update: enabling tools and checklist-source exploration
 
 Added 18 scoped assessments, taking the cohort to **70**: NTEN, Aspiration, Tech Matters, DataKind, data.org, Simprints, GlobalGiving, Software Freedom Conservancy, Software in the Public Interest, Open Source Initiative, Mozilla Foundation, Nexleaf Analytics, Solutions Journalism Network, Institute for the Future, DemocracyNext, Fairplay, Giving What We Can, and Crisis Text Line (Aselo infrastructure only). Current categories contain 13 health, 8 poverty/opportunity, 7 climate, 10 animal welfare and 32 justice/public-good profiles. Illustrative inclusions now total 48; the 19 evaluator-selection labels and 3 historical reviews keep their original dated scope.

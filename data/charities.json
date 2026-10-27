@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.3.0",
+  "schemaVersion": "0.4.0",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "70 scoped assessment profiles, including 18 tools-and-checklist additions on 27 October. Purposefully selected, not comprehensive. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation.",
+  "coverage": "82 scoped assessment profiles, including 12 open-source infrastructure additions in the second 27 October batch. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -3386,6 +3386,1252 @@
           "https://www.crisistextline.org/wp-content/uploads/2026/08/Crisis-Text-Line-Aselo-Acquisition-Press-Release-FINAL.docx.pdf"
         ],
         "reviewedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "kobo",
+      "name": "Kobo (KoboToolbox)",
+      "category": "Justice & public goods",
+      "website": "https://www.kobo.ngo/",
+      "mechanism": "Reusable field-data infrastructure for humanitarian organizations",
+      "summary": "Maintains KoboToolbox and supports aid and civil-society organizations collecting and using field data.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.kobo.ngo/",
+          "title": "Kobo — nonprofit mission and current work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.kobotoolbox.org/about-us/the-organization/",
+          "title": "Kobo — organization and KoboToolbox stewardship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/kobotoolbox/kpi",
+          "title": "KoboToolbox KPI — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/kobotoolbox/kpi/blob/main/LICENSE",
+          "title": "KoboToolbox KPI — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared form, collection and export workflows address a recurring organizational data constraint rather than delivering one isolated survey.",
+        "reach": "The humanitarian, development and rights partner model has cross-country and cross-sector potential; this is not a verified population reached.",
+        "durability": "Reusable forms and staff routines can persist, but hosting, maintenance, secure handling and organizational capability need continued support.",
+        "scalability": "The AGPL-licensed server can be adapted and reused; implementation, hosting and data stewardship still have substantial costs.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Official use and investment figures are not independently verified welfare gains. Poor surveys, unsafe sensitive-data collection, connectivity limits and weak follow-through can negate benefits. Open code does not mean unlimited free hosted service.",
+      "falsifiableClaim": "Compared with feasible alternatives, do partner organizations sustain more accurate, safer and decision-relevant data at lower full cost, and do the resulting decisions improve outcomes?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "KoboToolbox shared-software and implementation-support design; not every Kobo activity or a donor-specific return.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Survey creation, field-data collection and export infrastructure for humanitarian and nonprofit implementers.",
+        "sourceUrls": [
+          "https://www.kobo.ngo/",
+          "https://www.kobotoolbox.org/about-us/the-organization/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "KoboToolbox KPI",
+            "repositoryUrl": "https://github.com/kobotoolbox/kpi",
+            "licenseUrl": "https://github.com/kobotoolbox/kpi/blob/main/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "64d8b459215a4408bf439c4f30356d87634de6da",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared data workflows can help implementers coordinate, while reusable code lowers a technical gate to building local data systems. This is a partial mechanism match, not the checklist’s specific coordination product.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.kobo.ngo/",
+          "https://www.kobotoolbox.org/about-us/the-organization/"
+        ]
+      }
+    },
+    {
+      "id": "huridocs",
+      "name": "HURIDOCS",
+      "category": "Justice & public goods",
+      "website": "https://huridocs.org/",
+      "mechanism": "Shared human-rights documentation tools and information-management support",
+      "summary": "Develops Uwazi, a reusable database platform for rights groups organizing and analyzing evidence.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://uwazi.io/about",
+          "title": "Uwazi — HURIDOCS stewardship, purpose and safety approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/huridocs/uwazi",
+          "title": "Uwazi — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/huridocs/uwazi/blob/production/LICENSE",
+          "title": "Uwazi — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable documentation workflows strengthen rights organizations’ information infrastructure, not just one collection.",
+        "reach": "The NGO’s international partner model could support rights initiatives in several countries; records and users are not an outcome count.",
+        "durability": "Organized collections and staff capability may outlast initial assistance, but the platform and security practice require upkeep.",
+        "scalability": "MIT-licensed software can be adapted across documentation initiatives; threat modeling, translation and expert support do not become free.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Sensitive evidence can expose defenders and survivors if security, access control or consent fail. More searchable documents do not establish accountability or remedy. Organization-reported partner counts were not audited.",
+      "falsifiableClaim": "Do supported groups produce safer, usable documentation and obtain independently assessed accountability benefits beyond what comparable unsupported groups achieve?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Uwazi and associated information-management support by the Geneva-based NGO; no assumption of US charitable deductibility.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Uwazi databases and information-management support for human-rights organizations and documentation initiatives.",
+        "sourceUrls": [
+          "https://uwazi.io/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Uwazi",
+            "repositoryUrl": "https://github.com/huridocs/uwazi",
+            "licenseUrl": "https://github.com/huridocs/uwazi/blob/production/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "a6d1517c80cb11876e0f2ab88674165855adaa63",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Reusable documentation software and implementation support lower a technical barrier for civil-society groups building their own evidence systems; they do not establish equal access to institutions or remedy.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://uwazi.io/about"
+        ]
+      }
+    },
+    {
+      "id": "openmrs",
+      "name": "OpenMRS Inc.",
+      "category": "Global health",
+      "website": "https://openmrs.org/",
+      "mechanism": "Shared electronic-medical-record infrastructure and community stewardship",
+      "summary": "Supports the OpenMRS platform and implementation community so health organizations can adapt common medical-record infrastructure.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openmrs.org/about/",
+          "title": "OpenMRS — nonprofit role and implementer community",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openmrs/openmrs-core",
+          "title": "OpenMRS Core — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openmrs/openmrs-core/blob/master/LICENSE",
+          "title": "OpenMRS Core — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A common record-system foundation changes recurring service workflows and infrastructure available to health implementers.",
+        "reach": "The international implementation ecosystem has broad institutional potential; the score is not a claim about patients helped.",
+        "durability": "Institutional systems, trained staff and retained records can persist beyond a grant, conditional on support and safe migration.",
+        "scalability": "Shared code and modules support replication, but clinical localization, integration, training and reliable operations remain resource-intensive.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "No clinical safety, privacy-law compliance, interoperability or patient benefit is certified by this review. The repository includes a Healthcare Disclaimer; open code is not a medical-device approval. Implementers and the nonprofit have distinct responsibilities.",
+      "falsifiableClaim": "Do supported implementations improve continuity, reliability and safe care relative to suitable alternatives after full implementation costs, exclusion and privacy risks are measured?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "OpenMRS Inc.’s fiscal, legal and shared-platform support; not all implementation partners’ clinical performance.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Adaptable medical-record platform, community modules and shared infrastructure for health-service implementers.",
+        "sourceUrls": [
+          "https://openmrs.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OpenMRS Core",
+            "repositoryUrl": "https://github.com/openmrs/openmrs-core",
+            "licenseUrl": "https://github.com/openmrs/openmrs-core/blob/master/LICENSE",
+            "licenseLabel": "MPL-2.0 with Healthcare Disclaimer",
+            "licenseBlobSha": "f7f59501308a6311cc1d3eed1f5451119056055d",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common medical-record infrastructure can reduce duplicated technical work and help implementers build locally adapted systems. This is an enabling-infrastructure analogy, not proof of sector interoperability or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openmrs.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "learning-equality",
+      "name": "Learning Equality",
+      "category": "Poverty & opportunity",
+      "website": "https://learningequality.org/",
+      "mechanism": "Offline-first open educational infrastructure for local implementers",
+      "summary": "Builds Kolibri and supports organizations delivering locally adapted learning where internet access is limited.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://learningequality.org/about/about-us/",
+          "title": "Learning Equality — nonprofit mission and history",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://kolibri.readthedocs.io/en/latest/faq.html",
+          "title": "Kolibri — maintenance and implementation responsibilities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/learningequality/kolibri",
+          "title": "Kolibri — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/learningequality/kolibri/blob/develop/LICENSE",
+          "title": "Kolibri — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable offline-first learning infrastructure tackles a recurring connectivity and implementation constraint for education providers.",
+        "reach": "The partner model can be adapted across countries and education settings; actual sustained learning reach is not established here.",
+        "durability": "Offline resources and educator skills may persist, but hardware, content curation and teaching support need continuing care.",
+        "scalability": "MIT-licensed software supports local reuse without a software license fee; suitable devices, power, accessible content and training still cost resources.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Access and usage do not prove learning gains. Content rights vary separately from the software license; disability access, language, safeguarding and educator capacity require local review. No device or connectivity costs are assumed away.",
+      "falsifiableClaim": "Do partner-led Kolibri implementations produce sustained, equitable learning gains over appropriate alternatives at comparable full cost, including teacher support and hardware?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Kolibri and implementation-enabling design; not an independently audited effect across all programs or learning content.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Kolibri learning software and implementation guidance for NGOs, educators and humanitarian partners working with limited connectivity.",
+        "sourceUrls": [
+          "https://learningequality.org/about/about-us/",
+          "https://kolibri.readthedocs.io/en/latest/faq.html"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Kolibri",
+            "repositoryUrl": "https://github.com/learningequality/kolibri",
+            "licenseUrl": "https://github.com/learningequality/kolibri/blob/develop/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "6506702f35f36c815395fb668e78dabb6c15ef54",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Offline access and adaptable learning software lower connectivity and technical gates to participation. The match concerns access infrastructure, not the checklist’s specific Co-Creator portal.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://learningequality.org/about/about-us/",
+          "https://kolibri.readthedocs.io/en/latest/faq.html"
+        ]
+      }
+    },
+    {
+      "id": "sahana-software-foundation",
+      "name": "Sahana Software Foundation",
+      "category": "Justice & public goods",
+      "website": "https://sahanafoundation.org/",
+      "mechanism": "Reusable assistance-management infrastructure for humanitarian teams",
+      "summary": "Stewards Sahana Eden, now based on Eden ASP, as a foundation for professional teams building humanitarian applications.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://sahanafoundation.org/about-us/",
+          "title": "Sahana — mission and coordination approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://sahanafoundation.org/eden/",
+          "title": "Sahana Eden — current ASP transition and implementation scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://sahanafoundation.org/our-projects/",
+          "title": "Sahana — projects and shared-codebase support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/sahana/eden",
+          "title": "Sahana Eden — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/sahana/eden/blob/master/LICENSE",
+          "title": "Sahana Eden — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A shared humanitarian application core addresses repeated assistance-management and organizational coordination constraints.",
+        "reach": "The current implementing-team ecosystem spans several countries; potential reach is not a demonstrated global response footprint.",
+        "durability": "Reusable code and trained teams can support ongoing services, but maintenance and emergency readiness must be sustained.",
+        "scalability": "MIT code supports adaptation, but current Eden ASP is explicitly a foundation for professional teams, not turnkey self-deployment by charities.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "The foundation reports Eden ASP became the main branch in May 2025. Specialist deployment, data protection, support continuity and disaster readiness are required. A shared database can create surveillance or exclusion risks and is not evidence of lives saved.",
+      "falsifiableClaim": "Do professionally supported deployments improve timely, equitable and safe assistance compared with alternative workflows during real operational stress?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Current Eden ASP-based Sahana Eden and supporting foundation design; the legacy codebase is not presented as the current main branch.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "A common humanitarian case-management foundation for professional implementation teams serving aid organizations.",
+        "sourceUrls": [
+          "https://sahanafoundation.org/about-us/",
+          "https://sahanafoundation.org/eden/",
+          "https://sahanafoundation.org/our-projects/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Sahana Eden",
+            "repositoryUrl": "https://github.com/sahana/eden",
+            "licenseUrl": "https://github.com/sahana/eden/blob/master/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "1ba92cbba9d4aea695b724bc86fcfe409e542999",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Shared assistance-management infrastructure targets fragmentation between responders and services, a partial match to the coordination source. Actual cross-organization information sharing and effective response need separate evidence.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://sahanafoundation.org/about-us/",
+          "https://sahanafoundation.org/eden/",
+          "https://sahanafoundation.org/our-projects/"
+        ]
+      }
+    },
+    {
+      "id": "axim-collaborative",
+      "name": "Axim Collaborative",
+      "category": "Poverty & opportunity",
+      "website": "https://www.axim.org/",
+      "mechanism": "Open edX platform stewardship for independent education providers",
+      "summary": "Stewards Open edX, enabling NGOs and other institutions to run and adapt their own learning platforms.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.axim.org/about",
+          "title": "Axim — Open edX stewardship and organization",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openedx.org/about/",
+          "title": "Open edX — nonprofit steward and independent platform ecosystem",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openedx/openedx-platform",
+          "title": "Open edX platform — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openedx/openedx-platform/blob/master/LICENSE",
+          "title": "Open edX platform — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Common learning-platform infrastructure allows institutions to adapt recurring course-delivery systems rather than commissioning isolated products.",
+        "reach": "A worldwide ecosystem of educational, public and NGO implementers gives the shared platform broad potential institutional reach.",
+        "durability": "Institutionally adopted platforms and content can persist beyond a grant, conditional on security updates, staff capacity and accessible course design.",
+        "scalability": "AGPL-licensed platform code can be reused, but running an accessible learning service requires hosting, integration, content and sustained teaching support.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Axim is distinct from commercial edX.org. Enrollment and course counts do not prove completion, learning or opportunity gains. Course material, trademarks, hosting and support have separate rights and costs.",
+      "falsifiableClaim": "Do independent nonprofit providers using the supported platform deliver more accessible, sustained learning outcomes than feasible alternatives at comparable total cost?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Open edX stewardship by nonprofit Axim Collaborative; not the commercial edX.org service or Axim’s entire grantmaking portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Open edX platform stewardship and community infrastructure for NGOs and other independent learning providers.",
+        "sourceUrls": [
+          "https://www.axim.org/about",
+          "https://openedx.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open edX platform",
+            "repositoryUrl": "https://github.com/openedx/openedx-platform",
+            "licenseUrl": "https://github.com/openedx/openedx-platform/blob/master/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "1eb391f38837b6ec7dd39bcc97c3873fa0505734",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Downloadable, adaptable learning-platform code lowers a software gate for institutions creating their own educational services. This is not a claim that access barriers, credentials or inequality are solved.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.axim.org/about",
+          "https://openedx.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "ourresearch",
+      "name": "OpenAlex / OurResearch",
+      "category": "Justice & public goods",
+      "website": "https://openalex.org/",
+      "mechanism": "Open scholarly-information infrastructure for researchers and public-interest users",
+      "summary": "Provides open scholarly discovery infrastructure, with publicly reusable software supporting access to research information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://ourresearch.gitbook.io/help.openalex.org/about-us",
+          "title": "OpenAlex — nonprofit builder and open-science purpose",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openalex.org/transparency",
+          "title": "OpenAlex — nonprofit identity and code/data transparency",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ourresearch/openalex-gui",
+          "title": "OpenAlex GUI — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ourresearch/openalex-gui/blob/master/LICENSE",
+          "title": "OpenAlex GUI — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "An openly reusable alternative to closed scholarly-information infrastructure changes access and dependence on proprietary discovery systems.",
+        "reach": "Research information infrastructure can serve institutions internationally across many fields; this does not certify complete or equitable coverage.",
+        "durability": "Open data and code permit continuation and reuse, but indexing quality, hosting and ongoing curation still require durable resources.",
+        "scalability": "MIT-licensed interface code supports low-cost copying and adaptation; operating a current scholarly index remains computationally and operationally expensive.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Coverage, attribution errors and field/language biases can distort research assessment. Software, database licensing and hosted/API access conditions are separate. Neither openness nor record totals establish better nonprofit decisions or welfare outcomes.",
+      "falsifiableClaim": "Do public-interest users obtain more complete, accurate and affordable evidence for consequential decisions than with available alternatives, without increasing bibliometric bias?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "OpenAlex discovery infrastructure associated with OurResearch/Impactstory; license check covers the named GUI repository only, not every component or service.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Open scholarly discovery software and information infrastructure usable by nonprofit researchers, libraries and evidence teams.",
+        "sourceUrls": [
+          "https://ourresearch.gitbook.io/help.openalex.org/about-us",
+          "https://openalex.org/transparency"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OpenAlex GUI",
+            "repositoryUrl": "https://github.com/ourresearch/openalex-gui",
+            "licenseUrl": "https://github.com/ourresearch/openalex-gui/blob/master/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "03734ba49c17ec838620505d342ed4f1303e0693",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Open research discovery reduces an information-access and software-dependence gate. This is a partial mechanism match, not evidence that users can access every underlying paper or that research decisions improve.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://ourresearch.gitbook.io/help.openalex.org/about-us",
+          "https://openalex.org/transparency"
+        ]
+      }
+    },
+    {
+      "id": "numfocus",
+      "name": "NumFOCUS",
+      "category": "Justice & public goods",
+      "website": "https://numfocus.org/",
+      "mechanism": "Fiscal and operational infrastructure sustaining open scientific software",
+      "summary": "Supports open scientific-computing projects with fiscal, legal, operational and community services; NumPy is a documented sponsored example.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://numfocus.org/community/mission",
+          "title": "NumFOCUS — public-charity mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://numfocus.org/projects-overview",
+          "title": "NumFOCUS — sponsorship models, support and current intake pause",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://numfocus.org/project/numpy",
+          "title": "NumFOCUS — NumPy sponsored-project relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/numpy/numpy",
+          "title": "NumPy (sponsored example) — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+          "title": "NumPy (sponsored example) — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared legal and financial infrastructure supports a reusable scientific software commons rather than one organization’s bespoke analysis.",
+        "reach": "Scientific-computing foundations have cross-field and international application, including nonprofit research; most use is not charity-specific.",
+        "durability": "Sponsorship structures and widely reusable code can outlast individual grants, but governance, finance and maintenance quality remain conditional.",
+        "scalability": "The checked NumPy license enables reuse of a common computational building block; it does not certify every sponsored project or eliminate specialist implementation costs.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "The current support page says new project applications are paused while financial and administrative systems are updated. Sponsored and affiliated projects have different legal relationships. Code reuse does not prove nonprofit impact; project funding restrictions and current financial stewardship need diligence.",
+      "falsifiableClaim": "Does sponsorship improve sustained maintenance and safe access to public-interest software compared with alternative support arrangements, including after accounting for administrative costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "NumFOCUS sponsorship infrastructure, with NumPy as one verified project example; not a separate NumPy charity rating or attribution of all scientific output to NumFOCUS.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared fiscal, legal and operational support for scientific software projects that nonprofit research and data teams can build on.",
+        "sourceUrls": [
+          "https://numfocus.org/community/mission",
+          "https://numfocus.org/projects-overview",
+          "https://numfocus.org/project/numpy"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "NumPy (sponsored example)",
+            "repositoryUrl": "https://github.com/numpy/numpy",
+            "licenseUrl": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+            "licenseLabel": "BSD-3-Clause",
+            "licenseBlobSha": "f37a12cc4cccf83af4517809791777e71c1df2a9",
+            "role": "fiscal_sponsor",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Sponsorship and open computational building blocks reduce administrative and technical gates for public-interest builders. This does not establish equitable participation or community control of the sponsor.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://numfocus.org/community/mission",
+          "https://numfocus.org/projects-overview",
+          "https://numfocus.org/project/numpy"
+        ]
+      }
+    },
+    {
+      "id": "open-contracting-partnership",
+      "name": "Open Contracting Partnership",
+      "category": "Justice & public goods",
+      "website": "https://www.open-contracting.org/",
+      "mechanism": "Procurement reform and reusable contracting-data tools",
+      "summary": "Combines procurement reform support with shared data standards and tools, including OCDS Kit, for public-interest analysis.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.open-contracting.org/about/governance/",
+          "title": "OCP — independent public-charity governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.open-contracting.org/data/data-use/",
+          "title": "OCP — maintained data tools and uses",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/open-contracting/ocdskit",
+          "title": "OCDS Kit — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/open-contracting/ocdskit/blob/main/LICENSE",
+          "title": "OCDS Kit — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Procurement rules, publication practices and shared analytical infrastructure target how public resources are allocated, not only a single contract.",
+        "reach": "A shared contracting standard and international reform partnerships have broad institutional application across spending areas.",
+        "durability": "Institutional publication routines and procurement reforms may persist beyond a grant, subject to enforcement, political continuity and maintenance.",
+        "scalability": "Reusable tools reduce repeated data-processing work, but meaningful reform depends on data quality, local coalitions, capacity and public institutions.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Open contracting data can be incomplete, misleading or unused; publication is not enforcement or reduced corruption. Reform attribution and indirect-impact estimates were not independently audited. OCDS Kit’s software license is distinct from website content and source-data terms.",
+      "falsifiableClaim": "Do supported reforms and data-tool use produce independently verified improvements in competition, service quality and fair access beyond suitable comparison settings?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "OCP’s procurement-reform and shared-tool design, with OCDS Kit as the checked software example; not a causal estimate for all public spending it reports influencing.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "OCDS Kit and associated contracting-data tools for civil-society monitors, analysts and public-service reform partners.",
+        "sourceUrls": [
+          "https://www.open-contracting.org/about/governance/",
+          "https://www.open-contracting.org/data/data-use/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OCDS Kit",
+            "repositoryUrl": "https://github.com/open-contracting/ocdskit",
+            "licenseUrl": "https://github.com/open-contracting/ocdskit/blob/main/LICENSE",
+            "licenseLabel": "BSD-3-Clause",
+            "licenseBlobSha": "eaea70004b30283a213a65baf6cf153ed989b129",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared contracting formats enable actors to work with common information, while accessible analytical tools can lower barriers to public-spending scrutiny. A standard alone does not redistribute power or enforce accountability.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.open-contracting.org/about/governance/",
+          "https://www.open-contracting.org/data/data-use/"
+        ]
+      }
+    },
+    {
+      "id": "open-ownership",
+      "name": "Open Ownership (Global Impact-sponsored)",
+      "category": "Justice & public goods",
+      "website": "https://www.openownership.org/",
+      "mechanism": "Ownership-transparency reform support and reusable data tools",
+      "summary": "A Global Impact-sponsored nonprofit initiative supporting beneficial-ownership transparency and reusable tools for analyzing ownership structures.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.openownership.org/en/about/governance/",
+          "title": "Open Ownership — fiscal sponsorship and governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.openownership.org/en/topics/beneficial-ownership-data-standard/",
+          "title": "Open Ownership — data standard and development pause",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openownership/visualisation-tool",
+          "title": "Open Ownership — current visualization library and scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openownership/visualisation-tool/blob/main/LICENSE",
+          "title": "BODS-Dagre visualization library — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Ownership-disclosure rules and shared data infrastructure target opacity in corporate control, a recurring accountability constraint.",
+        "reach": "Beneficial-ownership transparency has international institutional application across procurement, finance and public-interest investigation.",
+        "durability": "Published standards and skills can persist, but enforcement, data updates and ongoing technical support are uncertain; further BODS development is paused.",
+        "scalability": "Reusable visualization code supports replication, while accurate ownership interpretation and locally effective reform require specialist effort.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "The organization announced a pause in further BODS development in November 2025. The old BODSKit repository is archived and is not the checked current tool. Disclosure gaps, inaccurate links, privacy concerns and weak enforcement can undermine benefits. Fiscal sponsorship is not independent incorporation.",
+      "falsifiableClaim": "Do supported disclosures and analytical tools improve independently verified investigations and enforcement outcomes beyond alternative approaches, without disproportionate privacy or safety harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Open Ownership initiative fiscally sponsored by US nonprofit Global Impact; not a rating of Global Impact’s whole portfolio or a claim of independent legal-charity status for the project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Ownership-data standards guidance and visualization software that civil-society investigators and analysts can reuse.",
+        "sourceUrls": [
+          "https://www.openownership.org/en/about/governance/",
+          "https://www.openownership.org/en/topics/beneficial-ownership-data-standard/",
+          "https://github.com/openownership/visualisation-tool"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "BODS-Dagre visualization library",
+            "repositoryUrl": "https://github.com/openownership/visualisation-tool",
+            "licenseUrl": "https://github.com/openownership/visualisation-tool/blob/main/LICENSE",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Transparent ownership information and reusable analytical tools can lower information barriers facing watchdog groups. Disclosure does not by itself confer decision rights, safety or effective remedy.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.openownership.org/en/about/governance/",
+          "https://www.openownership.org/en/topics/beneficial-ownership-data-standard/",
+          "https://github.com/openownership/visualisation-tool"
+        ]
+      }
+    },
+    {
+      "id": "open-supply-hub",
+      "name": "Open Supply Hub",
+      "category": "Justice & public goods",
+      "website": "https://opensupplyhub.org/",
+      "mechanism": "Shared supply-chain location identifiers and reusable mapping infrastructure",
+      "summary": "Maintains a common production-location registry and matching software for organizations connecting supply-chain information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://info.opensupplyhub.org/",
+          "title": "Open Supply Hub — public-interest users and shared identifiers",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://info.opensupplyhub.org/developer-resources",
+          "title": "Open Supply Hub — repository and nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://info.opensupplyhub.org/faqs",
+          "title": "Open Supply Hub — access limits and service distinctions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/opensupplyhub/open-supply-hub",
+          "title": "Open Supply Hub platform — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/opensupplyhub/open-supply-hub/blob/main/LICENSE.txt",
+          "title": "Open Supply Hub platform — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared identifiers and deduplication infrastructure address recurring information fragmentation across supply-chain stakeholders.",
+        "reach": "A common cross-country facility reference can serve civil society, researchers and companies across sectors; platform coverage is not independently audited here.",
+        "durability": "Persistent identifiers and reusable code can support continuing coordination, but data accuracy and services need active maintenance.",
+        "scalability": "MIT-licensed platform code can be reused; hosted premium features, API access, data rights and deployment costs remain separate constraints.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Facility matching errors, incomplete records and unsafe disclosure can cause harm. A mapped factory is not a verified safe workplace. Hosted free downloads have limits and some features are paid; open-source software does not imply unrestricted hosted/API access or uniform data rights.",
+      "falsifiableClaim": "Do civil-society users obtain safer, more accurate links and coordinate effective remedy or improvements beyond feasible alternatives after costs and data risks are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "Open Supply Hub Inc.’s shared infrastructure and named code repository; not an independent verification of factory conditions, certifications or all downstream data.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared facility identifiers, location matching and mapping software for civil-society groups and other supply-chain stakeholders.",
+        "sourceUrls": [
+          "https://info.opensupplyhub.org/",
+          "https://info.opensupplyhub.org/developer-resources",
+          "https://info.opensupplyhub.org/faqs"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Supply Hub platform",
+            "repositoryUrl": "https://github.com/opensupplyhub/open-supply-hub",
+            "licenseUrl": "https://github.com/opensupplyhub/open-supply-hub/blob/main/LICENSE.txt",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "d978dbba8c64c62c2939aa8a7bf4a348b8bcaa96",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common identifiers help groups connect otherwise fragmented information and find relevant partners. Accessible reference infrastructure can lower an information gate, without proving worker power or accountability.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://info.opensupplyhub.org/",
+          "https://info.opensupplyhub.org/developer-resources",
+          "https://info.opensupplyhub.org/faqs"
+        ]
+      }
+    },
+    {
+      "id": "apache-software-foundation",
+      "name": "Apache Software Foundation",
+      "category": "Justice & public goods",
+      "website": "https://apache.org/",
+      "mechanism": "Institutional support for a shared open-source software commons",
+      "summary": "Provides legal, organizational and technical infrastructure for community software projects; Superset is one reusable data-analysis example.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://apache.org/foundation/",
+          "title": "ASF — public-charity mission and shared support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://apache.org/foundation/faq",
+          "title": "ASF — nonprofit structure and project services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://apache.org/foundation/board/minutes/Superset.html",
+          "title": "ASF — Superset stewardship and current project reports",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/apache/superset",
+          "title": "Apache Superset (project example) — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/apache/superset/blob/master/LICENSE.txt",
+          "title": "Apache Superset (project example) — actual license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "An institutional legal and infrastructure commons supports independent collaborative projects and reduces repeated organizational barriers to building shared software.",
+        "reach": "Foundation projects have broad international and cross-sector application; potential nonprofit reuse is not the same as charity-specific adoption.",
+        "durability": "Formal project governance and reusable code may persist beyond individual grants, conditional on healthy maintainers, security work and sustained foundation support.",
+        "scalability": "The checked Apache-licensed Superset project supports reusable analytics software; deployment, privacy, hosting and skilled operations still require resources.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and the counterfactual have not been audited.",
+        "agency": "Unknown: open licenses, participation or contributor governance do not establish audited consequential rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; primary mechanism and named repository license inspected",
+      "confidence": "Moderate for documented design and license; low for systemic attribution",
+      "limitations": "Most foundation software is general-purpose, not specifically designed for charities. Commercial beneficiaries, opportunity costs, project security and dependency maintenance matter. Superset activity reports and a permissive license are not audited nonprofit outcomes.",
+      "falsifiableClaim": "Does foundation support sustain safer, more accessible software that measurably improves public-interest organizations’ work beyond alternative maintenance arrangements?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-open-source",
+      "evaluationScope": "ASF’s shared-project support model with Superset as a checked software example; not every Apache project, commercial service provider or downstream result.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared organizational infrastructure and open software building blocks that public-interest technology and nonprofit data teams can reuse.",
+        "sourceUrls": [
+          "https://apache.org/foundation/",
+          "https://apache.org/foundation/faq",
+          "https://apache.org/foundation/board/minutes/Superset.html"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Apache Superset (project example)",
+            "repositoryUrl": "https://github.com/apache/superset",
+            "licenseUrl": "https://github.com/apache/superset/blob/master/LICENSE.txt",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "56313ab5a54a163e7d46224cb5470a814c3a2436",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, data, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Common legal, technical and contribution infrastructure reduces some gates to building reusable public software. It does not establish that every project is equitable, safe or beneficial to charities.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://apache.org/foundation/",
+          "https://apache.org/foundation/faq",
+          "https://apache.org/foundation/board/minutes/Superset.html"
+        ]
       }
     }
   ],
