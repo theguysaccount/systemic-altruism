@@ -2,10 +2,16 @@ import {readFile,access} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {method,presets} from '../src/scoring.mjs';
 import {hasVerifiedOpenSource} from '../src/focus.mjs';
+import {inspectReviewLedger} from '../src/review-ledger.mjs';
 const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
 const dataset=JSON.parse(await readFile('data/charities.json','utf8'));
+const ledger=JSON.parse(await readFile('dist/api/v1/review-ledger.json','utf8'));
+const ledgerSummary=inspectReviewLedger(ledger,dataset);
+if(JSON.stringify(ledger.summary)!==JSON.stringify(ledgerSummary))throw new Error('Stale public review-ledger summary');
+const openDataHtml=await readFile('dist/data/index.html','utf8');
+if(!openDataHtml.includes('/api/v1/review-ledger.json')||!openDataHtml.includes(`${ledgerSummary.included} of ${ledgerSummary.target}`))throw new Error('Missing public goal progress and review ledger');
 const homeHtml=await readFile('dist/index.html','utf8');
 if(!homeHtml.includes('id="focus-filter"')||!homeHtml.includes('not verified adoption'))throw new Error('Missing focused exploration or alignment limits');
 if(!homeHtml.includes('<option value="opensource">Open-source tools · license checked</option>')||!homeHtml.includes('not a security or impact audit'))throw new Error('Missing open-source view or verification limits');
@@ -54,7 +60,7 @@ for(const r of routes){
   }
 }
 if(origin){
-  for(const file of ['app.mjs','scoring.mjs','assessment-data.mjs','focus.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
+  for(const file of ['app.mjs','scoring.mjs','assessment-data.mjs','focus.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json','api/v1/review-ledger.json']){
     const response=await fetch(origin+'/'+file);
     if(!response.ok)throw new Error(`Live tool asset missing: ${file}`);
     const local=await readFile('dist/'+file),live=Buffer.from(await response.arrayBuffer());

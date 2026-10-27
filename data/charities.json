@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.0",
+  "schemaVersion": "0.4.1",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "82 scoped assessment profiles, including 12 open-source infrastructure additions in the second 27 October batch. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation.",
+  "coverage": "100 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 01. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -4631,6 +4631,1599 @@
           "https://apache.org/foundation/",
           "https://apache.org/foundation/faq",
           "https://apache.org/foundation/board/minutes/Superset.html"
+        ]
+      }
+    },
+    {
+      "id": "tor-project",
+      "name": "Tor Project",
+      "category": "Justice & public goods",
+      "website": "https://www.torproject.org/",
+      "mechanism": "Reusable privacy and anti-censorship infrastructure",
+      "summary": "Develops privacy and anti-censorship technologies that civil-society organizations and other users can build on.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.torproject.org/about/history/",
+          "title": "Tor Project — nonprofit identity, mission and infrastructure history",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://gitlab.torproject.org/tpo/core/arti",
+          "title": "Arti — official source repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://gitlab.torproject.org/api/v4/projects/647/repository/files/README.md/raw?ref=main",
+          "title": "Arti README — scope, licensing and optional LGPL components",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://gitlab.torproject.org/api/v4/projects/647/repository/files/LICENSE-MIT/raw?ref=main",
+          "title": "Arti — inspected MIT option through the public repository API",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://gitlab.torproject.org/tpo/core/arti/-/blob/main/LICENSE-MIT",
+          "title": "Arti (MIT option inspected) — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared privacy infrastructure alters a technical constraint on communication and access across many organizations.",
+        "reach": "The network and reusable protocols have international, cross-sector potential; this is not an audited count of people protected.",
+        "durability": "Open protocols and code can persist, but relay diversity, security updates, usability and anti-censorship work need continued support.",
+        "scalability": "Reusable privacy components can be adapted across services; threat modeling, network operations and integration still require expertise.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "No tool guarantees anonymity or safety. Misconfiguration, endpoint compromise, traffic analysis and local legal risks remain. Arti has component-specific license exceptions. Public repository files and activity were checked, but its API did not expose an archival-status flag; no current-support guarantee is made.",
+      "falsifiableClaim": "Do supported nonprofit users obtain safer, more reliable access than with appropriate alternatives after usability, operational costs and adversarial risks are independently assessed?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Tor Project Inc.’s shared-infrastructure design; Arti is the named code example, not a license or security audit of the full Tor Browser/network portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Privacy and anti-censorship technologies for rights groups, nonprofit newsrooms and other public-interest users.",
+        "sourceUrls": [
+          "https://www.torproject.org/about/history/",
+          "https://gitlab.torproject.org/tpo/core/arti",
+          "https://gitlab.torproject.org/api/v4/projects/647/repository/files/README.md/raw?ref=main",
+          "https://gitlab.torproject.org/api/v4/projects/647/repository/files/LICENSE-MIT/raw?ref=main"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Arti (MIT option inspected)",
+            "repositoryUrl": "https://gitlab.torproject.org/tpo/core/arti",
+            "licenseUrl": "https://gitlab.torproject.org/tpo/core/arti/-/blob/main/LICENSE-MIT",
+            "licenseLabel": "MIT OR Apache-2.0; optional LGPL-3.0 components",
+            "licenseBlobSha": "46f0bc9287a5da523702aaf1265f16422e7c9d65",
+            "role": "maintainer",
+            "repositoryStatus": "archive_status_unverified",
+            "scope": "The inspected MIT file covers the corresponding Arti code option. The README identifies optional LGPL-3.0 components; dependencies, Tor Browser and other projects have separate terms. The public API did not expose an archive flag."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Privacy and anti-censorship infrastructure can reduce technical and information-access gates. It is not a guarantee of anonymity, equal access or the checklist’s specific builder portal.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.torproject.org/about/history/",
+          "https://gitlab.torproject.org/tpo/core/arti",
+          "https://gitlab.torproject.org/api/v4/projects/647/repository/files/README.md/raw?ref=main",
+          "https://gitlab.torproject.org/api/v4/projects/647/repository/files/LICENSE-MIT/raw?ref=main"
+        ]
+      }
+    },
+    {
+      "id": "freedom-of-the-press-foundation",
+      "name": "Freedom of the Press Foundation",
+      "category": "Justice & public goods",
+      "website": "https://freedom.press/",
+      "mechanism": "Shared secure communications and digital-security capacity for journalism",
+      "summary": "Maintains SecureDrop and other tools, with training and support for news organizations and their sources.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://freedom.press/about/",
+          "title": "FPF — nonprofit identity and current programs",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://freedom.press/tech/",
+          "title": "FPF — shared tools and SecureDrop stewardship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/freedomofpress/securedrop",
+          "title": "SecureDrop — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/freedomofpress/securedrop/blob/develop/LICENSE",
+          "title": "SecureDrop — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared submission infrastructure and security practice strengthen a recurring constraint facing investigative organizations.",
+        "reach": "The newsroom implementation model has international application, including nonprofit media; installation counts are not accountability outcomes.",
+        "durability": "Retained skills and reusable code may persist, but safe operation and responding to new threats require ongoing maintenance.",
+        "scalability": "Shared code supports reuse, while secure on-premises deployment, staff training and operational discipline limit frictionless scaling.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "An open-source license is not a security certification. Endpoint compromise, mistakes, source exposure and newsroom workflows can cause serious harm. The official sources describe tools and support, not independently verified systemic outcomes or a current marginal funding gap.",
+      "falsifiableClaim": "Do supported newsrooms sustain safer source communications and useful public-interest reporting compared with feasible alternatives, without increasing risks to sources or staff?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Shared security-tool and newsroom-capacity design, with SecureDrop as the checked software example; not the full advocacy or reporting portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "SecureDrop and digital-security support for independent newsrooms, including nonprofit journalism organizations.",
+        "sourceUrls": [
+          "https://freedom.press/about/",
+          "https://freedom.press/tech/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "SecureDrop",
+            "repositoryUrl": "https://github.com/freedomofpress/securedrop",
+            "licenseUrl": "https://github.com/freedomofpress/securedrop/blob/develop/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "47c5d4eaba2cabee059fbce412acab16794fca8a",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Reusable submission and privacy tools can lower barriers to investigative reporting and protected information exchange. That does not prove sources are safe or that disclosed information produces accountability.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://freedom.press/about/",
+          "https://freedom.press/tech/"
+        ]
+      }
+    },
+    {
+      "id": "meedan",
+      "name": "Meedan",
+      "category": "Justice & public goods",
+      "website": "https://meedan.org/",
+      "mechanism": "Reusable collaborative verification infrastructure for information organizations",
+      "summary": "Builds Check and related tools supporting media and civic groups organizing verification workflows and community information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://meedan.org/",
+          "title": "Meedan — current nonprofit identity and product direction",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://meedan.org/check",
+          "title": "Meedan Check — partner workflows and scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/meedan/check-api",
+          "title": "Check API — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/meedan/check-api/blob/develop/LICENSE.txt",
+          "title": "Check API — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared verification workflows address repeated information-management and coordination constraints across partner organizations.",
+        "reach": "The multi-country and multilingual partner design has broad institutional potential, not a verified measure of reduced misinformation.",
+        "durability": "Skills and shared workflows may persist, but verification quality, platform integrations and maintenance need ongoing resources.",
+        "scalability": "The MIT-licensed API can be adapted, while hosting, messaging-platform access and human verification remain costly.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Verification errors, linguistic bias, moderation choices, AI failure and sensitive tip data can cause harms. Usage or tipline counts do not establish changes in beliefs or behavior. The organization’s current product direction is broader than Check; no license or impact claim is made for all products.",
+      "falsifiableClaim": "Do partner teams using these workflows improve timely, accurate and equitable responses beyond alternative approaches, with measurable downstream benefits and acceptable privacy risks?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Check and partner-enabling infrastructure only. The current site also features Suwali; the Check API license check is not generalized to every newer product.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Check verification workflows and reusable API code for media, civic engagement and public-interest information groups.",
+        "sourceUrls": [
+          "https://meedan.org/",
+          "https://meedan.org/check"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Check API",
+            "repositoryUrl": "https://github.com/meedan/check-api",
+            "licenseUrl": "https://github.com/meedan/check-api/blob/develop/LICENSE.txt",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "5daf81c6717d2913a3c23d569289aa64fdfcec1a",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "coordination"
+        ],
+        "rationale": "Verification workflows can help groups direct attention toward checked information and coordinate responses. This does not change feed incentives by itself and is not the checklist’s specific attention platform.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://meedan.org/",
+          "https://meedan.org/check"
+        ]
+      }
+    },
+    {
+      "id": "kiwix",
+      "name": "Kiwix Association",
+      "category": "Poverty & opportunity",
+      "website": "https://kiwix.org/en/",
+      "mechanism": "Reusable offline knowledge infrastructure",
+      "summary": "Builds software for distributing and serving offline knowledge collections where connectivity is limited.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://kiwix.org/en/non-profit/",
+          "title": "Kiwix — Swiss nonprofit identity, governance and purpose",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://kiwix.org/en/",
+          "title": "Kiwix — offline software and implementation model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/kiwix/kiwix-tools",
+          "title": "Kiwix Tools — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/kiwix/kiwix-tools/blob/main/COPYING",
+          "title": "Kiwix Tools — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Common offline distribution software addresses a recurring connectivity barrier facing learning and information providers.",
+        "reach": "Reusable offline infrastructure has international application across education and knowledge settings; distribution is not verified learning reach.",
+        "durability": "Locally stored collections and skills can persist, but hardware, updates, content quality and maintenance need continuing support.",
+        "scalability": "GPL-licensed serving tools allow replication and adaptation; devices, accessible content and local implementation are still required.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Content has separate licenses and may become outdated. Device access, language, disability access and implementation quality matter. Offline use and reported user totals do not establish learning or welfare outcomes; paid customization and hardware are separate from free software rights.",
+      "falsifiableClaim": "Do supported offline deployments yield sustained, equitable access and useful learning or decision outcomes beyond suitable alternatives after device, content and support costs are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Kiwix Association’s offline software and support design. Swiss public-benefit identity is not assumed to establish US deductibility.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Offline knowledge-serving software for educational, humanitarian and other public-interest implementers.",
+        "sourceUrls": [
+          "https://kiwix.org/en/non-profit/",
+          "https://kiwix.org/en/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Kiwix Tools",
+            "repositoryUrl": "https://github.com/kiwix/kiwix-tools",
+            "licenseUrl": "https://github.com/kiwix/kiwix-tools/blob/main/COPYING",
+            "licenseLabel": "GPL-3.0",
+            "licenseBlobSha": "443254047416efc10bc53cb1adb5421680d5a647",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Offline knowledge infrastructure can lower connectivity barriers to information and local service building. This partial access match does not establish affordable devices, appropriate content or learning gains.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://kiwix.org/en/non-profit/",
+          "https://kiwix.org/en/"
+        ]
+      }
+    },
+    {
+      "id": "mapaction",
+      "name": "MapAction",
+      "category": "Justice & public goods",
+      "website": "https://mapaction.org/",
+      "mechanism": "Shared geospatial capacity and humanitarian information-management support",
+      "summary": "Supports aid organizations with geospatial analysis, training and data workflows for preparedness and emergency response.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://mapaction.org/about-us/",
+          "title": "MapAction — nonprofit identity, shared expertise and training",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://mapaction.org/gisanddata/",
+          "title": "MapAction — current GIS and data work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/mapaction/mapactionpy_controller",
+          "title": "MapAction controller repository — license not verified in this pass",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared geospatial expertise and preparedness routines target recurring information constraints across aid organizations.",
+        "reach": "The partner model can support international humanitarian institutions; the potential scope is not a count of people aided.",
+        "durability": "Training, standards and preparedness capacity may persist, but deployments, current data and expert availability require ongoing resources.",
+        "scalability": "Reusable workflows support replication, while contextual analysis, data quality, staffing and operational logistics remain resource-intensive.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Incorrect or unsafe geospatial data can misdirect aid or expose people. The inspected controller repository had no license file available through the license endpoint, so no verified open-source tag is assigned. Proprietary dependencies and actual reuse rights require separate checks.",
+      "falsifiableClaim": "Do partner organizations make measurably better, safer response and preparedness decisions than suitable comparison teams after data errors, support costs and local needs are considered?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The England-and-Wales charity’s partner-enabling geospatial and data-capacity design, not a separate rating of its Netherlands entity or every response deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Geospatial analysis, data workflows and training that support other humanitarian organizations.",
+        "sourceUrls": [
+          "https://mapaction.org/about-us/",
+          "https://mapaction.org/gisanddata/",
+          "https://github.com/mapaction/mapactionpy_controller"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Common maps and information-management capacity can help humanitarian actors coordinate. A shared map is not evidence that aid decisions become fairer, faster or more effective.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://mapaction.org/about-us/",
+          "https://mapaction.org/gisanddata/",
+          "https://github.com/mapaction/mapactionpy_controller"
+        ]
+      }
+    },
+    {
+      "id": "akvo",
+      "name": "Akvo Foundation",
+      "category": "Justice & public goods",
+      "website": "https://akvo.org/",
+      "mechanism": "Shared data systems and implementation capability for development organizations",
+      "summary": "Combines reusable data-collection software with implementation support for water, agriculture and climate partners.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://akvo.org/",
+          "title": "Akvo — current mission, sectors and open principles",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://akvo.org/our-legal-entities/",
+          "title": "Akvo — foundation identities and operating responsibilities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://akvo.org/policies/",
+          "title": "Akvo — separate software, data and trademark terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/akvo/akvo-flow",
+          "title": "Akvo Flow — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/akvo/akvo-flow/blob/master/LICENSE.md",
+          "title": "Akvo Flow — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared collection and monitoring infrastructure targets repeated data constraints rather than an isolated development project.",
+        "reach": "The foundation and partner model spans several countries and development sectors; data collection does not establish improved services.",
+        "durability": "Reusable systems and partner skills can persist, but maintenance, integration and using data well require ongoing support.",
+        "scalability": "AGPL-licensed Flow code supports adaptation, while hosting, fieldwork, training and decision-making capacity remain resource requirements.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Software rights differ from hosted services, datasets, trademarks and professional support. The linked product-stack page returned 404; current mission/legal sources and the public Flow repository support this narrower description. Poor measurement, sensitive-data handling and lack of operational follow-through can negate benefits.",
+      "falsifiableClaim": "Do supported partners sustain more accurate and actionable monitoring that improves service decisions and outcomes compared with feasible alternatives at similar full cost?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Shared-software and partner-enabling work led by the Netherlands foundation, with Kenya and US entities distinguished in the official legal description.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable field-data software and implementation support for nonprofit and public-interest development partners.",
+        "sourceUrls": [
+          "https://akvo.org/",
+          "https://akvo.org/our-legal-entities/",
+          "https://akvo.org/policies/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Akvo Flow",
+            "repositoryUrl": "https://github.com/akvo/akvo-flow",
+            "licenseUrl": "https://github.com/akvo/akvo-flow/blob/master/LICENSE.md",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "db4f1ed31db1ab20bab713d6a78eebc0f7a0b3e1",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared data infrastructure can reduce fragmented workflows and lower technical barriers for implementers. Information collection alone does not prove coordination or redirect resources toward better outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://akvo.org/",
+          "https://akvo.org/our-legal-entities/",
+          "https://akvo.org/policies/"
+        ]
+      }
+    },
+    {
+      "id": "internet-archive",
+      "name": "Internet Archive",
+      "category": "Justice & public goods",
+      "website": "https://archive.org/",
+      "mechanism": "Reusable public-library catalog software and knowledge infrastructure",
+      "summary": "Supports Open Library as a shared catalog and software project for discovering and organizing book information.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openlibrary.org/about",
+          "title": "Open Library — project scope and Internet Archive parent",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openlibrary.org/help/faq/about",
+          "title": "Open Library — nonprofit parent and catalog responsibilities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/internetarchive/openlibrary",
+          "title": "Open Library — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/internetarchive/openlibrary/blob/master/LICENSE",
+          "title": "Open Library — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A shared catalog and reusable library software address a recurring knowledge-discovery infrastructure constraint.",
+        "reach": "The open catalog and software can serve libraries and readers internationally; bibliographic coverage is not an audited access outcome.",
+        "durability": "Reusable code and catalog records can persist, but curation, preservation, hosting and rights compliance need continued work.",
+        "scalability": "AGPL-licensed catalog software permits adaptation; accurate records, digitization, accessibility and lawful content access remain separate costs.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Code, metadata, book content and lending/access terms are distinct. Copyright and access restrictions, catalog errors, preservation risks and accessibility gaps require separate review. More records or downloads do not establish better learning or welfare. Open Library is not counted as a second independent charity.",
+      "falsifiableClaim": "Do public-interest users obtain more accurate, accessible and sustainable knowledge-discovery services than feasible alternatives without disproportionate legal, privacy or exclusion harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Open Library software/catalog infrastructure under Internet Archive; not a rating of every archive collection, lending practice, Wayback service or legal position.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Open Library catalog software and reference infrastructure that libraries, nonprofit researchers and public-interest builders can reuse.",
+        "sourceUrls": [
+          "https://openlibrary.org/about",
+          "https://openlibrary.org/help/faq/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Library",
+            "repositoryUrl": "https://github.com/internetarchive/openlibrary",
+            "licenseUrl": "https://github.com/internetarchive/openlibrary/blob/master/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Reusable discovery tools can lower some barriers to finding knowledge. Catalog openness does not imply permission to redistribute every underlying book or remove access restrictions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openlibrary.org/about",
+          "https://openlibrary.org/help/faq/about"
+        ]
+      }
+    },
+    {
+      "id": "openstreetmap-foundation",
+      "name": "OpenStreetMap Foundation",
+      "category": "Justice & public goods",
+      "website": "https://osmfoundation.org/wiki/Main_Page",
+      "mechanism": "Shared geographic-data and community infrastructure",
+      "summary": "Supports, but does not control, OpenStreetMap’s community-run mapping infrastructure and freely reusable geographic data.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://osmfoundation.org/wiki/Main_Page",
+          "title": "OSMF — nonprofit identity and support-not-control relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://osmfoundation.org/wiki/Mission_Statement",
+          "title": "OSMF — infrastructure and community-support mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openstreetmap/openstreetmap-website",
+          "title": "OpenStreetMap website (community project) — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openstreetmap/openstreetmap-website/blob/master/LICENSE",
+          "title": "OpenStreetMap website (community project) — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Institutional support for a shared mapping commons reduces dependence on individually commissioned or closed geographic infrastructure.",
+        "reach": "A global map and common infrastructure have cross-sector public-interest application; actual local coverage and usefulness vary.",
+        "durability": "Community infrastructure and reusable data can outlast individual grants, but upkeep, moderation and contributor health remain necessary.",
+        "scalability": "The checked website code permits reuse, while map-data licensing, tile policies, data quality and operating costs remain separate.",
+        "additionality": "Unknown: current marginal funding, restricted allocations, delivery capacity and a credible counterfactual have not been audited.",
+        "agency": "Unknown: open source, consultations, memberships or participation do not by themselves establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation is an international nonprofit, not assumed here to be a registered UK charity or US-deductible recipient. Community website code, geographic database licenses, tile services and trademarks differ. Neither OSMF nor HOT receives sole attribution for volunteer mapping or downstream humanitarian outcomes.",
+      "falsifiableClaim": "Does foundation support improve sustained reliability, equitable coverage and useful nonprofit reuse beyond alternative support arrangements after maintenance and community costs are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "OSMF’s community/infrastructure support, with the community website as a checked code example. OSMF supports rather than controls the project and is distinct from Humanitarian OpenStreetMap Team.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Common geographic-data and website infrastructure usable by humanitarian groups and other public-interest implementers.",
+        "sourceUrls": [
+          "https://osmfoundation.org/wiki/Main_Page",
+          "https://osmfoundation.org/wiki/Mission_Statement"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OpenStreetMap website (community project)",
+            "repositoryUrl": "https://github.com/openstreetmap/openstreetmap-website",
+            "licenseUrl": "https://github.com/openstreetmap/openstreetmap-website/blob/master/LICENSE",
+            "licenseLabel": "GPL-2.0",
+            "licenseBlobSha": "d159169d1050894d3ea3b98e1c965c4058208fe1",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Named repository license inspected on the review date; dependencies, datasets, content, trademarks and hosted services have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common geographic references can connect work across organizations and reduce dependence on closed mapping infrastructure. This does not establish local inclusion, accurate maps or control by affected people.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://osmfoundation.org/wiki/Main_Page",
+          "https://osmfoundation.org/wiki/Mission_Statement"
+        ]
+      }
+    },
+    {
+      "id": "frameworks-institute",
+      "name": "FrameWorks Institute",
+      "category": "Justice & public goods",
+      "website": "https://www.frameworksinstitute.org/",
+      "mechanism": "Shared framing research and communications capacity for the social sector",
+      "summary": "Researches public mindsets and supports nonprofit and public-interest partners in changing how social issues are understood.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.frameworksinstitute.org/what-we-do/our-approach/",
+          "title": "FrameWorks — research and partner-engagement approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.frameworksinstitute.org/partner-with-us/",
+          "title": "FrameWorks — nonprofit and public-sector partner support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.frameworksinstitute.org/terms-of-use/",
+          "title": "FrameWorks — nonprofit identity, rights and non-endorsement boundaries",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Its explicit focus on dominant narratives and cultural mindsets targets a shared upstream framing mechanism across issues.",
+        "reach": "Partner organizations and public institutions can carry framing approaches across several policy areas; broad public change is not verified here.",
+        "durability": "Skills and communications routines may persist, but shifting mindsets and maintaining relevance need continued practice and evidence.",
+        "scalability": "Shared research, toolkits and training can be reused across partners, with context-specific research and facilitation still needed.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The methodology and published resources have restrictive terms and are not described as wholly open-source. Framing research or short-term attitude changes do not prove durable policy or welfare effects. This profile is original analysis with attribution; no institute content, logo, endorsement or partnership is claimed.",
+      "falsifiableClaim": "Do partner organizations using the framing support achieve independently measured, durable improvements in understanding and beneficial institutional action beyond credible comparison strategies?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The US institute’s framing research and partner-capacity design, not its UK counterpart’s entire work or a causal rating of every partner campaign.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Framing research, toolkits and learning support for nonprofit storytellers, advocates and coalitions.",
+        "sourceUrls": [
+          "https://www.frameworksinstitute.org/what-we-do/our-approach/",
+          "https://www.frameworksinstitute.org/partner-with-us/",
+          "https://www.frameworksinstitute.org/terms-of-use/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story"
+        ],
+        "rationale": "The explicit effort to change public mindsets and dominant narratives is a partial match to the story source. It is not an adoption of the checklist’s particular narrative or an endorsement of all its claims.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.frameworksinstitute.org/what-we-do/our-approach/",
+          "https://www.frameworksinstitute.org/partner-with-us/",
+          "https://www.frameworksinstitute.org/terms-of-use/"
+        ]
+      }
+    },
+    {
+      "id": "constructive-institute",
+      "name": "Constructive Institute",
+      "category": "Justice & public goods",
+      "website": "https://constructiveinstitute.org/",
+      "mechanism": "Shared constructive-journalism practice and newsroom capacity",
+      "summary": "Supports journalists and news organizations through fellowships, research and practices emphasizing solutions, nuance and dialogue.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://constructiveinstitute.org/about-us/",
+          "title": "Constructive Institute — nonprofit foundation and newsroom-support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://constructiveinstitute.org/",
+          "title": "Constructive Institute — current constructive-journalism work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Newsroom practices and professional norms target recurring information-production patterns, not only one story.",
+        "reach": "The international newsroom and education model has potential reach across media institutions; audience and adoption figures are not audited outcomes.",
+        "durability": "Retained reporting skills and editorial routines may persist, but management commitment and incentives can reverse them.",
+        "scalability": "Shared practices and fellowships can spread through institutions, while adaptation, editorial independence and training remain resource-intensive.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Constructive reporting must not become promotion, minimization of harm or a substitute for scrutiny. The site’s percentage-effect and reach claims were not independently evaluated here. Training, attitudes and audience engagement are not proof of sustained democratic or welfare improvements.",
+      "falsifiableClaim": "Do supported newsrooms sustain accurate, independent and useful reporting that improves informed engagement beyond appropriate alternatives without weakening critical scrutiny?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The independent Denmark-based nonprofit foundation at Aarhus University; no assumption of US tax deductibility or attribution of all partner reporting.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Newsroom fellowships, professional practices and research that public-interest journalism organizations can apply.",
+        "sourceUrls": [
+          "https://constructiveinstitute.org/about-us/",
+          "https://constructiveinstitute.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "attention"
+        ],
+        "rationale": "Solutions-focused reporting and editorial nuance can change what public narratives emphasize and what attention rewards. This is a partial practice match, not evidence of changing platform-ranking incentives or delivering societal trust.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://constructiveinstitute.org/about-us/",
+          "https://constructiveinstitute.org/"
+        ]
+      }
+    },
+    {
+      "id": "more-in-common",
+      "name": "More in Common US",
+      "category": "Justice & public goods",
+      "website": "https://moreincommonus.com/",
+      "mechanism": "Shared polarization research and partner capacity for social cohesion",
+      "summary": "Combines research on division with partner initiatives intended to strengthen belonging and cooperation across differences in the United States.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://moreincommonus.com/about/",
+          "title": "More in Common US — nonprofit identity, mission and partner approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.moreincommon.com/where-we-work/more-in-common-us/",
+          "title": "More in Common — US entity and institutional work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared research and institution-facing work target recurring narratives and practices that can reinforce polarization.",
+        "reach": "US institutional partners provide a national pathway; the assessment does not attribute every international affiliate’s work to this entity.",
+        "durability": "Organizational learning and relationships may persist, but attitudes and intergroup trust can regress under changing incentives.",
+        "scalability": "Research insights and partner practices can be adapted, while representative research, trust-building and evaluation require skilled work.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Survey segmentation and self-reported trust are not demonstrated reductions in conflict or improved rights. Consensus framing can obscure real power differences or legitimate grievances. The organization describes itself as nonpartisan but not neutral; no ideological neutrality or outcome guarantee is inferred.",
+      "falsifiableClaim": "Do partner initiatives create durable, equitable cooperation on consequential problems beyond comparison approaches, including for marginalized groups and genuine policy disagreements?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "More in Common’s US 501(c)(3) entity and its research/partner model, not separate UK, French, German or other legal entities.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Public-interest research and partner guidance for organizations working on social cohesion and polarization.",
+        "sourceUrls": [
+          "https://moreincommonus.com/about/",
+          "https://www.moreincommon.com/where-we-work/more-in-common-us/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination"
+        ],
+        "rationale": "Work on divisive narratives and cross-group cooperation partly matches the story and coordination sources. This does not mean every disagreement is a misconception or that the checklist’s specific projects are followed.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://moreincommonus.com/about/",
+          "https://www.moreincommon.com/where-we-work/more-in-common-us/"
+        ]
+      }
+    },
+    {
+      "id": "people-powered",
+      "name": "People Powered",
+      "category": "Justice & public goods",
+      "website": "https://www.peoplepowered.org/",
+      "mechanism": "Shared capacity and resource infrastructure for participatory democracy",
+      "summary": "Provides resources, mentoring and training to organizations and governments building participatory decision-making programs.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.peoplepowered.org/about",
+          "title": "People Powered — current nonprofit identities and origin",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.peoplepowered.org/digital-participation",
+          "title": "People Powered — digital participation guidance, training and tool selection",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Supporting changes to consequential public decision-making processes targets institutional rules rather than isolated consultation events.",
+        "reach": "The international practitioner network can support institutions across countries; organizational membership is not a count of empowered residents.",
+        "durability": "Skills and institutional routines may persist, but meaningful powers, implementation and program continuity need ongoing support and political commitment.",
+        "scalability": "Reusable guidance and peer learning can spread across implementers; legitimate processes still require resources, local adaptation and facilitation.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown pending scoped review: published member-governance and funding-allocation claims warrant follow-up, but affected-community rights, representation and enforcement were not audited."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The official site describes member governance and member input into funding; this is documented but not independently audited here. Tool ratings and third-party platform licenses were not imported or certified. Participation can be tokenistic or exclusionary without binding authority, accessibility and implementation.",
+      "falsifiableClaim": "Do supported programs increase equitable, consequential public decision rights and implemented outcomes beyond alternatives, with independently assessed representation and long-term continuity?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The nonprofit hub incorporated in the US and Ireland. Its origin as a Participatory Budgeting Project-sponsored initiative is historical, not assumed to be its current legal status.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Participation guides, platform-selection resources, mentoring and training for civil-society and public-sector implementers.",
+        "sourceUrls": [
+          "https://www.peoplepowered.org/about",
+          "https://www.peoplepowered.org/digital-participation"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared participation know-how can improve coordination and lower technical barriers for organizations building public decision processes. A guide or training alone does not transfer enforceable power to residents.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.peoplepowered.org/about",
+          "https://www.peoplepowered.org/digital-participation"
+        ]
+      }
+    },
+    {
+      "id": "sortition-foundation",
+      "name": "Sortition Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.sortitionfoundation.org/",
+      "mechanism": "Reusable democratic-lottery infrastructure and deliberative institution support",
+      "summary": "Builds OpenDLP and provides democratic-lottery services for citizens’ assemblies while advocating permanent deliberative institutions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.sortitionfoundation.org/about_us",
+          "title": "Sortition — not-for-profit identity, services and current software",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.sortitionfoundation.org/privacy_policy",
+          "title": "Sortition — UK company identity and data responsibilities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.sortitionfoundation.org/opendlp",
+          "title": "Sortition — OpenDLP program scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/sortitionfoundation/opendlp",
+          "title": "Open Democratic Lottery Platform — official repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/sortitionfoundation/opendlp/blob/main/LICENSE.txt",
+          "title": "Open Democratic Lottery Platform — license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Its stated goal is institutionalizing permanent, consequential citizens’ assemblies, alongside tools for their selection processes.",
+        "reach": "Services and software support national and regional deliberative institutions; event counts do not establish inclusive or effective governance.",
+        "durability": "A permanent institutional design could outlast grants, but actual powers, official uptake and operational continuity remain uncertain.",
+        "scalability": "Shared selection software supports reuse, while representative recruitment, facilitation, accessibility and legitimacy require contextual work.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected and named license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Recruitment bias, nonresponse, manipulation, privacy and tokenistic public processes can undermine benefits. Workers’ control of the organization is not automatically beneficiary governance. A license check does not validate selection fairness, implementation security or the effectiveness of constitutional reform.",
+      "falsifiableClaim": "Do supported assemblies achieve representative, informed and consequential decisions with sustained public accountability beyond feasible alternative processes?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The UK not-for-profit company limited by guarantee and its OpenDLP/institutional-support model; nonprofit status is not presented as registered-charity status or a guarantee of US deductibility.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "OpenDLP selection software and democratic-lottery support for organizations implementing deliberative participation.",
+        "sourceUrls": [
+          "https://www.sortitionfoundation.org/about_us",
+          "https://www.sortitionfoundation.org/privacy_policy",
+          "https://www.sortitionfoundation.org/opendlp"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Democratic Lottery Platform",
+            "repositoryUrl": "https://github.com/sortitionfoundation/opendlp",
+            "licenseUrl": "https://github.com/sortitionfoundation/opendlp/blob/main/LICENSE.txt",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "0345e1746825a77a3601c904dcb8cb0e7839f29a",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Named OpenDLP repository license inspected; personal data, hosting, implementation services and other projects have separate terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Selection infrastructure and assembly-support methods can lower implementation barriers and help groups coordinate deliberation. Representative selection does not by itself make an assembly’s decisions binding.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.sortitionfoundation.org/about_us",
+          "https://www.sortitionfoundation.org/privacy_policy",
+          "https://www.sortitionfoundation.org/opendlp"
+        ]
+      }
+    },
+    {
+      "id": "forum-for-the-future",
+      "name": "Forum for the Future",
+      "category": "Climate & environment",
+      "website": "https://www.forumforthefuture.org/",
+      "mechanism": "Shared futures practice and cross-sector sustainability collaboration",
+      "summary": "Uses futures analysis, systems thinking and partnerships to support changes in food, energy and business systems.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.forumforthefuture.org/about-us",
+          "title": "Forum — current strategy, registered-charity identity and partners",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.forumforthefuture.org/",
+          "title": "Forum — current collaborations and futures work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The explicit design targets relationships, institutional practices and incentives across food, energy and business systems.",
+        "reach": "International civil-society, business and philanthropic partnerships create a cross-sector institutional pathway; actual systemic effects remain unverified.",
+        "durability": "Shared capabilities and institutional changes could persist, but voluntary collaboration and corporate commitments can reverse.",
+        "scalability": "Futures methods, shared learning and coalitions can be adapted, while expert facilitation, implementation and local legitimacy require substantial work.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Scenarios are not forecasts and workshops are not implemented change. Corporate partnerships create attribution and greenwashing risks; voluntary commitments do not establish additional emissions reductions, equitable transitions or durable enforcement.",
+      "falsifiableClaim": "Do supported collaborations implement additional, equitable and durable changes beyond plausible alternatives, with independently measured environmental and social outcomes?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The England-and-Wales registered charity’s futures and partner-enabling design; separate international entities and particular corporate outcomes are not independently rated.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Futures analysis, systems-change practices and coalition support for civil society, philanthropic and other institutional partners.",
+        "sourceUrls": [
+          "https://www.forumforthefuture.org/about-us",
+          "https://www.forumforthefuture.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination"
+        ],
+        "rationale": "Helping institutions imagine alternative futures and form cross-sector collaborations partly matches vision and coordination. This is not the checklist’s specific Vision Market or proof that scenarios lead to action.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.forumforthefuture.org/about-us",
+          "https://www.forumforthefuture.org/"
+        ]
+      }
+    },
+    {
+      "id": "long-now-foundation",
+      "name": "Long Now Foundation",
+      "category": "Justice & public goods",
+      "website": "https://longnow.org/",
+      "mechanism": "Cultural infrastructure for long-term imagination and responsibility",
+      "summary": "Uses cultural projects, public ideas and convenings to encourage longer-term thinking and responsibility.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://longnow.org/",
+          "title": "Long Now — nonprofit cultural mission and current projects",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The explicit cultural mechanism seeks to change time horizons and assumptions shaping how people and institutions make decisions.",
+        "reach": "Public ideas and convenings have a cross-sector pathway, but audience visibility is not institutional adoption.",
+        "durability": "Cultural artifacts and ideas can persist, but a proposed long-lived clock is not evidence of durable behavior or policy change.",
+        "scalability": "Ideas and publications can travel beyond an event, while physical projects, convenings and applying them in institutions incur costs.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Cultural resonance and symbolic timescales do not establish more responsible policy, equitable access or welfare gains. The physical clock’s intended duration does not earn a high demonstrated-durability score. No dedicated charity-tool or repository-license classification is assigned in this pass.",
+      "falsifiableClaim": "Do participants and partner institutions make measurably better long-horizon decisions than appropriate comparison groups, with benefits that justify the full cultural and physical-project costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "The nonprofit cultural institution’s imagination and long-term-thinking design, not a claim that a monument, membership or media audience causes better decisions.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "story"
+        ],
+        "rationale": "Long-term imagination and cultural narratives partly match vision and story. This does not establish the checklist’s protopia narrative, futures-market mechanism or a measured shift in public expectations.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://longnow.org/"
+        ]
+      }
+    },
+    {
+      "id": "founders-pledge",
+      "name": "Founders Pledge",
+      "category": "Justice & public goods",
+      "website": "https://www.founderspledge.com/",
+      "mechanism": "Giving norms, donor research and shared grant-facilitation capacity",
+      "summary": "Combines a giving pledge, entrepreneur community, research and philanthropic support to direct resources toward charities.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.founderspledge.com/who-we-are",
+          "title": "Founders Pledge — mission, operating model and nonprofit entities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.founderspledge.com/",
+          "title": "Founders Pledge — giving norms, funds and support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Changing donor norms and decision processes targets recurring resource-allocation patterns rather than delivering one beneficiary service.",
+        "reach": "An international donor community and cross-cause research model offer broad potential reach; pledged capital is not money delivered or additional impact.",
+        "durability": "Research and giving routines could persist, but commitments, distributions and ongoing advisory operations require follow-through.",
+        "scalability": "Shared research and grant facilitation can be reused, while specialized advice, diligence and administration remain resource-intensive.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Pledges are distinct from distributions, and reported distributions are not counterfactual additional giving or verified welfare. Operating support and charitable allocations are different funding routes. Concentrated donor influence, selection assumptions and conflicts require diligence.",
+      "falsifiableClaim": "Does participation cause additional, well-timed and beneficial charitable allocation beyond what donors would otherwise give, after operating costs, displacement and recipient capacity are considered?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Pledge/community and shared giving-support design across the identified US, UK and German nonprofit entities; not an independent endorsement of every research recommendation or fund.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Giving research, philanthropic guidance and grant-facilitation infrastructure supporting donors and recipient charities.",
+        "sourceUrls": [
+          "https://www.founderspledge.com/who-we-are",
+          "https://www.founderspledge.com/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status",
+          "coordination"
+        ],
+        "rationale": "A visible entrepreneur giving community can partly redirect social norms toward generosity, while advice and grant facilitation coordinate resources. This is not the checklist’s charity-designer-goods model or proof of incremental giving.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.founderspledge.com/who-we-are",
+          "https://www.founderspledge.com/"
+        ]
+      }
+    },
+    {
+      "id": "one-for-the-world",
+      "name": "One for the World",
+      "category": "Global health",
+      "website": "https://1fortheworld.org/",
+      "mechanism": "Giving commitments and organizer capacity for recurring charitable funding",
+      "summary": "Builds a community around a 1% giving commitment, with campus and workplace organizing and regranting to selected charities.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://1fortheworld.org/",
+          "title": "One for the World — pledge, organizer programs, nonprofit identities and partner scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Recurring giving commitments and organizing practices target social norms and resource allocation rather than only a one-time transfer.",
+        "reach": "Campus and workplace organizing provide a multi-community pathway; donor totals do not demonstrate population-level benefit.",
+        "durability": "Giving habits and organizer skills may persist, but pledges can lapse and regranting requires continuing administration.",
+        "scalability": "Replicable organizer programs and giving infrastructure can spread, while recruitment, donor support and recipient diligence retain costs.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The website’s lives-saved calculator and giving totals were not independently audited or converted into this profile’s score. Pledges, received funds, regrants and attributable welfare are different quantities. Recipient evaluator recommendations do not independently validate the intermediary’s own additionality.",
+      "falsifiableClaim": "Do participants sustain additional giving beyond their counterfactual behavior, and do recipient allocations produce more benefit after administration, displacement and delivery constraints are considered?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "Giving-norm, organizer and regranting design of the US nonprofit, with its separate UK charity identified; not a second rating of recipient charities’ health interventions.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Campus/workplace organizer support and giving infrastructure that help fund partner charities.",
+        "sourceUrls": [
+          "https://1fortheworld.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status"
+        ],
+        "rationale": "Visible commitments and community organizing can help make generosity a social norm, a partial status-source match. It is not evidence of the checklist’s specific status product or additional giving.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://1fortheworld.org/"
+        ]
+      }
+    },
+    {
+      "id": "witness",
+      "name": "WITNESS",
+      "category": "Justice & public goods",
+      "website": "https://www.witness.org/",
+      "mechanism": "Shared audiovisual documentation and verification capability for rights defenders",
+      "summary": "Supports rights defenders and civic organizations with guidance, training and technology-policy work around video evidence and AI-shaped media.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.witness.org/about/",
+          "title": "WITNESS — current documentation, verification and technology priorities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.witness.org/about/annual-report/",
+          "title": "WITNESS Inc. — current financial-disclosure and Form 990 links",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.witness.org/programmatic-communications-coordinator-usa/",
+          "title": "WITNESS — historical organizational description identifying US nonprofit status",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared evidence-handling practices and technology standards target repeated constraints facing human-rights organizations.",
+        "reach": "The international partner model has broad potential across rights contexts; self-reported scale tiers are not verified numbers benefiting.",
+        "durability": "Skills and protocols can persist beyond training, but safe workflows, new media threats and advocacy require continued support.",
+        "scalability": "Reusable guidance can spread through partners, while safe documentation, localization and legal or advocacy strategies need skilled implementation.",
+        "additionality": "Unknown: current marginal funding, delivery capacity, displacement and a credible counterfactual have not been audited.",
+        "agency": "Unknown: stated values, participation, consultation or contributor governance do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Filming and sharing can expose survivors, traumatize communities or create misleading evidence. Consent, safe storage, authenticity and legal context require review. Training or footage is not accountability; published tools and guidance are not blanket-classified as open-source software.",
+      "falsifiableClaim": "Do supported defenders obtain safer, more credible and consequential documentation than with suitable alternatives, including independently assessed effects on accountability and risks to affected people?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-01",
+      "evaluationScope": "WITNESS Inc.’s partner-enabling documentation and verification design. The historical identity description is not treated as a current job opening or proof of every present program.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Video-documentation, verification and technology guidance for grassroots groups, journalists and human-rights organizations.",
+        "sourceUrls": [
+          "https://www.witness.org/about/",
+          "https://www.witness.org/about/annual-report/",
+          "https://www.witness.org/programmatic-communications-coordinator-usa/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "Helping defenders make credible evidence visible can shift attention toward documented harms and lower technical barriers to rights advocacy. Verification does not by itself change feed incentives or deliver remedy.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.witness.org/about/",
+          "https://www.witness.org/about/annual-report/",
+          "https://www.witness.org/programmatic-communications-coordinator-usa/"
         ]
       }
     }

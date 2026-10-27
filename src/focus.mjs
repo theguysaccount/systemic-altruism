@@ -5,7 +5,8 @@ export const normalizeFocus=value=>Object.hasOwn(focusOptions,value)?value:'all'
 // License inspection is separate from maintenance, security and impact validation.
 export function hasVerifiedOpenSource(charity){
   const o=charity.openSource;
-  return Boolean(charity.tooling&&o?.status==='license_verified'&&/^\d{4}-\d{2}-\d{2}$/.test(o.reviewedAt)&&Array.isArray(o.projects)&&o.projects.length&&o.projects.every(p=>p.repositoryUrl?.startsWith('https://github.com/')&&p.licenseUrl?.startsWith(p.repositoryUrl+'/blob/')&&p.licenseLabel&&/^[a-f0-9]{40}$/.test(p.licenseBlobSha)));
+  const sameRepository=p=>(p.repositoryUrl?.startsWith('https://github.com/')&&p.licenseUrl?.startsWith(p.repositoryUrl+'/blob/'))||(p.repositoryUrl?.startsWith('https://gitlab.torproject.org/')&&p.licenseUrl?.startsWith(p.repositoryUrl+'/-/blob/'));
+  return Boolean(charity.tooling&&o?.status==='license_verified'&&/^\d{4}-\d{2}-\d{2}$/.test(o.reviewedAt)&&Array.isArray(o.projects)&&o.projects.length&&o.projects.every(p=>sameRepository(p)&&p.licenseLabel&&/^[a-f0-9]{40}$/.test(p.licenseBlobSha)));
 }
 export function matchesFocus(charity,focus='all'){
   if(focus==='all')return true;

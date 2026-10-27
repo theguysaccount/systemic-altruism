@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,82);assert.equal(new Set(data.charities.map(c=>c.id)).size,82);
+  assert.equal(data.charities.length,100);assert.equal(new Set(data.charities.map(c=>c.id)).size,100);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -80,4 +80,17 @@ test('second October 27 batch scopes 12 open-source assessments without filling 
   assert.match(batch.find(c=>c.id==='open-ownership').evaluationScope,/fiscally sponsored/);
   assert.match(batch.find(c=>c.id==='numfocus').limitations,/applications are paused/);
   assert.match(batch.find(c=>c.id==='sahana-software-foundation').limitations,/May 2025/);
+});
+test('first goal batch adds 18 scoped assessments without promoting unsupported evidence',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-01');assert.equal(batch.length,18);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
+    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-27'));
+    assert.equal(c.checklistAlignment.adoption,'not_verified');
+  }
+  assert.match(batch.find(c=>c.id==='sortition-foundation').evaluationScope,/not-for-profit/);
+  assert.match(batch.find(c=>c.id==='mapaction').limitations,/no license file/);
+  assert.equal(batch.find(c=>c.id==='long-now-foundation').tooling,undefined);
+  assert.match(batch.find(c=>c.id==='people-powered').rationales.agency,/member-governance/);
 });

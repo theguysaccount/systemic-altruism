@@ -23,16 +23,22 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,12);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,20);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
-      assert.ok(['maintainer','steward','fiscal_sponsor'].includes(p.role));assert.equal(p.repositoryStatus,'not_archived');
+      assert.ok(['maintainer','steward','fiscal_sponsor'].includes(p.role));assert.ok(['not_archived','archive_status_unverified'].includes(p.repositoryStatus));
       assert.ok(p.scope.length>70);assert.ok(p.name);assert.ok(c.sources.some(s=>s.url===p.repositoryUrl));assert.ok(c.sources.some(s=>s.url===p.licenseUrl));
       assert.match(focusProfile(c,s=>s),new RegExp(p.licenseBlobSha));
     }
   }
   assert.ok(checked.some(c=>c.openSource.projects.some(p=>p.role==='fiscal_sponsor')));
+});
+test('canonical Tor GitLab license evidence is supported without accepting unrelated hosts or files',()=>{
+  const c=data.charities.find(c=>c.id==='tor-project');assert.equal(hasVerifiedOpenSource(c),true);
+  const clone=structuredClone(c);clone.openSource.projects[0].licenseUrl='https://gitlab.torproject.org.evil.example/LICENSE';assert.equal(hasVerifiedOpenSource(clone),false);
+  const map=data.charities.find(c=>c.id==='mapaction');assert.equal(hasVerifiedOpenSource(map),false);
+  assert.match(c.openSource.projects[0].scope,/optional LGPL/);
 });
 test('focus metadata never changes an assessment or asserts checklist affiliation',()=>{
   const c=data.charities.find(c=>c.checklistAlignment);
