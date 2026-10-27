@@ -23,7 +23,7 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,35);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,49);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
@@ -69,4 +69,13 @@ test('every focus claim is dated and linked to that profile’s actual sources',
     }
   }
   for(const source of Object.keys(checklistSources))assert.ok(data.charities.some(c=>matchesFocus(c,'source:'+source)),`Missing source coverage: ${source}`);
+});
+test('fourth batch describes support roles without converting nonprofit or service labels into license evidence',()=>{
+  for(const id of ['linux-foundation','open-source-collective','netbsd-foundation','internews']){
+    const c=data.charities.find(c=>c.id===id);assert.equal(matchesFocus(c,'tooling'),true);assert.equal(hasVerifiedOpenSource(c),false);
+  }
+  for(const id of ['rust-foundation','linux-foundation','open-source-collective'])assert.match(data.charities.find(c=>c.id===id).limitations,/501\(c\)\(6\)/);
+  assert.equal(matchesFocus(data.charities.find(c=>c.id==='center-for-open-science'),'source:status'),true);
+  const blender=data.charities.find(c=>c.id==='blender-foundation');assert.equal(hasVerifiedOpenSource(blender),true);assert.match(blender.openSource.projects[0].scope,/GPL-3.0-or-later binaries/);
+  assert.match(data.charities.find(c=>c.id==='freebsd-foundation').openSource.projects[0].scope,/advertising-clause addendum/);
 });

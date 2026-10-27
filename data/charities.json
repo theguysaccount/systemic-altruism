@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.3",
+  "schemaVersion": "0.4.4",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "137 scoped assessment profiles toward a first-edition goal of 200, including 19 source-linked additions in goal batch 03. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "155 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 04. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -9662,6 +9662,1845 @@
           "https://algorithmwatch.org/en/legal-notice/",
           "https://algorithmwatch.org/en/vision-mission-values/",
           "https://algorithmwatch.org/en/algorithms-and-the-world-of-work/about-awow/"
+        ]
+      }
+    },
+    {
+      "id": "freebsd-foundation",
+      "name": "FreeBSD Foundation",
+      "category": "Justice & public goods",
+      "website": "https://freebsdfoundation.org/",
+      "mechanism": "Sustain reusable operating-system infrastructure and contributor capacity",
+      "summary": "The US charitable foundation funds engineering, infrastructure, education and legal support for FreeBSD. The proposed leverage is reliable shared infrastructure that public-interest implementers can reuse, not a claim that the foundation alone develops the operating system.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://freebsdfoundation.org/about-us/about-the-foundation/overview/",
+          "title": "FreeBSD Foundation: nonprofit identity and support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/freebsd/freebsd-src",
+          "title": "FreeBSD source: inspected publish-only repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/freebsd/freebsd-src/blob/main/COPYRIGHT",
+          "title": "FreeBSD: inspected compilation grant and historical notices",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared engineering and institutional support can reduce dependence on proprietary infrastructure rather than buy one organization’s license access.",
+        "reach": "An operating-system commons can enable many sectors and nonprofit implementers; general-purpose reach is not attributable welfare impact.",
+        "durability": "Reusable code, knowledge and contributor institutions can persist, while security, compatibility and hardware support need continuing work.",
+        "scalability": "Common source can support many deployments without rebuilding a base system, but migration, administration and support remain significant costs.",
+        "additionality": "No current marginal engineering bottleneck or counterfactual between foundation grants, companies and volunteer contributions was audited.",
+        "agency": "Developer participation and public source do not establish binding decision rights for communities affected by downstream systems."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The overview identifies a US 501(c)(3). FreeBSD’s COPYRIGHT file includes a two-clause compilation grant, historical Berkeley notices and an addendum removing the old advertising clause; individual files and bundled material still require their own review. The GitHub repository describes itself as publish-only. Foundation support is not sole authorship, a security audit or proof of nonprofit cost savings. Hardware, migration, administration and continuing maintenance can dominate total costs.",
+      "falsifiableClaim": "Do public-interest organizations adopting supported FreeBSD infrastructure sustain usable, secure services with lower lifecycle dependency costs than comparable organizations using existing systems, after migration and support are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "FreeBSD Foundation’s nonprofit engineering, legal and contributor-support role, with the FreeBSD source compilation as a scoped example; not every vendor, developer or downstream deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Engineering, testing infrastructure, legal support and reusable operating-system code can reduce duplicated technical work for public-interest implementers.",
+        "sourceUrls": [
+          "https://freebsdfoundation.org/about-us/about-the-foundation/overview/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "FreeBSD source compilation",
+            "repositoryUrl": "https://github.com/freebsd/freebsd-src",
+            "licenseUrl": "https://github.com/freebsd/freebsd-src/blob/main/COPYRIGHT",
+            "licenseLabel": "BSD-2-Clause compilation grant; historical and component notices apply",
+            "licenseBlobSha": "f7134c977fa67f3a595451f5e00301b21d4a1085",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the compilation grant, historical notices and advertising-clause addendum in FreeBSD’s publish-only GitHub repository. Foundation stewardship is not sole authorship; per-file, bundled documentation and dependency rights remain separate."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared system infrastructure can reduce proprietary gatekeeping and coordinate contributor effort across organizations. This partial mapping does not establish safe deployments or affected-community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://freebsdfoundation.org/about-us/about-the-foundation/overview/"
+        ]
+      }
+    },
+    {
+      "id": "openbsd-foundation",
+      "name": "OpenBSD Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.openbsdfoundation.org/",
+      "mechanism": "Pool infrastructure support for reusable security-oriented software",
+      "summary": "The Canadian not-for-profit corporation funds infrastructure and developer work for OpenBSD-related projects. Portable OpenSSH is the named software example, enabling organizations to reuse a common remote-administration component.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.openbsdfoundation.org/",
+          "title": "OpenBSD Foundation: Canadian nonprofit identity, projects and 2026 support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openssh/openssh-portable",
+          "title": "Portable OpenSSH: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/openssh/openssh-portable/blob/master/LICENCE",
+          "title": "Portable OpenSSH: inspected mixed permissive notices",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared infrastructure funding can change access to reusable security components, rather than repeatedly purchasing proprietary substitutes.",
+        "reach": "Remote-administration infrastructure can enable many types of public-interest services, not only a single application or charity.",
+        "durability": "Code can persist, but security response, compatibility and reliable project infrastructure are recurring obligations.",
+        "scalability": "A common implementation can be reused across many systems without duplicating protocol development, while skilled operations remain necessary.",
+        "additionality": "The current costed infrastructure bottleneck and the effect of a marginal contribution relative to commercial or volunteer support were not audited.",
+        "agency": "Contributor activity and reusable code do not establish affected users’ binding authority over project or foundation decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The official site identifies a Canadian not-for-profit corporation; this is not a verification of registered-charity status or donor eligibility. Portable OpenSSH’s LICENCE contains several permissive grants and component-specific conditions, not one uniform BSD identifier for the whole ecosystem. The foundation funds support and is not the sole developer. No cryptographic, operational security or financial audit was performed, and remote-administration tooling can also enable harmful uses.",
+      "falsifiableClaim": "Does sustained pooled support for OpenBSD-related infrastructure reduce critical maintenance gaps and improve usable public-interest deployments beyond existing support, without concentrating operational risk or excluding less-resourced users?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "OpenBSD Foundation’s nonprofit infrastructure-support model, with Portable OpenSSH as a named example; not a second count for each related project or a guarantee about every OpenBSD component.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Infrastructure funding and reusable remote-administration software can spare nonprofit operators from rebuilding common technical components.",
+        "sourceUrls": [
+          "https://www.openbsdfoundation.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Portable OpenSSH",
+            "repositoryUrl": "https://github.com/openssh/openssh-portable",
+            "licenseUrl": "https://github.com/openssh/openssh-portable/blob/master/LICENCE",
+            "licenseLabel": "BSD/ISC-style and other permissive component notices",
+            "licenseBlobSha": "aeb3017e76c6ca6a53337dfb4af2f434e1628568",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named portable repository’s multi-part license notice and non-archived status. The foundation supports infrastructure rather than solely developing OpenSSH; dependencies, protocol claims, patents and operational security require separate review."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared technical infrastructure can lower proprietary barriers and coordinate maintenance across users and developers. This partial connection does not demonstrate security, equitable access or governance power.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.openbsdfoundation.org/"
+        ]
+      }
+    },
+    {
+      "id": "netbsd-foundation",
+      "name": "The NetBSD Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.netbsd.org/foundation/",
+      "mechanism": "Provide durable legal and contributor infrastructure for a portable operating-system commons",
+      "summary": "The US nonprofit foundation handles project assets, support and institutional continuity for NetBSD. This profile assesses the enabling institution without treating every source file as covered by a single inspected license.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.netbsd.org/foundation/",
+          "title": "NetBSD Foundation: current nonprofit identity, assets and governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.netbsd.org/about/",
+          "title": "NetBSD: project, contributors and foundation relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.netbsd.org/about/redistribution.html",
+          "title": "NetBSD: licensing and redistribution distinctions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/NetBSD/src",
+          "title": "NetBSD source conversion: inspected repository and link-stability warning",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared assets and support for a portable software commons can reduce infrastructure dependency, without alone changing the institutions using it.",
+        "reach": "A portable base system can support diverse public-interest and other applications across platforms rather than one local program.",
+        "durability": "Institutional assets and reusable source can persist across grants, but maintenance, hardware adaptation and contributor continuity still need resources.",
+        "scalability": "A common base can be adapted across deployments; specialized hardware work and system administration limit low-cost replication.",
+        "additionality": "No current marginal foundation funding gap or displacement of other project contributions was established.",
+        "agency": "The foundation page documents developer-elected directors, but developer membership is not equivalent to binding rights for affected downstream communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation identifies itself as a Delaware-incorporated 501(c)(3). Its licensing page distinguishes several BSD forms and per-file terms. The inspected GitHub source conversion warns that commit links can change; a root license endpoint did not supply a scoped current packet, so no license-checked badge is awarded here. That is not evidence of closed code. No security, portability, governance or lifecycle-cost audit occurred, and contributor voting does not establish downstream community agency.",
+      "falsifiableClaim": "Do nonprofit implementers supported by NetBSD’s shared institutional infrastructure sustain useful portable systems with better exit options and lower lifecycle burden than comparable teams relying on existing alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The NetBSD Foundation’s nonprofit asset, legal and contributor-support role, not sole authorship of the operating system or a blanket license certification of its source tree.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared project assets, administrative continuity and technical knowledge can help public-interest developers reuse a portable operating-system ecosystem.",
+        "sourceUrls": [
+          "https://www.netbsd.org/foundation/",
+          "https://www.netbsd.org/about/",
+          "https://www.netbsd.org/about/redistribution.html"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "A reusable software institution can reduce dependence on proprietary gatekeepers and coordinate contributions. This partial mapping does not establish social impact, security or beneficiary decision rights.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.netbsd.org/foundation/",
+          "https://www.netbsd.org/about/",
+          "https://www.netbsd.org/about/redistribution.html"
+        ]
+      }
+    },
+    {
+      "id": "rust-foundation",
+      "name": "Rust Foundation",
+      "category": "Justice & public goods",
+      "website": "https://rustfoundation.org/",
+      "mechanism": "Support a reusable language ecosystem with shared infrastructure and administration",
+      "summary": "The US nonprofit trade association stewards support for the Rust language community. The hypothesis concerns shared developer infrastructure and reduced duplication, not guaranteed software safety or charitable tax treatment.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://rustfoundation.org/about/",
+          "title": "Rust Foundation: mission and member/project governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://rustfoundation.org/faq/",
+          "title": "Rust Foundation: current 501(c)(6) identity and support role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/rust-lang/rust",
+          "title": "Rust language: inspected source repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/rust-lang/rust/blob/main/README.md",
+          "title": "Rust README: project, primary licenses and trademark relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/rust-lang/rust/blob/main/LICENSE-APACHE",
+          "title": "Rust: inspected Apache license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/rust-lang/rust/blob/main/LICENSE-MIT",
+          "title": "Rust: inspected MIT license grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared language and ecosystem support can reduce dependence on proprietary developer infrastructure, while language choice is not a complete institutional fix.",
+        "reach": "A reusable language, libraries and contributor ecosystem can enable public-interest implementers in many sectors.",
+        "durability": "Open code, skills and institutions can persist, though dependencies, infrastructure and security work require ongoing maintenance.",
+        "scalability": "Common language tooling can support many applications without repeating compiler development; specialist training and migration remain costs.",
+        "additionality": "No current marginal support bottleneck or counterfactual allocation between foundation, member companies and other project contributors was audited.",
+        "agency": "Member directors and Rust Project directors have documented board roles, but those arrangements do not establish affected communities’ binding decision rights."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The FAQ identifies a Delaware non-stock nonprofit claiming 501(c)(6) status, not a 501(c)(3) charity. The foundation is not the Rust Project’s sole developer or decision-maker. The README identifies primary MIT and Apache-2.0 licensing plus BSD-like portions; the inspected Apache and MIT files do not certify every dependency or asset. Memory-safety goals are not a guarantee of secure, equitable applications. Corporate/project representation and a broad mission do not settle community power or donation additionality.",
+      "falsifiableClaim": "Does additional Rust ecosystem support measurably reduce public-interest teams’ maintenance and dependency barriers beyond existing contributions, while preserving practical choices and avoiding new concentration of infrastructure control?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Rust Foundation’s nonprofit trade-association support and stewardship role, with the Rust language repository as an example; not a charitable tax-status claim or sole attribution of Rust development.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared language infrastructure, administration and contributor support can help nonprofit developers build on reusable technical foundations.",
+        "sourceUrls": [
+          "https://rustfoundation.org/about/",
+          "https://rustfoundation.org/faq/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Rust compiler, library and documentation source",
+            "repositoryUrl": "https://github.com/rust-lang/rust",
+            "licenseUrl": "https://github.com/rust-lang/rust/blob/main/LICENSE-APACHE",
+            "licenseLabel": "MIT and Apache-2.0 primary licenses; additional notices apply",
+            "licenseBlobSha": "1b5ec8b78e237b5c3b3d812a7c0a6589d0f7161d",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected Apache and MIT files and the README describing BSD-like portions. The foundation supports and protects ecosystem assets but is not sole developer; third-party code, trademarks, infrastructure services and security outcomes are separate."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Common developer infrastructure can reduce proprietary barriers and coordinate ecosystem work. This partial match is not evidence of safe applications, charity-exclusive use or affected-community governance.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://rustfoundation.org/about/",
+          "https://rustfoundation.org/faq/"
+        ]
+      }
+    },
+    {
+      "id": "eclipse-foundation",
+      "name": "Eclipse Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.eclipse.org/about/",
+      "mechanism": "Provide shared governance, intellectual-property processes and development infrastructure",
+      "summary": "The Belgian international nonprofit association supports an ecosystem of reusable software projects. Eclipse JDT Core is the scoped developer-tool example, not a score for every member company or product.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.eclipse.org/about/",
+          "title": "Eclipse Foundation: current mission and core services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.eclipse.org/europe/faq/",
+          "title": "Eclipse Foundation: Belgian AISBL and related legal-entity boundaries",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/eclipse-jdt/eclipse.jdt.core",
+          "title": "Eclipse JDT Core: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/eclipse-jdt/eclipse.jdt.core/blob/master/README.md",
+          "title": "Eclipse JDT Core README: tools, volunteers and project links",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/eclipse-jdt/eclipse.jdt.core/blob/master/LICENSE",
+          "title": "Eclipse JDT Core: inspected EPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared governance, IP processes and infrastructure can lower institutional barriers to collaboration rather than fund one proprietary software purchase.",
+        "reach": "Reusable development infrastructure can support many public-interest applications and organizations alongside commercial users.",
+        "durability": "Public source and governance institutions can persist, while dependency, interoperability and maintenance work continues.",
+        "scalability": "Common developer tools and support processes can be reused across projects; integration and institutional adoption still cost resources.",
+        "additionality": "No current marginal foundation funding bottleneck or counterfactual against member and volunteer contributions was audited.",
+        "agency": "Membership and committer processes do not establish binding rights for communities affected by systems built with these tools."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current legal FAQ identifies Eclipse Foundation AISBL in Belgium and continuing US and German entities; they are not counted separately here or presumed to have identical tax treatment. JDT Core’s EPL-2.0 license check is not a blanket statement about all Eclipse projects, dependencies or specifications. The README emphasizes volunteer development, not sole foundation authorship or a support guarantee. Industry collaboration does not itself establish public-interest outcomes, independence from member priorities or affected-community power.",
+      "falsifiableClaim": "Do nonprofit teams using supported Eclipse infrastructure sustain interoperable applications and useful exit options at lower lifecycle cost than comparable teams relying on proprietary development environments, including integration and support?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Eclipse Foundation AISBL’s nonprofit stewardship and core-support model, with Eclipse JDT Core as the scoped example; not a combined rating of every related legal entity, member or hosted project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared development tools, IP administration and contributor infrastructure can reduce duplicated technical and institutional work by public-interest developers.",
+        "sourceUrls": [
+          "https://www.eclipse.org/about/",
+          "https://www.eclipse.org/europe/faq/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Eclipse JDT Core",
+            "repositoryUrl": "https://github.com/eclipse-jdt/eclipse.jdt.core",
+            "licenseUrl": "https://github.com/eclipse-jdt/eclipse.jdt.core/blob/master/LICENSE",
+            "licenseLabel": "EPL-2.0",
+            "licenseBlobSha": "e23ece2c852415800ac224b74ede6c5849f6f88d",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named core repository’s EPL text and README. The foundation provides an institutional home and services, while contributors develop the tools; other Eclipse projects, specifications, dependencies and support promises are outside this check."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable tools and common project institutions can lower vendor barriers and coordinate development. This partial mapping does not establish neutral outcomes or community control of downstream systems.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.eclipse.org/about/",
+          "https://www.eclipse.org/europe/faq/"
+        ]
+      }
+    },
+    {
+      "id": "blender-foundation",
+      "name": "Blender Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.blender.org/about/foundation/",
+      "mechanism": "Sustain a reusable creative-technology pipeline outside a proprietary license model",
+      "summary": "The Dutch nonprofit foundation supports Blender and its public development ecosystem. The enabling hypothesis is lower technical barriers for public-interest visualization and media work, not a claim that any resulting story or simulation improves society.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.blender.org/about/foundation/",
+          "title": "Blender Foundation: legal identity, mission and working-company relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://fund.blender.org/about/",
+          "title": "Blender Development Fund: support model and charity-status limits",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.blender.org/about/license/",
+          "title": "Blender: source, binary, component and artwork licensing distinctions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/blender/blender",
+          "title": "Blender: inspected official GitHub mirror",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/blender/blender/blob/main/COPYING",
+          "title": "Blender: root license pointer",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/blender/blender/blob/main/doc/license/GPL-license.txt",
+          "title": "Blender: inspected GPL version 2 license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable creative infrastructure can reduce dependency on proprietary production tools, though access to software alone does not reform media or research institutions.",
+        "reach": "A common 3D pipeline can enable educational, scientific and public-interest communication work across sectors.",
+        "durability": "Reusable code and production knowledge can outlast a grant, but maintenance, hardware compatibility and training need ongoing work.",
+        "scalability": "A shared pipeline can be reused without duplicating core development, while skilled production and computing remain substantial costs.",
+        "additionality": "No current marginal funding bottleneck or counterfactual between foundation, commercial studios and community contributions was audited.",
+        "agency": "Public development channels and fund membership do not establish binding affected-community rights over the foundation or downstream productions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal contact identifies Stichting Blender Foundation, Dutch registry 34176425. The Development Fund page says Blender is not an officially recognized charity for tax benefits; this profile does not assert donor eligibility. Much operational work is through Blender Institute, with Blender Studio distinct. Source defaults to GPL-2.0-or-later, some components use permissive licenses, and the official page identifies GPL-3.0-or-later for distributed binaries. The inspected version-2 text is not a uniform license for every asset. No security, accessibility, scientific-validity or media-impact audit occurred.",
+      "falsifiableClaim": "Do nonprofit teams adopting supported Blender retain useful, accessible production workflows and lower lifecycle dependency costs than comparable teams using proprietary tools, after training, hardware and support are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Stichting Blender Foundation’s nonprofit stewardship of the Blender software commons and support model, not every working company, paid content service or downstream creative output.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable 3D creation infrastructure can help nonprofit educators, researchers and communicators avoid rebuilding or licensing every production component.",
+        "sourceUrls": [
+          "https://www.blender.org/about/foundation/",
+          "https://fund.blender.org/about/",
+          "https://www.blender.org/about/license/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Blender source",
+            "repositoryUrl": "https://github.com/blender/blender",
+            "licenseUrl": "https://github.com/blender/blender/blob/main/doc/license/GPL-license.txt",
+            "licenseLabel": "GPL-2.0-or-later source default; binary and component terms differ",
+            "licenseBlobSha": "8860b2a8afa8c8586992f7f374a099956563a152",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the GPL text and root pointer in the official GitHub mirror; canonical development is on projects.blender.org. The official license page distinguishes source defaults, GPL-3.0-or-later binaries, permissive components, artwork and other assets."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "A reusable production commons can reduce proprietary gatekeeping and coordinate technical contributions. It is not automatically a checklist Story intervention or evidence that resulting media changes institutions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.blender.org/about/foundation/",
+          "https://fund.blender.org/about/",
+          "https://www.blender.org/about/license/"
+        ]
+      }
+    },
+    {
+      "id": "krita-foundation",
+      "name": "Krita Foundation",
+      "category": "Justice & public goods",
+      "website": "https://krita.org/en/about/krita-foundation/",
+      "mechanism": "Fund and sustain reusable digital-art software and contributor capacity",
+      "summary": "The independent Dutch nonprofit foundation supports Krita development and its creative community. It offers reusable production capacity that public-interest teams can adapt, not an evaluation of every artwork or campaign made with it.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://krita.org/en/about/krita-foundation/",
+          "title": "Krita Foundation: independent nonprofit identity and support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://krita.org/en/about/license/",
+          "title": "Krita: software, plugin, artwork and trademark distinctions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/krita",
+          "title": "Krita: inspected official GitHub mirror",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/krita/blob/master/README.md",
+          "title": "Krita README: canonical KDE development and license scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/KDE/krita/blob/master/COPYING",
+          "title": "Krita: inspected GPL version 3 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared creative software can reduce vendor dependency and access barriers, but cannot alone change the social institutions using the work.",
+        "reach": "A common art tool can enable educators and public-interest communicators, although its institutional breadth is narrower than general-purpose infrastructure.",
+        "durability": "Reusable source and contributor skills can persist, with maintenance, platform compatibility and training still needed.",
+        "scalability": "A common codebase can be distributed and adapted without each organization building a painting application; creative labor remains costly.",
+        "additionality": "No current marginal developer-funding bottleneck or displacement of community and other contributions was audited.",
+        "agency": "Artist participation and public contribution do not establish binding governance rights for affected communities or downstream audiences."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation page identifies Stichting Krita Foundation in the Netherlands, independent despite Krita’s continuing KDE community relationship. The existing KDE e.V. profile uses Okular and does not count Krita as its own foundation. Krita as a whole is GPL version 3, with compatible per-file and third-party terms; artwork, trademarks and distribution channels are separate. Canonical development is on KDE Invent, not the GitHub mirror. No usability, accessibility, security or nonprofit outcome audit occurred, and creative tools are not charity-exclusive.",
+      "falsifiableClaim": "Do public-interest teams adopting supported Krita maintain useful creative workflows and meaningful exit options with lower lifecycle costs than comparable teams using existing proprietary tools, including training and support?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The independent Stichting Krita Foundation’s nonprofit support for Krita, not KDE e.V.’s Okular scope, all KDE projects or a judgment of downstream creative content.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable digital-painting software and development support can reduce repeated production-tool costs for nonprofit educators and communicators.",
+        "sourceUrls": [
+          "https://krita.org/en/about/krita-foundation/",
+          "https://krita.org/en/about/license/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Krita",
+            "repositoryUrl": "https://github.com/KDE/krita",
+            "licenseUrl": "https://github.com/KDE/krita/blob/master/COPYING",
+            "licenseLabel": "GPL-3.0 for the application; compatible per-file terms differ",
+            "licenseBlobSha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected COPYING and README in KDE’s GitHub mirror; canonical development is on KDE Invent. The independent foundation funds and supports contributors, not sole authorship; plugins, artwork, trademarks and bundled components need separate treatment."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared creative tooling can lower proprietary barriers and coordinate development. This partial match does not make every use a Story intervention or establish audience or community outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://krita.org/en/about/krita-foundation/",
+          "https://krita.org/en/about/license/"
+        ]
+      }
+    },
+    {
+      "id": "qgis-association",
+      "name": "QGIS.org Association",
+      "category": "Justice & public goods",
+      "website": "https://www.qgis.org/",
+      "mechanism": "Sustain reusable geospatial analysis infrastructure with a dedicated nonprofit institution",
+      "summary": "QGIS.org is a Swiss not-for-profit association supporting the QGIS project. Its shared mapping and analysis tools can enable public-interest organizations, but software availability is not evidence of accurate data or equitable land decisions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.qgis.org/community/organisation/",
+          "title": "QGIS: current Swiss association and project organization",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.qgis.org/community/foundation/charter/",
+          "title": "QGIS.org charter: nonprofit identity, voting and OSGeo relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/qgis/QGIS",
+          "title": "QGIS: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/qgis/QGIS/blob/master/README.md",
+          "title": "QGIS README: project and ecosystem relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/qgis/QGIS/blob/master/COPYING",
+          "title": "QGIS: inspected GPL version 2 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable mapping infrastructure can reduce proprietary barriers to institutional analysis rather than buy access for one project.",
+        "reach": "Common geospatial tools can enable environmental, humanitarian, planning and other public-interest organizations across sectors.",
+        "durability": "Public source, skills and a supporting institution can persist, but data, dependencies and maintenance require renewal.",
+        "scalability": "A shared application can be reused widely without duplicating core development, while data collection and interpretation remain local costs.",
+        "additionality": "No current marginal association funding bottleneck or comparison with other geospatial-capacity investments was audited.",
+        "agency": "The charter documents voting-member budget and board powers, but those membership rights were not shown to represent affected communities’ binding authority over deployments."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The charter identifies a Swiss association, distinct from OSGeo’s legal entities and local user groups. The OSGeo profile in this batch is limited to its US support/GDAL example, not QGIS funding again. The inspected GPL version-2 text does not certify every plugin, dataset or dependency. Accurate-looking maps can still misrepresent uncertainty or expose sensitive locations; land rights, consent, accessibility and decision quality need separate review. Association governance is not a beneficiary-agency audit or donor-eligibility verification.",
+      "falsifiableClaim": "Do nonprofit teams using supported QGIS infrastructure make more accurate, contestable and community-valued spatial decisions at lower lifecycle cost than comparable teams using existing tools, without increasing sensitive-data exposure?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The Swiss QGIS.org not-for-profit association’s dedicated project stewardship, not OSGeo’s separate GDAL/support scope, national user groups or the outcomes of every map.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable geospatial analysis software and shared project support can help nonprofit teams avoid rebuilding specialist mapping infrastructure.",
+        "sourceUrls": [
+          "https://www.qgis.org/community/organisation/",
+          "https://www.qgis.org/community/foundation/charter/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "QGIS",
+            "repositoryUrl": "https://github.com/qgis/QGIS",
+            "licenseUrl": "https://github.com/qgis/QGIS/blob/master/COPYING",
+            "licenseLabel": "GPL-2.0 license text; plugins, data and component terms differ",
+            "licenseBlobSha": "8e2daf6bc046673223b197d859fa9609255ef13c",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the application repository’s GPL text and current repository status. The Swiss association supports the project rather than solely authoring it; datasets, plugins, trademarks, dependencies and sensitive-location use are outside this check."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared mapping tools can lower proprietary information barriers and coordinate reusable technical work. This partial mapping does not establish data ownership, legal rights or fair decisions.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.qgis.org/community/organisation/",
+          "https://www.qgis.org/community/foundation/charter/"
+        ]
+      }
+    },
+    {
+      "id": "osgeo",
+      "name": "Open Source Geospatial Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.osgeo.org/",
+      "mechanism": "Provide common legal, organizational and technical support for reusable geospatial infrastructure",
+      "summary": "OSGeo supports open geospatial development through shared institutions and infrastructure. The US nonprofit’s support role and GDAL are scoped here, rather than counting the separate QGIS association’s work again.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.osgeo.org/about/",
+          "title": "OSGeo: nonprofit identity, US/Dutch entities and support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.osgeo.org/projects/gdal/",
+          "title": "OSGeo: GDAL project and shared geospatial-library role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OSGeo/gdal",
+          "title": "GDAL: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OSGeo/gdal/blob/master/LICENSE.TXT",
+          "title": "GDAL: inspected general grant and component notices",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Common legal and technical infrastructure can lower collaboration and data-format barriers, rather than repeatedly fund isolated proprietary conversions.",
+        "reach": "Reusable geospatial libraries can support many public-interest applications across environment, humanitarian response and planning.",
+        "durability": "Shared libraries, formats and organizational knowledge can persist, with ongoing maintenance and interoperability work still necessary.",
+        "scalability": "Common libraries and support processes can be reused across deployments while integration, data quality and local capacity remain costly.",
+        "additionality": "No current marginal US foundation funding gap or allocation between foundation, project sponsors and contributors was audited.",
+        "agency": "Charter-member participation and project committees do not establish affected communities’ binding rights over geospatial decisions or data."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The official about page identifies the US nonprofit, EIN 72-1613215, and a separate Dutch Stichting whose ANBI request is described as under review. No independent tax-eligibility verification is claimed; older or development-site status descriptions are not substituted for current evidence. GDAL’s general MIT-style grant sits alongside component notices. The separately constituted QGIS association is not counted as OSGeo’s own program here. No geospatial accuracy, privacy, security or public-benefit audit occurred, and data licenses are distinct from software.",
+      "falsifiableClaim": "Does pooled support for GDAL-related infrastructure reduce duplicated integration work and improve reliable, contestable public-interest spatial analysis beyond existing support, without creating new data or maintenance bottlenecks?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The US Open Source Geospatial Foundation’s nonprofit support model, using GDAL as its scoped example; not the Dutch Stichting, QGIS.org Association or a combined rating of every OSGeo project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared legal, organizational and geospatial-library infrastructure can help nonprofit implementers reuse data-conversion and analysis capabilities.",
+        "sourceUrls": [
+          "https://www.osgeo.org/about/",
+          "https://www.osgeo.org/projects/gdal/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "GDAL/OGR",
+            "repositoryUrl": "https://github.com/OSGeo/gdal",
+            "licenseUrl": "https://github.com/OSGeo/gdal/blob/master/LICENSE.TXT",
+            "licenseLabel": "MIT-style general grant; bundled component notices differ",
+            "licenseBlobSha": "cd24b533bddcf6971fa61ef2622abd1a90b188fc",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named repository’s general grant and multiple component notices. OSGeo provides an institutional home, not sole development; separate QGIS work, data rights, dependencies, third-party drivers and hosted services are outside this packet."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable geospatial libraries and shared institutions can lower proprietary barriers and coordinate contributions. This partial connection does not establish fair spatial decisions or community data authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.osgeo.org/about/",
+          "https://www.osgeo.org/projects/gdal/"
+        ]
+      }
+    },
+    {
+      "id": "linux-foundation",
+      "name": "Linux Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.linuxfoundation.org/",
+      "mechanism": "Pool operational and institutional support for open-technology collaboration",
+      "summary": "The US nonprofit trade association supplies development, administrative and ecosystem support to open-technology communities. This assessment concerns the support platform, not an attribution of every hosted project’s code or outcomes to the foundation.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.linuxfoundation.org/about",
+          "title": "Linux Foundation: current support model and 501(c)(6) identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.linuxfoundation.org/legal/bylaws",
+          "title": "Linux Foundation: Oregon nonprofit mutual-benefit corporate purposes",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared legal, operational and contributor infrastructure can lower barriers to sustaining technical commons, rather than finance only one application.",
+        "reach": "An enabling platform can support many technology communities and public-interest implementers alongside industry users.",
+        "durability": "Institutional knowledge and shared processes can persist, but administration, infrastructure and contributor support remain recurring services.",
+        "scalability": "Common support functions can reduce repeated setup work, while legal, community and operational needs are not costless software copies.",
+        "additionality": "No current marginal funding bottleneck or counterfactual against member funding and direct project support was audited.",
+        "agency": "Member governance and claims of a neutral home do not establish affected communities’ binding rights over foundation or hosted-project decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The bylaws describe an Oregon nonprofit mutual-benefit corporation operating under 501(c)(6), not a 501(c)(3) charity. Separate charities, project entities and member companies are not merged into one legal or tax claim. This pass inspected the support model, not a named project license packet, so no license-checked badge is assigned. Hosted projects’ benefits cannot be added to foundation benefits as if independently caused twice. Industry scale, certifications and marketing claims are not evidence of public-interest impact or community agency.",
+      "falsifiableClaim": "Does marginal support for shared foundation services help public-interest technology communities sustain useful infrastructure more effectively than direct project grants or existing support, without increasing member capture or institutional dependency?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The Linux Foundation’s US nonprofit trade-association support model, not every related charity, project entity, member or independently counted software foundation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared administration, training, development infrastructure and ecosystem services can reduce repeated organizational work for open-technology projects.",
+        "sourceUrls": [
+          "https://www.linuxfoundation.org/about",
+          "https://www.linuxfoundation.org/legal/bylaws"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common project institutions can coordinate contributors and lower entry barriers. This partial match does not establish neutrality, unrestricted licenses across all projects or affected-community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.linuxfoundation.org/about",
+          "https://www.linuxfoundation.org/legal/bylaws"
+        ]
+      }
+    },
+    {
+      "id": "openmined",
+      "name": "OpenMined Foundation",
+      "category": "Justice & public goods",
+      "website": "https://openmined.org/",
+      "mechanism": "Build reusable infrastructure for analysis across organizational data boundaries",
+      "summary": "The US nonprofit foundation develops tools for using non-public information without simply centralizing raw datasets. PySyft is the named example; technical privacy goals are not treated as a guarantee of safe data use.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openmined.org/foundation/",
+          "title": "OpenMined Foundation: current nonprofit identity and mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openmined.org/privacy-policy/",
+          "title": "OpenMined: October 2026 legal/controller identity and website scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenMined/PySyft",
+          "title": "PySyft: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenMined/PySyft/blob/dev/README.md",
+          "title": "PySyft README: current architecture and legacy API transition",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenMined/PySyft/blob/dev/LICENSE",
+          "title": "PySyft: inspected Apache license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared computation infrastructure can change organizational data-access barriers rather than repeatedly transfer sensitive data to a central provider.",
+        "reach": "Cross-organizational analysis tools can enable research, public-interest evaluation and other applications across sectors.",
+        "durability": "Reusable code and methods can persist, but privacy threats, interfaces, dependencies and operational governance keep changing.",
+        "scalability": "Common tools can be reused across collaborations, while threat modeling, authorization and data stewardship require substantial local work.",
+        "additionality": "No current marginal funding bottleneck or counterfactual contribution relative to other privacy-preserving research infrastructure was audited.",
+        "agency": "Data-holder configuration and contributor participation do not establish binding rights for the people represented in datasets or affected by analyses."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation and October 2026 privacy pages identify OpenMined Foundation as a US 501(c)(3); the website privacy policy is not a certification of every software deployment. The current PySyft README distinguishes version 0.10+ from legacy APIs and describes additional services and authorization requirements. Apache-2.0 for the inspected repository does not settle data rights, model rights, dependencies or hosted-service conditions. No privacy, cryptographic, legal or AI-safety audit was performed; approved queries can still cause harmful inferences.",
+      "falsifiableClaim": "Do public-interest collaborations using supported OpenMined infrastructure obtain useful, independently checkable results beyond existing data-sharing arrangements while preserving meaningful data-subject protections and reducing exposure under realistic threat models?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "OpenMined Foundation’s nonprofit software-infrastructure model, with the current PySyft repository as a named example; not a guarantee about every client, data holder, model or network deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable cross-organizational analysis tools can help nonprofit researchers and evaluators collaborate without rebuilding every data-access workflow.",
+        "sourceUrls": [
+          "https://openmined.org/foundation/",
+          "https://openmined.org/privacy-policy/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "PySyft",
+            "repositoryUrl": "https://github.com/OpenMined/PySyft",
+            "licenseUrl": "https://github.com/OpenMined/PySyft/blob/dev/LICENSE",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "6fae2429ecfe51cd6a4fdb90f7cf24abd0ee770d",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the repository license and current README, including the successor/legacy API distinction. Code licensing is separate from data/model rights, dependencies, authorization, cloud-service terms, threat models and privacy or security assurance."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared computation tools can address coordination and data-access gatekeeping. This partial connection does not establish legitimate permission, privacy guarantees or affected-community governance.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openmined.org/foundation/",
+          "https://openmined.org/privacy-policy/"
+        ]
+      }
+    },
+    {
+      "id": "center-for-open-science",
+      "name": "Center for Open Science",
+      "category": "Justice & public goods",
+      "website": "https://www.cos.io/",
+      "mechanism": "Combine shared research tools with norms, incentives and institutional policy change",
+      "summary": "The US nonprofit combines research infrastructure, community practice and incentive reform. Its current OSF direction emphasizes planning, preregistration, preprints and linked records while phasing out Projects as an active storage workspace.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.cos.io/",
+          "title": "COS: current OSF service-direction notice",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.cos.io/about",
+          "title": "COS: tools, norms and incentive-change strategy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.cos.io/about/finances",
+          "title": "COS: nonprofit identity and financial-disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/CenterForOpenScience/osf.io",
+          "title": "OSF: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/CenterForOpenScience/osf.io/blob/develop/LICENSE",
+          "title": "OSF: inspected Apache license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The documented strategy pairs tools with norms, rewards and institutional requirements, targeting research incentives rather than only offering storage to individuals.",
+        "reach": "Shared research practices and infrastructure can enable multiple disciplines, funders and public-interest institutions, without proving beneficial downstream findings.",
+        "durability": "Reusable methods and records can persist, but service changes, funding and evolving research norms limit assumed permanence.",
+        "scalability": "Common tools and policy frameworks can be reused widely, while community adoption, curation and institutional incentives require complementary work.",
+        "additionality": "The current site describes funding and scope adjustments, but a costed marginal funding bottleneck and counterfactual effect of new support were not audited.",
+        "agency": "Stakeholder engagement, badges and open practices do not establish binding affected-community rights over research agendas, incentives or COS governance."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The financial page identifies COS as a US 501(c)(3); disclosures and historical assurance claims were not independently audited here. The current homepage explicitly says it is phasing out OSF Projects as an active collaboration and storage workspace, so older all-purpose storage descriptions are not treated as current service promises. Apache-2.0 code is distinct from stored content and hosted-service terms. Preregistration, openness or badges do not guarantee true findings, ethical studies, reproducibility or fair research evaluation.",
+      "falsifiableClaim": "Do comparable research communities adopting COS tools together with incentive and policy changes produce more trustworthy, reusable evidence than tool-only or existing practice, without worsening exclusion, performative compliance or service-transition burdens?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Center for Open Science Inc.’s nonprofit research-tools and institutional-change model, with the OSF repository as a scoped example and current service narrowing retained; not every research output or a continuing general-storage guarantee.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared planning, preregistration, preprint and research-record infrastructure, paired with training and policy resources, can reduce repeated work by nonprofit research teams.",
+        "sourceUrls": [
+          "https://www.cos.io/",
+          "https://www.cos.io/about",
+          "https://www.cos.io/about/finances"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Science Framework server",
+            "repositoryUrl": "https://github.com/CenterForOpenScience/osf.io",
+            "licenseUrl": "https://github.com/CenterForOpenScience/osf.io/blob/develop/LICENSE",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "4b74aecc744ff1933dc05d97d2908b3eba8314c8",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the named server repository license and non-archived status. This is not a promise that historical hosted collaboration/storage functions continue; service changes, uploaded content, dependencies, data protection and research validity are separate."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status",
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "The documented strategy explicitly seeks recognition and rewards for open practices, shared workflows and changes in publisher/funder requirements. This partially connects Status, Coordination and Gatekeepers, without proving that rewards become fair or research becomes trustworthy.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.cos.io/",
+          "https://www.cos.io/about",
+          "https://www.cos.io/about/finances"
+        ]
+      }
+    },
+    {
+      "id": "open-source-collective",
+      "name": "Open Source Collective",
+      "category": "Justice & public goods",
+      "website": "https://oscollective.org/",
+      "mechanism": "Make pooled financial and administrative support practical for software maintainers",
+      "summary": "The US nonprofit fiscal host helps open-source communities manage funds, expenses and administration. The hypothesis is that shared back-office capacity can make maintaining useful public infrastructure easier, not that all hosted-project outcomes belong to the intermediary.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://oscollective.org/about/",
+          "title": "Open Source Collective: current nonprofit identity, fiscal-host services and strategy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared fiscal and administrative infrastructure can reduce barriers to sustaining a commons rather than fund only isolated features.",
+        "reach": "A common support model can serve multiple software communities and their nonprofit users, alongside commercial beneficiaries.",
+        "durability": "Administrative knowledge can persist, but legal, financial and operational duties are continuing services rather than permanent fixes.",
+        "scalability": "Pooled processes can reduce repeated setup work, while compliance, support and project needs still require staff and local judgment.",
+        "additionality": "No current marginal hosting-capacity bottleneck, fee allocation or counterfactual against direct project support was audited.",
+        "agency": "Values of collectivity and public budgets do not establish binding affected-community rights over fiscal-host or project decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The about page identifies a US 501(c)(6), EIN 82-2037583, not a 501(c)(3) charity. Open Source Collective is distinct from other fiscal hosts and the Open Collective software/platform operator; their legal and tax statuses are not merged. No named platform or hosted-project license packet was checked, so no software badge is awarded. Gross receipts and project spending are not an impact multiplier, and project benefits cannot be counted again as independently caused by the intermediary. Service terms, fees and eligibility need their own review.",
+      "falsifiableClaim": "Do comparable public-interest software projects using pooled fiscal-host services sustain useful maintenance with less total administrative burden than direct or alternative arrangements, without reducing community control or financial resilience?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Open Source Collective’s US nonprofit fiscal-host support model, not every hosted project, other fiscal host, platform company or independently attributed project outcome.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Pooled money management, expenses and administration can help public-interest software maintainers concentrate on useful work rather than recreate back-office functions.",
+        "sourceUrls": [
+          "https://oscollective.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "A common fiscal layer can coordinate contributions and reduce administrative entry barriers. This partial match does not establish funding additionality, unrestricted licenses for every project or community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://oscollective.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "hack-foundation",
+      "name": "The Hack Foundation",
+      "category": "Justice & public goods",
+      "website": "https://the.hackfoundation.org/",
+      "mechanism": "Combine fiscal sponsorship with reusable financial-administration software",
+      "summary": "The US public charity behind Hack Club operates HCB, pairing fiscal sponsorship with shared financial tools. This profile focuses on that enabling infrastructure, not a separate score for every sponsored project or all youth-education outcomes.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://the.hackfoundation.org/",
+          "title": "The Hack Foundation: legal identity, EIN and fiscal-support role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://hackclub.com/fiscal-sponsorship",
+          "title": "Hack Club HCB: current sponsorship model, tools and fee",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/hackclub/hcb",
+          "title": "HCB: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/hackclub/hcb/blob/main/README.md",
+          "title": "HCB README: platform and Hack Club relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/hackclub/hcb/blob/main/LICENSE",
+          "title": "HCB: inspected AGPL license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared legal and financial infrastructure can lower barriers to running a public-interest project, rather than only reimburse one organization’s administrative expense.",
+        "reach": "The platform can enable several community groups and nonprofit initiatives, with jurisdiction, eligibility and sponsor capacity constraining reach.",
+        "durability": "Reusable software and knowledge persist, but financial oversight, staffing, compliance and banking relationships require continuing support.",
+        "scalability": "Common software can automate repeated workflows across projects, while fiscal responsibilities and human support are not free copies.",
+        "additionality": "No current costed marginal sponsor-capacity gap or comparison between platform support, service revenue and direct project grants was audited.",
+        "agency": "Teen participation, transparency modes and team access do not establish affected-community rights over sponsor governance, eligibility or consequential financial decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation page identifies The Hack Foundation, EIN 81-2908499, as Hack Club’s 501(c)(3) legal entity. The current HCB page lists a 7% revenue fee; open-source code does not make the managed service free or automatically confer charitable status on every independent deployment. AGPL terms do not settle banking, payment-provider, privacy or eligibility conditions. No financial safety, compliance, safeguarding or software-security audit occurred. Processed transactions and sponsored-project outcomes are not an independently measured intermediary impact multiplier.",
+      "falsifiableClaim": "Do comparable community initiatives using HCB sponsorship and tools sustain useful work with lower full administrative costs and meaningful control than alternative arrangements, after fees, eligibility and sponsor-dependency risks are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "The Hack Foundation’s nonprofit HCB fiscal-sponsorship and financial-tool model, not a second count of each sponsored initiative, a bank endorsement or the whole Hack Club education portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "HCB combines sponsorship, accounting workflows, expenses and optional financial transparency with reusable software for community and nonprofit initiatives.",
+        "sourceUrls": [
+          "https://the.hackfoundation.org/",
+          "https://hackclub.com/fiscal-sponsorship"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "HCB",
+            "repositoryUrl": "https://github.com/hackclub/hcb",
+            "licenseUrl": "https://github.com/hackclub/hcb/blob/main/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected HCB’s license and README linking it to Hack Club. Reusable code does not provide a bank, regulated payment access, fiscal sponsorship, tax treatment or the managed service for free; provider terms, fees and security require separate review."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared sponsorship and administration can reduce institutional entry barriers and coordinate resources. This partial match does not establish financial safety, project effectiveness or binding community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://the.hackfoundation.org/",
+          "https://hackclub.com/fiscal-sponsorship"
+        ]
+      }
+    },
+    {
+      "id": "bellingcat",
+      "name": "Bellingcat",
+      "category": "Justice & public goods",
+      "website": "https://www.bellingcat.com/",
+      "mechanism": "Share investigative methods and reusable evidence-preservation tooling",
+      "summary": "The Dutch nonprofit foundation combines investigations with training and tools for journalists and rights groups. Auto Archiver is the scoped software example; preserved public material does not by itself establish a true claim or legally admissible evidence.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.bellingcat.com/about/general-information",
+          "title": "Bellingcat: Dutch foundation and separate US entity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.bellingcat.com/about/who-we-are",
+          "title": "Bellingcat: shared methods, training and investigative scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.bellingcat.com/resources/2022/09/22/preserve-vital-online-content-with-bellingcats-auto-archiver-tool/",
+          "title": "Bellingcat: Auto Archiver origins, partner use and forensic limits",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/bellingcat/auto-archiver",
+          "title": "Auto Archiver: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/bellingcat/auto-archiver/blob/main/README.md",
+          "title": "Auto Archiver README: current tool architecture",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/bellingcat/auto-archiver/blob/main/LICENSE",
+          "title": "Auto Archiver: inspected MIT grant and Stichting Bellingcat copyright",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared investigation and preservation capacity can change information asymmetries and accountability barriers rather than publish only one report.",
+        "reach": "Reusable tools and training can enable multiple journalists and rights organizations, although access, language and political context constrain reach.",
+        "durability": "Methods and preserved records can persist, but source platforms change and safe curation, verification and maintenance require continued work.",
+        "scalability": "Common archiving software and methods can reduce repeated development work, while contextual verification and safeguarding remain skilled labor.",
+        "additionality": "No current marginal tool-maintenance or training bottleneck, donor substitution or counterfactual investigative contribution was audited.",
+        "agency": "Volunteer investigation and public methods do not establish affected subjects’ or communities’ binding rights over research agendas and publication decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The general-information page identifies Stichting Bellingcat, Dutch KvK 72136030, and a separate US entity, not two separately counted assessments. MIT applies to Auto Archiver code, not third-party content, accounts or platform terms. The originating article is dated 2022 and is paired with the current inspected repository; it explicitly notes that stored hashes alone may not satisfy forensic requirements. No admissibility, security, factual-accuracy or safeguarding audit occurred. Archiving can expose victims, intensify harassment or preserve harmful material; open-source research is not automatically open-source software.",
+      "falsifiableClaim": "Do rights and journalism teams using supported archiving tools and methods preserve more useful, contestable evidence than existing workflows, without increasing privacy, exposure, harassment or false-confidence harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Stichting Bellingcat’s nonprofit methods, training and tool model, with Auto Archiver as the named example; not a second US-entity count or an endorsement of every investigation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared investigative guidance and Auto Archiver can help rights groups and journalists avoid rebuilding evidence-preservation workflows.",
+        "sourceUrls": [
+          "https://www.bellingcat.com/about/general-information",
+          "https://www.bellingcat.com/about/who-we-are",
+          "https://www.bellingcat.com/resources/2022/09/22/preserve-vital-online-content-with-bellingcats-auto-archiver-tool/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Auto Archiver",
+            "repositoryUrl": "https://github.com/bellingcat/auto-archiver",
+            "licenseUrl": "https://github.com/bellingcat/auto-archiver/blob/main/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "057b55a8290cb4513315137996586c076dfb2e14",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the MIT grant naming Stichting Bellingcat, current README and non-archived repository. This does not grant rights to archived content or bypass platform controls; hosting, accounts, privacy, factual verification and forensic admissibility remain separate."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared verification and preservation capacity can reduce information gatekeeping and coordinate investigative work. This partial mapping does not establish truthful conclusions, ethical use or community decision power.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.bellingcat.com/about/general-information",
+          "https://www.bellingcat.com/about/who-we-are",
+          "https://www.bellingcat.com/resources/2022/09/22/preserve-vital-online-content-with-bellingcats-auto-archiver-tool/"
+        ]
+      }
+    },
+    {
+      "id": "internews",
+      "name": "Internews",
+      "category": "Justice & public goods",
+      "website": "https://www.internews.org/",
+      "mechanism": "Build shared local-information capacity, methods and organizational resilience",
+      "summary": "Internews Network supports local news and information organizations with research methods, training and sustainability capacity. The hypothesis is to strengthen the institutions people rely on, rather than equate more content or training attendance with impact.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.internews.org/aboutus",
+          "title": "Internews: current mission, local support and information-ecosystem methods",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.internews.org/financials",
+          "title": "Internews: current disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.internews.org/s/2024-Internews-UG-Audit.pdf",
+          "title": "Internews Network: 2024 report, legal name and nonprofit description",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Support for information institutions and sustainable local models can alter recurring access and accountability conditions, beyond producing isolated messages.",
+        "reach": "Shared methods and support can enable different local information organizations and public-interest settings, without proving influence or audience benefit.",
+        "durability": "Skills, relationships and organizational models can persist, while funding, staff, local trust and safety need continuing support.",
+        "scalability": "Common methods can be adapted across partners, but local listening, organizational development and political conditions are not low-cost copies.",
+        "additionality": "No current marginal funding bottleneck, post-transition program capacity or counterfactual contribution relative to other local-information support was audited.",
+        "agency": "Listening-first values and local partnerships do not establish affected communities’ binding rights over budgets, agendas, ownership or publication."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current website describes the nonprofit model; the linked 2024 financial report names Internews Network and describes its nonprofit organization. This is a dated identity corroboration, not an independent audit of financial health, current program capacity or tax eligibility. Partner counts, journalist training and information outputs are not causal civic outcomes. No named software repository/license was inspected, so no open-source badge is assigned. Political retaliation, safety, representation and local revenue-model tradeoffs require independent review; unrelated organizations with similar names are outside scope.",
+      "falsifiableClaim": "Do comparable local information organizations receiving Internews methods and resilience support sustain more useful, trusted and community-accountable information than existing support, without increasing dependence or risks to participants?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Internews Network’s nonprofit local-information capacity and shared-method model, not every affiliate, partner newsroom or an independently attributed rating of all reported media outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Information-ecosystem assessment methods, organizational support and shared training can help nonprofit media and community groups build capability without duplicating every specialist function.",
+        "sourceUrls": [
+          "https://www.internews.org/aboutus",
+          "https://www.internews.org/financials",
+          "https://www.internews.org/s/2024-Internews-UG-Audit.pdf"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "coordination"
+        ],
+        "rationale": "Support for sustainable local information and shared listening methods partially addresses attention incentives and collective information provision. This does not establish healthy information ecosystems, independence or community authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.internews.org/aboutus",
+          "https://www.internews.org/financials",
+          "https://www.internews.org/s/2024-Internews-UG-Audit.pdf"
+        ]
+      }
+    },
+    {
+      "id": "intrahealth-international",
+      "name": "IntraHealth International",
+      "category": "Global health",
+      "website": "https://www.intrahealth.org/",
+      "mechanism": "Provide reusable health-workforce information tools and implementation capacity",
+      "summary": "The nonprofit subsidiary of Global Communities supports health workers and institutions. iHRIS is the named workforce-information example, not a clinical tool recommendation or proof that workforce records improve care.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.intrahealth.org/about-intrahealth-international",
+          "title": "IntraHealth: nonprofit identity and Global Communities subsidiary relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://globalcommunities.org/ihris/",
+          "title": "Global Communities: current iHRIS role, source link and program FAQ",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/iHRIS/iHRIS",
+          "title": "iHRIS: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/iHRIS/iHRIS/blob/master/README.md",
+          "title": "iHRIS README: implementation and customization documentation",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/iHRIS/iHRIS/blob/master/LICENSE",
+          "title": "iHRIS: inspected LGPL version 3 license text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared workforce information and institutional capacity can change allocation and planning routines rather than only deliver individual care.",
+        "reach": "Common workforce infrastructure can support multiple facilities, professions and health programs, with national institutions mediating actual reach.",
+        "durability": "Reusable code and institutional skills can persist, while accurate records, staffing, software and public budgets require renewal.",
+        "scalability": "Common software and implementation knowledge can be adapted across systems, but interoperability, trusted data and local capacity constrain replication.",
+        "additionality": "No current marginal implementation or maintenance funding bottleneck, donor substitution or counterfactual versus other health-system investments was audited.",
+        "agency": "Government partnership and local customization do not establish binding decision rights for health workers, patients or affected communities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current about page says IntraHealth incorporated as a nonprofit and became a Global Communities subsidiary in May 2024; the commercial intrahealth.com brand is not this entity. The linked current iHRIS repository contains LGPL-3.0 text, whereas the parent program FAQ calls it GPL v3; this difference is explicit and not a blanket license resolution for every version or component. An incorrect /digital-health route returned 500; the parent’s working program page and its source link were used instead. No clinical, privacy, security or cost-savings audit occurred, and records or installations do not demonstrate better care.",
+      "falsifiableClaim": "Do comparable health institutions adopting supported iHRIS improve equitable workforce allocation and reliable service availability beyond existing planning systems, after data-quality, privacy, transition and maintenance costs are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "IntraHealth International Inc.’s current nonprofit health-workforce technology and implementation role as a Global Communities subsidiary, with iHRIS as the named example; not the whole parent group or a similarly named commercial software firm.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable workforce-information software and implementation guidance can help health organizations avoid rebuilding personnel-data systems and support capacity.",
+        "sourceUrls": [
+          "https://www.intrahealth.org/about-intrahealth-international",
+          "https://globalcommunities.org/ihris/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "iHRIS",
+            "repositoryUrl": "https://github.com/iHRIS/iHRIS",
+            "licenseUrl": "https://github.com/iHRIS/iHRIS/blob/master/LICENSE",
+            "licenseLabel": "LGPL-3.0 license text; program FAQ uses GPL-v3 wording",
+            "licenseBlobSha": "0a041280bd00a9d068f503b8ee7ce35214bd24a1",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected the repository linked by the parent organization’s current iHRIS page. The root file contains LGPL-3.0 while the program FAQ says GPL v3; this packet records that discrepancy, not every component/version’s legal interpretation, security or service terms."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared workforce information can address coordination failures and information bottlenecks. This partial match does not establish clinical benefit, legitimate data use or binding patient and worker control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.intrahealth.org/about-intrahealth-international",
+          "https://globalcommunities.org/ihris/"
+        ]
+      }
+    },
+    {
+      "id": "development-gateway",
+      "name": "Development Gateway: An IREX Venture",
+      "category": "Poverty & opportunity",
+      "website": "https://developmentgateway.org/",
+      "mechanism": "Make institutional development-data use easier through shared tools and capacity",
+      "summary": "The US nonprofit IREX subsidiary develops data systems and implementation support. The Aid Management Program is the scoped software example; this work differs from the existing IREX profile’s media-literacy scope.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://developmentgateway.org/about/",
+          "title": "Development Gateway: current mission, data systems and IREX identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://developmentgateway.org/financials/",
+          "title": "Development Gateway: nonprofit identity and disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/devgateway/amp",
+          "title": "Aid Management Program: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/devgateway/amp/blob/develop/README.md",
+          "title": "AMP README: software, training and Development Gateway role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/devgateway/amp/blob/develop/LICENSE",
+          "title": "AMP: inspected GPL version 3 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.irex.org/files/IREX_Annual_Impact_Report_2021.pdf",
+          "title": "IREX: dated annual report describing Development Gateway subsidiary relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared development-data systems and uptake capacity can alter institutional information and resource-allocation routines, rather than fund only individual reporting tasks.",
+        "reach": "Common tools can support governments, development partners and public-interest institutions across several sectors.",
+        "durability": "Reusable software and institutional knowledge can persist, while data updates, training, budgets and local ownership require ongoing support.",
+        "scalability": "Shared code and implementation methods reduce duplicated development, but trusted data, policy context and organizational change still require local work.",
+        "additionality": "No current costed marginal funding bottleneck or counterfactual contribution relative to direct institutional capacity investments was audited.",
+        "agency": "Country ownership language and partner consultation do not establish affected communities’ binding authority over aid data, budgets or platform governance."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The financial page identifies a US 501(c)(3); the current brand is an IREX venture, with the subsidiary relationship documented in IREX’s dated report. The existing IREX assessment is scoped to media literacy, not this platform or the entire group, so outcomes are not added together. GPL-3.0 for AMP does not settle datasets, dependencies or hosted-service conditions. Reported country counts and better dashboards are not causal evidence of more effective aid. Sensitive data, political misuse, exclusion, interoperability and maintenance need separate review; financial disclosures were not audited.",
+      "falsifiableClaim": "Do comparable development institutions adopting supported AMP tools and data-use practice allocate resources more transparently and usefully than existing systems, without increasing sensitive-data exposure, reporting burden or platform dependency?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-04",
+      "evaluationScope": "Development Gateway’s nonprofit data-system and implementation role as an IREX subsidiary, with AMP as the named example; distinct from IREX’s existing media-literacy profile and not an additive whole-group impact claim.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared aid-information software, data-use methods and implementation support can help public-interest partners avoid rebuilding common institutional data infrastructure.",
+        "sourceUrls": [
+          "https://developmentgateway.org/about/",
+          "https://developmentgateway.org/financials/",
+          "https://www.irex.org/files/IREX_Annual_Impact_Report_2021.pdf"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Aid Management Program",
+            "repositoryUrl": "https://github.com/devgateway/amp",
+            "licenseUrl": "https://github.com/devgateway/amp/blob/develop/LICENSE",
+            "licenseLabel": "GPL-3.0",
+            "licenseBlobSha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Inspected AMP’s GPL text and README describing Development Gateway’s software, training and policy-support role. Other IREX work, datasets, dependencies, procurement, hosted terms and development outcomes are outside this license check."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared development information can reduce coordination failures and gatekeeping around institutional data. This partial mapping does not establish equitable budgets, causal aid effectiveness or affected-community authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://developmentgateway.org/about/",
+          "https://developmentgateway.org/financials/",
+          "https://www.irex.org/files/IREX_Annual_Impact_Report_2021.pdf"
         ]
       }
     }
