@@ -9,9 +9,9 @@ test('funder alternatives never infer mission equivalence or include another cau
   assert.deepEqual(peersFor([a,b,c],a).map(c=>c.id),['b']);
   assert.deepEqual(peersFor([a,b,c],b,undefined,true),[]);
   const comparison=comparePotential(a,b);
-  assert.equal(comparison.delta,7.5);
+  assert.equal(comparison.delta,8.75);
   assert.equal(comparison.overlaps,true);
-  assert.equal(comparison.candidate.coverage,85);
+  assert.equal(comparison.candidate.coverage,90);
 });
 test('fit stays incomplete until every question is checked; one concern takes precedence',()=>{
   assert.equal(fitStatus({outcome:'yes'}),'Mission fit needs review');

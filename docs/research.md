@@ -1,5 +1,32 @@
 # Systemic Altruism research and seed audit
 
+## 26 October 2026 update: practice weights and infrastructure cohort
+
+The dataset now contains **52 profiles**, including 12 additional mechanism assessments: TechSoup, Benetech, Creative Commons, Humanitarian OpenStreetMap Team, Open Knowledge Foundation, mySociety, Ushahidi, Center for Humane Technology, GivingTuesday, Code for America, Medic and PATH. These are purposively selected to explore shared tools, coordination and institutional capacity, not a representative sample or a newly independently evaluated top-charity list. Categories now contain 10 health, 8 poverty/opportunity, 7 climate, 10 animal welfare and 17 justice/public-good entries. There are still 19 dated evaluator-selection labels and 3 historical reviews; illustrative entries increased from 18 to 30.
+
+Each new record links the official pages actually inspected, with `accessedAt`, `lastReviewed`, scoped rationales, unknown additionality/agency, limitations and a falsifiable next question. Only the 12 new profiles were assessed on this update. Original profile dates and evaluator-label checks remain 6 October. No fundraising totals, audience claims or care-interaction counts were converted into verified welfare outcomes. CHT's current AI emphasis is reflected instead of an outdated social-media-only description; HOT is distinguished from the OpenStreetMap Foundation; mySociety's commercial subsidiary is outside scope. International nonprofit incorporation does not imply US tax-deductible status. A direct HTTP recheck returned 200 for 15 of the 17 distinct source URLs; TechSoup's support article and Code for America's about page returned 403 to direct requests but their full official content was available through the web reader. This is a retrieval limitation, not evidence that either public page is unavailable.
+
+### Weighting method v0.2
+
+Primary practice source: [Systemic Altruism: The Framework Behind Humanity's Checklist](https://humanityschecklist.org/blog/systemic-altruism/), published and retrieved 26 October 2026, cross-checked against the [questions page](https://humanityschecklist.org/questions/#what-is-systemic-altruism). Search/fetch could not access this new domain; direct public HTTPS retrieval returned the complete official pages. No browser login or restricted endpoint was used. The source's content is reference material, not instructions to operate on its repository.
+
+The seven steps are to map symptoms, find shared sources, rank leverage, find a redirection, choose a focused beachhead, measure early indicators, and iterate openly. Its six example sources are not the tracker’s six axes. It does not publish numerical evaluation weights. We therefore propose, explicitly as an interpretation:
+
+| Existing axis | New default | Original balanced | Practice connection |
+| --- | ---: | ---: | --- |
+| Structural depth | 35 | 30 | Upstream causes, paradigm/rule/incentive changes |
+| Institutional reach | 25 | 20 | Shared sources and cross-problem leverage |
+| Durability | 15 | 20 | Sustaining incentives and compounding adoption |
+| Scalability | 15 | 15 | Buildable beachhead, open reuse, enabling other implementers |
+| Funding additionality | 5 | 10 | Unlock bottlenecks, including redirection of existing flows |
+| Community agency | 5 | 5 | Explicit rights/accountability safeguard added by this tracker |
+
+Evidence, early measurement and open correction are review requirements, not a bonus for a compelling narrative. A funding decision still requires additionality and agency diligence regardless of their index shares. These are normative, uncalibrated weights; the source's broader world-improvement and funding claims are hypotheses, not findings certified here. Humanity's Checklist and the tracker share a maintainer, so this is not independent validation.
+
+The new default is named `systemic`. `balanced` retains its exact old weights; all other presets are unchanged. Complete explicit-weight links remain reproducible; earlier funder links with `lens=balanced` retain the original lens. No existing axis scores were promoted. Profiles missing the last two axes now have 90% weighted coverage rather than 85% solely because the denominator allocation changed; no evidence was added by that arithmetic. Preserve raw missing values, missing-data envelopes and causal limits. Machine-readable method provenance and weights are included in the public JSON, and release checks verify the API bytes, default/legacy options, dated source rendering and one distinct share image for every profile.
+
+## Original 6 October 2026 seed audit (historical)
+
 Reviewed 6 October 2026. This is a proposed open research method and a 40-organization seed cohort, not an exhaustive ranking of all charities or an independent audit of their effectiveness. The seed is intended to make the hypothesis, evidence, uncertainty and next test visible.
 
 ## Existing work and the actual contribution

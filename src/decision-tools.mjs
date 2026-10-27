@@ -1,4 +1,4 @@
-import {axes, assess, ordered, presets} from './scoring.mjs';
+import {axes, assess, ordered, presets, method} from './scoring.mjs';
 
 export async function copyText(text) {
   let timer;
@@ -17,14 +17,14 @@ export const fitChecks = {
   capacity: 'Current funding need and delivery capacity'
 };
 
-export function peersFor(records, baseline, weights = presets.balanced, higherOnly = false) {
+export function peersFor(records, baseline, weights = presets[method.defaultPreset], higherOnly = false) {
   if (!baseline) return [];
   const lower = assess(baseline.scores, weights).lower;
   return ordered(records.filter(c => c.id !== baseline.id && c.category === baseline.category &&
     (!higherOnly || assess(c.scores, weights).lower > lower)), weights);
 }
 
-export function comparePotential(baseline, candidate, weights = presets.balanced) {
+export function comparePotential(baseline, candidate, weights = presets[method.defaultPreset]) {
   const a = assess(baseline.scores, weights), b = assess(candidate.scores, weights);
   return {baseline: a, candidate: b, delta: b.lower - a.lower,
     overlaps: Math.max(a.lower, b.lower) <= Math.min(a.upper, b.upper)};
@@ -46,13 +46,15 @@ export function scenario({people, baseline, target, cost}) {
 
 export function funderBrief({baseline, candidates, weights, mission, notes, checks, reviewedAt, origin}) {
   const lines = ['# Funding comparison brief', '', `Prepared: ${new Intl.DateTimeFormat('en-CA').format(new Date())}`,
-    `Assessment snapshot: ${reviewedAt}`, `Mission to preserve: ${mission || 'Not specified'}`, '',
+    `Dataset updated: ${reviewedAt}`, `Weighting method: v${method.version}; explicit weights below`,
+    `Practice source: ${method.source.url}`, `Mission to preserve: ${mission || 'Not specified'}`, '',
     'These are preliminary editorial mechanism assessments. A higher systemic-potential score does not establish greater effectiveness or justify replacing an existing grant.',
     'Candidates share a broad cause category. Same mission, beneficiaries, geography, restrictions and marginal funding need require separate verification.', '',
     '## Priority weights', Object.entries(weights).map(([k,v]) => `${axes[k]?.label || k}: ${v}`).join(' · '), '',
     `## Current charity: ${baseline.name}`, baseline.summary || '',
     `Potential: ${Math.round(assess(baseline.scores,weights).lower)}–${Math.round(assess(baseline.scores,weights).upper)}/100.`,
     `Scope: ${baseline.evaluationScope || 'Not specified'}`,
+    `Profile reviewed: ${baseline.lastReviewed || 'Not specified'}`,
     `Limits: ${Array.isArray(baseline.limitations) ? baseline.limitations.join(' ') : baseline.limitations || 'Not specified'}`, '',
     'Sources:', ...baseline.sources.map(s=>`- ${s.title}: ${s.url}`), `Profile: ${origin}/charities/${baseline.id}/`, ''];
   for (const c of candidates) {
@@ -61,7 +63,7 @@ export function funderBrief({baseline, candidates, weights, mission, notes, chec
       ...Object.entries(fitChecks).map(([key,label]) => `- ${label}: ${checks[c.id]?.[key] || 'unknown'}`),
       '', `Potential: ${Math.round(result.candidate.lower)}–${Math.round(result.candidate.upper)}/100; ${Math.round(result.candidate.coverage)}% weighted coverage.`,
       `Lower-bound difference: ${result.delta >= 0 ? '+' : ''}${result.delta.toFixed(1)} points. ${result.overlaps ? 'Missing-data ranges overlap; the scores do not separate the candidates.' : 'Missing-data ranges do not overlap; qualitative scoring and causal uncertainty remain.'}`,
-      `Mechanism: ${c.mechanism}`, `Scope: ${c.evaluationScope}`,
+      `Mechanism: ${c.mechanism}`, `Scope: ${c.evaluationScope}`, `Profile reviewed: ${c.lastReviewed || 'Not specified'}`,
       `Limits: ${Array.isArray(c.limitations) ? c.limitations.join(' ') : c.limitations}`,
       `Next evidence question: ${c.falsifiableClaim}`, '', 'Sources:',
       ...c.sources.map(s => `- ${s.title}: ${s.url}`), `Profile: ${origin}/charities/${c.id}/`, '');

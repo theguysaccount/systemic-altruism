@@ -1,9 +1,10 @@
 {
-  "schemaVersion": "0.1.0",
-  "reviewedAt": "2026-10-06",
+  "schemaVersion": "0.2.0",
+  "reviewedAt": "2026-10-26",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "40 starting-cohort organizations; not an exhaustive charity ranking",
+  "coverage": "52 assessment profiles: the original 40 plus 12 infrastructure-focused additions; not an exhaustive charity ranking. Individual review and source dates are retained.",
+  "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
       "id": "against-malaria-foundation",
@@ -1937,6 +1938,262 @@
       "selectionType": "illustrative",
       "evaluatorStatus": "not_verified"
     }
+    ,{
+      "id": "techsoup", "name": "TechSoup", "category": "Justice & public goods", "website": "https://www.techsoup.org/",
+      "mechanism": "Shared technology access and nonprofit capacity",
+      "summary": "Connects nonprofits with donated or discounted technology, implementation services and training through a partner network.",
+      "externalEvaluator": null, "evaluatorUrl": null,
+      "sources": [
+        {"url":"https://page.techsoup.org/why-join-techsoup-2","title":"TechSoup — technology solutions for nonprofits","type":"official","accessedAt":"2026-10-26"},
+        {"url":"https://support.techsoup.org/hc/en-us/articles/360030995673-Providers-Policies-Nonprofit-Eligibility-Requirements-and-Restrictions","title":"TechSoup — provider eligibility and restrictions","type":"official","accessedAt":"2026-10-26"}
+      ],
+      "scores": {"depth":3,"reach":4,"durability":2,"scalability":3,"additionality":null,"agency":null},
+      "rationales": {
+        "depth":"Targets a recurring technology-access constraint across civil society, rather than delivering one charity's end service; this does not itself rewrite public rules.",
+        "reach":"The documented partner network serves organizations in multiple countries and across missions; this is potential institutional reach, not verified downstream benefit.",
+        "durability":"Skills and implementation can persist, but licenses, support and partner offers require renewal or ongoing operations.",
+        "scalability":"A common distribution and support network can serve many organizations, although eligibility and implementation remain organization-specific.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: eligibility rules and member access do not establish affected-community control of consequential decisions."
+      },
+      "evidenceLevel":"Organization reported; official program and eligibility descriptions", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Discounts are not demonstrated mission outcomes. Proprietary vendors, fees, country restrictions and ongoing license costs can limit access and durability. No independent outcome or funding-gap audit was completed.",
+      "falsifiableClaim":"Do comparable nonprofits using this support sustain better service outcomes or lower full technology costs after implementation, net of fees, staff time and vendor lock-in?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Documented nonprofit technology access and support mechanism; not every offer, partner or downstream charity.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"benetech", "name":"Benetech", "category":"Justice & public goods", "website":"https://benetech.org/",
+      "mechanism":"Accessible learning and social-good software",
+      "summary":"Develops software and educator support aimed at making learning and other opportunities more accessible to people with disabilities.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://benetech.org/who-we-are/","title":"Benetech — who we are and our approach","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":3,"durability":2,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Shared accessible software and educator support address recurring exclusion in learning institutions rather than only a single learner's immediate need.",
+        "reach":"The official account describes work with schools and learners internationally; reviewed evidence does not establish a change to international rules.",
+        "durability":"Accessible materials and trained educators could remain useful, but platform operation and updates require continued support.",
+        "scalability":"Software can be reused across schools, with language, content conversion, training and access constraints limiting frictionless replication.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: serving people with disabilities does not demonstrate enforceable decision rights within the organization."
+      },
+      "evidenceLevel":"Organization reported; official approach description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"School counts and access are not learning gains. The source does not independently establish sustained attainment, inclusion, counterfactual effects or community governance.",
+      "falsifiableClaim":"Do comparable learners receiving accessible materials achieve sustained improvements in participation and learning, including underserved languages and settings?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Accessible learning software and educator-support design; not an audit of the full organization or historical projects.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"creative-commons", "name":"Creative Commons", "category":"Justice & public goods", "website":"https://creativecommons.org/",
+      "mechanism":"Reusable legal infrastructure for shared knowledge",
+      "summary":"Builds open licensing and public-domain tools, supports their adoption, and advocates for access to shared knowledge and culture.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://creativecommons.org/what-we-do/","title":"Creative Commons — what we do","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":4,"reach":4,"durability":3,"scalability":4,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Reusable legal permissions and shared infrastructure alter how knowledge can be accessed and built upon across institutions.",
+        "reach":"The tools are intended for international use across education, research and culture, rather than a single institution or cause.",
+        "durability":"Adopted licenses and public-domain tools can persist beyond a grant; enforcement, stewardship and changing technology still matter.",
+        "scalability":"Public legal tools can be adopted and reused with low marginal access cost; successful use still needs legal and implementation capacity.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: permission to reuse knowledge is not evidence of affected-community governance of the organization."
+      },
+      "evidenceLevel":"Organization reported; official tools and strategy description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Licensing volume is not proof of equitable knowledge use or welfare gains. Attribution, consent, extraction risks and unequal access require separate assessment.",
+      "falsifiableClaim":"Does adopting these tools increase equitable, lawful reuse and access relative to comparable restricted resources without shifting disproportionate costs onto creators?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Open licensing and commons-support mechanism; no causal estimate for the organization's entire portfolio.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"humanitarian-openstreetmap-team", "name":"Humanitarian OpenStreetMap Team", "category":"Justice & public goods", "website":"https://www.hotosm.org/",
+      "mechanism":"Open mapping infrastructure and local coordination",
+      "summary":"Works with mapping communities and partners to create and use open map data for humanitarian, resilience and public-service decisions.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.hotosm.org/en/","title":"HOT — programs, open mapping hubs and tools","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":4,"durability":2,"scalability":4,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Shared map data and coordination tools address recurring information constraints in planning and response; institutional behavior change remains to be tested.",
+        "reach":"The documented network spans regions and multiple sectors, including disaster response, public health and climate resilience.",
+        "durability":"Data and mapping skills can persist, but maps become outdated and local capacity requires continued upkeep.",
+        "scalability":"Open map data and shared digital tools can be reused across organizations at low marginal access cost; collecting and validating local data remains costly.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: local participation and regional hubs alone do not establish audited decision rights or control of budgets."
+      },
+      "evidenceLevel":"Organization reported; official program and tool descriptions", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Mapped features and volunteer activity are not verified improvements in decisions or lives. Data quality, sensitive locations, representation and ongoing maintenance matter. HOT is distinct from the OpenStreetMap Foundation.",
+      "falsifiableClaim":"Do partner decisions using the maps improve response or service access compared with plausible alternatives, while protecting sensitive communities and maintaining data quality?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"HOT's documented open-mapping and capacity-building approach; not all OpenStreetMap activity.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"open-knowledge-foundation", "name":"Open Knowledge Foundation", "category":"Justice & public goods", "website":"https://okfn.org/",
+      "mechanism":"Open data standards and shared public-interest tools",
+      "summary":"Supports open data and knowledge through reusable legal tools, data standards, software and an international network.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://okfn.org/en/","title":"Open Knowledge Foundation — mission and legal identity","type":"official","accessedAt":"2026-10-26"},{"url":"https://okfn.org/en/what-we-do/tools/","title":"Open Knowledge Foundation — legal and technology tools","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":4,"reach":4,"durability":3,"scalability":4,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Open definitions, permissions and interoperable infrastructure target recurring rules and barriers governing how institutions share knowledge.",
+        "reach":"Public tools and an international network can operate across governments, research and civil society rather than one cause or locality.",
+        "durability":"Adopted standards and published tools can remain available, but institutions must maintain data, systems and governance.",
+        "scalability":"Open-source software, legal tools and standards permit reuse without building each system from scratch; deployment is not cost-free.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: openness of tools does not establish affected-community authority over organizational priorities or resources."
+      },
+      "evidenceLevel":"Organization reported; official mission and tool inventory", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Open data availability is not evidence of accountability or better outcomes. Privacy, maintenance, usability and power imbalances need evaluation. This is an England-and-Wales incorporated nonprofit; no US tax-deductibility claim is made.",
+      "falsifiableClaim":"Do institutions adopting the tools show sustained, independently observed improvements in data reuse, public accountability or service decisions relative to suitable comparators?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Foundation-described legal tools, standards and public-interest software; not all network members or every CKAN deployment.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"mysociety", "name":"mySociety", "category":"Justice & public goods", "website":"https://www.mysociety.org/",
+      "mechanism":"Civic tools and institutional responsiveness",
+      "summary":"Provides public tools for access to information, political accountability and reporting local problems, and supports civic-technology partners.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.mysociety.org/about/","title":"mySociety — goals, public tools and charitable structure","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":3,"durability":3,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Targets routines of public information access and authority responsiveness through civic tools, beyond responding to an isolated request.",
+        "reach":"The documented work concerns UK institutions and support to international partners, not a verified worldwide change in public rules.",
+        "durability":"Institutional routines and civic capacity may persist beyond one grant, although services and accountability require maintenance.",
+        "scalability":"Common civic-tool approaches can be adapted by partners, with local law, integration and political context limiting effortless replication.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: public access to tools is not evidence of affected-community authority over organizational governance."
+      },
+      "evidenceLevel":"Organization reported; official goals and program description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Requests filed and visits are not accountability outcomes. Government response, exclusion and safety need measurement. The assessment concerns the charity, not its separate commercial subsidiary SocietyWorks.",
+      "falsifiableClaim":"Does use of the civic tools lead to independently verified improvements in responsiveness or remedies, including for underrepresented residents, beyond what would otherwise occur?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"mySociety charity's documented civic participation and transparency mechanism; excludes generalization to its commercial subsidiary.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"ushahidi", "name":"Ushahidi", "category":"Justice & public goods", "website":"https://www.ushahidi.com/",
+      "mechanism":"Citizen-generated data and community coordination",
+      "summary":"Offers crowdsourcing and mapping tools for partners collecting community information in governance, humanitarian response and rights work.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.ushahidi.com/","title":"Ushahidi — platform, use cases and theory of change","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":4,"durability":2,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Changes how community information can enter organizational decisions; the documented theory of change does not itself establish a change to underlying public rules.",
+        "reach":"A common platform is offered across governance, rights, climate and humanitarian settings, with potential use beyond one institution.",
+        "durability":"Collected information and local skills may remain useful, but hosting, verification and sustained decision-maker response require ongoing work.",
+        "scalability":"A reusable platform can support multiple partners, while data validation, safety and locally appropriate deployment constrain replication.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: contributing reports or being heard is not proof of enforceable control over decisions or resources."
+      },
+      "evidenceLevel":"Organization reported; official platform and theory of change", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Reported deployments, voices or reach are not verified causal impact. Selection bias, misinformation, exposure of sensitive locations and lack of institutional response could undermine benefits.",
+      "falsifiableClaim":"Do deployments improve verified response or accountability outcomes compared with plausible alternatives, without exposing reporters or excluded communities to additional harm?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Documented crowdsourcing-platform mechanism; no validation of the site's numerical impact claims or all partner deployments.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"center-for-humane-technology", "name":"Center for Humane Technology", "category":"Justice & public goods", "website":"https://www.humanetech.com/",
+      "mechanism":"Technology incentive reform, public understanding and coordination",
+      "summary":"Uses public education, decision-maker briefings and cross-sector coordination to address technology's systemic incentives, with a current emphasis on AI.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.humanetech.com/","title":"Center for Humane Technology — current strategy and activities","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":4,"reach":4,"durability":2,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Explicitly targets technology incentives and shared understanding rather than only helping an individual manage technology use.",
+        "reach":"The intended levers concern widely used technology systems and cross-sector decision-makers, with effects potentially extending across borders and issues.",
+        "durability":"Understanding and relationships could persist, but communications alone do not establish durable institutional adoption or enforcement.",
+        "scalability":"Public educational materials can spread widely; targeted briefings and coordination remain relationship- and context-dependent.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: convening influential decision-makers does not establish affected-community control of priorities or resources."
+      },
+      "evidenceLevel":"Organization reported; official current strategy description", "confidence":"Moderate for documented intent; low for systemic attribution",
+      "limitations":"Audience size, media appearances and elite access do not prove incentive reform or reduced harm. The current website emphasizes AI; an older social-media-only description would misstate its focus.",
+      "falsifiableClaim":"Can specific briefing or coordination efforts be traced to implemented safeguards or incentive changes and independently observed reductions in technology-related harm?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Currently described education, briefing and coordination strategy; not a causal evaluation of films, platforms or all past campaigns.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"givingtuesday", "name":"GivingTuesday", "category":"Justice & public goods", "website":"https://www.givingtuesday.org/",
+      "mechanism":"Generosity norms, distributed coordination and shared giving data",
+      "summary":"Supports a distributed generosity movement and a Data Commons intended to help the social sector learn about giving.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.givingtuesday.org/about/","title":"GivingTuesday — mission, network and nonprofit identity","type":"official","accessedAt":"2026-10-26"},{"url":"https://data.givingtuesday.org/","title":"GivingTuesday Data Commons — shared research and resources","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":4,"reach":4,"durability":2,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Aims to redirect recurring social norms and giving flows across causes, alongside shared research infrastructure rather than one end-service program.",
+        "reach":"The official network is international and cross-cause; reach describes the intended lever, not additional donations or welfare outcomes caused.",
+        "durability":"A shared giving ritual and local networks may persist, but continued mobilization is needed and persistence without the organization has not been demonstrated.",
+        "scalability":"A common campaign model and shared resources can be reused locally, but coordination, adaptation and fundraising effort remain necessary.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited; gross giving is not proof of additional giving.",
+        "agency":"Unknown: distributed leadership statements do not establish enforceable affected-community authority over funds or organizational decisions."
+      },
+      "evidenceLevel":"Organization reported; official mission and Data Commons descriptions", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Giving on a campaign day may replace donations at other times. More giving is not necessarily more effective giving. Self-reported network size and donation totals are not independent causal evidence.",
+      "falsifiableClaim":"Does participation generate sustained additional generosity and better downstream outcomes after accounting for displaced donations, campaign costs and recipient effectiveness?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Nonprofit movement coordination and shared giving-research design; not validation of aggregate fundraising attribution.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"code-for-america", "name":"Code for America", "category":"Justice & public goods", "website":"https://codeforamerica.org/",
+      "mechanism":"Public-service tools and government implementation reform",
+      "summary":"Partners with US government institutions to build digital tools, improve public programs and change service-delivery policies.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://codeforamerica.org/about-us/","title":"Code for America — approach, programs and charitable identity","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":3,"durability":3,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Targets institutional routines, policies and service interfaces, not just helping one person complete an application.",
+        "reach":"Works with US government institutions at several levels across safety-net, tax and justice programs; this is national institutional potential.",
+        "durability":"Government adoption of improved routines could outlast a grant, conditional on public budgets, maintenance and political continuity.",
+        "scalability":"Shared implementation patterns can extend to other jurisdictions, but legal rules, procurement and system integration remain substantial constraints.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: people-centered design is not proof that affected residents have binding authority over institutional or charity decisions."
+      },
+      "evidenceLevel":"Organization reported; official approach and program description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"A simpler application or digital tool is not necessarily more equitable access. Exclusion, erroneous decisions, privacy, system maintenance and policy implementation need independent testing.",
+      "falsifiableClaim":"Do redesigned services sustainably improve eligible residents' access and reduce administrative burdens relative to comparable services without increasing exclusion or error?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Documented government-service and implementation approach; not an audit of every project or AI deployment.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"medic", "name":"Medic", "category":"Global health", "website":"https://medic.org/",
+      "mechanism":"Open-source infrastructure for community health systems",
+      "summary":"Stewards and contributes to the Community Health Toolkit and supports partners deploying digital tools for health workers and care coordination.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://medic.org/","title":"Medic — mission and reported health-worker support","type":"official","accessedAt":"2026-10-26"},{"url":"https://medic.org/tools/","title":"Medic — digital public goods and Community Health Toolkit stewardship","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":3,"durability":3,"scalability":4,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Shared digital infrastructure targets care-team routines and coordination across implementing institutions, rather than delivering a single episode of care.",
+        "reach":"The documented model supports health workers and partners in multiple countries; this does not establish an international rule change.",
+        "durability":"Open software and locally adopted routines could remain beyond a grant, provided health systems sustain hosting, training and maintenance.",
+        "scalability":"Open-source frameworks and implementation resources allow partners to reuse and adapt software instead of rebuilding it, though deployment still costs resources.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: participatory design and local adaptation do not establish audited control over budgets or governance by affected communities."
+      },
+      "evidenceLevel":"Organization reported; official software-stewardship description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"Health-worker support and care-interaction counts are not causal health gains. Workload, privacy, reliability, costs and actual adoption need independent study. Open source does not mean cost-free deployment.",
+      "falsifiableClaim":"Do comparable care teams using the toolkit improve sustained care quality and patient outcomes after accounting for training, hosting, worker burden and other health-system changes?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Medic's Community Health Toolkit stewardship and partner-support mechanism; not attribution for every partner's health outcomes.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },{
+      "id":"path", "name":"PATH", "category":"Global health", "website":"https://www.path.org/",
+      "mechanism":"Health-system capacity, data and institutional adoption",
+      "summary":"Works with governments and local partners on health-system strengthening, including digital data systems, workforce capacity, policy and financing.",
+      "externalEvaluator":null, "evaluatorUrl":null,
+      "sources":[{"url":"https://www.path.org/who-we-are/","title":"PATH — nonprofit identity and global approach","type":"official","accessedAt":"2026-10-26"},{"url":"https://www.path.org/what-we-do/health-systems-strengthening/","title":"PATH — health systems strengthening","type":"official","accessedAt":"2026-10-26"}],
+      "scores":{"depth":3,"reach":3,"durability":3,"scalability":3,"additionality":null,"agency":null},
+      "rationales":{
+        "depth":"Targets public-health routines, workforce capability, data systems and financing, rather than solely repeated commodity or clinical delivery.",
+        "reach":"Works with national and local institutions in multiple countries; reviewed sources do not establish one globally adopted institutional lever.",
+        "durability":"Institutionally adopted capacity and data practices could outlast a grant, conditional on government budgets, staff continuity and maintenance.",
+        "scalability":"Technical approaches can be adapted across health systems, but context, procurement, training and public financing constrain replication.",
+        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency":"Unknown: human-centered design and local partnerships alone do not establish enforceable community authority over resources."
+      },
+      "evidenceLevel":"Organization reported; official health-systems program description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
+      "limitations":"This is a scoped design assessment, not a rating of all PATH programs. Institutional adoption, equitable outcomes, implementation costs and durability require independent evaluation; descriptions do not establish attribution.",
+      "falsifiableClaim":"Do partner health systems sustain measurable improvements in service quality and equitable access after project support ends, relative to credible alternative trajectories?",
+      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
+      "evaluationScope":"Health-system strengthening mechanism only; excludes extrapolation to every vaccine, device, market-shaping or research program.",
+      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    }
   ],
-  "reviewMethod": "AI-assisted source research and qualitative mechanism sketches; no independent human validation yet"
+  "reviewMethod": "AI-assisted source research and qualitative mechanism sketches; no independent human validation yet. Dataset update date does not refresh older profile or evaluator-status reviews."
 }

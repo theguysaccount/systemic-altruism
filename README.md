@@ -4,7 +4,7 @@
 
 A beta charity tracker with a broad searchable IRS registry and an evidence-linked assessment cohort. It makes the proposed pathway to structural change visible: rules, incentives, institutions, knowledge and community power.
 
-**This is a working first release, not a validated effectiveness ranking.** The 40 starting profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations.
+**This is a working beta, not a validated effectiveness ranking.** The 52 profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations. Twelve infrastructure-focused assessments were added on 26 October; the original 40 retain their earlier review dates.
 
 ## What works
 
@@ -12,7 +12,8 @@ A beta charity tracker with a broad searchable IRS registry and an evidence-link
 - [Charity outcome planner](https://charities.systemicaltruism.com/toolkit/): define a systemic mechanism, observable outcome, evidence plan, community role, stop rule and reviewer; export Markdown or JSON, or copy the plan. Drafts stay in browser-local storage. Optional full-cost scenarios are arithmetic assumptions, not measured or forecast impact.
 - Search more than a million IRS-listed 501(c)(3) organizations by name, city or EIN, with filing-address location and NTEE cause filters.
 - Inspect public identity and classification records; registry-only organizations have no systemic scores.
-- Search and filter 40 assessment profiles across five cause areas.
+- Search and filter 52 assessment profiles across five cause areas.
+- Default to Systemic Altruism practice weights (35/25/15/15/5/5), with linked provenance and an explicit numeric interpretation; the original balanced lens remains available unchanged.
 - Adjust six priority weights and share a reproducible view URL.
 - Compare up to three profiles side by side, including evidence gaps.
 - Save a watchlist in browser-local storage.

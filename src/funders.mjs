@@ -1,4 +1,4 @@
-import {axes, assess, presets} from './scoring.mjs';
+import {axes, assess, presets, method} from './scoring.mjs';
 import {peersFor, comparePotential, fitChecks, fitStatus, funderBrief, copyText} from './decision-tools.mjs';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,7 +15,7 @@ try {
 if (dataset) {
   const records = dataset.charities;
   let baseline = records.find(c => c.id === query.get('baseline')) || records[0];
-  let lens = Object.hasOwn(presets, query.get('lens')) ? query.get('lens') : 'balanced';
+  let lens = Object.hasOwn(presets, query.get('lens')) ? query.get('lens') : method.defaultPreset;
   let selected = new Set((query.get('alternatives') || '').split(',').filter(id =>
     records.some(c => c.id === id && c.id !== baseline.id && c.category === baseline.category)).slice(0,2));
   const checks = {};

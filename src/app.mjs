@@ -1,11 +1,12 @@
-import {axes,presets,assess,ordered} from './scoring.mjs';
+import {axes,presets,assess,ordered,method} from './scoring.mjs';
 const data=await fetch('/api/v1/charities.json').then(r=>{if(!r.ok)throw new Error('Dataset unavailable');return r.json()});
 const records=data.charities;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const query=new URLSearchParams(location.search);
-let weights={...presets.balanced},category=query.get('cause')||'all',search=query.get('q')||'',savedOnly=false;
+let weights={...presets[method.defaultPreset]},category=query.get('cause')||'all',search=query.get('q')||'',savedOnly=false;
 try{if(query.has('weights')){const v=JSON.parse(query.get('weights'));for(const k of Object.keys(axes))if(Number.isFinite(v[k])&&v[k]>=0&&v[k]<=100)weights[k]=v[k];}}catch{}
+$('#preset').value=Object.keys(presets).find(name=>Object.keys(axes).every(k=>presets[name][k]===weights[k]))||'custom';
 let saved=new Set();try{saved=new Set(JSON.parse(localStorage.getItem('sa-watchlist')||'[]'));}catch{}
 let selected=new Set((query.get('compare')||'').split(',').filter(id=>records.some(c=>c.id===id)).slice(0,3));
 const pct=x=>Math.round(x);
@@ -27,7 +28,7 @@ $('#weights').innerHTML=Object.entries(axes).map(([k,a])=>`<div class="weight"><
 $('#weights').addEventListener('input',e=>{const k=e.target.dataset.axis;if(!k)return;weights[k]=+e.target.value;$(`#value-${k}`).value=weights[k];$('#preset').value='custom';render();});
 function setPreset(name){weights={...presets[name]};for(const k of Object.keys(axes)){$(`#weight-${k}`).value=weights[k];$(`#value-${k}`).value=weights[k];}$('#preset').value=name;render();}
 $('#preset').addEventListener('change',e=>{if(presets[e.target.value])setPreset(e.target.value)});
-$('#reset-weights').addEventListener('click',()=>setPreset('balanced'));
+$('#reset-weights').addEventListener('click',()=>setPreset(method.defaultPreset));
 $('#search').addEventListener('input',e=>{search=e.target.value;render();});
 $('#cause-filter').addEventListener('change',e=>{category=e.target.value;render();});
 $('#saved-filter').addEventListener('click',e=>{savedOnly=!savedOnly;e.currentTarget.classList.toggle('active',savedOnly);e.currentTarget.setAttribute('aria-pressed',savedOnly);render();});

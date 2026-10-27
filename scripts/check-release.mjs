@@ -1,8 +1,26 @@
 import {readFile,access} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {method,presets} from '../src/scoring.mjs';
 const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
+const dataset=JSON.parse(await readFile('data/charities.json','utf8'));
+if(routes.filter(r=>r.path.startsWith('/charities/')).length!==dataset.charities.length)throw new Error('Assessment route/count mismatch');
+const methodHtml=await readFile('dist/methodology/index.html','utf8');
+if(!methodHtml.includes(method.source.url)||!methodHtml.includes('not a numerical charity-rating formula'))throw new Error('Missing practice provenance/interpretation');
+for(const path of ['/','/funders/']){
+  const html=await readFile(`dist${path}index.html`,'utf8');
+  if(!html.includes('<option value="systemic">Systemic Altruism practice (default)</option>')||!html.includes('<option value="balanced">Original balanced (v0.1)</option>'))throw new Error(`Missing default or legacy lens: ${path}`);
+}
+for(const c of dataset.charities){
+  const html=await readFile(`dist/charities/${c.id}/index.html`,'utf8');
+  if(!html.includes(`Axis review: ${c.lastReviewed}`))throw new Error(`Profile review date mismatch: ${c.id}`);
+  for(const s of c.sources)if(!html.includes(`checked ${s.accessedAt}`))throw new Error(`Source review date mismatch: ${c.id}`);
+}
+for(const path of ['/','/directory/','/data/']){
+  const html=await readFile(`dist${path}index.html`,'utf8');
+  if(!html.includes(String(dataset.charities.length)))throw new Error(`Stale assessment count: ${path}`);
+}
 if(!routes.some(r=>r.path==='/directory/'))throw new Error('Missing public charity directory');
 for(const path of ['/funders/','/toolkit/'])if(!routes.some(r=>r.path===path))throw new Error(`Missing decision tool: ${path}`);
 if(registry.recordCount<1_000_000)throw new Error('Incomplete charity registry');
@@ -27,12 +45,14 @@ for(const r of routes){
   }
 }
 if(origin){
-  for(const file of ['funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css']){
+  for(const file of ['app.mjs','scoring.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
     const response=await fetch(origin+'/'+file);
     if(!response.ok)throw new Error(`Live tool asset missing: ${file}`);
     const local=await readFile('dist/'+file),live=Buffer.from(await response.arrayBuffer());
     if(createHash('sha256').update(local).digest('hex')!==createHash('sha256').update(live).digest('hex'))throw new Error(`Live tool asset mismatch: ${file}`);
   }
+  const liveData=await (await fetch(origin+'/api/v1/charities.json')).json();
+  if(liveData.charities.length!==dataset.charities.length||JSON.stringify(liveData.weightingMethod.weights)!==JSON.stringify(presets[method.defaultPreset]))throw new Error('Live assessment/default weights mismatch');
   const response=await fetch(origin+'/api/registry?q=food+bank&state=NY&cause=K&limit=3');
   if(!response.ok)throw new Error(`Live registry: ${response.status}`);
   const result=await response.json();
