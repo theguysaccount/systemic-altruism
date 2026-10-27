@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,52);assert.equal(new Set(data.charities.map(c=>c.id)).size,52);
+  assert.equal(data.charities.length,70);assert.equal(new Set(data.charities.map(c=>c.id)).size,70);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -56,4 +56,15 @@ test('added assessments have dated primary sources without inventing funding or 
   }
   assert.equal(data.charities.filter(c=>c.lastReviewed==='2026-10-06').length,40);
   assert.ok(data.charities.slice(0,40).every(c=>c.sources.every(s=>s.accessedAt==='2026-10-06')));
+});
+test('October 27 batch adds 18 scoped assessments without changing the agreed weighting method',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-tools-and-checklist');
+  assert.equal(batch.length,18);assert.equal(data.charities.filter(c=>c.lastReviewed==='2026-10-26').length,12);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
+    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-27'));
+  }
+  assert.equal(data.weightingMethod.version,'0.2');
+  assert.deepEqual(data.weightingMethod.weights,{depth:35,reach:25,durability:15,scalability:15,additionality:5,agency:5});
 });

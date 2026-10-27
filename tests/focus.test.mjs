@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {checklistSources,normalizeFocus,matchesFocus,focusProfile} from '../src/focus.mjs';
+import {assess} from '../src/scoring.mjs';
+const data=JSON.parse(readFileSync(new URL('../data/charities.json',import.meta.url)));
+test('focus filters separate evidence-backed tooling, partial source matches and unclassified records',()=>{
+  const tool={tooling:{kind:'software'}},match={checklistAlignment:{basis:'editorial_mapping',sources:['story']}},unknown={};
+  assert.equal(matchesFocus(tool,'tooling'),true);assert.equal(matchesFocus(match,'tooling'),false);
+  assert.equal(matchesFocus(match,'source:story'),true);assert.equal(matchesFocus(match,'source:vision'),false);
+  assert.equal(matchesFocus(unknown,'all'),true);assert.equal(matchesFocus(unknown,'checklist'),false);
+  assert.equal(normalizeFocus('invalid'),'all');assert.equal(normalizeFocus('source:vision'),'source:vision');
+});
+test('focus metadata never changes an assessment or asserts checklist affiliation',()=>{
+  const c=data.charities.find(c=>c.checklistAlignment);
+  assert.deepEqual(assess(c.scores),assess({...c,checklistAlignment:undefined,tooling:undefined}.scores));
+  assert.match(focusProfile(c,s=>s),/Explicit checklist adoption: not verified/);
+  assert.equal(focusProfile({},s=>s),'');
+});
+test('every focus claim is dated and linked to that profile’s actual sources',()=>{
+  const kinds=['software','capacity','shared_infrastructure'];
+  for(const c of data.charities){
+    const urls=c.sources.map(s=>s.url);
+    if(c.tooling){assert.ok(kinds.includes(c.tooling.kind));assert.ok(c.tooling.summary);assert.ok(c.tooling.sourceUrls.length);for(const u of c.tooling.sourceUrls)assert.ok(urls.includes(u));}
+    if(c.checklistAlignment){
+      const a=c.checklistAlignment;assert.equal(a.basis,'editorial_mapping');assert.equal(a.adoption,'not_verified');assert.match(a.mappedAt,/^\d{4}-\d{2}-\d{2}$/);assert.ok(a.rationale.length>40);
+      assert.ok(a.sources.length);for(const s of a.sources)assert.ok(s in checklistSources);
+      assert.ok(a.sourceUrls.length);for(const u of a.sourceUrls)assert.ok(urls.includes(u));
+    }
+  }
+  for(const source of Object.keys(checklistSources))assert.ok(data.charities.some(c=>matchesFocus(c,'source:'+source)),`Missing source coverage: ${source}`);
+});

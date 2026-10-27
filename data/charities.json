@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.2.0",
-  "reviewedAt": "2026-10-26",
+  "schemaVersion": "0.3.0",
+  "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "52 assessment profiles: the original 40 plus 12 infrastructure-focused additions; not an exhaustive charity ranking. Individual review and source dates are retained.",
+  "coverage": "70 scoped assessment profiles, including 18 tools-and-checklist additions on 27 October. Purposefully selected, not comprehensive. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -1940,6 +1940,8 @@
     }
     ,{
       "id": "techsoup", "name": "TechSoup", "category": "Justice & public goods", "website": "https://www.techsoup.org/",
+      "tooling": {"kind":"shared_infrastructure","summary":"Technology access, training and implementation support for nonprofit organizations.","sourceUrls":["https://page.techsoup.org/why-join-techsoup-2","https://support.techsoup.org/hc/en-us/articles/360030995673-Providers-Policies-Nonprofit-Eligibility-Requirements-and-Restrictions"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["coordination","gatekeepers"],"rationale":"Connects nonprofits to technology and support, reducing some practical barriers to implementing their missions.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://page.techsoup.org/why-join-techsoup-2","https://support.techsoup.org/hc/en-us/articles/360030995673-Providers-Policies-Nonprofit-Eligibility-Requirements-and-Restrictions"]},
       "mechanism": "Shared technology access and nonprofit capacity",
       "summary": "Connects nonprofits with donated or discounted technology, implementation services and training through a partner network.",
       "externalEvaluator": null, "evaluatorUrl": null,
@@ -1964,6 +1966,7 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"benetech", "name":"Benetech", "category":"Justice & public goods", "website":"https://benetech.org/",
+      "tooling": {"kind":"software","summary":"Accessible learning software and educator resources used by mission-driven education organizations.","sourceUrls":["https://benetech.org/who-we-are/"],"reviewedAt":"2026-10-27"},
       "mechanism":"Accessible learning and social-good software",
       "summary":"Develops software and educator support aimed at making learning and other opportunities more accessible to people with disabilities.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -1985,6 +1988,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"creative-commons", "name":"Creative Commons", "category":"Justice & public goods", "website":"https://creativecommons.org/",
+      "tooling": {"kind":"shared_infrastructure","summary":"Reusable legal permissions and licensing resources for sharing public-interest knowledge.","sourceUrls":["https://creativecommons.org/what-we-do/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["gatekeepers"],"rationale":"Open permissions reduce barriers to reusing and building on shared knowledge; this is not proof of equitable governance.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://creativecommons.org/what-we-do/"]},
       "mechanism":"Reusable legal infrastructure for shared knowledge",
       "summary":"Builds open licensing and public-domain tools, supports their adoption, and advocates for access to shared knowledge and culture.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2006,6 +2011,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"humanitarian-openstreetmap-team", "name":"Humanitarian OpenStreetMap Team", "category":"Justice & public goods", "website":"https://www.hotosm.org/",
+      "tooling": {"kind":"software","summary":"Open mapping tools and shared data for humanitarian and civil-society implementers.","sourceUrls":["https://www.hotosm.org/en/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["coordination"],"rationale":"Common geographic data can help humanitarian actors coordinate, a partial match rather than the checklist’s proposed collaborator-routing system.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://www.hotosm.org/en/"]},
       "mechanism":"Open mapping infrastructure and local coordination",
       "summary":"Works with mapping communities and partners to create and use open map data for humanitarian, resilience and public-service decisions.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2027,6 +2034,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"open-knowledge-foundation", "name":"Open Knowledge Foundation", "category":"Justice & public goods", "website":"https://okfn.org/",
+      "tooling": {"kind":"software","summary":"Public-interest data tools, standards and legal resources for civil-society organizations.","sourceUrls":["https://okfn.org/en/","https://okfn.org/en/what-we-do/tools/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["gatekeepers"],"rationale":"Open data, standards and software can reduce control by proprietary intermediaries, without proving that affected people gain decision power.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://okfn.org/en/","https://okfn.org/en/what-we-do/tools/"]},
       "mechanism":"Open data standards and shared public-interest tools",
       "summary":"Supports open data and knowledge through reusable legal tools, data standards, software and an international network.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2048,6 +2057,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"mysociety", "name":"mySociety", "category":"Justice & public goods", "website":"https://www.mysociety.org/",
+      "tooling": {"kind":"software","summary":"Civic transparency and participation tools used by citizens and civil-society organizations.","sourceUrls":["https://www.mysociety.org/about/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["gatekeepers"],"rationale":"Tools supporting public access and scrutiny can reduce information barriers around institutions, a narrower mechanism than the full checklist thesis.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://www.mysociety.org/about/"]},
       "mechanism":"Civic tools and institutional responsiveness",
       "summary":"Provides public tools for access to information, political accountability and reporting local problems, and supports civic-technology partners.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2069,6 +2080,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"ushahidi", "name":"Ushahidi", "category":"Justice & public goods", "website":"https://www.ushahidi.com/",
+      "tooling": {"kind":"software","summary":"Reusable crowdsourcing and mapping infrastructure for community and nonprofit partners.","sourceUrls":["https://www.ushahidi.com/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["coordination","gatekeepers"],"rationale":"Citizen-generated information can support coordinated response and broaden whose knowledge is visible; it does not itself give binding authority.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://www.ushahidi.com/"]},
       "mechanism":"Citizen-generated data and community coordination",
       "summary":"Offers crowdsourcing and mapping tools for partners collecting community information in governance, humanitarian response and rights work.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2090,6 +2103,7 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"center-for-humane-technology", "name":"Center for Humane Technology", "category":"Justice & public goods", "website":"https://www.humanetech.com/",
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["attention"],"rationale":"Its technology-incentive and public-understanding work overlaps the attention theme; the reviewed current strategy emphasizes AI, not an alternative social feed.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://www.humanetech.com/"]},
       "mechanism":"Technology incentive reform, public understanding and coordination",
       "summary":"Uses public education, decision-maker briefings and cross-sector coordination to address technology's systemic incentives, with a current emphasis on AI.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2111,6 +2125,8 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"givingtuesday", "name":"GivingTuesday", "category":"Justice & public goods", "website":"https://www.givingtuesday.org/",
+      "tooling": {"kind":"shared_infrastructure","summary":"Giving research and shared resources intended to help the wider nonprofit ecosystem.","sourceUrls":["https://www.givingtuesday.org/about/","https://data.givingtuesday.org/"],"reviewedAt":"2026-10-27"},
+      "checklistAlignment": {"basis":"editorial_mapping","sources":["status","coordination"],"rationale":"A public generosity ritual and distributed giving networks overlap redirection of social norms and coordinated resources, not the specific designer-goods beachhead.","adoption":"not_verified","mappedAt":"2026-10-27","sourceUrls":["https://www.givingtuesday.org/about/","https://data.givingtuesday.org/"]},
       "mechanism":"Generosity norms, distributed coordination and shared giving data",
       "summary":"Supports a distributed generosity movement and a Data Commons intended to help the social sector learn about giving.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2153,6 +2169,7 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"medic", "name":"Medic", "category":"Global health", "website":"https://medic.org/",
+      "tooling": {"kind":"software","summary":"Community Health Toolkit frameworks and partner resources for nonprofit health implementers.","sourceUrls":["https://medic.org/","https://medic.org/tools/"],"reviewedAt":"2026-10-27"},
       "mechanism":"Open-source infrastructure for community health systems",
       "summary":"Stewards and contributes to the Community Health Toolkit and supports partners deploying digital tools for health workers and care coordination.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2174,6 +2191,7 @@
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
     },{
       "id":"path", "name":"PATH", "category":"Global health", "website":"https://www.path.org/",
+      "tooling": {"kind":"capacity","summary":"Digital, workforce and implementation support for government and local NGO health partners.","sourceUrls":["https://www.path.org/who-we-are/","https://www.path.org/what-we-do/health-systems-strengthening/"],"reviewedAt":"2026-10-27"},
       "mechanism":"Health-system capacity, data and institutional adoption",
       "summary":"Works with governments and local partners on health-system strengthening, including digital data systems, workforce capacity, policy and financing.",
       "externalEvaluator":null, "evaluatorUrl":null,
@@ -2193,6 +2211,1182 @@
       "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
       "evaluationScope":"Health-system strengthening mechanism only; excludes extrapolation to every vaccine, device, market-shaping or research program.",
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+    },
+    {
+      "id": "nten",
+      "name": "NTEN",
+      "category": "Justice & public goods",
+      "website": "https://www.nten.org/",
+      "mechanism": "Technology leadership and shared nonprofit practice",
+      "summary": "Builds nonprofit technology capacity through training, research, peer connections and equitable technology practice.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.nten.org/about-nten",
+          "title": "NTEN — mission, community and nonprofit technology capacity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Builds recurring organizational technology routines and sector capacity rather than providing one end-service intervention.",
+        "reach": "The documented network connects nonprofit staff, funders and practitioners across missions; this does not establish international rule change.",
+        "durability": "Skills and peer relationships could persist, while training and organizational turnover require continued support.",
+        "scalability": "Curricula and community practices can be repeated across organizations, but coaching and local implementation remain labor-intensive.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Participation and training completion are not measured improvements in charities’ outcomes. Access costs, staff turnover and unequal capacity may limit benefits.",
+      "falsifiableClaim": "Do participating nonprofits sustain better technology decisions and independently measured service outcomes than comparable nonparticipants, after accounting for time and fees?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Nonprofit technology training, research and peer-capacity mechanism; not every event, member or vendor.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Training, research and peer support for nonprofit technology staff.",
+        "sourceUrls": [
+          "https://www.nten.org/about-nten"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Peer connections and technology capacity can reduce barriers to collaboration and building within civil society; this is a partial mechanism match.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.nten.org/about-nten"
+        ]
+      }
+    },
+    {
+      "id": "aspiration",
+      "name": "Aspiration",
+      "category": "Justice & public goods",
+      "website": "https://aspirationtech.org/",
+      "mechanism": "Nonprofit technology capacity and shared operational infrastructure",
+      "summary": "Connects nonprofits, funders and open-source projects with technology strategy, digital skills, convenings and fiscal sponsorship.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://aspirationtech.org/about",
+          "title": "Aspiration — nonprofit technology support and fiscal sponsorship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Addresses recurring technology and organizational constraints across the nonprofit supply chain, not only a single service project.",
+        "reach": "The documented model spans nonprofit teams, funders and open projects internationally and across causes.",
+        "durability": "Skills, infrastructure and relationships may persist, but hands-on support and fiscal operations require ongoing staff.",
+        "scalability": "Shared guides and recurring support models can spread, while strategy, mentoring and convening remain context-dependent.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "An open guide or convening does not prove effective implementation. Fiscal sponsorship entails eligibility, fees and sponsor authority; client and community outcomes were not independently audited.",
+      "falsifiableClaim": "Do supported organizations reduce recurring technology failures and strengthen durable mission delivery relative to credible alternatives, net of full support costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Documented technology capacity, convening and sponsorship approach; not a rating of every sponsored project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Technology decision support, practical guides and shared fiscal services for mission-driven teams.",
+        "sourceUrls": [
+          "https://aspirationtech.org/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Explicitly links nonprofit teams, technologists and funders, while helping smaller organizations overcome technology and operating barriers.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://aspirationtech.org/about"
+        ]
+      }
+    },
+    {
+      "id": "tech-matters",
+      "name": "Tech Matters",
+      "category": "Justice & public goods",
+      "website": "https://techmatters.org/",
+      "mechanism": "Nonprofit technology field-building and reusable platforms",
+      "summary": "Develops and incubates technology for the social sector, with current work on data practice, AI information and nonprofit technology capacity.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://techmatters.org/",
+          "title": "Tech Matters — current projects and graduated initiatives",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://techmatters.org/project/aselo/",
+          "title": "Tech Matters — Aselo transition to Crisis Text Line",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets shared technology and data bottlenecks across social-good organizations rather than only one beneficiary service.",
+        "reach": "Its field-building and reusable-platform approach is intended across missions and international nonprofit settings.",
+        "durability": "Incubated tools and skills can persist, but a platform handoff is not evidence of durable outcomes or self-sufficiency.",
+        "scalability": "Common software and field lessons can be reused, although incubation, adoption and implementation need continued resources.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Aselo and Terraso are marked graduated, so a current unrestricted gift cannot be assumed to fund their operations. Aselo is now part of Crisis Text Line. No current marginal funding or outcome audit was completed.",
+      "falsifiableClaim": "Do current initiatives produce sustained adoption and measurable improvements for nonprofit partners beyond what existing technology and support would provide?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Current Tech Matters incubation and field-building approach; excludes attributing present Aselo operations to Tech Matters.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Incubates reusable social-sector technology and shares nonprofit technology expertise.",
+        "sourceUrls": [
+          "https://techmatters.org/",
+          "https://techmatters.org/project/aselo/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Field-building and shared tools lower technical barriers for social-sector builders; this does not establish adoption of the checklist.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://techmatters.org/",
+          "https://techmatters.org/project/aselo/"
+        ]
+      }
+    },
+    {
+      "id": "datakind",
+      "name": "DataKind",
+      "category": "Justice & public goods",
+      "website": "https://www.datakind.org/",
+      "mechanism": "Shared data tools and social-sector technical capacity",
+      "summary": "Works with mission-driven organizations on data science and AI, combining technical partnerships, capacity-building and reusable products.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.datakind.org/",
+          "title": "DataKind — approach, domains and public product inventory",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets repeated data and decision-making constraints across organizations; a technical product alone does not change underlying public rules.",
+        "reach": "Its documented domains span health, humanitarian action, climate and economic opportunity, giving the model cross-cause potential.",
+        "durability": "Software and partner skills may persist, but models, data and deployments need maintenance and institutional ownership.",
+        "scalability": "Public products and shared technical practices can support multiple organizations; custom integrations and data quality limit effortless replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "AI deployment, dashboards or model accuracy do not establish social benefit. Bias, privacy, maintenance, staff burden and whether partners actually change decisions need independent evaluation.",
+      "falsifiableClaim": "Do partner organizations using these products make better sustained decisions and achieve stronger outcomes than comparable teams using existing alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Documented technical-partnership, capacity and reusable-product mechanism; not validation of every model or product.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Reusable data products and technical partnerships for mission-driven organizations.",
+        "sourceUrls": [
+          "https://www.datakind.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Access to technical expertise and reusable tools may broaden who can build and use data systems; the match is narrower than the checklist’s full gatekeeper thesis.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.datakind.org/"
+        ]
+      }
+    },
+    {
+      "id": "data-org",
+      "name": "data.org",
+      "category": "Justice & public goods",
+      "website": "https://data.org/",
+      "mechanism": "Social-sector data capacity and reusable assessment tools",
+      "summary": "Supports social-impact organizations with data and AI skills, resources, convenings and a Data Maturity Assessment.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://data.org/about/",
+          "title": "data.org — mission, capacity and nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://data.org/dma/",
+          "title": "data.org — Data Maturity Assessment",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Addresses recurring organizational data capability and governance constraints rather than only delivering one direct program.",
+        "reach": "Its documented work crosses public health, climate and financial inclusion through a global partner model.",
+        "durability": "Workforce skills and organizational practices may persist, while staff turnover and technical change require continuing support.",
+        "scalability": "An assessment framework and resource library can be reused, but training and effective implementation remain resource-dependent.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "An assessment score or trained practitioner count is not a causal outcome measure. AI adoption can introduce bias, privacy risks and unnecessary complexity; partner results require separate review.",
+      "falsifiableClaim": "Do participating organizations sustain better-governed data use and improved mission outcomes relative to appropriate alternatives, including the option not to deploy AI?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Documented data-capacity and assessment-tool mechanism; not an independent evaluation of grantees or innovation-challenge winners.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "A reusable data-capacity assessment, guides and training for social-impact organizations.",
+        "sourceUrls": [
+          "https://data.org/about/",
+          "https://data.org/dma/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "The model distributes data capability and connects expertise, resources and social-impact teams; this is editorial alignment, not a verified affiliation.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://data.org/about/",
+          "https://data.org/dma/"
+        ]
+      }
+    },
+    {
+      "id": "simprints",
+      "name": "Simprints",
+      "category": "Global health",
+      "website": "https://www.simprints.com/",
+      "mechanism": "Reusable identification and delivery-monitoring infrastructure",
+      "summary": "Builds biometric identification and monitoring tools intended to help development and health partners track service delivery.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.simprints.com/",
+          "title": "Simprints — identification tools, services and stated safeguards",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Changes recurring identification and follow-up workflows in partner programs, rather than only supplying one episode of care.",
+        "reach": "The documented platform is intended for multiple development and health partners across countries; this is potential program reach.",
+        "durability": "Records and workflows can persist, but hardware, secure hosting, enrollment and support require continuing operations.",
+        "scalability": "A reusable platform can support multiple partners, while integrations, consent, devices and locally validated performance constrain scale.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Biometrics can exclude people, expose sensitive data or create coercion and surveillance risks. Enrollment and delivery verification are not proof of improved health or welfare. Claimed safeguards and impact figures were not independently audited.",
+      "falsifiableClaim": "Do deployments improve verified access and continuity of services compared with less intrusive alternatives, without worsening exclusion, consent or privacy harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Identification and delivery-monitoring design only; no endorsement of biometric deployment or validation of reported impact.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Identification and delivery-monitoring technology for health and development implementers.",
+        "sourceUrls": [
+          "https://www.simprints.com/"
+        ],
+        "reviewedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "globalgiving",
+      "name": "GlobalGiving",
+      "category": "Justice & public goods",
+      "website": "https://www.globalgiving.org/",
+      "mechanism": "Shared fundraising infrastructure and nonprofit learning",
+      "summary": "Provides nonprofit fundraising infrastructure alongside peer learning, training and practical organizational-effectiveness resources.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.globalgiving.org/community-learning-hub",
+          "title": "GlobalGiving — nonprofit learning hub and tools",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Addresses recurring access-to-funding and organizational capability constraints across nonprofits rather than delivering one recipient program.",
+        "reach": "The documented platform and learning model connect nonprofit projects and supporters across countries and cause areas.",
+        "durability": "Relationships and learned practices can persist, but fundraising infrastructure and ongoing support require continued operations.",
+        "scalability": "A common platform and learning resources can serve many organizations, with due diligence, access, fees and support limiting replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Funds raised may displace other donations. Platform access, vetting, transaction costs and donor preferences can reproduce gatekeeping. Fundraising growth does not establish recipient effectiveness.",
+      "falsifiableClaim": "Do participating nonprofits gain sustained net additional resources and better outcomes after platform costs, displaced giving and selection effects are considered?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Shared nonprofit fundraising and learning mechanism; not a recommendation of all hosted projects or a claim about each donation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Fundraising infrastructure, peer learning and effectiveness tools for nonprofit partners.",
+        "sourceUrls": [
+          "https://www.globalgiving.org/community-learning-hub"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Connects resources and organizational learning across nonprofits and supporters; it is not evidence that its selection processes remove gatekeeping.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.globalgiving.org/community-learning-hub"
+        ]
+      }
+    },
+    {
+      "id": "software-freedom-conservancy",
+      "name": "Software Freedom Conservancy",
+      "category": "Justice & public goods",
+      "website": "https://sfconservancy.org/",
+      "mechanism": "Shared legal and operational infrastructure for open projects",
+      "summary": "Provides fiscal sponsorship, asset stewardship and legal or operational support to member free and open-source software projects.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://sfconservancy.org/projects/services/",
+          "title": "Software Freedom Conservancy — member project services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://sfconservancy.org/about/",
+          "title": "Software Freedom Conservancy — mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Combines shared institutional infrastructure with defense of software freedoms and licensing rules that govern reuse.",
+        "reach": "Member-project infrastructure and software rights can affect institutions across countries and mission areas.",
+        "durability": "Legal structures, asset stewardship and reusable software can persist beyond a grant, conditional on active maintenance and enforcement.",
+        "scalability": "A common sponsor can serve many projects, but legal work, administration and project support remain staff-intensive.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Supporting a project is not proof that its software improves welfare or charity effectiveness. Sponsorship involves selection, legal constraints and sponsor authority; community budget rights and marginal funding effects were not audited.",
+      "falsifiableClaim": "Do sponsored projects sustain useful, accessible software and reduce duplicated administrative burdens relative to credible sponsorship or incorporation alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Conservancy’s shared services and software-freedom mechanism; not the aggregate impact of every member project.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Common fiscal, legal and operational services for public-interest open-source projects.",
+        "sourceUrls": [
+          "https://sfconservancy.org/projects/services/",
+          "https://sfconservancy.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Software freedoms and shared legal infrastructure can reduce dependence on proprietary owners and the need for every project to form an institution.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://sfconservancy.org/projects/services/",
+          "https://sfconservancy.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "software-in-the-public-interest",
+      "name": "Software in the Public Interest",
+      "category": "Justice & public goods",
+      "website": "https://www.spi-inc.org/",
+      "mechanism": "Pooled nonprofit administration for open-source projects",
+      "summary": "Acts as a fiscal sponsor for open software and hardware projects, handling shared financial, asset and contracting administration.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.spi-inc.org/",
+          "title": "SPI — mission and charitable identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.spi-inc.org/projects/services/",
+          "title": "SPI — services offered to associated projects",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Removes a recurring institutional setup and administration burden for open projects; this is a shared operating model rather than a general policy reform.",
+        "reach": "Its open-project sponsorship model can support public infrastructure used across countries and sectors.",
+        "durability": "Legal stewardship, held assets and project continuity may persist, but accounting and administration require ongoing support.",
+        "scalability": "Shared templates and administration can serve multiple projects, while reviews, compliance and project support remain resource-dependent.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "An associated project is not automatically effective or suitable for every nonprofit. Sponsor control, legal restrictions, project maintenance and actual avoided costs require examination. SPI does not claim to provide fundraising services.",
+      "falsifiableClaim": "Do associated projects achieve sustained public-interest maintenance with lower full administrative burdens than suitable independent or sponsored alternatives?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Shared administrative and fiscal services; not a causal rating of all associated software projects.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Pooled accounting, asset stewardship, contracts and charitable administration for open projects.",
+        "sourceUrls": [
+          "https://www.spi-inc.org/",
+          "https://www.spi-inc.org/projects/services/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Lets open projects operate without each establishing a separate legal entity; this is an enabling-infrastructure match, not checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.spi-inc.org/",
+          "https://www.spi-inc.org/projects/services/"
+        ]
+      }
+    },
+    {
+      "id": "open-source-initiative",
+      "name": "Open Source Initiative",
+      "category": "Justice & public goods",
+      "website": "https://opensource.org/",
+      "mechanism": "Open licensing standards and public software rights",
+      "summary": "Stewards the Open Source Definition and approved-license program, and provides education and advocacy around open software.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://opensource.org/about",
+          "title": "Open Source Initiative — definition, licensing and charitable mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Maintains shared licensing standards that shape permissions and coordination across the software ecosystem.",
+        "reach": "Definitions and license recognition can be used internationally by developers, institutions and public-interest organizations.",
+        "durability": "Published standards and adopted licenses may persist, while stewardship and interpretation require ongoing work.",
+        "scalability": "Public definitions and licensing information are reusable at low marginal access cost; compliance and implementation still have costs.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Open-source status is not a guarantee of security, usability, accessible governance or positive impact. Standards influence and actual freedom from vendor lock-in require independent assessment.",
+      "falsifiableClaim": "Do the standards improve reliable, rights-respecting reuse and reduce harmful lock-in relative to plausible alternatives without excluding affected communities?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Definition, licensing and education mechanism; not a rating of all software using an approved license.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers"
+        ],
+        "rationale": "Reusable permissions and public standards can widen who may inspect, adapt and build software; this does not certify accessible governance.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://opensource.org/about"
+        ]
+      }
+    },
+    {
+      "id": "mozilla-foundation",
+      "name": "Mozilla Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.mozillafoundation.org/en/",
+      "mechanism": "Public-interest technology capacity and alternative digital infrastructure",
+      "summary": "Supports public-interest technologists, fellowships, grants and collaborative digital initiatives intended to widen participation in technology.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.mozillafoundation.org/en/",
+          "title": "Mozilla Foundation — current philanthropic programs and shared digital resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets how digital technology is built and governed through alternative infrastructure, public-interest capacity and shared resources.",
+        "reach": "The documented philanthropic programs and digital initiatives have international, cross-sector potential.",
+        "durability": "Communities and shared resources may persist, but project continuity and governance depend on continued stewardship.",
+        "scalability": "Reusable resources can spread, while fellowships, grantmaking and community support remain resource-intensive.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "This profile concerns the Foundation, not every Mozilla Corporation product or Firefox outcome. Grantee activity, movement size and released datasets do not prove inclusive power or welfare gains.",
+      "falsifiableClaim": "Do supported projects create sustained, usable alternatives with independently observed benefits and meaningful community control rather than reproducing concentrated platform power?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Current Foundation philanthropic and public-interest technology mechanism; no generalization to the full Mozilla corporate group.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "vision"
+        ],
+        "rationale": "Backing alternative digital futures and public-interest builders fits parts of the checklist’s creation-access and shared-future themes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.mozillafoundation.org/en/"
+        ]
+      }
+    },
+    {
+      "id": "nexleaf-analytics",
+      "name": "Nexleaf Analytics",
+      "category": "Global health",
+      "website": "https://www.nexleaf.org/",
+      "mechanism": "Shared equipment data and health-system maintenance tools",
+      "summary": "Develops sensor-based data systems and implementation support for health workers maintaining equipment, vaccine storage and clinic power.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.nexleaf.org/",
+          "title": "Nexleaf Analytics — health-worker tools, country partnership and data rights",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets recurring equipment-maintenance and information routines within health systems rather than only replacing a failed device.",
+        "reach": "The documented approach works across country health systems and implementing partners; this is institutional potential, not a verified population effect.",
+        "durability": "Skills and data practices may persist, but sensors, repairs, power and connectivity require ongoing resources.",
+        "scalability": "A repeatable technology and support model can be adapted, though hardware, local capacity and maintenance costs constrain scaling.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Connected equipment and temperature readings are not causal health gains. Reported coverage, vaccine value and country ownership claims need independent validation, including data rights and long-term maintenance.",
+      "falsifiableClaim": "Do participating facilities sustain better equipment uptime and safe service delivery than appropriate alternatives after full maintenance, training and connectivity costs are included?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Equipment-data and maintenance-support design; not validation of every claimed vaccine or health benefit.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Data, monitoring and maintenance tools used by health systems and implementing partners.",
+        "sourceUrls": [
+          "https://www.nexleaf.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "solutions-journalism-network",
+      "name": "Solutions Journalism Network",
+      "category": "Justice & public goods",
+      "website": "https://www.solutionsjournalism.org/",
+      "mechanism": "Changing news-production routines and shared problem-solving narratives",
+      "summary": "Trains and connects journalists to report on responses to social problems, with evidence, limitations and shared learning resources.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.solutionsjournalism.org/",
+          "title": "Solutions Journalism Network — reporting principles, training and shared resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets repeatable newsroom practices and public framing rather than only producing a single positive story.",
+        "reach": "The documented network and resources span countries and many social issues, with potential effects beyond one newsroom.",
+        "durability": "Skills and editorial routines may persist, but staff turnover, news economics and audience incentives require ongoing attention.",
+        "scalability": "Common guides and reporting principles can be reused, while quality reporting and training remain labor-intensive.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Optimistic coverage, trained reporters and audience reach do not prove better decisions or social outcomes. Solutions reporting can become promotional if evidence, failures and limitations are omitted.",
+      "falsifiableClaim": "Does sustained adoption improve reporting quality and informed problem-solving behavior relative to comparable coverage, without weakening scrutiny or exaggerating success?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Reporting-practice and training mechanism; not endorsement of every story, outlet or reported intervention.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "attention"
+        ],
+        "rationale": "Changes what is considered newsworthy and how responses are framed, a partial match to constructive narratives and attention rather than a claim about a new feed-ranking system.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.solutionsjournalism.org/"
+        ]
+      }
+    },
+    {
+      "id": "institute-for-the-future",
+      "name": "Institute for the Future",
+      "category": "Justice & public goods",
+      "website": "https://www.iftf.org/",
+      "mechanism": "Shared foresight tools and institutional future-planning capacity",
+      "summary": "Provides foresight research, training and tools for organizations and communities to explore possible futures and act under uncertainty.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.iftf.org/",
+          "title": "IFTF — current foresight, training and nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://legacy.iftf.org/philanthropy/",
+          "title": "IFTF — philanthropy foresight resources (legacy page)",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets recurring institutional planning practices and assumptions rather than forecasting a single event.",
+        "reach": "The documented work spans public, private and civic organizations across issues; potential reach is broader than a single program.",
+        "durability": "Planning skills and scenarios can remain useful, but conditions change and foresight practice requires renewal.",
+        "scalability": "Frameworks and exercises can be reused, while facilitation, training and some proprietary materials constrain access and replication.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "A compelling scenario or workshop is not a prediction, shared mandate or proven improvement in decisions. Some materials and training are proprietary or restricted; legacy philanthropy resources are labeled historical.",
+      "falsifiableClaim": "Do organizations using foresight make better robust decisions and sustain useful experiments than comparable teams, rather than merely reporting confidence or producing attractive scenarios?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Current foresight and planning-capacity mechanism, with explicitly historical philanthropy examples; not a rating of forecast accuracy.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Foresight methods and facilitation resources with documented philanthropy applications.",
+        "sourceUrls": [
+          "https://www.iftf.org/",
+          "https://legacy.iftf.org/philanthropy/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision"
+        ],
+        "rationale": "Making possible futures discussable and actionable is a partial match to the checklist’s vision theme; it is not the same as building its proposed Vision Market.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.iftf.org/",
+          "https://legacy.iftf.org/philanthropy/"
+        ]
+      }
+    },
+    {
+      "id": "democracynext",
+      "name": "DemocracyNext",
+      "category": "Justice & public goods",
+      "website": "https://www.demnext.org/",
+      "mechanism": "Deliberative institutions and reusable citizen-assembly guidance",
+      "summary": "Works on citizen assemblies, shared decision-making and institutionalisation, and publishes practical guidance for assembly organizers.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.demnext.org/",
+          "title": "DemocracyNext — deliberative decision-making and institutionalisation",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://assemblyguide.demnext.org/",
+          "title": "DemocracyNext — public citizens’ assembly guide",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.demnext.org/foundation-details",
+          "title": "DemocracyNext — foundation identity and governance",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets who exercises public decision-making power and how deliberation becomes part of institutional rules.",
+        "reach": "The approach is intended for cities, regions and other institutions across countries, without a verified global rule change.",
+        "durability": "Legally embedded processes could persist, but one assembly or recommendation does not establish durable authority or implementation.",
+        "scalability": "A public guide and repeatable design can be adapted, while facilitation, representative selection and political adoption remain costly.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Assembly participation is not proof of binding power or implemented recommendations. Recruitment, agenda control, accessibility and institutional follow-through need independent examination. Dutch nonprofit status does not establish US deductibility.",
+      "falsifiableClaim": "Do supported assemblies achieve representative participation, meaningful decision rights and implemented improvements that persist beyond the initial project?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Documented institutional and assembly-guidance mechanism; not attribution for all deliberative democracy or proof of community governance in the Foundation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "A public, reusable guide for institutions and civic organizations designing citizens’ assemblies.",
+        "sourceUrls": [
+          "https://www.demnext.org/",
+          "https://assemblyguide.demnext.org/",
+          "https://www.demnext.org/foundation-details"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Deliberation and wider citizen decision-making address collective choice and concentrated authority; this is a partial mechanism match, not a verified checklist affiliation.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.demnext.org/",
+          "https://assemblyguide.demnext.org/",
+          "https://www.demnext.org/foundation-details"
+        ]
+      }
+    },
+    {
+      "id": "fairplay",
+      "name": "Fairplay",
+      "category": "Justice & public goods",
+      "website": "https://fairplayforkids.org/",
+      "mechanism": "Reforming commercial incentives around children’s attention",
+      "summary": "Advocates for changes to marketing and technology practices affecting children, including platform design and institutional policy.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://fairplayforkids.org/",
+          "title": "Fairplay — current campaigns and stated nonprofit mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets business incentives, platform practices and policy rules shaping children’s attention rather than only advising one family.",
+        "reach": "The documented advocacy has national and platform-level potential, not a demonstrated worldwide improvement.",
+        "durability": "Policy and business changes could persist if implemented and enforced; campaigns alone do not establish that durability.",
+        "scalability": "Model policies, research and advocacy approaches can spread, but enforcement and local organizing require sustained resources.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Complaints, petitions and corporate commitments are not implemented safeguards or demonstrated child-welfare improvements. Specific allegations and broad policy prescriptions were not independently adjudicated in this review.",
+      "falsifiableClaim": "Do adopted policies or platform changes produce independently measured reductions in harmful design practices and improved outcomes without avoidable exclusion or rights harms?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Attention-incentive and policy-advocacy design; not endorsement of every allegation, campaign or proposed ban.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention"
+        ],
+        "rationale": "Directly addresses incentives around children’s attention and commercial platform design, while not claiming to operate the checklist’s proposed alternative feed.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://fairplayforkids.org/"
+        ]
+      }
+    },
+    {
+      "id": "giving-what-we-can",
+      "name": "Giving What We Can",
+      "category": "Justice & public goods",
+      "website": "https://www.givingwhatwecan.org/",
+      "mechanism": "Public giving commitments and effective-giving norms",
+      "summary": "Organizes a community around public giving pledges and provides resources and recommendations intended to encourage effective donations.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.givingwhatwecan.org/",
+          "title": "Giving What We Can — public pledges, community and giving resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Targets recurring giving norms and resource allocation through public commitments; voluntary pledges do not by themselves change structural rules.",
+        "reach": "The documented community and resources operate across donors and causes rather than one recipient program.",
+        "durability": "Commitments and habits may persist, but pledge retention and actual giving need ongoing support and independent verification.",
+        "scalability": "A common pledge model and educational resources can spread, while community building and suitable local giving arrangements require work.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Pledges and gross donations are not verified additional giving or welfare gains. Recommendations rely on external evidence, donor selection and value judgments; legal donation routes vary by entity and jurisdiction.",
+      "falsifiableClaim": "Do public commitments cause sustained net additional effective giving after displacement, attrition and community costs, with independently assessed recipient outcomes?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Pledge-community and giving-education mechanism; not a validation of every recommended charity or a tax-deductibility determination.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "status"
+        ],
+        "rationale": "Visible commitments can help make generosity socially valued, a partial match to redirecting status; this is not the checklist’s specific charity-designer-goods model.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.givingwhatwecan.org/"
+        ]
+      }
+    },
+    {
+      "id": "crisis-text-line",
+      "name": "Crisis Text Line",
+      "category": "Global health",
+      "website": "https://www.crisistextline.org/",
+      "mechanism": "Aselo shared software infrastructure for partner helplines",
+      "summary": "Now stewards Aselo, an open-source contact-center platform intended to support independent helplines beyond its own direct service.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.crisistextline.org/wp-content/uploads/2026/08/Crisis-Text-Line-Aselo-Acquisition-Press-Release-FINAL.docx.pdf",
+          "title": "Crisis Text Line — Aselo acquisition announcement, 10 August 2026",
+          "type": "official",
+          "accessedAt": "2026-10-27",
+          "publishedAt": "2026-08-10"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared communications, case-management and quality workflows target an infrastructure constraint across helpline organizations.",
+        "reach": "The announced partner model serves helplines in multiple countries; reported contacts do not establish population-level outcomes.",
+        "durability": "Reusable software and trained teams could persist, but the recent acquisition does not demonstrate long-term operational durability.",
+        "scalability": "Open-source contact-center software can be reused and adapted by partners, with hosting, localization, security and training still costing resources.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participation, open access or stated values do not establish audited consequential decision rights for affected communities."
+      },
+      "evidenceLevel": "Organization reported; documented official mechanism",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "This is an assessment of Aselo infrastructure, not Crisis Text Line’s entire clinical or direct-service impact. The acquisition announcement is self-reported; partner contacts do not prove safety, quality or welfare gains. Privacy and operational continuity require independent review.",
+      "falsifiableClaim": "Do partner helplines using Aselo sustain better response quality, reliability and access than suitable alternatives after total costs, privacy risks and local needs are considered?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-tools-and-checklist",
+      "evaluationScope": "Aselo stewardship and partner-infrastructure design following the 2026 acquisition only; not the organization’s full service portfolio.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared open-source contact-center infrastructure for independent helpline partners.",
+        "sourceUrls": [
+          "https://www.crisistextline.org/wp-content/uploads/2026/08/Crisis-Text-Line-Aselo-Acquisition-Press-Release-FINAL.docx.pdf"
+        ],
+        "reviewedAt": "2026-10-27"
+      }
     }
   ],
   "reviewMethod": "AI-assisted source research and qualitative mechanism sketches; no independent human validation yet. Dataset update date does not refresh older profile or evaluator-status reviews."

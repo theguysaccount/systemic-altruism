@@ -5,6 +5,8 @@ const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
 const dataset=JSON.parse(await readFile('data/charities.json','utf8'));
+const homeHtml=await readFile('dist/index.html','utf8');
+if(!homeHtml.includes('id="focus-filter"')||!homeHtml.includes('not verified adoption'))throw new Error('Missing focused exploration or alignment limits');
 if(routes.filter(r=>r.path.startsWith('/charities/')).length!==dataset.charities.length)throw new Error('Assessment route/count mismatch');
 const methodHtml=await readFile('dist/methodology/index.html','utf8');
 if(!methodHtml.includes(method.source.url)||!methodHtml.includes('not a numerical charity-rating formula'))throw new Error('Missing practice provenance/interpretation');
@@ -15,6 +17,8 @@ for(const path of ['/','/funders/']){
 for(const c of dataset.charities){
   const html=await readFile(`dist/charities/${c.id}/index.html`,'utf8');
   if(!html.includes(`Axis review: ${c.lastReviewed}`))throw new Error(`Profile review date mismatch: ${c.id}`);
+  if(c.tooling&&!html.includes('Tools &amp; support for charities'))throw new Error(`Missing tooling rationale: ${c.id}`);
+  if(c.checklistAlignment&&!html.includes('Explicit checklist adoption: not verified'))throw new Error(`Missing mapping limits: ${c.id}`);
   for(const s of c.sources)if(!html.includes(`checked ${s.accessedAt}`))throw new Error(`Source review date mismatch: ${c.id}`);
 }
 for(const path of ['/','/directory/','/data/']){
@@ -45,7 +49,7 @@ for(const r of routes){
   }
 }
 if(origin){
-  for(const file of ['app.mjs','scoring.mjs','assessment-data.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
+  for(const file of ['app.mjs','scoring.mjs','assessment-data.mjs','focus.mjs','funders.mjs','toolkit.mjs','decision-tools.mjs','workbenches.css','api/v1/charities.json']){
     const response=await fetch(origin+'/'+file);
     if(!response.ok)throw new Error(`Live tool asset missing: ${file}`);
     const local=await readFile('dist/'+file),live=Buffer.from(await response.arrayBuffer());
