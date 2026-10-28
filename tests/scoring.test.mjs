@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,173);assert.equal(new Set(data.charities.map(c=>c.id)).size,173);
+  assert.equal(data.charities.length,187);assert.equal(new Set(data.charities.map(c=>c.id)).size,187);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -43,6 +43,19 @@ test('fifth goal batch keeps eighteen identities and current program scopes dist
   assert.match(get('ruby-central').limitations,/final RailsConf in July 2025/);assert.match(get('open-robotics').limitations,/acquired by Intrinsic/);
   assert.match(get('project-equity').limitations,/could not be retrieved/);assert.match(get('common-future').limitations,/dated filing/);
   assert.match(get('democracy-at-work-institute').evaluationScope,/separately incorporated/);assert.match(get('open-source-ecology').limitations,/privately owned land/);
+});
+test('sixth goal batch adds fourteen scoped assessments with clinical and corporate boundaries',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-06');assert.equal(batch.length,14);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.evaluatorStatus,'not_verified');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);assert.ok(c.evaluationScope.length>70);assert.ok(c.falsifiableClaim.length>70);
+    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-27'));assert.equal(c.checklistAlignment.adoption,'not_verified');
+    for(const k of Object.keys(axes))assert.ok(c.rationales[k].length>70);
+  }
+  const get=id=>batch.find(c=>c.id===id);
+  assert.match(get('muso').evaluationScope,/not Malawi/);assert.match(get('foundation-for-public-code').limitations,/Dutch parent association/);
+  assert.match(get('5rights-foundation').limitations,/Belgian/);assert.match(get('responsible-ai-collaborative').limitations,/private operating foundation/);
+  assert.match(get('full-fact').limitations,/paid licence/);assert.match(get('nlnet-labs').limitations,/distinct from the NLnet Foundation/);
 });
 test('practice default is explicit, totals 100 and preserves the original lens',()=>{
   assert.equal(method.defaultPreset,'systemic');

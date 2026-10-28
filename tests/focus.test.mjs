@@ -23,7 +23,7 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,56);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,60);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
@@ -45,6 +45,16 @@ test('fifth goal batch scopes mixed licenses, mirrors, transfers and non-code to
   for(const id of ['open-source-hardware-association','open-source-ecology','climate-outreach','climate-advocacy-lab','multisolving-institute','center-for-economic-democracy']){assert.equal(hasVerifiedOpenSource(get(id)),false);assert.equal(matchesFocus(get(id),'tooling'),true);}
   assert.match(get('open-source-hardware-association').limitations,/does not guarantee safety/);
 });
+test('sixth goal batch separates restricted mirrors, health-data retention and software/data permissions',()=>{
+  const get=id=>data.charities.find(c=>c.id===id);
+  assert.equal(data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-06'&&hasVerifiedOpenSource(c)).length,4);
+  const restricted=get('msupply-foundation');assert.equal(hasVerifiedOpenSource(restricted),false);assert.equal(matchesFocus(restricted,'tooling'),true);
+  assert.match(restricted.limitations,/b9f7c0713d63c10c4e3c53195f4560d74edbee85/);assert.match(restricted.limitations,/October 28, 2026/);assert.match(restricted.limitations,/read-only mirror/);
+  assert.match(get('jembi-health-systems').limitations,/retained indefinitely by default/);
+  assert.match(get('wikimedia-deutschland').openSource.projects[0].scope,/not a uniform license/);
+  assert.match(get('responsible-ai-collaborative').limitations,/CC BY-SA/);assert.match(get('responsible-ai-collaborative').limitations,/allegations/);
+  assert.equal(hasVerifiedOpenSource(get('full-fact')),false);assert.equal(hasVerifiedOpenSource(get('taproot-foundation')),false);
+});
 test('canonical Tor GitLab license evidence is supported without accepting unrelated hosts or files',()=>{
   const c=data.charities.find(c=>c.id==='tor-project');assert.equal(hasVerifiedOpenSource(c),true);
   const clone=structuredClone(c);clone.openSource.projects[0].licenseUrl='https://gitlab.torproject.org.evil.example/LICENSE';assert.equal(hasVerifiedOpenSource(clone),false);
@@ -59,7 +69,7 @@ test('focus metadata never changes an assessment or asserts checklist affiliatio
 });
 test('source-visible noncommercial tools and historical platform roles cannot receive open-source badges',()=>{
   const c=data.charities.find(c=>c.openSource);
-  for(const label of ['CC BY-NC 2.0','CC-BY-NC-4.0','Noncommercial source license']){
+  for(const label of ['CC BY-NC 2.0','CC-BY-NC-4.0','Noncommercial source license','mSupply Open Source License','LOW INCOME AND MIDDLE INCOME ECONOMIES','Field-of-use restricted grant']){
     const clone=structuredClone(c);clone.openSource.projects[0].licenseLabel=label;assert.equal(hasVerifiedOpenSource(clone),false);
   }
   for(const id of ['radicalxchange-foundation','villagereach','cadasta-foundation','open-culture-foundation','free-software-foundation','wordpress-foundation']){

@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.5",
+  "schemaVersion": "0.4.6",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "173 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 05. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "187 scoped assessment profiles toward a first-edition goal of 200, including 14 source-linked additions in goal batch 06. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -13150,6 +13150,1293 @@
         "mappedAt": "2026-10-27",
         "sourceUrls": [
           "https://www.commonfuture.co/"
+        ]
+      }
+    },
+    {
+      "id": "d-tree-international",
+      "name": "D-tree International",
+      "category": "Global health",
+      "website": "https://www.d-tree.org/",
+      "mechanism": "Build government and frontline capacity for coordinated digital health",
+      "summary": "D-tree International works with governments and health workers on digital decision support, implementation and institutional adoption. The scope is its enabling and handover model, not a claim that an app alone produces better care.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.d-tree.org/about-us/",
+          "title": "D-tree: current government-partner and health-system implementation strategy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.d-tree.org/donate/",
+          "title": "D-tree International: current US nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.d-tree.org/",
+          "title": "D-tree: current frontline tools, data capacity and government coordination",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Digital decision support combined with government policy and implementation capacity can change health-system routines rather than fund only isolated consultations.",
+        "reach": "Common methods can influence health workers, supervisors and government services across implementation sites; independently attributable national reach was not audited.",
+        "durability": "Skills and institutional adoption can persist, but clinical updates, worker support, connectivity and government budgets require continuing work.",
+        "scalability": "Shared implementation methods can travel beyond one setting, while clinical protocols, language, workforce capacity and public administration require local adaptation.",
+        "additionality": "No current costed marginal government-partnership bottleneck, replacement provider or causal funding counterfactual was audited.",
+        "agency": "People-centered design and work with communities do not establish affected patients’ or health workers’ binding control over nonprofit budgets, software priorities or government systems."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current donation page identifies D-tree as a US 501(c)(3) and names D-tree International; this is not independent tax-eligibility or financial certification. Organizational outcome percentages, people reached and clinical claims were not re-audited or imported as causal evidence for these design scores. Implementation support is distinct from sole software authorship; no named repository license was checked, so no code badge is assigned. Clinical safety, data protection, worker compensation, government handover, maintenance and equitable access require deployment-level review. Shared tools are not a substitute for staffed, financed care.",
+      "falsifiableClaim": "Do government teams receiving a defined D-tree implementation and handover package sustain safer, timelier care after external support declines than comparable teams, accounting for staffing, financing, data quality and patient exclusion?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The US nonprofit D-tree International’s digital-health partnership and implementation capacity, including the Jamii ni Afya example. It is not sole authorship of underlying software platforms or every government-run deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Decision-support implementation, health-worker training and government data capacity can help public-interest health systems use and sustain digital tools rather than rebuild each implementation in isolation.",
+        "sourceUrls": [
+          "https://www.d-tree.org/about-us/",
+          "https://www.d-tree.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "The documented model connects frontline workers, supervisors and government systems to reduce coordination failures. This is partial editorial alignment, not proof of clinical effectiveness or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.d-tree.org/about-us/",
+          "https://www.d-tree.org/"
+        ]
+      }
+    },
+    {
+      "id": "jembi-health-systems",
+      "name": "Jembi Health Systems",
+      "category": "Global health",
+      "website": "https://www.jembi.org/",
+      "mechanism": "Make health-information exchange reusable across implementing institutions",
+      "summary": "Jembi is a South African nonprofit company developing health information systems and implementation capacity. OpenHIM Core is the inspected middleware example; its license does not certify clinical safety or appropriate handling of patient messages.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.jembi.org/about",
+          "title": "Jembi: independent South African nonprofit company and local-capacity approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.jembi.org/",
+          "title": "Jembi: current system development and implementation work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openhim.org/",
+          "title": "OpenHIM: middleware scope and Jembi maintenance role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/jembi/openhim-core-js",
+          "title": "OpenHIM Core: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/jembi/openhim-core-js/blob/master/LICENSE",
+          "title": "OpenHIM Core: inspected MPL-2.0 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/jembi/openhim-core-js/blob/master/README.md",
+          "title": "OpenHIM Core README: message routing, data retention and controller responsibilities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared interoperability middleware can change how institutions exchange and govern information rather than build another isolated health application.",
+        "reach": "A common exchange layer can support several health organizations and public systems; independent causal reach and patient benefit were not measured.",
+        "durability": "Reusable code and standards can persist, but data mappings, access controls, operational reliability and local support require continuous work.",
+        "scalability": "Common middleware can reduce repeated integration development, while legacy systems, data quality, policy and deployment safeguards remain substantial constraints.",
+        "additionality": "No current marginal maintainer or implementation funding bottleneck, alternative support or funding counterfactual was audited.",
+        "agency": "Local capacity and human-centered design do not establish binding patient or health-worker control over budgets, data-retention decisions or platform governance."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The official about page identifies an independent South African nonprofit company registered in 2009, not a US-incorporated charity. Its equivalency-determination claim was not independently audited here. MPL-2.0 is checked for the named Core repository, not every mediator, dependency, dataset or hosted service. The README explicitly says message data is retained indefinitely by default and places data-controller responsibilities on the deploying organization; openness does not establish privacy, safe retention or regulatory compliance. Clinical outcomes, performance and security were not independently tested, and interoperability is not itself proof of better care.",
+      "falsifiableClaim": "Do comparable health implementers using a defined OpenHIM deployment reduce integration failures and inappropriate data exposure at lower full cost than alternatives, after accounting for retention settings, staff training, legacy systems and clinical workflow?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Jembi Health Systems’ independent nonprofit company and shared health-information-exchange work, illustrated by OpenHIM Core. It is not every OpenHIE partner, health record system or government implementation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "OpenHIM Core provides reusable routing, access and audit middleware for health-information exchange, supported by Jembi’s implementation and local-capacity work.",
+        "sourceUrls": [
+          "https://www.jembi.org/",
+          "https://openhim.org/",
+          "https://github.com/jembi/openhim-core-js",
+          "https://github.com/jembi/openhim-core-js/blob/master/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "OpenHIM Core",
+            "repositoryUrl": "https://github.com/jembi/openhim-core-js",
+            "licenseUrl": "https://github.com/jembi/openhim-core-js/blob/master/LICENSE",
+            "licenseLabel": "MPL-2.0",
+            "licenseBlobSha": "14e2f777f6c395e7e04ab4aa306bbcc4b0c1120e",
+            "role": "maintainer",
+            "scope": "The Core repository was not archived when checked; the project site names Jembi as current developer and maintainer. The MPL-2.0 file does not settle every mediator, dependency, patient-data use or service term. README’s indefinite default message retention requires an independent deployment privacy and security review.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "A common health-information exchange layer addresses coordination between otherwise separate systems. This partial design connection does not establish safe data use, patient benefit or explicit checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.jembi.org/about",
+          "https://openhim.org/"
+        ]
+      }
+    },
+    {
+      "id": "msupply-foundation",
+      "name": "The mSupply Foundation",
+      "category": "Global health",
+      "website": "https://msupply.foundation/",
+      "mechanism": "Share health-supply-chain software and implementation capacity",
+      "summary": "The mSupply Foundation is a New Zealand not-for-profit trust developing health-supply-chain systems and training. Its Open mSupply repository is source-visible but has an explicit field-of-use restriction; it is not classified as unrestricted open-source software here.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://msupply.foundation/about",
+          "title": "mSupply Foundation: New Zealand not-for-profit trust and charitable purpose",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://msupply.foundation/open-msupply",
+          "title": "Open mSupply: supply-chain, implementation and offline-first design",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://msupply.foundation/open-msupply/open-source",
+          "title": "mSupply: legacy-server dependency, support costs and stated October 28, 2026 target",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/msupply-foundation/open-msupply",
+          "title": "Open mSupply: inspected source-visible repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/msupply-foundation/open-msupply/blob/develop/README.md",
+          "title": "Open mSupply README: filtered read-only mirror of private monorepo",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/msupply-foundation/open-msupply/blob/develop/LICENSE",
+          "title": "Open mSupply: inspected custom field-of-use-restricted license, not an unmodified AGPL grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable supply-chain systems and local capacity can change procurement, stock visibility and dispensing routines instead of only supply individual shipments.",
+        "reach": "A shared platform can support warehouses, facilities and public health institutions across settings; independent institutional outcomes were not audited.",
+        "durability": "Code and operating knowledge can persist, but product data, synchronization, support and supply-chain operations require continuing resources.",
+        "scalability": "Shared software can reduce duplicated development, but license restrictions, legacy integration, hardware, training and local workflows limit unrestricted replication.",
+        "additionality": "No current marginal development bottleneck, alternative support contract or causal contribution of an additional charitable donation was audited.",
+        "agency": "Partnership and local-capacity aims do not establish affected patients’ or implementers’ binding rights over trust budgets, licensing terms or product priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current about page identifies a New Zealand not-for-profit trust; this is not US deductibility certification. The actual LICENSE modifies AGPL-3.0 and restricts reproduction and use to health services for people in World Bank low- or middle-income economies. The inspected license blob is b9f7c0713d63c10c4e3c53195f4560d74edbee85; branding and GitHub’s NOASSERTION detector are not substituted for that text. No unrestricted open-source badge is assigned. README describes a filtered read-only mirror of a private monorepo. The current website says multi-site synchronization still needs a non-open legacy server and gives October 28, 2026 as a target for removing it; that future target is not treated as delivered. Code, data, dependencies and optional paid support differ. Availability, clinical safety and supply reliability were not independently tested.",
+      "falsifiableClaim": "Do eligible health institutions adopting a defined Open mSupply configuration achieve independently verified reductions in stock-outs and full operating costs compared with credible alternatives, accounting for licensing, legacy-server dependencies, training and procurement constraints?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The New Zealand mSupply Foundation trust’s supply-chain software and capacity model, including the named public Open mSupply mirror. This is not all legacy mSupply products or a certification of any medicine-supply system.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Source-visible supply-chain software, training and implementation support can reduce duplicated logistics-system work, with important field-of-use and legacy-dependency limits.",
+        "sourceUrls": [
+          "https://msupply.foundation/about",
+          "https://msupply.foundation/open-msupply",
+          "https://msupply.foundation/open-msupply/open-source",
+          "https://github.com/msupply-foundation/open-msupply",
+          "https://github.com/msupply-foundation/open-msupply/blob/develop/README.md",
+          "https://github.com/msupply-foundation/open-msupply/blob/develop/LICENSE"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Shared stock and transaction information can reduce coordination failures between supply-chain institutions. This is not a finding of unrestricted reuse, improved medicine availability or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://msupply.foundation/open-msupply"
+        ]
+      }
+    },
+    {
+      "id": "muso",
+      "name": "Muso",
+      "category": "Global health",
+      "website": "https://www.musohealth.org/",
+      "mechanism": "Help governments learn and implement faster-access health systems",
+      "summary": "Muso combines proactive care, embedded research and government technical assistance. This assessment concerns reusable institutional learning and implementation support, not a new evaluation of every clinical outcome or the similarly named Baobab Health Trust.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.musohealth.org/",
+          "title": "Muso: current theory of change, technical assistance and nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.musohealth.org/about",
+          "title": "Muso: current mission and government implementation approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.musohealth.org/research",
+          "title": "Muso: current embedded research and supervision learning; underlying clinical findings not re-audited here",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Combining health-system research with government technical assistance can change access routines and implementation practice rather than deliver only individual visits.",
+        "reach": "Shared strategies and public-sector partnerships can influence several health institutions beyond one care team; independent causal reach was not audited.",
+        "durability": "Institutional learning can persist, but accessible care still depends on workers, supervision, finance and operational support.",
+        "scalability": "Research-informed methods can be adapted elsewhere, while public financing, workforce conditions, conflict and local service capacity constrain replication.",
+        "additionality": "No current marginal technical-assistance funding gap, alternative government support or causal donation counterfactual was audited.",
+        "agency": "Origin stories, patient-centered values and government partnership do not establish binding patient or health-worker authority over nonprofit budgets, research agendas or public programs."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current pages identify Muso, formerly Under the Baobab Tree Inc., as a US 501(c)(3), EIN 20-3171837; this is not independent current tax or governance certification. The name does not identify Baobab Health Trust in Malawi. Clinical research and before/after mortality claims were not re-audited, imported as causal findings or converted into a cost-effectiveness recommendation in this batch. The profile’s institutional-support scope is narrower than all care delivery and advocacy. No named software license was inspected. Data protection, clinical safety, public financing, worker conditions and the ability to sustain access without external delivery remain unverified.",
+      "falsifiableClaim": "Do government teams receiving a specified Muso technical-assistance package sustain independently measured improvements in timely, equitable access after external support declines, compared with similar teams and accounting for staffing, fees, conflict and public budgets?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Muso’s nonprofit rapid-care research and government technical-assistance model. Its former US name, Under the Baobab Tree Inc., is not Malawi’s separate Baobab Health Trust.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Embedded research, practical implementation learning and government technical assistance can help health institutions adapt rapid-access care systems without rebuilding every learning process.",
+        "sourceUrls": [
+          "https://www.musohealth.org/",
+          "https://www.musohealth.org/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "The current model links research, frontline delivery and government implementation to address coordination failures. This partial connection does not establish clinical effectiveness, universal access or explicit checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.musohealth.org/",
+          "https://www.musohealth.org/about"
+        ]
+      }
+    },
+    {
+      "id": "living-goods",
+      "name": "Living Goods",
+      "category": "Global health",
+      "website": "https://livinggoods.org/",
+      "mechanism": "Build government capacity to support digitally enabled community health workers",
+      "summary": "Living Goods supports community health workers through government partnerships, digital systems and performance support. The scope is its implementation model, not sole authorship of every underlying platform or a re-evaluation of mortality claims.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://livinggoods.org/who-we-are/vision-mission-values/",
+          "title": "Living Goods: current nonprofit mission, public-system support and values",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://livinggoods.org/",
+          "title": "Living Goods: current government partnership and digital/data capacity approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://livinggoods.org/donate/",
+          "title": "Living Goods: current US nonprofit identity and EIN 20-5010527",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Government partnerships and digital worker-support systems can change community-health implementation routines rather than fund isolated patient contacts.",
+        "reach": "Shared implementation practice can influence public health institutions and worker networks across settings; attributable institutional reach was not audited.",
+        "durability": "Public-system learning can persist, but workers, devices, supervision, compensation and government budgets require ongoing support.",
+        "scalability": "Methods and digital configurations can be reused beyond one area, while financing, local workflows, accessibility and workforce capacity remain constraints.",
+        "additionality": "No current costed marginal government-partnership or worker-support bottleneck, replacement funding or causal donation counterfactual was audited.",
+        "agency": "Listening to families and community health workers does not establish binding affected-community rights over nonprofit budgets, public-system priorities or workforce decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current donation page identifies a US 501(c)(3), EIN 20-5010527; this is not independent current tax or financial certification. The website’s trial/preprint, mortality and coverage claims were not re-audited or imported as causal findings for these systemic-design scores. Its work includes implementation and support for digital ecosystems, not sole ownership of all underlying platforms; existing tool developers’ work is not attributed twice. Open standards language is not a named repository-license check, so no code badge is assigned. Health-data protection, clinical safety, worker compensation, equitable access and sustainable public financing need deployment-specific review.",
+      "falsifiableClaim": "Do government programs receiving a specified Living Goods digital and worker-support package sustain independently verified improvements in timely, equitable care compared with credible alternatives, after accounting for financing, staffing, supervision and other partners?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The US Living Goods nonprofit’s government-partner, digital-health and worker-support model, not all partner governments, separate software contributors or every local program.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Government implementation support, digital/data expertise and worker-management learning can help public-interest health systems run community-health services with less duplicated infrastructure work.",
+        "sourceUrls": [
+          "https://livinggoods.org/who-we-are/vision-mission-values/",
+          "https://livinggoods.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "The documented approach links government systems, worker support and information flows to reduce coordination failures. This is not a clinical-effectiveness finding or verified adoption of the checklist.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://livinggoods.org/who-we-are/vision-mission-values/",
+          "https://livinggoods.org/"
+        ]
+      }
+    },
+    {
+      "id": "foundation-for-public-code",
+      "name": "Foundation for Public Code",
+      "category": "Justice & public goods",
+      "website": "https://www.publiccode.net/",
+      "mechanism": "Make shared public software stewardship easier to organize",
+      "summary": "Foundation for Public Code supports public-product organizations with reusable standards, process guides and governance resources. The current parent is a Dutch association of chapters; its US chapter is not treated as the same legal entity or an extra profile.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.publiccode.net/",
+          "title": "Foundation for Public Code: current standards, process guides, governance resources and chapter/legal identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://standard.publiccode.net/",
+          "title": "Standard for Public Code: current collaboration criteria and parent association identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared procurement, stewardship and governance guidance can change how institutions maintain reusable public software instead of repeatedly commissioning isolated systems.",
+        "reach": "Common resources can support several public administrations and civic implementers, though documented examples do not establish attributable reach.",
+        "durability": "Standards and organizational skills can persist, but governance, maintenance and procurement practice require continuing institutional resources.",
+        "scalability": "Reusable guidance and product-organization methods can travel, while laws, vendor arrangements, staff capacity and local accountability require adaptation.",
+        "additionality": "No current marginal stewardship-support bottleneck, alternative public-sector capacity investment or causal funding counterfactual was audited.",
+        "agency": "Collaborative governance resources and chapter membership do not establish binding affected residents’ rights over association budgets, procurement decisions or supported codebases."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current site describes a chapter-based nonprofit network with a Dutch parent association, KvK 74996452 and RSIN 860102294, and a separate US 501(c)(3) chapter, EIN 92-2324481. The parent is not silently called a Dutch stichting or assigned the chapter’s US status. These are organizational disclosures, not independent regulator checks. Public-code examples and testimonials are not causal impact findings or evidence that the foundation authored every product. The Standard, Process Codes and Governance Game are enabling resources; website CC0 terms do not establish licenses for every supported software project, dependency or hosted service. No named software badge is assigned.",
+      "falsifiableClaim": "Do public institutions using a defined stewardship and procurement guidance package maintain more independently reusable, supported codebases at lower full cost than comparable institutions, with enforceable resident accountability and no increased vendor lock-in?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The Dutch parent association’s shared public-code stewardship and capacity model. It does not score the separate North American chapter, every supported product or public authorities’ entire software portfolios.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "The Standard for Public Code, process guidebooks and governance exercises help public-interest implementers organize shared code stewardship rather than invent each procurement and maintenance process.",
+        "sourceUrls": [
+          "https://www.publiccode.net/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared stewardship guidance targets vendor dependence and coordination among public institutions. This is partial editorial alignment, not proof of resident control, successful procurement reform or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.publiccode.net/"
+        ]
+      }
+    },
+    {
+      "id": "wikimedia-deutschland",
+      "name": "Wikimedia Deutschland",
+      "category": "Justice & public goods",
+      "website": "https://www.wikimedia.de/",
+      "mechanism": "Enable independent institutions to run linked, reusable knowledge bases",
+      "summary": "Wikimedia Deutschland is a German nonprofit association maintaining Wikibase with a global community. Wikibase Suite deployment tooling is the inspected example, distinct from the existing Wikimedia Foundation profile’s broader encyclopedia-support scope.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.wikimedia.de/impressum/",
+          "title": "Wikimedia Deutschland: registered German association identity and service-provider limits",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.wikimedia.de/",
+          "title": "Wikimedia Deutschland: nonprofit free-knowledge mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://wikiba.se/about-us/",
+          "title": "Wikibase: Wikimedia Deutschland and global community maintenance role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/wmde/wikibase-suite",
+          "title": "Wikibase Suite: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/wmde/wikibase-suite/blob/main/README.md",
+          "title": "Wikibase Suite README: deployment configuration and bundled services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/wmde/wikibase-suite/blob/main/LICENSE",
+          "title": "Wikibase Suite: inspected BSD-3-Clause grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable independent knowledge-base infrastructure can change how institutions control, connect and share structured information rather than publish only isolated records.",
+        "reach": "A common knowledge-base suite can enable libraries, archives, research and civic institutions across sectors; attributable institutional outcomes were not measured.",
+        "durability": "Reusable code and linked-data practices can persist, but hosting, upgrades, curation and community support require ongoing work.",
+        "scalability": "Shared deployment tooling reduces duplicated infrastructure setup, while semantic modeling, data rights, server administration and local expertise remain necessary.",
+        "additionality": "No current marginal Wikibase maintenance or support bottleneck, alternative contributor funding or causal donation counterfactual was audited.",
+        "agency": "Volunteer participation and institutional independence do not establish affected communities’ binding authority over association budgets, data inclusion or ecosystem priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current imprint identifies the registered German association, VR 23855 B, and warns that it is not the service provider for all named Wikimedia projects. The nonprofit mission and separate identity are not US deductibility certification. This scope differs from the existing Wikimedia Foundation assessment; shared ecosystem outcomes are not added together. The checked BSD-3-Clause file concerns Wikibase Suite deployment tooling, not every bundled MediaWiki, Wikibase, database, search component, dataset or service. The README lists those separate services. Openness and federation do not establish accurate data, consent, privacy, secure hosting or effective charitable use.",
+      "falsifiableClaim": "Do independent public-interest institutions using a defined Wikibase Suite implementation sustain more reusable and interoperable knowledge collections at lower full cost than credible alternatives, accounting for data rights, curation, hosting and staff expertise?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V., scoped to Wikibase ecosystem and deployment support. It is not the US Wikimedia Foundation, all Wikipedia fundraising or sole authorship of every bundled component.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Wikibase Suite supplies reusable deployment configuration for independent linked knowledge bases; Wikimedia Deutschland and its community support the wider ecosystem.",
+        "sourceUrls": [
+          "https://wikiba.se/about-us/",
+          "https://github.com/wmde/wikibase-suite",
+          "https://github.com/wmde/wikibase-suite/blob/main/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Wikibase Suite deployment tooling",
+            "repositoryUrl": "https://github.com/wmde/wikibase-suite",
+            "licenseUrl": "https://github.com/wmde/wikibase-suite/blob/main/LICENSE",
+            "licenseLabel": "BSD-3-Clause for suite tooling; bundled services have separate licenses",
+            "licenseBlobSha": "6c07648ef62cf6b78f6cd2640e48513ae65e588a",
+            "role": "maintainer",
+            "scope": "The Suite repository was not archived when checked and identifies Wikimedia Deutschland in its BSD grant. This check concerns deployment configuration/tooling, not a uniform license for bundled MediaWiki, Wikibase, databases, search, data or hosted services. Community maintenance is not sole authorship or a security/support guarantee.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Independent knowledge bases can reduce platform gatekeeping, while linked data and shared tooling support cooperation across institutions. This partial connection does not verify data quality, community power or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://wikiba.se/about-us/"
+        ]
+      }
+    },
+    {
+      "id": "open-forum-europe",
+      "name": "OpenForum Europe",
+      "category": "Justice & public goods",
+      "website": "https://openforumeurope.org/",
+      "mechanism": "Build policy and institutional capacity for open digital infrastructure",
+      "summary": "OpenForum Europe is a Belgian international nonprofit association conducting research, convening and policy advocacy on interoperability and open technologies. The scope is its enabling policy model, not ownership of all software discussed or proven regulatory outcomes.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openforumeurope.org/what-we-do/",
+          "title": "OFE: current interoperability, public-sector adoption and policy-capacity approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openforumeurope.org/privacy-policy/",
+          "title": "OFE: December 2025 Belgian aisbl legal identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openforumeurope.org/support-ofe/",
+          "title": "OFE: nonprofit support and collaboration model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The model seeks changes in interoperability, procurement and digital-market policy rather than only distribute individual software products.",
+        "reach": "Policy research and convening can influence several public institutions and open-technology communities; attributable regulatory reach was not audited.",
+        "durability": "Implemented standards and policy can outlast one project, but enforcement, institutional capacity and technical evolution require ongoing support.",
+        "scalability": "Research and convening methods can be reused across institutions, while jurisdiction-specific law, political context and procurement practice constrain replication.",
+        "additionality": "No current costed marginal policy-research bottleneck, alternative advocacy support or causal donation counterfactual was audited.",
+        "agency": "Stakeholder convening and open-movement participation do not establish affected residents’ binding rights over association priorities, sponsor influence or digital policy."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current privacy policy identifies OpenForum Europe aisbl as a Belgian international nonprofit association, enterprise 721975651; it is not a similarly named UK company. Nonprofit status and industry/civil-society support do not establish independence from every funding influence, US deductibility or causal policy impact. No current regulatory result or law’s effectiveness was independently established here. Advocacy for open technologies and a content license do not substitute for a named software repository-license check, so no code badge is assigned. Procurement, competition, security and access trade-offs require context-specific review; this is not legal advice or endorsement of all proposals.",
+      "falsifiableClaim": "Does a specified OFE research or convening intervention lead to independently documented reductions in public-sector vendor lock-in or more reusable procurement outcomes than plausible alternatives, after accounting for industry influence and other advocates?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "OpenForum Europe aisbl, Belgian enterprise 721975651, and its open-technology research and policy-convening work. It is not an unrelated similarly named UK company or every supporter’s products.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared policy research, interoperability expertise and stakeholder convening can help public-interest institutions develop open-technology practices without duplicating every policy-learning process.",
+        "sourceUrls": [
+          "https://openforumeurope.org/what-we-do/",
+          "https://openforumeurope.org/support-ofe/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "The current approach explicitly targets vendor lock-in and coordinates open-technology stakeholders. This is partial editorial alignment, not proof of fair markets, regulatory success or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openforumeurope.org/what-we-do/"
+        ]
+      }
+    },
+    {
+      "id": "center-for-digital-democracy",
+      "name": "Center for Digital Democracy",
+      "category": "Justice & public goods",
+      "website": "https://democraticmedia.org/",
+      "mechanism": "Equip civil society and policymakers to challenge commercial digital surveillance",
+      "summary": "The Center for Digital Democracy combines research, public education and policy advocacy on data justice and digital marketing. This assessment concerns shared policy capacity and institutional accountability, not a finding that every campaign or legal filing succeeds.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://democraticmedia.org/about/",
+          "title": "CDD: current research, policy, digital-rights and youth-protection approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://democraticmedia.org/",
+          "title": "CDD: current digital-marketing, health and public-sphere work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://democraticmedia.org/about/annual-reports",
+          "title": "CDD: nonprofit history and dated annual-report context; not a current financial audit",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=Center%20for%20Digital%20Democracy",
+          "title": "CDD: fixed September 8, 2026 IRS BMF legal-name and locality match",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Research-led advocacy seeks changes in digital-market rules and commercial data incentives rather than only help individuals manage one privacy incident.",
+        "reach": "Shared evidence and policy capacity can influence regulators, civil society and digital institutions; independently attributable reach was not measured.",
+        "durability": "Enforced data protections and institutional safeguards can persist beyond one grant, while oversight and evolving technical practices require ongoing support.",
+        "scalability": "Research and coalition methods can be shared across contexts, but legal systems, enforcement capacity and platform practices require adaptation.",
+        "additionality": "No current costed marginal research or advocacy bottleneck, replacement funding or causal donation counterfactual was audited.",
+        "agency": "Public-interest advocacy and coalition participation do not establish binding rights for affected users over nonprofit budgets, research agendas or proposed regulatory remedies."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current primary pages describe the organization and its policy work; the fixed September 8 IRS snapshot lists Center for Digital Democracy, EIN 52-2311577, in Washington, DC. That dated identity match is not independent current tax-eligibility certification. It is distinct from the Center for Democracy & Technology. The annual-report page contains historical reports, not a fresh financial or outcome audit. Filings, press coverage and organizational accounts of influence are not treated as causal evidence. No named software license was checked. Privacy, expression, child protection, competition and access trade-offs require policy-specific review; sharing research does not establish that every remedy is effective or proportionate.",
+      "falsifiableClaim": "Does a defined CDD evidence or coalition intervention produce independently documented improvements in enforceable digital-data protections compared with plausible alternatives, while preserving access and expression and accounting for other advocates?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The US Center for Digital Democracy nonprofit’s research-led digital-rights and coalition-support model, not the existing Center for Democracy & Technology profile or every coalition partner.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared research, policy analysis and coalition learning can help civil-society organizations and public institutions understand digital-marketing practices without rebuilding every evidence base.",
+        "sourceUrls": [
+          "https://democraticmedia.org/about/",
+          "https://democraticmedia.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "CDD targets commercial digital-marketing incentives and concentrated platform/data power, connecting partially to Attention and Gatekeepers. This is not endorsement of all regulatory proposals or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://democraticmedia.org/about/",
+          "https://democraticmedia.org/"
+        ]
+      }
+    },
+    {
+      "id": "5rights-foundation",
+      "name": "5Rights Foundation",
+      "category": "Justice & public goods",
+      "website": "https://5rightsfoundation.com/",
+      "mechanism": "Make children’s rights part of digital design and institutional rules",
+      "summary": "5Rights Foundation develops research, policy and practical design guidance for children’s rights online. The UK charity is distinguished from its Belgian affiliate, and the assessment does not turn organizational harm claims or policy influence into validated outcomes.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://5rightsfoundation.com/about-us/",
+          "title": "5Rights: current rights-by-design mission and institutional approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://5rightsfoundation.com/about-us/transparency/",
+          "title": "5Rights: current UK and Belgian legal identities, funding and governance disclosures",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://5rightsfoundation.com/",
+          "title": "5Rights: current policy, design-code and practitioner resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The model seeks to embed children’s rights in digital design defaults, incentives and institutional rules rather than only offer individual coping advice.",
+        "reach": "Reusable policy and design resources can influence multiple institutions and jurisdictions; attributable reach and benefits were not independently audited.",
+        "durability": "Implemented rights-respecting design and enforceable rules can persist, but oversight, product change and safeguarding require continuing work.",
+        "scalability": "Common frameworks can travel across products and institutions, while cultural context, law, technical constraints and access risks require adaptation.",
+        "additionality": "No current marginal design-guidance or advocacy funding bottleneck, alternative support or causal donation counterfactual was audited.",
+        "agency": "Working with young people and naming agency as a right do not establish children’s binding decision rights over charity budgets, policy positions or industry implementation."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The transparency page identifies the UK charity, company and Scottish registration separately from Belgian 5Rights–EU; neither the affiliate nor joint research centers are counted twice. These disclosures are not independent regulator or safeguarding audits. Organizational claims about harm prevalence, legislation and influence were not re-evaluated as causal findings. Design codes, research and policy guidance do not establish a named open-source software license, so no code badge is assigned. Child privacy, participation, expression, age assurance, accessibility and protection can involve trade-offs requiring case-specific assessment. No blanket endorsement of restrictions or proof of safe digital services is implied.",
+      "falsifiableClaim": "Do institutions applying a specified 5Rights design or policy framework produce independently verified improvements in children’s privacy, participation and safety compared with credible alternatives, without disproportionate exclusion or surveillance?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The UK 5Rights Foundation’s rights-by-design and institutional-capacity model, charity 1178581 / SC049882 and company 11271356. The separately identified Belgian 5Rights–EU association is not counted as an additional assessment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Rights-by-design frameworks, research and practitioner guidance can help public-interest organizations, policymakers and implementers evaluate digital services without starting every safeguarding/design process from scratch.",
+        "sourceUrls": [
+          "https://5rightsfoundation.com/about-us/",
+          "https://5rightsfoundation.com/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "attention",
+          "gatekeepers"
+        ],
+        "rationale": "The work explicitly challenges engagement-driven design and concentrated platform power over children’s digital environments. This is partial editorial alignment, not a finding of beneficial implementation or explicit checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://5rightsfoundation.com/about-us/",
+          "https://5rightsfoundation.com/"
+        ]
+      }
+    },
+    {
+      "id": "responsible-ai-collaborative",
+      "name": "Responsible AI Collaborative (AI Incident Database)",
+      "category": "Justice & public goods",
+      "website": "https://incidentdatabase.ai/",
+      "mechanism": "Make reported AI failures available for shared institutional learning",
+      "summary": "Responsible AI Collaborative Inc. advances the AI Incident Database, a shared incident-learning resource with an inspected software repository. Software permissions, selected database collections and third-party reports have different terms and evidentiary limits.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://incidentdatabase.ai/about/",
+          "title": "AIID: current Responsible AI Collaborative identity, governance and contributor/support roles",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://res.cloudinary.com/pai/image/upload/v1744386442/2024_Tax_Return_Documents_RESPONSIBLE_AI_COLLABORATIVE_INC_wpw5hb.pdf",
+          "title": "RAIC: self-published 2024 Form 990-PF, legal name and EIN 88-1046583",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://incidentdatabase.ai/terms-of-use/",
+          "title": "AIID: selected collection/data terms and third-party-content limitations",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/responsible-ai-collaborative/aiid",
+          "title": "AIID: inspected current software repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/responsible-ai-collaborative/aiid/blob/main/LICENSE.txt",
+          "title": "AIID: inspected Apache-2.0 software grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/responsible-ai-collaborative/aiid/blob/main/README.md",
+          "title": "AIID README: contribution, application and hosted architecture scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared incident memory and analytical tooling can change how institutions learn from AI failures rather than investigate every event in isolation.",
+        "reach": "A common incident resource can enable researchers, civil society and public institutions across sectors; downstream risk reduction was not independently measured.",
+        "durability": "Records and reusable code can persist, but curation, corrections, source access and operational support require continued work.",
+        "scalability": "Common software and taxonomies can support many users, while reporting bias, verification, language coverage and contextual interpretation limit generalization.",
+        "additionality": "No current marginal curation or maintenance bottleneck, alternative support from collaborators or causal donation counterfactual was audited.",
+        "agency": "Contributor participation and public submissions do not establish binding rights for people harmed by AI over nonprofit budgets, classifications, corrections or database priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The organization’s own 2024 Form 990-PF identifies Responsible AI Collaborative Inc., EIN 88-1046583; the fixed registry also classifies it as a private operating foundation, not a public charity. A dated filing corroborates identity, not current eligibility, solvency or governance. The about page credits DSRI support and many independent contributors; RAIC is not sole author of every activity. LICENSE.txt grants Apache-2.0 for software, while terms describe CC BY-SA for specified database collections and preserve separate third-party-content rights. No broad right to republish news or reports is inferred. Incident reports may contain allegations and selection bias; counts are not prevalence estimates, adjudicated facts or proof that using the database prevents harm. Hosted/API terms, moderation, privacy and dependencies need separate review.",
+      "falsifiableClaim": "Do public-interest teams using a specified AIID learning workflow identify and mitigate independently verified failure modes better than comparable teams, accounting for reporting bias, uncertain allegations, existing expertise and the cost of verification?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Responsible AI Collaborative Inc.’s AI Incident Database program, not every contributor, DSRI / UL Research Institutes activity or the whole Partnership on AI. The initiative is not an extra independent charity beyond its named nonprofit.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "The AI Incident Database’s reusable application, taxonomies and curation workflow can help institutions learn from reported failures without independently rebuilding the whole incident-discovery infrastructure.",
+        "sourceUrls": [
+          "https://incidentdatabase.ai/about/",
+          "https://incidentdatabase.ai/terms-of-use/",
+          "https://github.com/responsible-ai-collaborative/aiid",
+          "https://github.com/responsible-ai-collaborative/aiid/blob/main/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "AI Incident Database software",
+            "repositoryUrl": "https://github.com/responsible-ai-collaborative/aiid",
+            "licenseUrl": "https://github.com/responsible-ai-collaborative/aiid/blob/main/LICENSE.txt",
+            "licenseLabel": "Apache-2.0 software grant; selected database collections and third-party reports differ",
+            "licenseBlobSha": "64a50330d12309e81225521b0cb7d1d453052c28",
+            "role": "maintainer",
+            "scope": "The repository was not archived when checked and names Responsible AI Collaborative Inc. in its Apache-2.0 grant. This does not license every database collection or linked report, validate incident allegations, guarantee hosted/API access, or certify dependencies and security. The program credits independent contributors and supporting institutions.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Shared incident records and taxonomies support collective learning across otherwise separate organizations. This is a partial Coordination connection, not proof of representative incident coverage, harm prevention or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://incidentdatabase.ai/about/"
+        ]
+      }
+    },
+    {
+      "id": "full-fact",
+      "name": "Full Fact",
+      "category": "Justice & public goods",
+      "website": "https://fullfact.org/",
+      "mechanism": "Help public-interest fact checkers find and investigate claims",
+      "summary": "Full Fact is an England and Wales charity building fact-checking practice and shared monitoring tools. Its current Full Fact AI page states access is through a paid licence; public fact-checking articles and software access are kept distinct.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://fullfact.org/about/frequently-asked-questions/",
+          "title": "Full Fact: current charity/company identity, editorial practice and trading-company distinction",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://fullfact.org/ai/",
+          "title": "Full Fact AI: current practitioner tooling and paid-licence access",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://fullfact.org/about/funding/",
+          "title": "Full Fact: current funding and independence safeguards as organization-reported",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared claim-discovery and verification workflows can change how public-interest organizations monitor and correct information rather than publish only isolated articles.",
+        "reach": "Common tools and practice can support fact-checking and civic organizations across settings; attributable institutional influence was not independently measured.",
+        "durability": "Research skills and corrections can persist, but monitoring, verification, editorial quality and software operations require continuing support.",
+        "scalability": "Reusable tools can reduce duplicated monitoring effort, while language, source access, licensing costs and skilled editorial review constrain expansion.",
+        "additionality": "No current marginal tool-development or fact-checking funding bottleneck, replacement support or causal donation counterfactual was audited.",
+        "agency": "Correction channels and editorial safeguards do not establish binding affected-community authority over charity budgets, claim selection, software access or moderation decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current pages identify charity 1158683 and nonprofit company 06975984 in England and Wales, with a separate trading company, Full Fact Services. These disclosures are not independent current regulator or impartiality audits. Full Fact AI explicitly describes a paid licence; free access to fact-checking content is not free hosted-tool access. No actual named software license was checked, so no open-source badge is assigned; payment alone is not evidence that all code is closed. Organizational examples and user counts are not causal evidence of trust, belief correction or policy impact. Automated selection can miss context or languages, and skilled human verification, corrections, source rights and independence remain essential.",
+      "falsifiableClaim": "Do participating public-interest fact-checking teams using a defined Full Fact AI workflow identify and accurately resolve consequential claims faster than comparable teams, accounting for licence costs, language coverage, false positives and human review?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "The Full Fact nonprofit’s shared fact-checking tools, evidence practice and organizational support, not a separate assessment of its trading company, every partner fact checker or all public claims.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared AI-assisted claim monitoring and fact-checking practice can reduce duplicated discovery work for other information-focused organizations, subject to paid access and human verification.",
+        "sourceUrls": [
+          "https://fullfact.org/about/frequently-asked-questions/",
+          "https://fullfact.org/ai/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination"
+        ],
+        "rationale": "The work addresses factual inputs to public stories and shares verification capacity across organizations. This limited Story/Coordination mapping does not establish optimistic narratives, changed platform incentives or explicit checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://fullfact.org/about/frequently-asked-questions/",
+          "https://fullfact.org/ai/"
+        ]
+      }
+    },
+    {
+      "id": "taproot-foundation",
+      "name": "Taproot Foundation",
+      "category": "Justice & public goods",
+      "website": "https://taprootfoundation.org/",
+      "mechanism": "Make pro bono expertise easier for nonprofits to find and use",
+      "summary": "Taproot Foundation Inc. matches nonprofits with skilled professionals and shares practices for scoping and completing pro bono work. Taproot Plus is the enabling platform example; matches and volunteered hours are not treated as measured mission outcomes.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://taprootfoundation.org/about",
+          "title": "Taproot: current nonprofit identity and capacity-building model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://taprootfoundation.org/privacy",
+          "title": "Taproot Foundation Inc.: March 2026 legal identity and service-data policy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://taprootfoundation.org/taproot-plus",
+          "title": "Taproot Plus: current scoping, matching and support platform",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://taprootfoundation.org/nonprofits",
+          "title": "Taproot: zero-cost nonprofit access, supported regions and engagement formats",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Making specialist expertise a reusable organizational resource can change how nonprofits build operational capacity rather than deliver only one direct service.",
+        "reach": "A shared matching model can enable nonprofits across missions and functions; downstream benefits and attributable organizational reach were not independently audited.",
+        "durability": "Skills and usable deliverables can persist, but maintenance, staff turnover, project management and platform support require ongoing effort.",
+        "scalability": "Common scoping and matching methods can spread across organizations, while expert availability, fit, management time and regional access remain constraints.",
+        "additionality": "No current marginal matching or support bottleneck, displaced paid/pro bono alternatives or causal funding counterfactual was audited.",
+        "agency": "Nonprofit-first positioning and matching preferences do not establish affected communities’ binding rights over foundation budgets, expert selection or partner priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current about page self-identifies a nonprofit and the March 2026 privacy policy names Taproot Foundation Inc.; this is not an independent tax-eligibility or governance audit. The nonprofit page offers zero-cost access to employees, volunteers and board members of nonprofits, public schools and fiscally sponsored organizations in specified regions, not guaranteed service for every applicant worldwide. Platform claims about AI, matching quality, users and durable value were not independently tested. A planned corporate AI partnership is not treated as already delivered. No repository license was inspected, so no code badge is assigned. Volunteer work still costs nonprofit management time and can displace better alternatives; confidentiality, data handling, expertise and maintenance need review.",
+      "falsifiableClaim": "Do nonprofits completing a defined Taproot-supported engagement sustain independently usable operational improvements and net time savings compared with matched alternatives, after accounting for staff coordination, rework, confidentiality and ongoing maintenance?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Taproot Foundation Inc.’s nonprofit pro bono capacity and matching model, including Taproot Plus. It is not every corporate partner, volunteer engagement or a separate AI vendor partnership.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Taproot Plus combines engagement scoping, expert matching and support resources so nonprofits can access operational skills without building every pro bono recruitment process themselves.",
+        "sourceUrls": [
+          "https://taprootfoundation.org/about",
+          "https://taprootfoundation.org/taproot-plus",
+          "https://taprootfoundation.org/nonprofits"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Matching needs with expertise and supporting shared project work directly addresses coordination friction. This partial mapping is not proof of mission impact, validated AI matching or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://taprootfoundation.org/about",
+          "https://taprootfoundation.org/taproot-plus",
+          "https://taprootfoundation.org/nonprofits"
+        ]
+      }
+    },
+    {
+      "id": "nlnet-labs",
+      "name": "NLnet Labs",
+      "category": "Justice & public goods",
+      "website": "https://nlnetlabs.nl/",
+      "mechanism": "Maintain reusable Internet naming and routing infrastructure",
+      "summary": "Stichting NLnet Labs is a Dutch nonprofit developing Internet infrastructure software and standards. Unbound is the inspected DNS-resolver example, not a finding that all networks or systems using it are secure or that every product has identical terms.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://nlnetlabs.nl/about/",
+          "title": "NLnet Labs: nonprofit engineering, funding and open-standards approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://nlnetlabs.nl/organisation/",
+          "title": "NLnet Labs: Dutch foundation identity, KvK 34126276 and organizational disclosures",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://nlnetlabs.nl/projects/unbound/about/",
+          "title": "Unbound: current DNS-resolver scope, support and sponsor-priority model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/NLnetLabs/unbound",
+          "title": "Unbound: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/NLnetLabs/unbound/blob/master/LICENSE",
+          "title": "Unbound: inspected three-clause BSD-style grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared naming and routing implementations can change the infrastructure available to institutions rather than build a proprietary service for one customer.",
+        "reach": "DNS and routing infrastructure can enable many public-interest institutions across sectors, though charity-specific use and benefits were not independently measured.",
+        "durability": "Redistributable code and standards can persist beyond one grant, but security response, protocol evolution and maintainer capacity require ongoing support.",
+        "scalability": "A shared resolver can be reused by many network operators, while configuration, threat models, training and operational reliability remain local responsibilities.",
+        "additionality": "No current marginal maintenance bottleneck, replacement industry support or causal contribution of an additional donation was audited.",
+        "agency": "User feedback and support-contract influence do not establish affected communities’ binding authority over foundation budgets, protocol priorities or deployed networks."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current organization page identifies Stichting NLnet Labs, KvK 34126276, as a Dutch nonprofit public-benefit organization; its analogy to US 501(c)(3) status is not treated as US incorporation or deductibility certification. NLnet Labs is distinct from the NLnet Foundation grantmaker. The Unbound page says sponsor-supported functionality can receive priority, so openness does not mean equal agenda-setting power. The inspected three-clause BSD-style license is for the named resolver, not every library, protocol patent, hosted service or other product. A public security-advisory process and source access are not a security audit, uptime guarantee, complete privacy solution or demonstrated charitable outcome.",
+      "falsifiableClaim": "For public-interest network operators, does a defined NLnet Labs maintenance or implementation intervention reduce independently verified DNS failures and full operating costs relative to credible alternatives, accounting for configuration, security updates and other contributors?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-06",
+      "evaluationScope": "Stichting NLnet Labs’ engineering and standards-support model, illustrated by Unbound. It is not the separate NLnet Foundation grantmaker, every Internet operator or a charity-exclusive technology service.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Reusable DNS/routing software and standards expertise can reduce duplicated Internet-infrastructure work; Unbound is one scoped code example rather than a charity-only hosted service.",
+        "sourceUrls": [
+          "https://nlnetlabs.nl/about/",
+          "https://nlnetlabs.nl/projects/unbound/about/",
+          "https://github.com/NLnetLabs/unbound"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Unbound",
+            "repositoryUrl": "https://github.com/NLnetLabs/unbound",
+            "licenseUrl": "https://github.com/NLnetLabs/unbound/blob/master/LICENSE",
+            "licenseLabel": "BSD-3-Clause-style grant",
+            "licenseBlobSha": "1859c095a5bebf3cc7595c300a030d8dd44a1e0c",
+            "role": "maintainer",
+            "scope": "The Unbound repository was not archived when checked; the official project page links it and describes NLnet Labs development/support. The inspected BSD-style grant does not settle every dependency, standards/patent question, other foundation product, service term or network security requirement.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable implementations can reduce proprietary infrastructure dependency while common standards coordinate interoperable networks. This partial mechanism connection does not establish secure deployments, equal governance power or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://nlnetlabs.nl/about/",
+          "https://nlnetlabs.nl/projects/unbound/about/"
         ]
       }
     }
