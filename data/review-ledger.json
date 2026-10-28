@@ -2378,16 +2378,17 @@
     {
       "id": "algorithmic-justice-league",
       "name": "Algorithmic Justice League",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Deferred rather than inferring a current nonprofit identity or sponsor. Current AJL pages describe the work, while the linked ActBlue form identifies its processor, not AJL’s current legal host. Historical or third-party sponsorship statements were not treated as current primary confirmation.",
+      "sourceUrls": [
+        "https://www.ajl.org/about",
+        "https://secure.actblue.com/donate/algorithmic-justice-league"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Current primary-source confirmation of AJL’s legal entity or named fiscal sponsor, including whether historical sponsorship changed."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2395,16 +2396,16 @@
     {
       "id": "distributed-ai-research-institute",
       "name": "Distributed AI Research Institute",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Deferred because the accessible homepage establishes research aims but the about and donation pages returned Cloudflare tunnel errors during this review. Current legal nonprofit or fiscal-host identity remains unresolved; access failure is not a finding of ineligibility or inactivity.",
+      "sourceUrls": [
+        "https://www.dair-institute.org/"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Accessible current legal-identity or fiscal-host disclosure and inspected programme sources; do not infer identity from the institute’s name."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2412,17 +2413,11 @@
     {
       "id": "ai-forensics",
       "name": "AI Forensics",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/ai-forensics/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of build independent evidence and reusable methods for scrutinizing powerful platforms. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -2440,68 +2435,44 @@
     {
       "id": "partnership-on-ai",
       "name": "Partnership on AI",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/partnership-on-ai/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of create shared ai governance guidance and cross-sector implementation capacity. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "ai-now-institute",
       "name": "AI Now Institute",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/ai-now-institute/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of develop shared policy strategies and narratives around concentrated ai power. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "ada-lovelace-institute",
-      "name": "Ada Lovelace Institute",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Ada Lovelace Institute (Nuffield Foundation programme)",
+      "status": "included",
+      "profilePath": "/charities/ada-lovelace-institute/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of translate public-interest research and participation into data and ai governance practice. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "data-and-society",
-      "name": "Data & Society",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Data & Society Research Institute",
+      "status": "included",
+      "profilePath": "/charities/data-and-society/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of build shared sociotechnical research and public-sector policy capacity. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -2553,16 +2524,16 @@
     {
       "id": "africa-check",
       "name": "Africa Check",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Deferred after the official about page returned an access challenge. No challenge was bypassed and no current legal identity or programme claims were inferred from secondary summaries; access failure is not a finding about the organization’s value or eligibility.",
+      "sourceUrls": [
+        "https://africacheck.org/about-us"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Accessible current primary nonprofit identity and reusable fact-checking support/tool sources for a scoped assessment."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2570,16 +2541,16 @@
     {
       "id": "chequeado",
       "name": "Chequeado",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Deferred because an accessible current identity and programme source was not resolved in this bounded review. The root request failed and the checked about route returned 404; this is an evidence-access gap, not a finding that the organization is inactive or ineligible.",
+      "sourceUrls": [
+        "https://chequeado.com/"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Current primary legal nonprofit/fiscal-host identity and functioning official resources for its fact-checking and capacity work."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2587,17 +2558,11 @@
     {
       "id": "idealist",
       "name": "Idealist",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/idealist/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of provide shared recruitment and volunteering infrastructure for mission-driven organizations. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
@@ -2643,136 +2608,95 @@
     {
       "id": "nlnet-foundation",
       "name": "NLnet Foundation",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/nlnet-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of resource reusable open technology and the independent teams building it. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "software-freedom-law-center",
       "name": "Software Freedom Law Center",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Deferred for a scoped current-service review. The US site carries nonprofit language, but the checked news is dated and its about route exposed a directory listing. This does not establish closure; a defensible current operating scope and service evidence were not resolved.",
+      "sourceUrls": [
+        "https://softwarefreedom.org/",
+        "https://softwarefreedom.org/about/"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Current primary confirmation of the US organization’s operating legal-services scope, distinct from SFLC.in and Software Freedom Conservancy."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "software-freedom-law-center-india",
-      "name": "Software Freedom Law Center India",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Software Freedom Law Center, India",
+      "status": "included",
+      "profilePath": "/charities/software-freedom-law-center-india/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of reduce legal and policy barriers to public-interest digital infrastructure. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "open-humans-foundation",
       "name": "Open Humans Foundation",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/open-humans-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of provide shared participant-controlled infrastructure for personal-data research. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "civicus",
-      "name": "CIVICUS",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "CIVICUS: World Alliance for Citizen Participation",
+      "status": "included",
+      "profilePath": "/charities/civicus/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of strengthen civil-society coordination, shared knowledge and civic operating space. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "transnational-institute",
       "name": "Transnational Institute",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/transnational-institute/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of share movement research and institutional alternatives for public-interest organizing. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "commons-network",
       "name": "Commons Network",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/commons-network/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of share practical commons and transition methods across civic organizations. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "open-future",
       "name": "Open Future",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/open-future/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "reason": "Included after scoped primary-source review of develop policy and governance approaches for public digital infrastructure and commons. Six preliminary rationales, identity boundaries, dated sources, limits and a falsifiable question are recorded; no independent effectiveness or checklist-adoption claim follows.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     }

@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,187);assert.equal(new Set(data.charities.map(c=>c.id)).size,187);
+  assert.equal(data.charities.length,200);assert.equal(new Set(data.charities.map(c=>c.id)).size,200);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
@@ -74,13 +74,29 @@ test('practice default is explicit, totals 100 and preserves the original lens',
   assert.equal(assess({depth:4,reach:4,durability:4,scalability:4}).coverage,90);
   assert.equal(assess({depth:4,reach:4,durability:4,scalability:4},presets.balanced).coverage,85);
 });
+test('seventh goal batch reaches the source-snapshot target without inventing independent programmes or impact',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-07');assert.equal(batch.length,13);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.evaluatorStatus,'not_verified');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);assert.ok(c.evaluationScope.length>70);assert.ok(c.falsifiableClaim.length>70);
+    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-27'));assert.equal(c.checklistAlignment.adoption,'not_verified');
+    for(const k of Object.keys(axes))assert.ok(c.rationales[k].length>70);
+  }
+  const get=id=>batch.find(c=>c.id===id);
+  assert.match(get('ada-lovelace-institute').evaluationScope,/within the Nuffield Foundation/);
+  assert.match(get('idealist').limitations,/early 2025/);assert.match(get('idealist').evaluationScope,/not a second VolunteerMatch charity/);
+  assert.match(get('ai-forensics').limitations,/902454313/);assert.match(get('civicus').limitations,/029-864-NPO/);
+  assert.match(get('commons-network').limitations,/1 May 2022/);assert.match(get('open-future').limitations,/CAF America/);
+  assert.match(get('partnership-on-ai').evaluationScope,/separately assessed AI Incident Database operator/);
+});
 test('added assessments have dated primary sources without inventing funding or governance scores',()=>{
   const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-26-infrastructure');
   assert.equal(batch.length,12);
   for(const c of batch){
     assert.equal(c.lastReviewed,'2026-10-26');assert.equal(c.selectionType,'illustrative');
     assert.equal(c.externalEvaluator,null);assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
-    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-26'));
+    assert.ok(c.sources.every(s=>s.type==='official'&&(s.accessedAt==='2026-10-26'||(c.id==='medic'&&s.accessedAt==='2026-10-27'))));
+    if(c.id==='medic')assert.ok(c.sources.slice(0,2).every(s=>s.accessedAt==='2026-10-26'));
   }
   assert.equal(data.charities.filter(c=>c.lastReviewed==='2026-10-06').length,40);
   assert.ok(data.charities.slice(0,40).every(c=>c.sources.every(s=>s.accessedAt==='2026-10-06')));

@@ -23,7 +23,7 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,60);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,63);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
@@ -60,6 +60,22 @@ test('canonical Tor GitLab license evidence is supported without accepting unrel
   const clone=structuredClone(c);clone.openSource.projects[0].licenseUrl='https://gitlab.torproject.org.evil.example/LICENSE';assert.equal(hasVerifiedOpenSource(clone),false);
   const map=data.charities.find(c=>c.id==='mapaction');assert.equal(hasVerifiedOpenSource(map),false);
   assert.match(c.openSource.projects[0].scope,/optional LGPL/);
+});
+test('seventh goal batch and supplemental checks preserve software, data and handover boundaries',()=>{
+  const get=id=>data.charities.find(c=>c.id===id);
+  assert.equal(data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-07'&&hasVerifiedOpenSource(c)).length,1);
+  assert.equal(get('open-humans-foundation').openSource.projects[0].licenseLabel,'MIT');
+  assert.match(get('open-humans-foundation').limitations,/21 February 2025/);
+  assert.match(get('open-humans-foundation').limitations,/not sensitive health\/genomic data/);
+  assert.equal(get('medic').lastReviewed,'2026-10-26');assert.ok(get('medic').sources.slice(0,2).every(s=>s.accessedAt==='2026-10-26'));
+  assert.equal(get('medic').openSource.projects[0].licenseBlobSha,'dbbe3558157f5861bff35dcb37b328b679b0ccfd');
+  assert.equal(get('crisis-text-line').openSource.projects[0].repositoryUrl,'https://github.com/techmatters/hrm');
+  assert.match(get('crisis-text-line').openSource.projects[0].scope,/2026 Aselo handover/);
+  assert.match(get('crisis-text-line').openSource.projects[0].scope,/Twilio\/Flex/);
+  assert.equal(hasVerifiedOpenSource(get('tech-matters')),false);
+  for(const id of ['nlnet-foundation','software-freedom-law-center-india','ai-forensics','partnership-on-ai','ada-lovelace-institute','open-future']){
+    assert.equal(matchesFocus(get(id),'tooling'),true);assert.equal(hasVerifiedOpenSource(get(id)),false);
+  }
 });
 test('focus metadata never changes an assessment or asserts checklist affiliation',()=>{
   const c=data.charities.find(c=>c.checklistAlignment);

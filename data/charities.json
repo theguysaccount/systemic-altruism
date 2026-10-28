@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.6",
+  "schemaVersion": "0.4.7",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "187 scoped assessment profiles toward a first-edition goal of 200, including 14 source-linked additions in goal batch 06. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "200 scoped preliminary assessment profiles, including 13 source-linked additions in goal batch 07. The coverage target is met in this source snapshot; completion and live publication require separate verification. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -2167,28 +2167,115 @@
       "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
       "evaluationScope":"Documented government-service and implementation approach; not an audit of every project or AI deployment.",
       "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
-    },{
-      "id":"medic", "name":"Medic", "category":"Global health", "website":"https://medic.org/",
-      "tooling": {"kind":"software","summary":"Community Health Toolkit frameworks and partner resources for nonprofit health implementers.","sourceUrls":["https://medic.org/","https://medic.org/tools/"],"reviewedAt":"2026-10-27"},
-      "mechanism":"Open-source infrastructure for community health systems",
-      "summary":"Stewards and contributes to the Community Health Toolkit and supports partners deploying digital tools for health workers and care coordination.",
-      "externalEvaluator":null, "evaluatorUrl":null,
-      "sources":[{"url":"https://medic.org/","title":"Medic — mission and reported health-worker support","type":"official","accessedAt":"2026-10-26"},{"url":"https://medic.org/tools/","title":"Medic — digital public goods and Community Health Toolkit stewardship","type":"official","accessedAt":"2026-10-26"}],
-      "scores":{"depth":3,"reach":3,"durability":3,"scalability":4,"additionality":null,"agency":null},
-      "rationales":{
-        "depth":"Shared digital infrastructure targets care-team routines and coordination across implementing institutions, rather than delivering a single episode of care.",
-        "reach":"The documented model supports health workers and partners in multiple countries; this does not establish an international rule change.",
-        "durability":"Open software and locally adopted routines could remain beyond a grant, provided health systems sustain hosting, training and maintenance.",
-        "scalability":"Open-source frameworks and implementation resources allow partners to reuse and adapt software instead of rebuilding it, though deployment still costs resources.",
-        "additionality":"Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
-        "agency":"Unknown: participatory design and local adaptation do not establish audited control over budgets or governance by affected communities."
+    },
+    {
+      "id": "medic",
+      "name": "Medic",
+      "category": "Global health",
+      "website": "https://medic.org/",
+      "tooling": {
+        "kind": "software",
+        "summary": "Community Health Toolkit frameworks and partner resources for nonprofit health implementers.",
+        "sourceUrls": [
+          "https://medic.org/",
+          "https://medic.org/tools/"
+        ],
+        "reviewedAt": "2026-10-27"
       },
-      "evidenceLevel":"Organization reported; official software-stewardship description", "confidence":"Moderate for documented mechanism; low for systemic attribution",
-      "limitations":"Health-worker support and care-interaction counts are not causal health gains. Workload, privacy, reliability, costs and actual adoption need independent study. Open source does not mean cost-free deployment.",
-      "falsifiableClaim":"Do comparable care teams using the toolkit improve sustained care quality and patient outcomes after accounting for training, hosting, worker burden and other health-system changes?",
-      "scoreStatus":"editorial_hypothesis", "lastReviewed":"2026-10-26", "reviewBatch":"2026-10-26-infrastructure",
-      "evaluationScope":"Medic's Community Health Toolkit stewardship and partner-support mechanism; not attribution for every partner's health outcomes.",
-      "selectionStatement":"Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch", "evaluatorLabel":null, "selectionType":"illustrative", "evaluatorStatus":"not_verified"
+      "mechanism": "Open-source infrastructure for community health systems",
+      "summary": "Stewards and contributes to the Community Health Toolkit and supports partners deploying digital tools for health workers and care coordination.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://medic.org/",
+          "title": "Medic — mission and reported health-worker support",
+          "type": "official",
+          "accessedAt": "2026-10-26"
+        },
+        {
+          "url": "https://medic.org/tools/",
+          "title": "Medic — digital public goods and Community Health Toolkit stewardship",
+          "type": "official",
+          "accessedAt": "2026-10-26"
+        },
+        {
+          "url": "https://medic.org/about/",
+          "title": "Medic: technical stewardship and core contribution to the Community Health Toolkit",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/medic/cht-core",
+          "title": "CHT Core Framework: Medic stewardship and repository status",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/medic/cht-core/blob/master/LICENSE",
+          "title": "CHT Core Framework: inspected AGPL-3.0 license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared digital infrastructure targets care-team routines and coordination across implementing institutions, rather than delivering a single episode of care.",
+        "reach": "The documented model supports health workers and partners in multiple countries; this does not establish an international rule change.",
+        "durability": "Open software and locally adopted routines could remain beyond a grant, provided health systems sustain hosting, training and maintenance.",
+        "scalability": "Open-source frameworks and implementation resources allow partners to reuse and adapt software instead of rebuilding it, though deployment still costs resources.",
+        "additionality": "Unknown: a current marginal funding gap, counterfactual and delivery capacity have not been audited.",
+        "agency": "Unknown: participatory design and local adaptation do not establish audited control over budgets or governance by affected communities."
+      },
+      "evidenceLevel": "Organization reported; official software-stewardship description",
+      "confidence": "Moderate for documented mechanism; low for systemic attribution",
+      "limitations": "Health-worker support and care-interaction counts are not causal health gains. Workload, privacy, reliability, costs and actual adoption need independent study. Open source does not mean cost-free deployment.",
+      "falsifiableClaim": "Do comparable care teams using the toolkit improve sustained care quality and patient outcomes after accounting for training, hosting, worker burden and other health-system changes?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-26",
+      "reviewBatch": "2026-10-26-infrastructure",
+      "evaluationScope": "Medic's Community Health Toolkit stewardship and partner-support mechanism; not attribution for every partner's health outcomes.",
+      "selectionStatement": "Illustrative infrastructure inclusion; no independent evaluator recommendation checked for this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Community Health Toolkit Core Framework",
+            "repositoryUrl": "https://github.com/medic/cht-core",
+            "licenseUrl": "https://github.com/medic/cht-core/blob/master/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "dbbe3558157f5861bff35dcb37b328b679b0ccfd",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Medic is the named technical steward and a core contributor, not the sole developer. Inspected CHT core code and AGPL license; repository not archived on 27 October 2026. Health data, configurations, dependencies, clinical safety, security, hosting and partner outcomes are outside this check."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Reusable community-health infrastructure and support can coordinate implementers and reduce proprietary technology dependence. This does not establish clinical effectiveness or affected-community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://medic.org/about/",
+          "https://github.com/medic/cht-core"
+        ]
+      }
     },{
       "id":"path", "name":"PATH", "category":"Global health", "website":"https://www.path.org/",
       "tooling": {"kind":"capacity","summary":"Digital, workforce and implementation support for government and local NGO health partners.","sourceUrls":["https://www.path.org/who-we-are/","https://www.path.org/what-we-do/health-systems-strengthening/"],"reviewedAt":"2026-10-27"},
@@ -3349,6 +3436,24 @@
           "type": "official",
           "accessedAt": "2026-10-27",
           "publishedAt": "2026-08-10"
+        },
+        {
+          "url": "https://techmatters.org/project/aselo/",
+          "title": "Tech Matters: Aselo graduation and July 2026 transition to Crisis Text Line",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/techmatters/hrm",
+          "title": "Aselo HRM backend: project scope and repository status",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/techmatters/hrm/blob/master/LICENSE",
+          "title": "Aselo HRM backend: inspected AGPL-3.0 license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
         }
       ],
       "scores": {
@@ -3386,6 +3491,36 @@
           "https://www.crisistextline.org/wp-content/uploads/2026/08/Crisis-Text-Line-Aselo-Acquisition-Press-Release-FINAL.docx.pdf"
         ],
         "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Aselo Helpline Relationship Management backend",
+            "repositoryUrl": "https://github.com/techmatters/hrm",
+            "licenseUrl": "https://github.com/techmatters/hrm/blob/master/LICENSE",
+            "licenseLabel": "AGPL-3.0",
+            "licenseBlobSha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Current programme stewardship is attributed to Crisis Text Line through the 2026 Aselo handover, not sole authorship of Tech Matters’ original work. The HRM backend repository remains in the techmatters namespace and was not archived on 27 October 2026. AGPL covers this code, not Twilio/Flex services, telecom costs, helpline records, clinical safety or all Aselo components."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared helpline infrastructure can coordinate nonprofit service operators and lower duplicated technical setup. This partial mapping does not establish safe clinical outcomes, free hosted access or transferred community power.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.crisistextline.org/wp-content/uploads/2026/08/Crisis-Text-Line-Aselo-Acquisition-Press-Release-FINAL.docx.pdf",
+          "https://techmatters.org/project/aselo/"
+        ]
       }
     },
     {
@@ -14437,6 +14572,1066 @@
         "sourceUrls": [
           "https://nlnetlabs.nl/about/",
           "https://nlnetlabs.nl/projects/unbound/about/"
+        ]
+      }
+    },
+    {
+      "id": "nlnet-foundation",
+      "name": "NLnet Foundation",
+      "category": "Justice & public goods",
+      "website": "https://nlnet.nl/",
+      "mechanism": "Resource reusable open technology and the independent teams building it",
+      "summary": "Stichting NLnet funds and supports open internet technology, standards and independent developers. Its grantmaking and connective support can reduce repeated infrastructure costs for public-interest implementers; this is distinct from NLnet Labs’ engineering work.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://nlnet.nl/foundation/",
+          "title": "NLnet: Stichting identity, public-benefit description and RSIN",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://nlnet.nl/foundation/can_do.html",
+          "title": "NLnet: microgrants, expert networks and project support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://nlnet.nl/foundation/request/application.html",
+          "title": "NLnet: documented open-result funding criteria",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Grantmaking and support target the upstream conditions under which shared internet infrastructure is built, rather than delivering one downstream charity service.",
+        "reach": "Funding standards and independent developers can affect infrastructure used across organizations and countries; portfolio size does not establish actual adoption or benefit.",
+        "durability": "Open project outputs can remain reusable beyond a grant, but continued maintenance, governance and interoperability still require capable institutions.",
+        "scalability": "Small projects, reusable code and shared expert networks offer a repeatable enabling model; selection, integration and support remain real constraints.",
+        "additionality": "Unknown: open grant programmes do not establish an unrestricted marginal funding gap, counterfactual project pipeline or the effect of one more donation.",
+        "agency": "Unknown: developer participation and public-benefit aims do not establish binding decision rights for affected end users or communities."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Dutch nonprofit foundation, RSIN 007989398, assessed for grantmaking and developer support only. NLnet Labs is a separate foundation already assessed; project outcomes are not counted as wholly attributable to either organization. Funding open work does not make NLnet its sole developer or maintainer, so no named-repository badge is assigned here. Published application information is not a promise of current eligibility, award or legal/tax advice. No independent portfolio-level causal or marginal-cost review was performed.",
+      "falsifiableClaim": "For a defined grant cohort, do supported teams ship independently usable infrastructure that public-interest organizations still maintain and use two years later, compared with otherwise similar unfunded proposals?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "Stichting NLnet’s philanthropic funding and connective support for open technology, not the separate NLnet Labs engineering foundation or all outcomes of funded projects.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Grants, connections and practical developer support can make reusable technical infrastructure easier for nonprofit and public-interest implementers to obtain.",
+        "sourceUrls": [
+          "https://nlnet.nl/foundation/",
+          "https://nlnet.nl/foundation/can_do.html"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared developer support coordinates infrastructure work and can lower reliance on proprietary intermediaries. This is a partial editorial connection, not a finding about the benefit of every grant.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://nlnet.nl/foundation/",
+          "https://nlnet.nl/foundation/can_do.html"
+        ]
+      }
+    },
+    {
+      "id": "software-freedom-law-center-india",
+      "name": "Software Freedom Law Center, India",
+      "category": "Justice & public goods",
+      "website": "https://sflc.in/",
+      "mechanism": "Reduce legal and policy barriers to public-interest digital infrastructure",
+      "summary": "SFLC.in supports free software and digital rights through legal services, research, education and policy engagement in India. These are enabling services for developers and civic actors, not a reviewed software platform.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://sflc.in/about-us/",
+          "title": "SFLC.in: legal support, education and policy mechanisms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://sflc.in/terms-and-conditions/",
+          "title": "SFLC.in: registered society identity and website-content terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Legal support and policy engagement address rules that shape software freedom, privacy and access, rather than treating only isolated technology problems.",
+        "reach": "Work with developers and public policy can reach multiple institutions in India; national ambition is not proof that particular rules or practices changed.",
+        "durability": "Legal knowledge and adopted safeguards may outlast an individual engagement, but enforcement and assistance require continued capacity.",
+        "scalability": "Research, education and reusable legal learning can spread between projects, while jurisdiction-specific expertise and casework limit frictionless replication.",
+        "additionality": "Unknown: donor support and free legal services do not establish current spare capacity, a marginal funding shortfall or an audited donation counterfactual.",
+        "agency": "Unknown: representing citizen interests is not the same as documented affected-community authority over programme priorities, budgets or legal strategy."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "SFLC.in identifies itself as an Indian nonprofit society, registration S-68628 dated 3 March 2010. It is assessed separately from the US Software Freedom Law Center and Software Freedom Conservancy; no parent relationship is assumed. The website’s CC BY-NC-SA 4.0 content terms are not a free-software license or evidence for a code badge. This profile does not validate every legal position, confirm current service eligibility or provide legal advice. Policy influence and case outcomes were not causally audited.",
+      "falsifiableClaim": "Across a defined set of supported free-software or civil-society projects, does access to SFLC.in’s assistance reduce unresolved legal barriers and preserve usable public-interest infrastructure relative to comparable unsupported projects?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "The Indian registered nonprofit society SFLC.in’s documented legal, educational and policy support, not US organizations with similar names or an independently audited legal-services outcome.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Legal assistance, education and policy research can help open-source developers and civil-society groups navigate barriers they cannot efficiently solve alone.",
+        "sourceUrls": [
+          "https://sflc.in/about-us/",
+          "https://sflc.in/terms-and-conditions/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reducing legal barriers and sharing specialist support can lower gatekeeping and coordinate public-interest technology work. The mapping does not establish agreement with every legal claim.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://sflc.in/about-us/",
+          "https://sflc.in/terms-and-conditions/"
+        ]
+      }
+    },
+    {
+      "id": "open-humans-foundation",
+      "name": "Open Humans Foundation",
+      "category": "Global health",
+      "website": "https://www.openhumans.org/",
+      "mechanism": "Provide shared participant-controlled infrastructure for personal-data research",
+      "summary": "The Open Humans Foundation operates Open Humans, a platform for personal-data access, participant research and community projects. Shared software and research infrastructure may reduce the cost of building separate systems for each study.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.openhumans.org/about/",
+          "title": "Open Humans: foundation, platform and community-research model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.openhumans.org/terms/",
+          "title": "Open Humans: project identity and participant-content terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenHumans/open-humans",
+          "title": "Open Humans website repository: scope and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/OpenHumans/open-humans/blob/master/LICENSE.txt",
+          "title": "Open Humans website: inspected MIT license file",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "A common participant-data platform changes how research projects can organize access and collaboration, although it does not by itself reform healthcare incentives.",
+        "reach": "Reusable infrastructure can serve multiple studies and participant communities; historical member counts are not evidence of representative reach or health outcomes.",
+        "durability": "MIT-licensed software can remain available if a project ends, but hosting, privacy safeguards, integrations and data stewardship require continuing work.",
+        "scalability": "Shared code and project interfaces can support reuse across studies, while consent, security and technical integration make expansion neither automatic nor costless.",
+        "additionality": "Unknown: an accessible platform and reusable repository do not establish a current funding gap, maintenance budget or the counterfactual effect of additional donations.",
+        "agency": "Unknown: the about page describes community-elected board seats, but actual participant decision rights, withdrawal limits and accountability have not been audited."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "The US 501(c)(3) Open Humans Foundation is the named operator; Open Humans is its project, not another independent charity counted separately. The website repository was not archived when checked, but its latest push was 21 February 2025; this is not a finding of current support or security. Its README lists older development dependencies. MIT applies to the checked code, not sensitive health/genomic data, participant content, third-party imports or service terms. Publishing personal data may have irreversible consequences; consent and re-identification risks were not clinically or technically audited.",
+      "falsifiableClaim": "For a defined group of community research projects, does shared Open Humans infrastructure reduce secure setup costs and increase participant-informed research completion without increasing unwanted disclosure or loss of control?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "Open Humans Foundation’s operation and stewardship of the Open Humans platform, not every partner study, participant dataset or another charity under a separate project name.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "A reusable website, personal-data interfaces and community research resources can help public-interest researchers avoid rebuilding participant infrastructure for every project.",
+        "sourceUrls": [
+          "https://www.openhumans.org/about/",
+          "https://www.openhumans.org/terms/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Open Humans website",
+            "repositoryUrl": "https://github.com/OpenHumans/open-humans",
+            "licenseUrl": "https://github.com/OpenHumans/open-humans/blob/master/LICENSE.txt",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "54c476a33c4cb88bb8f64deb34be6344b36140b0",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "The linked foundation platform and website repository have an inspected MIT license. Not archived on 27 October 2026; latest push 21 February 2025. This is code evidence only, excluding participant data, content, dependencies, hosting, security and a promise of current maintenance."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared research infrastructure and participant access can reduce institutional data barriers and coordinate studies. This does not establish effective consent, representative participation or community control.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.openhumans.org/about/",
+          "https://www.openhumans.org/terms/"
+        ]
+      }
+    },
+    {
+      "id": "ai-forensics",
+      "name": "AI Forensics",
+      "category": "Justice & public goods",
+      "website": "https://aiforensics.org/",
+      "mechanism": "Build independent evidence and reusable methods for scrutinizing powerful platforms",
+      "summary": "AI Forensics investigates opaque platform algorithms and shares auditing tools, datasets and methods with public-interest researchers. The enabling hypothesis is that common evidence infrastructure makes independent scrutiny easier.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://aiforensics.org/",
+          "title": "AI Forensics: auditing infrastructure and shared methods",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://aiforensics.org/about",
+          "title": "AI Forensics: founding, programme and Tracking Exposed history",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://recherche-entreprises.api.gouv.fr/search?q=902454313",
+          "title": "French official company-search API: Artificial Intelligence Forensics association identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Independent audits target the informational power asymmetry between platforms and people affected by them, rather than providing only individual remedies.",
+        "reach": "Methods and evidence can inform researchers, journalists and policymakers across platforms; visibility does not prove that institutions act on the findings.",
+        "durability": "Published methods and evidence can remain useful, but changing interfaces and platform countermeasures require ongoing access and technical work.",
+        "scalability": "Reusable collection and analysis methods can lower duplicate audit effort, while platform-specific methods, access restrictions and sensitive data constrain replication.",
+        "additionality": "Unknown: developing shared audit infrastructure does not reveal the current marginal project pipeline, funding shortfall or what additional funding would uniquely enable.",
+        "agency": "Unknown: investigating harms to marginalized groups does not establish their binding authority over audit priorities, publication choices or organizational governance."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Scoped to the French association Artificial Intelligence Forensics, SIREN 902454313 / RNA W922018815, and the current AI Forensics programme founded in 2021. The official register reports an active declared association; that is not charitable tax advice or an impact review. Historical Tracking Exposed work is not treated as a separate current charity or a checked current software asset. No named repository license was resolved in this review, so the software-tooling tag does not carry an open-source badge. Platform access, data rights, reproducibility and regulatory causal claims remain unaudited; the image-only 2025 annual report was not used as readable legal evidence.",
+      "falsifiableClaim": "Can independent nonprofit auditors reproduce a defined AI Forensics audit using the released methods at lower cost than building their own pipeline, and do resulting findings lead to verifiable changes rather than publicity alone?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "The current AI Forensics association and shared algorithm-auditing work, not every historical Tracking Exposed repository, a regulator’s actions or all downstream investigations.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared audit methods, evidence-collection infrastructure and datasets can help public-interest researchers and accountability organizations scrutinize platforms.",
+        "sourceUrls": [
+          "https://aiforensics.org/",
+          "https://aiforensics.org/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Independent scrutiny can challenge platform information gatekeeping, while shared methods coordinate researchers. This is not verified enforcement, unrestricted data access or adoption of the checklist.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://aiforensics.org/",
+          "https://aiforensics.org/about"
+        ]
+      }
+    },
+    {
+      "id": "partnership-on-ai",
+      "name": "Partnership on AI",
+      "category": "Justice & public goods",
+      "website": "https://partnershiponai.org/",
+      "mechanism": "Create shared AI governance guidance and cross-sector implementation capacity",
+      "summary": "Partnership on AI convenes civil society, researchers and companies to develop guidance and shared practices for responsible AI. The hypothesis concerns common institutional capacity, not a regulator’s authority or automatic compliance.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://partnershiponai.org/",
+          "title": "Partnership on AI: organization identity and current resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://partnershiponai.org/about/",
+          "title": "Partnership on AI: cross-sector research and practice model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://partnershiponai.org/transparency-governance/",
+          "title": "Partnership on AI: nonprofit status, funding and board structure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared governance guidance aims to change organizational practices and incentives around AI, although voluntary recommendations are not binding institutional reform.",
+        "reach": "Cross-sector convening can connect industry, civil society and research institutions; partner membership is not proof of implementation or a population-level effect.",
+        "durability": "Guidance can be reused in institutional practice, but voluntary commitments, fast-changing technology and ongoing coordination limit persistence without continued effort.",
+        "scalability": "Published resources and common practices can spread across organizations, while implementation capacity, conflicts and local regulation constrain straightforward replication.",
+        "additionality": "Unknown: philanthropic and corporate contributions do not establish a marginal funding gap, unused programme capacity or what an extra donation would uniquely change.",
+        "agency": "Unknown: a balanced company/nonprofit board and stakeholder consultation do not establish binding decision rights for people directly affected by AI systems."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Partnership on AI to Benefit People and Society is assessed as the US 501(c)(3) nonprofit described on its site. Corporate funding and equal for-profit/not-for-profit board representation are disclosed; independence claims are not an external conflict-of-interest audit. Voluntary guidance is not enforcement or demonstrated reduction in harms. The separately assessed Responsible AI Collaborative’s current AI Incident Database work is outside this scope; historical PAI involvement is not counted twice. Public guidance is not a named software license, and no code badge is assigned.",
+      "falsifiableClaim": "For organizations implementing a specific PAI guidance resource, do independently observed practices and affected-user outcomes improve relative to comparable non-adopters after accounting for selection and industry funding relationships?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "PAI’s current cross-sector guidance and convening capacity, excluding regulatory powers, every partner’s conduct and the separately assessed AI Incident Database operator.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared guidance, research and cross-sector working practices can help nonprofit advocates and public-interest implementers avoid developing AI governance methods alone.",
+        "sourceUrls": [
+          "https://partnershiponai.org/",
+          "https://partnershiponai.org/about/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Convening across institutional boundaries and making governance guidance public can coordinate practice and contest information asymmetries. Corporate participation alone does not show power redistribution.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://partnershiponai.org/",
+          "https://partnershiponai.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "ada-lovelace-institute",
+      "name": "Ada Lovelace Institute (Nuffield Foundation programme)",
+      "category": "Justice & public goods",
+      "website": "https://www.adalovelaceinstitute.org/",
+      "mechanism": "Translate public-interest research and participation into data and AI governance practice",
+      "summary": "The Ada Lovelace Institute develops evidence, policy work and public participation around data and AI. This programme-level assessment covers its shared research and convening role within the Nuffield Foundation, not the parent’s entire portfolio.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.adalovelaceinstitute.org/about/",
+          "title": "Ada Lovelace Institute: establishment and research/policy/practice mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.adalovelaceinstitute.org/about/impact/",
+          "title": "Ada Lovelace Institute: contribution model and institutional partnerships",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.adalovelaceinstitute.org/terms-conditions/",
+          "title": "Ada Lovelace Institute: Nuffield Foundation relationship and content terms",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.nuffieldfoundation.org/about",
+          "title": "Nuffield Foundation: registered charity 206601 and institute relationship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Research, public participation and policy practice target the institutional rules around data and AI rather than offering only case-by-case technical assistance.",
+        "reach": "Partnerships and policy engagement can reach UK and international institutions, but a cited consultation or partnership is not a measure of population-level impact.",
+        "durability": "Research and adopted practices may persist, while changing technology, political choices and continued participation require ongoing institutional work.",
+        "scalability": "Public research and transferable participation methods can be reused, but high-quality deliberation and policy implementation depend on local resources and context.",
+        "additionality": "Unknown: the programme’s relationship with its founding charity does not establish a current marginal funding gap, restrictions on gifts or an additional-donation counterfactual.",
+        "agency": "Unknown: public consultation and a Citizens’ Biometrics Council do not by themselves establish affected people’s binding authority over budgets or decisions."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Counted once as a Nuffield Foundation programme; the parent identifies itself as registered charity 206601 and the institute site says it is part of that foundation. This is not a claim that the institute is a separately incorporated charity or that all Nuffield work is scored. Its own impact approach describes contributions alongside other actors, not sole causal attribution. Public participation is not assumed to equal community power. Content reuse terms are not a software license; no named-repository badge or verified checklist adoption is inferred.",
+      "falsifiableClaim": "When an institution uses a specific Ada research or participation method, is a documented policy or deployment decision changed in a way affected participants can verify, rather than merely recording that consultation occurred?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "The Ada Lovelace Institute programme within the Nuffield Foundation, not an independent charity identity, the parent’s other programmes or partner institutions’ entire outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Public-interest research, policy resources and convening can help civic organizations and institutions develop more accountable data and AI practices.",
+        "sourceUrls": [
+          "https://www.adalovelaceinstitute.org/about/",
+          "https://www.adalovelaceinstitute.org/about/impact/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared evidence and public participation can coordinate governance work and challenge who gets heard in technology decisions. This is a partial mapping, not proof that decision rights moved.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.adalovelaceinstitute.org/about/",
+          "https://www.adalovelaceinstitute.org/about/impact/"
+        ]
+      }
+    },
+    {
+      "id": "data-and-society",
+      "name": "Data & Society Research Institute",
+      "category": "Justice & public goods",
+      "website": "https://datasociety.net/",
+      "mechanism": "Build shared sociotechnical research and public-sector policy capacity",
+      "summary": "Data & Society produces public-interest technology research and supports peer learning through its Public Technology Leadership Collaborative. Common evidence and specialist connections may help civic and government teams make better technology decisions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://datasociety.net/about/",
+          "title": "Data & Society: nonprofit research institute and mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://datasociety.net/public-tech-leadership-collaborative/",
+          "title": "Data & Society: peer learning, expert matchmaking and policy support",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://datasociety.net/donate/",
+          "title": "Data & Society: named Research Institute recipient",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://datasociety.net/annual-reports-and-financials/",
+          "title": "Data & Society: dated reports and financial-disclosure index",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Research and policy support address the institutional assumptions behind technology procurement and use, not just isolated digital-service problems.",
+        "reach": "A peer network spanning researchers and government can influence multiple institutions; its self-reported membership does not establish improved public outcomes.",
+        "durability": "Published research and institutional learning can persist, but networks and fast-changing technology policy still require ongoing support.",
+        "scalability": "Shared analysis, peer learning and expert matchmaking can reduce duplication, while specialist staffing, trust and policy context constrain replication.",
+        "additionality": "Unknown: publishing financial statements and inviting support does not establish an audited marginal funding gap or the projects another donation would uniquely enable.",
+        "agency": "Unknown: advisory groups and public-interest values do not establish binding affected-community control over research questions, budgets or government decisions."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Assessed as the named nonprofit Data & Society Research Institute and its shared research/peer-learning work, not the authority or results of participating governments. Its financial index lists recent reports, but this review did not audit the underlying accounts or current marginal finances. Self-reported network size is not a causal outcome. The collaborative is not a separately counted charity. Public reports and convening are capacity resources, not inspected code, so there is no software-license badge.",
+      "falsifiableClaim": "For a defined group of public or nonprofit teams using the collaborative, does peer learning and expert access change documented procurement or governance decisions compared with similar teams without that support?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "Data & Society Research Institute’s public research and Public Technology Leadership Collaborative, not a separate collaborative charity or every decision by a participating institution.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Research, peer learning, specialist matchmaking and policy analysis can help public-interest teams avoid repeatedly solving the same sociotechnical governance problems.",
+        "sourceUrls": [
+          "https://datasociety.net/about/",
+          "https://datasociety.net/public-tech-leadership-collaborative/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Sharing research expertise coordinates institutional learning and can reduce dependence on vendor-led knowledge. This does not establish that procurement authority or community power changed.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://datasociety.net/about/",
+          "https://datasociety.net/public-tech-leadership-collaborative/"
+        ]
+      }
+    },
+    {
+      "id": "idealist",
+      "name": "Idealist",
+      "category": "Justice & public goods",
+      "website": "https://www.idealist.org/",
+      "mechanism": "Provide shared recruitment and volunteering infrastructure for mission-driven organizations",
+      "summary": "Idealist operates a social-impact jobs and volunteering platform. Its 2025 merger with VolunteerMatch makes that work part of this scoped profile, not a second independent charity entry.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.idealist.org/en/about",
+          "title": "Idealist: US nonprofit identity, EIN and VolunteerMatch merger",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Recruitment and volunteer matching reduce common operating friction for mission-driven organizations, but do not alone change underlying social rules or ownership.",
+        "reach": "A shared platform can connect people with organizations across countries and causes; listing and user counts do not establish successful placements or mission outcomes.",
+        "durability": "Reusable recruitment infrastructure and relationships can persist, but a matching marketplace needs continued operations, moderation and participation.",
+        "scalability": "Common listings and search infrastructure can serve many organizations without a separate platform for each, while discovery, costs and matching quality still constrain access.",
+        "additionality": "Unknown: a nonprofit platform’s donation option and scale do not establish an audited marginal funding gap, subsidized access shortfall or donation counterfactual.",
+        "agency": "Unknown: allowing organizations and applicants to participate does not establish their binding authority over platform priorities, fees, data use or governance."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Idealist identifies itself as a New York US 501(c)(3), EIN 13-3836763. The organization reports merging with VolunteerMatch in early 2025; no extra VolunteerMatch charity is counted. Scope is shared recruitment/volunteering infrastructure, not every participating organization’s outcomes or a finding that a listed opportunity is safe or effective. User and listing totals are self-reported activity, not causal placement evidence. No named code license was inspected, and nonprofit status does not imply a free hosted service or unrestricted reuse of listings.",
+      "falsifiableClaim": "Across a defined cohort of small charities, does using Idealist produce additional suitable staff or volunteer placements at lower full cost than their alternatives, without merely moving applicants between existing listings?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "Idealist’s current recruitment and volunteering platform, including the reported 2025 VolunteerMatch merger, not a second VolunteerMatch charity or all downstream charitable work.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared jobs, volunteer discovery and organizational listings can reduce the need for each charity to build its own recruitment marketplace.",
+        "sourceUrls": [
+          "https://www.idealist.org/en/about"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Matching mission-driven organizations with people is a direct coordination mechanism. A successful match, organizational effectiveness and community control still need separate evidence.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.idealist.org/en/about"
+        ]
+      }
+    },
+    {
+      "id": "open-future",
+      "name": "Open Future",
+      "category": "Justice & public goods",
+      "website": "https://openfuture.eu/",
+      "mechanism": "Develop policy and governance approaches for public digital infrastructure and commons",
+      "summary": "Stichting Open Future works on the rules and infrastructure supporting a European digital public space. Shared analysis and policy approaches can help civic organizations advocate for interoperable public-interest alternatives.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://openfuture.eu/about/transparency/",
+          "title": "Open Future: Dutch foundation identity, governance and funding",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://openfuture.eu/about/our-approach/",
+          "title": "Open Future: digital public infrastructure and commons governance approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Work on infrastructure governance, interoperability and access targets rules and concentrations of digital power rather than delivering only individual services.",
+        "reach": "European policy and infrastructure approaches can reach multiple cultural and civic institutions, but proposals are not enacted policy or measured adoption.",
+        "durability": "Governance and interoperable infrastructure could persist institutionally if implemented; analysis and advocacy alone do not secure that persistence.",
+        "scalability": "Public frameworks and interoperable approaches can be reused, while political agreement, operational investment and local governance limit replication.",
+        "additionality": "Unknown: disclosed grants and commissioned work do not establish a current unrestricted funding gap or which additional public-interest work another donation would cause.",
+        "agency": "Unknown: a commons-governance agenda and supervisory board do not establish binding affected-user authority over this organization or proposed infrastructure."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Dutch nonprofit Stichting Open Future, KVK 80732453, is the assessed organization. CAF America is described as a US giving intermediary, not treated as Open Future’s own US charity identity. Openness can reinforce concentrated power, a risk the organization itself discusses. A proposed digital public space or infrastructure fund is not a deployed public system. Public content terms, grant participation and a registry project do not establish a named code license or sole development role; no software badge is assigned. Policy influence was not causally verified.",
+      "falsifiableClaim": "Does a specific Open Future policy or governance proposal lead to a funded, interoperable public-interest service with independently documented access and governance improvements, rather than remaining a discussion paper?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "Stichting Open Future’s policy, research and connective work for public digital infrastructure and commons, not CAF America, a whole funded consortium or already-realized public infrastructure.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared policy analysis and digital-commons governance approaches can support nonprofit and public institutions seeking alternatives to dependency on dominant private infrastructure.",
+        "sourceUrls": [
+          "https://openfuture.eu/about/transparency/",
+          "https://openfuture.eu/about/our-approach/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "A concrete digital-public-space model connects future institutional design, information gatekeeping and interoperable coordination. This is partial conceptual alignment, not a finding that the model works.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://openfuture.eu/about/transparency/",
+          "https://openfuture.eu/about/our-approach/"
+        ]
+      }
+    },
+    {
+      "id": "commons-network",
+      "name": "Commons Network",
+      "category": "Justice & public goods",
+      "website": "https://www.commonsnetwork.org/",
+      "mechanism": "Share practical commons and transition methods across civic organizations",
+      "summary": "Stichting Commons Network combines research, coalition building, dialogue and transition workshops. Its shared methods explore alternatives in community wealth, public-civic partnerships and other commons-based institutions.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.commonsnetwork.org/2022/05/01/about-commons-network-2/",
+          "title": "Commons Network: dated nonprofit identity and Dutch registration",
+          "type": "official",
+          "accessedAt": "2026-10-27",
+          "publishedAt": "2022-05-01"
+        },
+        {
+          "url": "https://www.commonsnetwork.org/tools-en-strategieen/",
+          "title": "Commons Network: current tools, strategies and practical services",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Commons models and public-civic partnerships aim at ownership, governance and institutional arrangements rather than merely treating individual symptoms.",
+        "reach": "Working with movements, governments and civic organizations can spread institutional alternatives beyond a single project; breadth of topics is not demonstrated reach.",
+        "durability": "Reusable concepts and practices may outlast a workshop, but maintaining changed institutions requires local capacity, political support and ongoing coordination.",
+        "scalability": "Shared tools, dialogue formats and transition workshops can be adapted between settings; contextual fit and facilitation make scaling more than distributing a document.",
+        "additionality": "Unknown: offering tools and collaboration does not establish an audited marginal funding shortfall, unused delivery capacity or what a further donation would enable.",
+        "agency": "Unknown: commons language and collaborative formats do not establish affected people’s binding control over this foundation, partner budgets or local institutions."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Stichting Commons Network is identified as a Dutch nonprofit, KVK 75997886, on its about article dated 1 May 2022; the current tools page corroborates its operating programme. Accessing an older article today does not make its publication current. This scope does not endorse every economic or political proposal. Workshops and shared ideas are not proof that ownership or power changed. Publicly available resources are not automatically unrestricted software; no named-repository license or verified checklist adoption is asserted.",
+      "falsifiableClaim": "For a defined set of organizations receiving Commons Network support, are new ownership or public-civic governance arrangements adopted and sustained beyond the workshops, with affected participants able to verify their actual authority?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "The Dutch Stichting Commons Network’s shared tools, research and facilitation, not every commons initiative, a separate similarly named organization or all partner institutional outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Tools, strategic research, dialogue and transition workshops can help civil-society organizations develop and test institutional alternatives without starting from scratch.",
+        "sourceUrls": [
+          "https://www.commonsnetwork.org/2022/05/01/about-commons-network-2/",
+          "https://www.commonsnetwork.org/tools-en-strategieen/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination",
+          "story"
+        ],
+        "rationale": "Alternative institutional models, coalition work and shared narratives connect to vision, coordination and story. The mapping is partial and does not certify the models’ outcomes or political claims.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.commonsnetwork.org/2022/05/01/about-commons-network-2/",
+          "https://www.commonsnetwork.org/tools-en-strategieen/"
+        ]
+      }
+    },
+    {
+      "id": "civicus",
+      "name": "CIVICUS: World Alliance for Citizen Participation",
+      "category": "Justice & public goods",
+      "website": "https://www.civicus.org/",
+      "mechanism": "Strengthen civil-society coordination, shared knowledge and civic operating space",
+      "summary": "CIVICUS links civil-society organizations and activists through knowledge, resourcing and collective advocacy. The enabling hypothesis concerns the conditions other organizations need to act, not attribution of every member’s work.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.civicus.org/index.php/who-we-are",
+          "title": "CIVICUS: alliance identity and civil-society support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.civicus.org/index.php/privacy-policy",
+          "title": "CIVICUS: South African nonprofit identity and registration",
+          "type": "official",
+          "accessedAt": "2026-10-27",
+          "publishedAt": "2022-11-10"
+        },
+        {
+          "url": "https://publications.civicus.org/publications/annual-report-2024-2025/work-towards-our-strategic-objectives/strengthen-the-civil-society-ecosystem/",
+          "title": "CIVICUS 2024–2025 report: ecosystem support and resourcing",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.civicus.org/index.php/who-we-are/values-and-accountability",
+          "title": "CIVICUS: accountability framework and stated commitments",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Civil-society resourcing and work on civic space address institutional conditions that enable many organizations, not just one beneficiary service.",
+        "reach": "An international alliance and cross-border support can connect many institutions; membership and grant counts do not establish additional collective impact.",
+        "durability": "Shared networks and improved civic protections can endure, but restrictive laws, political backlash and continuing support needs make durability uncertain.",
+        "scalability": "Knowledge sharing and network support can be reused across countries, while safety, local legitimacy, legal context and trusted relationships constrain replication.",
+        "additionality": "Unknown: reported grants and emergency support do not establish an audited current marginal funding gap, the next unfunded partner or a donation counterfactual.",
+        "agency": "Unknown: alliance membership, board elections and accountability commitments do not yet establish affected groups’ binding decision rights within the specific funded work."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "The current privacy policy identifies CIVICUS World Alliance for Citizen Participation as South African registered nonprofit 029-864-NPO, also noting other country registrations. This is one scoped alliance assessment, not separate counts for national registrations or member organizations, and not current international tax-deductibility advice. The 2024–2025 report is organizational self-reporting, not this tracker’s independent impact audit. Civic-space research, advocacy and resourcing do not establish safe participation in a particular setting. Historical monitoring-toolkit links returned 404; no functioning toolkit or code-license badge is inferred from them.",
+      "falsifiableClaim": "For a defined cohort of locally led partners, does CIVICUS support improve sustained organizing capacity and verifiable civic operating space relative to plausible alternatives, while preserving partners’ control and safety?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "CIVICUS World Alliance for Citizen Participation’s shared civil-society support and alliance work, not each member’s activity, a separately counted country registration or sole credit for civic-space outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Cross-border knowledge, resourcing and alliance connections can help civic organizations coordinate and maintain the operating conditions needed for their work.",
+        "sourceUrls": [
+          "https://www.civicus.org/index.php/who-we-are",
+          "https://www.civicus.org/index.php/privacy-policy"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Alliance support coordinates civic actors and contests restrictions on participation. Membership or advocacy is not proof that gatekeeping has been removed or decision rights transferred.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.civicus.org/index.php/who-we-are",
+          "https://www.civicus.org/index.php/privacy-policy"
+        ]
+      }
+    },
+    {
+      "id": "transnational-institute",
+      "name": "Transnational Institute",
+      "category": "Justice & public goods",
+      "website": "https://www.tni.org/",
+      "mechanism": "Share movement research and institutional alternatives for public-interest organizing",
+      "summary": "Transnational Institute connects research and advocacy with movements working on public services, economic power and ecological transitions. Shared analysis and learning may strengthen organizations’ ability to pursue institutional alternatives.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.tni.org/en/about",
+          "title": "TNI: research, advocacy and movement collaboration",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.tni.org/en/privacy-policy",
+          "title": "TNI: Dutch foundation and data-controller identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.tni.org/en/our-standards-and-certifications",
+          "title": "TNI: stated public-benefit status and organizational standards",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Research on corporate power and public-service alternatives aims at institutional rules and ownership arrangements rather than only individual relief.",
+        "reach": "Movement collaboration and international research can inform multiple institutions; a broad programme agenda does not prove policy adoption or representativeness.",
+        "durability": "Published knowledge and adopted institutional alternatives may persist, but movement capacity, policy change and local implementation require continuing effort.",
+        "scalability": "Shared research and institutional examples can travel across organizations, while political context and implementation costs constrain direct replication.",
+        "additionality": "Unknown: research output and public-benefit status do not establish the current marginal funding gap, organizational capacity or the counterfactual impact of additional gifts.",
+        "agency": "Unknown: movement partnerships and justice commitments do not establish affected people’s binding authority over research agendas, budgets or supported institutional changes."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "Scoped to the Transnational Institute foundation under Dutch law, identified by its current privacy policy, and its shared research/advocacy capacity. Its own ANBI and quality-standard statements are not this tracker’s independent tax or organizational audit. This is not endorsement or verification of every political position, factual claim or campaign. Public research and content reuse terms are not an inspected software license. Partner activity and any policy outcomes cannot all be attributed to TNI; no independent counterfactual evaluation was performed.",
+      "falsifiableClaim": "When a movement or civic institution uses a specific TNI institutional-alternative resource, does it contribute to a verifiable adopted practice that persists locally, rather than only increasing publication reach or campaign visibility?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "The Dutch Transnational Institute foundation’s shared research, advocacy and movement-learning role, not every affiliated researcher, partner movement or claimed downstream political outcome.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared research, institutional alternatives and movement learning can help public-interest organizations develop arguments and strategies without duplicating specialist analysis.",
+        "sourceUrls": [
+          "https://www.tni.org/en/about",
+          "https://www.tni.org/en/privacy-policy"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Research narratives, movement learning and scrutiny of concentrated economic power connect partially to story, coordination and gatekeepers. This does not validate every proposed alternative.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.tni.org/en/about",
+          "https://www.tni.org/en/privacy-policy"
+        ]
+      }
+    },
+    {
+      "id": "ai-now-institute",
+      "name": "AI Now Institute",
+      "category": "Justice & public goods",
+      "website": "https://ainowinstitute.org/",
+      "mechanism": "Develop shared policy strategies and narratives around concentrated AI power",
+      "summary": "AI Now produces research and policy strategies focused on commercial surveillance, concentrated power and public accountability. Its enabling role is specialist analysis and coalition capacity for public-interest technology governance.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://ainowinstitute.org/about",
+          "title": "AI Now: current independent nonprofit identity and policy approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://ainowinstitute.org/",
+          "title": "AI Now: current research and policy resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Policy strategies addressing surveillance and market concentration target institutional rules and incentives rather than offering only individual technical fixes.",
+        "reach": "Research and coalition work can reach policymakers and civil-society institutions; invitations to advise are not proof that recommendations were adopted or effective.",
+        "durability": "Published analysis and adopted policy can persist, but political windows, enforcement and evolving technology limit durability without continued institutional work.",
+        "scalability": "Shared research and strategic framing can be reused across campaigns, while specialist expertise, jurisdictional differences and coalition trust constrain replication.",
+        "additionality": "Unknown: stated rejection of corporate funding does not establish a current marginal funding gap, an unfunded policy opportunity or a donation counterfactual.",
+        "agency": "Unknown: community partnerships and public-accountability aims do not establish binding affected-community authority over the institute’s priorities, budgets or policy choices."
+      },
+      "evidenceLevel": "Primary-source programme and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "limitations": "The current site identifies AI Now as a nonprofit 501(c)(3) and says it has operated independently since mid-2022; the historical NYU origin is not treated as its current sponsor. This scope covers current policy research and coalition work, not all academic work associated with its name. Its no-corporate-funding statement is self-reported, not an independent financial audit. Research visibility, policy access and narratives do not establish causal changes or endorse every policy position. No named software license was inspected and no open-source badge is assigned.",
+      "falsifiableClaim": "Does a specific AI Now policy strategy used by a public-interest coalition lead to a documented, implemented accountability measure that would plausibly not have occurred otherwise, rather than only a citation or meeting?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-07",
+      "evaluationScope": "AI Now Institute’s current independent nonprofit policy research and coalition capacity, not a present NYU-sponsored programme, a software platform or all downstream policy changes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Public policy research, strategic analysis and coalition learning can help civil-society organizations engage with AI governance without each building a specialist research team.",
+        "sourceUrls": [
+          "https://ainowinstitute.org/about",
+          "https://ainowinstitute.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Strategic narratives and coalition analysis address how concentrated AI power is framed and contested. This is partial editorial alignment, not a verified redistribution of power.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://ainowinstitute.org/about",
+          "https://ainowinstitute.org/"
         ]
       }
     }
