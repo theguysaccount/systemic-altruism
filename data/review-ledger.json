@@ -18,33 +18,35 @@
     },
     {
       "id": "expand-cohort",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "At least 200 distinct source-backed assessments, without duplicate parent/project counting."
     },
     {
       "id": "open-source-review",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "Inspect named project licenses and maintainer/steward/sponsor roles for new and appropriate existing profiles."
     },
     {
       "id": "checklist-breadth",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "Seek defensible source mappings without forced alignment or implied adoption."
     },
     {
       "id": "preserve-method",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "Keep v0.2 weights 35/25/15/15/5/5, older review dates, legacy lenses, uncertainty and unscored registry intact."
     },
     {
       "id": "release-validation",
       "status": "in_progress",
-      "requirement": "Tests, profile/count/source checks, unique cards, exact live release checks, focused filters and expanded funder selections."
+      "requirement": "Tests, profile/count/source checks, unique cards, exact live release checks, focused filters and expanded funder selections.",
+      "note": "52 tests, 207 live page/still checks and 200 live paired-video checks passed. Editable-file export confirmation remains pending."
     },
     {
       "id": "completion-audit",
-      "status": "pending",
-      "requirement": "Audit all goal requirements against current production, clean up resources and deliver coverage/limitations report."
+      "status": "in_progress",
+      "requirement": "Audit all goal requirements against current production, clean up resources and deliver coverage/limitations report.",
+      "note": "Coverage and preservation audits passed; the final export boundary is still open. Independent score and affected-community validation remain pending."
     }
   ],
   "entries": [

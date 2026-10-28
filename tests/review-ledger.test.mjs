@@ -26,6 +26,7 @@ test('unresolved operating identities and sponsored examples cannot pad the prof
 });
 test('reaching 200 does not silently complete release or review requirements',()=>{
   assert.equal(ledger.goal.status,'in_progress');
+  for(const id of ['review-ledger','expand-cohort','open-source-review','checklist-breadth','preserve-method'])assert.equal(ledger.progressChecklist.find(c=>c.id===id).status,'complete');
   for(const id of ['release-validation','completion-audit'])assert.notEqual(ledger.progressChecklist.find(c=>c.id===id).status,'complete');
   for(const id of ['algorithmic-justice-league','distributed-ai-research-institute','software-freedom-law-center','africa-check','chequeado']){
     const e=ledger.entries.find(e=>e.id===id);assert.equal(e.status,'deferred');assert.equal(e.decisionAt,'2026-10-27');assert.ok(e.evidenceGaps.length);
