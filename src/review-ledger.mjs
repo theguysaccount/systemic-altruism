@@ -35,7 +35,7 @@ export function inspectReviewLedger(ledger,dataset){
   if(ledger.goal.status==='complete'&&(included.size<ledger.goal.targetProfiles||ledger.progressChecklist.some(i=>i.status!=='complete')))fail('premature completion');
   if(ledger.goal.status==='complete'){
     const audit=ledger.completionAudit,exportCheck=audit?.ownerExportCheck;
-    if(!audit||!dated(audit.completedAt)||audit.profileCount!==included.size||audit.baselineCommit!==ledger.goal.baselineCommit||!audit.scope||audit.evidenceReport!=='docs/research.md'||!audit.publicationPolicy)fail('missing bounded completion audit');
+    if(!audit||!dated(audit.completedAt)||audit.profileCount!==ledger.goal.targetProfiles||audit.profileCount>included.size||audit.baselineCommit!==ledger.goal.baselineCommit||!audit.scope||audit.evidenceReport!=='docs/research.md'||!audit.publicationPolicy)fail('missing bounded completion audit');
     if(exportCheck?.confirmed!==true||!dated(exportCheck.confirmedAt)||!exportCheck.method||!exportCheck.statement||exportCheck.expectedProject!=='Fictional community access pilot')fail('missing owner export confirmation');
     if(audit.independentScoreValidation!=='pending'||audit.affectedCommunityValidation!=='pending')fail('unsupported independent validation claim');
   }

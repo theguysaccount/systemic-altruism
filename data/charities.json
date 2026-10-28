@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.7",
-  "reviewedAt": "2026-10-27",
+  "schemaVersion": "0.4.8",
+  "reviewedAt": "2026-10-28",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "200 scoped preliminary assessment profiles, including 13 source-linked additions in goal batch 07. The coverage target is met in this source snapshot; completion and live publication require separate verification. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "206 scoped preliminary assessment profiles, including six additions in the October 28 tools batch. The completed first-edition milestone was 200 profiles; subsequent batches require their own publication checks. Purposefully selected, not comprehensive. Nonprofit legal forms differ: Apperta is a not-for-profit CIC, not a registered charity. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -15632,6 +15632,649 @@
         "sourceUrls": [
           "https://ainowinstitute.org/about",
           "https://ainowinstitute.org/"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "openemr-foundation",
+      "name": "OpenEMR Foundation",
+      "category": "Global health",
+      "website": "https://www.open-emr.org/foundation/",
+      "mechanism": "Steward reusable electronic health-record infrastructure for care providers",
+      "summary": "The foundation supports the community-developed OpenEMR record and practice-management system through shared infrastructure, legal assets and certification work. Reusable software can help nonprofit clinics avoid rebuilding core administration.",
+      "sources": [
+        {
+          "url": "https://www.open-emr.org/foundation/",
+          "title": "OpenEMR Foundation — nonprofit identity and stewardship",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.open-emr.org/wiki/index.php/OpenEMR_Foundation_wiki_page",
+          "title": "Foundation wiki — governance and current meeting references",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.open-emr.org/",
+          "title": "OpenEMR — product capabilities and implementation boundaries",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=830557835&limit=3",
+          "title": "Dated IRS BMF identity snapshot — OpenEMR Foundation Inc",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/openemr/openemr",
+          "title": "OpenEMR — repository, README and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/openemr/openemr/blob/master/LICENSE",
+          "title": "OpenEMR — inspected GNU GPL v3 license file",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 2,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared clinical records and practice administration can improve institutional workflows, but software alone does not change healthcare financing or unequal access.",
+        "reach": "A common platform can serve multiple care organizations and professional support networks; this review did not verify current deployment counts or clinical coverage.",
+        "durability": "Reusable code, documentation and shared legal stewardship can outlast one grant, while upgrades, interoperability and clinical operations require continuing support.",
+        "scalability": "The same software can be reused across providers without rebuilding it, although migration, training, hosting and jurisdictional compliance still cost resources.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "Scoped to OpenEMR Foundation Inc, EIN 83-0557835, and its stewardship of community-developed OpenEMR, not every vendor or clinic using it. Its official nonprofit statement matches the fixed September 8 IRS identity snapshot, which is not current donation/tax eligibility advice. The inspected repository LICENSE is GNU GPL v3; this does not relicense dependencies, patient records, trademarks or external services. Certification statements are release- and configuration-specific, not this tracker’s clinical safety, privacy or compliance audit. Free code is not a promise of free supported hosting. No patient outcomes, avoided costs or donation counterfactual were independently measured.",
+      "falsifiableClaim": "For a nonprofit clinic adopting supported OpenEMR, do independently checked record completeness and staff time improve after migration, net of training and support costs, without worsening patient privacy or care access?",
+      "evaluationScope": "OpenEMR Foundation’s nonprofit legal/infrastructure stewardship of the shared OpenEMR project; not all project contributors, vendor revenue, clinical deployments or certification claims.",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared electronic records, practice-management code and stewardship can reduce duplicated software work for nonprofit care providers.",
+        "sourceUrls": [
+          "https://www.open-emr.org/foundation/",
+          "https://www.open-emr.org/wiki/index.php/OpenEMR_Foundation_wiki_page"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-28",
+        "projects": [
+          {
+            "name": "OpenEMR",
+            "repositoryUrl": "https://github.com/openemr/openemr",
+            "licenseUrl": "https://github.com/openemr/openemr/blob/master/LICENSE",
+            "licenseLabel": "GNU GPL v3",
+            "licenseBlobSha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "The foundation supports community-developed OpenEMR and its legal/infrastructure assets; it is not the sole developer. This GNU GPL v3 check covers the named repository license, not patient data, dependencies, clinical certification, professional services or hosted deployment."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared clinical workflows and inspectable, reusable code connect partially to coordination and access to building institutional tools; neither establishes equitable healthcare or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://www.open-emr.org/foundation/",
+          "https://www.open-emr.org/wiki/index.php/OpenEMR_Foundation_wiki_page"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "apperta-foundation",
+      "name": "Apperta Foundation CIC",
+      "category": "Global health",
+      "website": "https://apperta.org/",
+      "mechanism": "Govern shared clinical software and open-platform standards",
+      "summary": "Apperta provides clinically led governance and support for open digital health programmes. Its OpenEyes ophthalmology record system is a concrete shared-code tool; its wider work promotes interoperable clinical information.",
+      "sources": [
+        {
+          "url": "https://apperta.org/",
+          "title": "Apperta — current not-for-profit identity, programmes and committees",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://find-and-update.company-information.service.gov.uk/company/09483987",
+          "title": "Companies House — Apperta Foundation CIC, company 09483987",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/AppertaFoundation/openeyes",
+          "title": "OpenEyes community edition — repository, README and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/AppertaFoundation/openeyes/blob/master/LICENSE",
+          "title": "OpenEyes community edition — inspected GNU AGPL v3 license file",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Governance of interoperable clinical platforms aims to reduce fragmented systems and dependence on individual suppliers, rather than funding only one episode of care.",
+        "reach": "Shared programmes and clinical committees can influence multiple providers; website deployment figures were not independently audited or treated as measured reach.",
+        "durability": "Open code and shared clinical models can remain reusable across supplier changes, but safety assurance, maintenance and implementation support must continue.",
+        "scalability": "Reusable clinical software and standards allow multiple organizations to build on the same base; integration, training and specialist assurance remain local constraints.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "The Apperta Foundation C.I.C. is company 09483987, an active private company limited by guarantee without share capital and a Community Interest Company; it is not presented here as a registered charity or a tax-deductible donation recipient. Its current site describes it as not-for-profit. The OpenEyes community-edition repository’s AGPL v3 license is checked separately from all other Apperta products. The repository warns that the community release may lag development, has no GitHub support SLA and is not guaranteed safe clinically without local assessment. Neither open code nor clinical leadership establishes patient control, safety, free professional services or independently demonstrated benefit.",
+      "falsifiableClaim": "When an eye-care provider adopts OpenEyes with appropriate local assurance, does it sustain interoperable record access and reduce avoidable workflow duplication across a supplier change without increasing clinical or privacy incidents?",
+      "evaluationScope": "Apperta Foundation CIC’s open-platform governance and the specifically inspected OpenEyes community-edition repository; not an independent OpenEyes charity or all Apperta software licenses.",
+      "tooling": {
+        "kind": "software",
+        "summary": "OpenEyes and shared clinical-platform governance can help public-interest care providers reuse record-system infrastructure instead of commissioning every component separately.",
+        "sourceUrls": [
+          "https://apperta.org/",
+          "https://find-and-update.company-information.service.gov.uk/company/09483987"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-28",
+        "projects": [
+          {
+            "name": "OpenEyes community edition",
+            "repositoryUrl": "https://github.com/AppertaFoundation/openeyes",
+            "licenseUrl": "https://github.com/AppertaFoundation/openeyes/blob/master/LICENSE",
+            "licenseLabel": "GNU AGPL v3",
+            "licenseBlobSha": "d84b0649aadeb1edd70ead5a1fc9c9725215ad1f",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "Apperta leads the collaborative OpenEyes project; hospitals, companies and individuals also contribute. AGPL v3 applies to the inspected community repository, not every module, documentation, patient data, clinical safety case, warranty or paid implementation partner."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared clinical information and supplier-independent building blocks partially address coordination and who can build care infrastructure. Clinical and community decision rights still need separate evidence.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://apperta.org/",
+          "https://find-and-update.company-information.service.gov.uk/company/09483987"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "decidim-association",
+      "name": "Decidim Free Software Association",
+      "category": "Justice & public goods",
+      "website": "https://decidim.org/",
+      "mechanism": "Steward reusable infrastructure for participatory decisions",
+      "summary": "The association maintains Decidim and supports its contributor community. Civil-society organizations and public institutions can use the framework to run proposals, assemblies and participatory processes with traceable follow-up.",
+      "sources": [
+        {
+          "url": "https://decidim.org/about",
+          "title": "Decidim — nonprofit association, mission and project history",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://decidim.org/es/legal-notice",
+          "title": "Decidim legal notice — Associació de Software Lliure Decidim, G67401174; notice updated February 2022",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://docs.decidim.org/en/develop/features/general-description.html",
+          "title": "Decidim documentation — organization-level participatory functions",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/decidim/decidim",
+          "title": "Decidim framework — repository, README and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/decidim/decidim/blob/develop/LICENSE-AGPLv3.txt",
+          "title": "Decidim framework — inspected GNU AGPL v3 license file",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable proposal, assembly and follow-up workflows can alter how institutions structure decisions, but a participation website cannot by itself confer binding decision rights.",
+        "reach": "The framework is designed for varied civic institutions and associations; documented functionality does not establish representative participation or current adoption totals.",
+        "durability": "Open code, a maintainer association and reusable process records can persist beyond one project, subject to funding, upgrades and institutions honouring their commitments.",
+        "scalability": "A modular framework can be installed and adapted by multiple organizations; facilitation, hosting, accessibility, moderation and governance design are not costless.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "The legal notice identifies Associació de Software Lliure Decidim, ID G67401174; it remains dated February 2022 and is not described as a fresh regulator audit. Its current about page identifies a nonprofit association responsible for code and community. The separately included CONSUL DEMOCRACY Foundation has a different legal identity and current codebase: historical Madrid/Barcelona origins are not grounds to count them as one present organization, nor to count every fork as a charity. AGPL v3 software permissions are separate from website/content, database, personal-data and trademark terms. Open-source governance and participation features do not prove inclusion, community budget control, government responsiveness or outcomes.",
+      "falsifiableClaim": "For an association using Decidim, do previously excluded members gain a documented route to proposals that receive consequential, traceable decisions, compared with its prior process—not merely more accounts or comments?",
+      "evaluationScope": "The Decidim Free Software Association’s current code/community stewardship, not Barcelona City Council as a charity, individual municipal deployments or the separate CONSUL DEMOCRACY Foundation.",
+      "tooling": {
+        "kind": "software",
+        "summary": "A reusable participation framework lets nonprofits and civic associations organize assemblies, proposals and transparent follow-up without building their own platform.",
+        "sourceUrls": [
+          "https://decidim.org/about",
+          "https://decidim.org/es/legal-notice"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-28",
+        "projects": [
+          {
+            "name": "Decidim framework",
+            "repositoryUrl": "https://github.com/decidim/decidim",
+            "licenseUrl": "https://github.com/decidim/decidim/blob/develop/LICENSE-AGPLv3.txt",
+            "licenseLabel": "GNU AGPL v3",
+            "licenseBlobSha": "dbbe3558157f5861bff35dcb37b328b679b0ccfd",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "The nonprofit association maintains Decidim with a contributor community. This AGPL v3 snapshot covers the named development repository’s code license, not all modules, content/database licenses, participant information, hosted services or trademark permissions."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Shared deliberation workflows and an inspectable, modifiable platform partially address coordination and access to civic infrastructure. Features are not proof that decision-making power has shifted.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://decidim.org/about",
+          "https://decidim.org/es/legal-notice"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "consul-democracy-foundation",
+      "name": "CONSUL DEMOCRACY Foundation",
+      "category": "Justice & public goods",
+      "website": "https://consuldemocracy.org/",
+      "mechanism": "Maintain shared participation software and implementation capacity",
+      "summary": "The Dutch foundation maintains CONSUL DEMOCRACY with an international software community and supports implementing organizations. Its platform combines participation functions that civil-society groups and public institutions can adapt.",
+      "sources": [
+        {
+          "url": "https://consuldemocracy.org/the-foundation/",
+          "title": "CONSUL DEMOCRACY — Stichting identity, RSIN and governance",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://consuldemocracy.org/about-us/",
+          "title": "CONSUL DEMOCRACY — current software community, foundation and implementation roles",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/consuldemocracy/consuldemocracy",
+          "title": "CONSUL DEMOCRACY — repository, README and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/consuldemocracy/consuldemocracy/blob/master/LICENSE-AGPLv3.txt",
+          "title": "CONSUL DEMOCRACY — inspected GNU AGPL v3 license file",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared participation infrastructure can change institutional decision procedures, although software configuration alone does not make consultation binding or redistribute power.",
+        "reach": "The foundation supports a multi-organization user and partner network; its cumulative used-or-have-used figure is not independently verified current active adoption.",
+        "durability": "Maintained shared code and implementation knowledge can survive individual grants, while partner support, upgrades and institutional commitments remain necessary.",
+        "scalability": "An open application can be reused and adapted across organizations, with local facilitation, moderation, technical implementation and political context limiting simple replication.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "Scoped to Stichting CONSUL DEMOCRACY in the Netherlands, RSIN 859876986, and its current community-maintenance role. The foundation page’s identity and ANBI disclosures are not an independent donation-eligibility or financial audit. Madrid originated the application; the foundation and software community now collaborate on maintenance. Decidim’s historical connection does not make its separate association a subsidiary or justify counting municipal installations as additional charities. The AGPL v3 check is repository-specific and excludes content, participation data, hosted-service charges and partner guarantees. Cumulative deployments, awards and platform use do not establish consequential citizen authority or causal democratic improvement.",
+      "falsifiableClaim": "Across organizations adopting a defined CONSUL DEMOCRACY process, do proposals receive timely, publicly traceable and consequential decisions under published rules, including for previously underrepresented participants, beyond the prior process?",
+      "evaluationScope": "The Dutch Stichting CONSUL DEMOCRACY’s current software/community support role, not Madrid City Council, certified commercial partners, all platform installations or the distinct Decidim association.",
+      "tooling": {
+        "kind": "software",
+        "summary": "Shared participation code and implementation knowledge can help nonprofits and civic organizations run deliberative processes without duplicating core platform development.",
+        "sourceUrls": [
+          "https://consuldemocracy.org/the-foundation/",
+          "https://consuldemocracy.org/about-us/"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-28",
+        "projects": [
+          {
+            "name": "CONSUL DEMOCRACY",
+            "repositoryUrl": "https://github.com/consuldemocracy/consuldemocracy",
+            "licenseUrl": "https://github.com/consuldemocracy/consuldemocracy/blob/master/LICENSE-AGPLv3.txt",
+            "licenseLabel": "GNU AGPL v3",
+            "licenseBlobSha": "885dfe40c773da9764f91dbc8ebd16e43f5d787c",
+            "role": "steward",
+            "repositoryStatus": "not_archived",
+            "scope": "The current repository says the open-source community maintains the application in collaboration with the foundation; Madrid was its originator. The inspected AGPL v3 grant is for this codebase, not every plugin, participant database, hosting contract or commercial partner."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Common participation workflows and reusable code partially address collective coordination and access to civic tools; they do not establish binding power or explicit checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://consuldemocracy.org/the-foundation/",
+          "https://consuldemocracy.org/about-us/"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "awana-digital",
+      "name": "Awana Digital",
+      "category": "Climate & environment",
+      "website": "https://awana.digital/",
+      "mechanism": "Co-develop community-controlled mapping and territorial monitoring tools",
+      "summary": "Awana Digital, formerly Digital Democracy, builds mapping tools with Indigenous and frontline partners. CoMapeo can help community organizations collect and manage territorial observations without commissioning a mapping system from scratch.",
+      "sources": [
+        {
+          "url": "https://awana.digital/",
+          "title": "Awana Digital — current nonprofit identity and tools",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://awana.digital/about-us",
+          "title": "Awana Digital — mission, autonomy and co-design process",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://awana.digital/blog/digital-democracy-is-now-awana-digital",
+          "title": "Awana Digital — name-change announcement, published July 22, 2024",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://comapeo.app/",
+          "title": "CoMapeo — current tool, Awana development role and community co-design",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=263761772&limit=3",
+          "title": "Dated IRS BMF identity snapshot — DTWO LTD",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.charitynavigator.org/ein/263761772",
+          "title": "Identity cross-reference: Dtwo Ltd dba Awana Digital; not an adopted rating",
+          "type": "research",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/digidem/comapeo-mobile",
+          "title": "CoMapeo Mobile — repository, README and archive status",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://github.com/digidem/comapeo-mobile/blob/develop/LICENSE",
+          "title": "CoMapeo Mobile — inspected GNU GPL v3 license file",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Locally usable monitoring infrastructure can change who controls evidence about territories and rights, but producing a map does not itself change land tenure or enforcement.",
+        "reach": "The documented approach works through particular community partnerships; project and hectare figures were not independently validated as institutional change or attributable reach.",
+        "durability": "Community-held observations and reusable software may persist, while devices, safety practices, continued maintenance and local institutional support remain constraints.",
+        "scalability": "Reusable software can spread across groups, but local language, co-design, training, sensitive-data protection and territorial context require substantial accompanying work.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "One organization is counted: Awana Digital, formerly Digital Democracy, not separate charities for its old name, CoMapeo and Terrastories. The official July 22, 2024 rename announcement and current nonprofit pages are linked; the dated IRS record names DTWO LTD at EIN 26-3761772, cross-referenced to the Awana dba by Charity Navigator without adopting its rating. This is not a current tax-eligibility audit or the unrelated awana.org religious organization. CoMapeo Mobile’s inspected repository is GNU GPL v3, not an assumed MIT license; its README identifies Mapbox and metrics/Sentry integration requirements. Code permissions do not authorize publishing Indigenous knowledge, locations, photos or audio. Co-design claims do not independently establish binding community control, operational security, land protection or a safe deployment.",
+      "falsifiableClaim": "For a community-led territorial monitoring project using CoMapeo, can partners retain and selectively share usable evidence under their own rules after outside support ends, with independently documented protective action and no increase in exposure risk?",
+      "evaluationScope": "Awana Digital’s nonprofit community-technology role, with CoMapeo Mobile as the named license-inspected example; not a separate Digital Democracy entity, every related repository or all claimed territorial outcomes.",
+      "tooling": {
+        "kind": "software",
+        "summary": "CoMapeo and accompanying co-design can give community organizations reusable territorial-monitoring infrastructure while respecting separately governed sensitive knowledge and data.",
+        "sourceUrls": [
+          "https://awana.digital/",
+          "https://awana.digital/about-us"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-28",
+        "projects": [
+          {
+            "name": "CoMapeo Mobile",
+            "repositoryUrl": "https://github.com/digidem/comapeo-mobile",
+            "licenseUrl": "https://github.com/digidem/comapeo-mobile/blob/develop/LICENSE",
+            "licenseLabel": "GNU GPL v3",
+            "licenseBlobSha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+            "role": "maintainer",
+            "repositoryStatus": "not_archived",
+            "scope": "Awana Digital is identified by the product site as CoMapeo’s builder with Indigenous partners; the repository retains the digidem namespace. GPL v3 covers this mobile codebase, not territorial observations, traditional knowledge, other tools, Mapbox terms or metrics/hosting services."
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Community-led evidence gathering and locally adaptable tools partially connect to coordination and access to building/controlling infrastructure. The mapping does not validate territorial outcomes or community decision rights.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://awana.digital/",
+          "https://awana.digital/about-us"
+        ]
+      }
+    },
+    {
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "evidenceLevel": "Primary-source mechanism and identity documentation; no independent impact validation in this review",
+      "confidence": "Low–medium for the documented mechanism; low for causal effectiveness and donation comparisons",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "id": "sociocracy-for-all",
+      "name": "Sociocracy for All",
+      "category": "Justice & public goods",
+      "website": "https://www.sociocracyforall.org/",
+      "mechanism": "Help organizations adopt explicit collaborative governance practices",
+      "summary": "Sociocracy for All provides governance learning, facilitation and implementation resources. Its reusable meeting and decision practices can help nonprofits organize authority and feedback without each inventing a governance method.",
+      "sources": [
+        {
+          "url": "https://www.sociocracyforall.org/about-sociocracy-for-all/",
+          "title": "SoFA — current nonprofit mission and practitioner-network role",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.sociocracyforall.org/donate/",
+          "title": "SoFA — Institute for Peaceable Communities dba identity, activities and content terms",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://www.sociocracyforall.org/bylaws/",
+          "title": "SoFA — legal/governance documentation resources; examples are not legal advice",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=043235656&limit=3",
+          "title": "Dated IRS BMF identity snapshot — Institute for Peaceable Communities Inc",
+          "type": "official",
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 2,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Explicit consent, role and feedback practices aim to alter an organization’s decision rules rather than only improve individual meeting experiences.",
+        "reach": "Training and practitioner networks can affect multiple organizations, but this review did not independently establish current implementation coverage or consequential change.",
+        "durability": "Adopted governance routines and documents may persist, but practice, conflict resolution, staff turnover and legal authority require ongoing attention.",
+        "scalability": "Guides and peer learning can be shared across nonprofits, while skilled facilitation, organizational context and sustained implementation limit effortless replication.",
+        "additionality": "Unknown: project activity and stated funding needs do not establish a current marginal funding gap, delivery capacity or what additional unrestricted donations would change.",
+        "agency": "Unknown: participatory design and community-oriented governance do not by themselves establish affected people’s binding authority over budgets, priorities, deployment or withdrawal."
+      },
+      "limitations": "The current official footer identifies Institute for Peaceable Communities Inc, dba Sociocracy for All; the fixed IRS snapshot lists the Amherst organization at EIN 04-3235656. Example bylaws are not proof that every sample clause is SoFA’s operative charter. The donation page’s Candid link resolved to placeholder profile /123456789 during this check, so its claimed seal was not adopted as independent evidence. Direct HTTP encountered access controls; the official pages were readable through the web reader, with no challenge bypass. Site content is CC BY-NC-SA, not an inspected open-source software grant, and paid courses/support may coexist with free resources. Participation rhetoric and member-run structures do not prove affected-community budget rights, workplace equity or improved outcomes.",
+      "falsifiableClaim": "After a nonprofit adopts a specified sociocratic governance practice, do independently checked decision records show clearer consequential authority and resolved objections across staff and affected participants six months later, without unacceptable delay or exclusion?",
+      "evaluationScope": "Institute for Peaceable Communities Inc doing business as Sociocracy for All and its governance-capacity resources, not all sociocratic organizations or an open-source software platform.",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Reusable governance guides, peer learning and facilitation can help charities clarify decision authority and feedback processes; these are capacity tools, not a software-license claim.",
+        "sourceUrls": [
+          "https://www.sociocracyforall.org/about-sociocracy-for-all/",
+          "https://www.sociocracyforall.org/donate/"
+        ],
+        "reviewedAt": "2026-10-28"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "Collaborative decision rules and feedback routines provide a partial coordination mechanism. This mapping neither establishes checklist adoption nor assumes that all participants have binding authority.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-28",
+        "sourceUrls": [
+          "https://www.sociocracyforall.org/about-sociocracy-for-all/",
+          "https://www.sociocracyforall.org/donate/"
         ]
       }
     }

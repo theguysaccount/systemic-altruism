@@ -19,7 +19,7 @@ test('encoded representative is six-second silent fast-start H264, not a manifes
   assert.throws(()=>inspectShareMp4(Buffer.from('not video')));assert.throws(()=>inspectShareMp4(bytes.subarray(0,bytes.length-9)));
 });
 test('every assessment has its own motion asset paired to the unchanged page-specific still',()=>{
-  assert.equal(manifest.pages.length,200);assert.equal(new Set(manifest.pages.map(p=>p.path)).size,200);
+  assert.equal(manifest.pages.length,data.charities.length);assert.equal(new Set(manifest.pages.map(p=>p.path)).size,data.charities.length);
   assert.equal(manifest.creativeReview.status,'representative_user_approved');assert.equal(manifest.creativeReview.sampleProfileId,'medic');
   assert.equal(manifest.creativeReview.userStatement,'Reviewed both sizes: use this motion');assert.equal(manifest.targetAppPlayback,'not_verified');
   const seen=new Set();

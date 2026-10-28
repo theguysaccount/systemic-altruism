@@ -21,7 +21,7 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,200);assert.equal(new Set(data.charities.map(c=>c.id)).size,200);
+  assert.equal(data.charities.length,206);assert.equal(new Set(data.charities.map(c=>c.id)).size,206);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}

@@ -1,6 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
+  "continuingReview": "The completed October 27 first-edition audit covers its original 200-profile milestone. Later source-checked batches expand the cohort without retroactively expanding that audit; each release needs its own live verification. Six profiles were added in 2026-10-28-tools-01.",
   "goal": {
     "targetProfiles": 200,
     "baselineProfiles": 82,
@@ -67,6 +68,72 @@
     "publicationPolicy": "This source-snapshot completion record does not verify its own deployment. Exact production commit, domain, pages, stills, motion and data must pass the separate release check."
   },
   "entries": [
+    {
+      "id": "openemr-foundation",
+      "name": "OpenEMR Foundation",
+      "status": "included",
+      "profilePath": "/charities/openemr-foundation/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "apperta-foundation",
+      "name": "Apperta Foundation CIC",
+      "status": "included",
+      "profilePath": "/charities/apperta-foundation/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "decidim-association",
+      "name": "Decidim Free Software Association",
+      "status": "included",
+      "profilePath": "/charities/decidim-association/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "consul-democracy-foundation",
+      "name": "CONSUL DEMOCRACY Foundation",
+      "status": "included",
+      "profilePath": "/charities/consul-democracy-foundation/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "awana-digital",
+      "name": "Awana Digital",
+      "status": "included",
+      "profilePath": "/charities/awana-digital/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "sociocracy-for-all",
+      "name": "Sociocracy for All",
+      "status": "included",
+      "profilePath": "/charities/sociocracy-for-all/",
+      "decisionAt": "2026-10-28",
+      "reviewBatch": "2026-10-28-tools-01",
+      "reason": "Source-checked continuation batch: scoped identity and mechanism, six rationales, uncertainty and falsifiable next question; not independent effectiveness validation.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
     {
       "id": "against-malaria-foundation",
       "name": "Against Malaria Foundation",

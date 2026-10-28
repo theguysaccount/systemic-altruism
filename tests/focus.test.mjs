@@ -23,9 +23,9 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,63);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,68);
   for(const c of checked){
-    assert.equal(c.openSource.reviewedAt,'2026-10-27');
+    assert.equal(c.openSource.reviewedAt,c.reviewBatch==='2026-10-28-tools-01'?'2026-10-28':'2026-10-27');
     for(const p of c.openSource.projects){
       assert.ok(['maintainer','steward','fiscal_sponsor'].includes(p.role));assert.ok(['not_archived','archive_status_unverified'].includes(p.repositoryStatus));
       assert.ok(p.scope.length>70);assert.ok(p.name);assert.ok(c.sources.some(s=>s.url===p.repositoryUrl));assert.ok(c.sources.some(s=>s.url===p.licenseUrl));
@@ -82,6 +82,26 @@ test('focus metadata never changes an assessment or asserts checklist affiliatio
   assert.deepEqual(assess(c.scores),assess({...c,checklistAlignment:undefined,tooling:undefined}.scores));
   assert.match(focusProfile(c,s=>s),/Explicit checklist adoption: not verified/);
   assert.equal(focusProfile({},s=>s),'');
+});
+test('October 28 tools batch separates CIC, nonprofit identities, historical origins and data/content terms',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-28-tools-01');assert.equal(batch.length,6);
+  assert.equal(batch.filter(hasVerifiedOpenSource).length,5);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-28');assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);
+    assert.equal(c.selectionType,'illustrative');assert.equal(c.externalEvaluator,null);assert.equal(c.checklistAlignment.adoption,'not_verified');
+    assert.ok(c.sources.every(s=>s.accessedAt==='2026-10-28'));assert.ok(c.evaluationScope.length>70);assert.ok(c.falsifiableClaim.length>70);
+    for(const rationale of Object.values(c.rationales))assert.ok(rationale.length>70);
+  }
+  const get=id=>batch.find(c=>c.id===id);
+  assert.match(get('apperta-foundation').limitations,/not presented here as a registered charity/);
+  assert.match(get('apperta-foundation').limitations,/09483987/);
+  assert.match(get('decidim-association').limitations,/G67401174/);assert.match(get('decidim-association').limitations,/February 2022/);
+  assert.match(get('consul-democracy-foundation').limitations,/859876986/);
+  assert.match(get('awana-digital').limitations,/July 22, 2024/);assert.match(get('awana-digital').limitations,/not an assumed MIT/);
+  assert.equal(get('awana-digital').openSource.projects[0].repositoryUrl,'https://github.com/digidem/comapeo-mobile');
+  assert.match(get('awana-digital').openSource.projects[0].scope,/Mapbox/);
+  assert.equal(hasVerifiedOpenSource(get('sociocracy-for-all')),false);assert.match(get('sociocracy-for-all').limitations,/CC BY-NC-SA/);
+  assert.match(get('sociocracy-for-all').limitations,/placeholder/);
 });
 test('source-visible noncommercial tools and historical platform roles cannot receive open-source badges',()=>{
   const c=data.charities.find(c=>c.openSource);

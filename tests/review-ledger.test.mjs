@@ -5,7 +5,7 @@ import {inspectReviewLedger} from '../src/review-ledger.mjs';
 const data=JSON.parse(readFileSync(new URL('../data/charities.json',import.meta.url)));
 const ledger=JSON.parse(readFileSync(new URL('../data/review-ledger.json',import.meta.url)));
 test('review decisions cover the cohort exactly and never count queued/deferred/excluded leads',()=>{
-  assert.deepEqual(inspectReviewLedger(ledger,data),{included:200,queued:5,deferred:18,excluded:2,target:200,remaining:0});
+  assert.deepEqual(inspectReviewLedger(ledger,data),{included:206,queued:5,deferred:18,excluded:2,target:200,remaining:0});
   assert.equal(ledger.goal.status,'complete');
   assert.equal(ledger.entries.filter(e=>e.status==='included').length,data.charities.length);
 });
@@ -27,11 +27,14 @@ test('unresolved operating identities and sponsored examples cannot pad the prof
   for(const id of ['code-for-all','shareable','public-lab','ehealth-africa','democratic-society','open-bioinformatics-foundation','beautiful-trouble','center-for-workplace-democracy','baobab-health-trust','jacaranda-health','digital-public-goods-alliance','software-heritage']){const e=ledger.entries.find(e=>e.id===id);assert.equal(e.status,'deferred');assert.ok(e.evidenceGaps.length);assert.equal(data.charities.some(c=>c.id===id),false);}
   const example=ledger.entries.find(e=>e.id==='openrefine-as-independent-charity');assert.equal(example.status,'excluded');assert.equal(example.relatedProfileId,'code-for-science-and-society');
 });
-test('bounded build completion records owner export evidence without implying independent score review',()=>{
+test('the historical 200-profile audit is not inflated by later source-checked additions',()=>{
   assert.equal(ledger.goal.status,'complete');
   assert.equal(ledger.progressChecklist.length,7);
   assert.ok(ledger.progressChecklist.every(c=>c.status==='complete'));
   assert.equal(ledger.completionAudit.profileCount,200);
+  assert.ok(data.charities.length>ledger.completionAudit.profileCount);
+  assert.match(ledger.continuingReview,/without retroactively expanding/);
+  const inflated=structuredClone(ledger);inflated.completionAudit.profileCount=data.charities.length;assert.throws(()=>inspectReviewLedger(inflated,data),/bounded completion audit/);
   assert.equal(ledger.completionAudit.baselineCommit,ledger.goal.baselineCommit);
   assert.equal(ledger.completionAudit.ownerExportCheck.confirmed,true);
   assert.equal(ledger.completionAudit.ownerExportCheck.statement,'Yes: the saved JSON contains the fictional project');

@@ -16,7 +16,7 @@ const ledger=JSON.parse(await readFile('dist/api/v1/review-ledger.json','utf8'))
 const ledgerSummary=inspectReviewLedger(ledger,dataset);
 if(JSON.stringify(ledger.summary)!==JSON.stringify(ledgerSummary))throw new Error('Stale public review-ledger summary');
 const openDataHtml=await readFile('dist/data/index.html','utf8');
-if(!openDataHtml.includes('/api/v1/review-ledger.json')||!openDataHtml.includes(`${ledgerSummary.included} of ${ledgerSummary.target}`))throw new Error('Missing public goal progress and review ledger');
+if(!openDataHtml.includes('/api/v1/review-ledger.json')||!openDataHtml.includes(`${ledgerSummary.included} included profiles; first-edition milestone ${ledgerSummary.target}`)||!openDataHtml.includes('not independent validation of the charities or automatic approval of later batches'))throw new Error('Missing public cohort progress, historical milestone boundary or review ledger');
 for(const item of ledger.progressChecklist)if(!openDataHtml.includes(`data-goal-check="${item.id}"`))throw Error('Missing visible tracker checklist item: '+item.id);
 for(const [count,noun] of [[ledgerSummary.deferred,'deferred candidate'],[ledgerSummary.excluded,'duplicate-project exclusion']]){
   if(!openDataHtml.includes(`${count} ${noun}${count===1?'':'s'}`))throw new Error('Stale progress count label');
