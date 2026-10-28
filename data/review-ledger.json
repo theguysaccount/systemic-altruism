@@ -5,7 +5,7 @@
     "targetProfiles": 200,
     "baselineProfiles": 82,
     "baselineCommit": "73c6e9c2ba94b04abc7cb3a240ac244b83a125f0",
-    "status": "in_progress",
+    "status": "complete",
     "scope": "First substantial edition, not an exhaustive charity ranking or a promise of independently verified impact."
   },
   "countingRule": "Included entries must correspond one-to-one to the assessment dataset. Queued leads, deferred or excluded candidates do not count. Counts describe this source snapshot; deployment must be verified separately.",
@@ -38,17 +38,34 @@
     },
     {
       "id": "release-validation",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "Tests, profile/count/source checks, unique cards, exact live release checks, focused filters and expanded funder selections.",
-      "note": "52 tests, 207 live page/still checks and 200 live paired-video checks passed. Editable-file export confirmation remains pending."
+      "note": "52 tests, 207 live page/still checks and 200 live paired-video checks passed. On October 27, Jack confirmed that the private-window fictional-example export saved JSON containing the fictional project."
     },
     {
       "id": "completion-audit",
-      "status": "in_progress",
+      "status": "complete",
       "requirement": "Audit all goal requirements against current production, clean up resources and deliver coverage/limitations report.",
-      "note": "Coverage and preservation audits passed; the final export boundary is still open. Independent score and affected-community validation remain pending."
+      "note": "The bounded 200-profile build audit is complete, including coverage, preservation, public delivery and the owner-confirmed export. Independent score and affected-community validation remain pending. Exact deployment verification is recorded separately from this source snapshot."
     }
   ],
+  "completionAudit": {
+    "completedAt": "2026-10-27",
+    "scope": "First-edition tracker build only; not independent validation of charity effectiveness or the editorial scores.",
+    "profileCount": 200,
+    "baselineCommit": "73c6e9c2ba94b04abc7cb3a240ac244b83a125f0",
+    "ownerExportCheck": {
+      "confirmed": true,
+      "confirmedAt": "2026-10-27",
+      "method": "Owner observation in a private browser window: toolkit fictional example, then Export editable JSON.",
+      "statement": "Yes: the saved JSON contains the fictional project",
+      "expectedProject": "Fictional community access pilot"
+    },
+    "independentScoreValidation": "pending",
+    "affectedCommunityValidation": "pending",
+    "evidenceReport": "docs/research.md",
+    "publicationPolicy": "This source-snapshot completion record does not verify its own deployment. Exact production commit, domain, pages, stills, motion and data must pass the separate release check."
+  },
   "entries": [
     {
       "id": "against-malaria-foundation",

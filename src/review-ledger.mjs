@@ -4,6 +4,7 @@ export function inspectReviewLedger(ledger,dataset){
   const fail=message=>{throw new Error('Review ledger: '+message)};
   const dated=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value);
   if(ledger.goal?.targetProfiles!==200||ledger.goal?.baselineProfiles!==82)fail('goal scope changed');
+  if(!['in_progress','complete'].includes(ledger.goal.status))fail('invalid goal status');
   if(!dated(ledger.updatedAt)||!ledger.countingRule||!ledger.evidencePolicy)fail('missing date or evidence policy');
   if(!Array.isArray(ledger.entries)||!Array.isArray(ledger.progressChecklist))fail('missing decision/checklist arrays');
   const profiles=new Map(dataset.charities.map(c=>[c.id,c])),seen=new Set(),included=new Set();
@@ -32,5 +33,11 @@ export function inspectReviewLedger(ledger,dataset){
   }
   for(const id of ['review-ledger','expand-cohort','open-source-review','checklist-breadth','preserve-method','release-validation','completion-audit'])if(!checkIds.has(id))fail('missing goal requirement: '+id);
   if(ledger.goal.status==='complete'&&(included.size<ledger.goal.targetProfiles||ledger.progressChecklist.some(i=>i.status!=='complete')))fail('premature completion');
+  if(ledger.goal.status==='complete'){
+    const audit=ledger.completionAudit,exportCheck=audit?.ownerExportCheck;
+    if(!audit||!dated(audit.completedAt)||audit.profileCount!==included.size||audit.baselineCommit!==ledger.goal.baselineCommit||!audit.scope||audit.evidenceReport!=='docs/research.md'||!audit.publicationPolicy)fail('missing bounded completion audit');
+    if(exportCheck?.confirmed!==true||!dated(exportCheck.confirmedAt)||!exportCheck.method||!exportCheck.statement||exportCheck.expectedProject!=='Fictional community access pilot')fail('missing owner export confirmation');
+    if(audit.independentScoreValidation!=='pending'||audit.affectedCommunityValidation!=='pending')fail('unsupported independent validation claim');
+  }
   return {...summary,target:ledger.goal.targetProfiles,remaining:Math.max(0,ledger.goal.targetProfiles-included.size)};
 }
