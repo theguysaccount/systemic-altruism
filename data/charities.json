@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "0.4.4",
+  "schemaVersion": "0.4.5",
   "reviewedAt": "2026-10-27",
   "license": "CC-BY-4.0 for original annotations only; external sources retain their own rights",
   "scoreStatus": "editorial_hypothesis",
-  "coverage": "155 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 04. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
+  "coverage": "173 scoped assessment profiles toward a first-edition goal of 200, including 18 source-linked additions in goal batch 05. Purposefully selected, not comprehensive. License checks cover named repositories, not whole organizations or outcomes. Focus tags and checklist mappings are editorial and do not establish adoption, effectiveness or independent recommendation. Human and affected-community validation remain outstanding.",
   "weightingMethod": {"version":"0.2","defaultPreset":"systemic","weights":{"depth":35,"reach":25,"durability":15,"scalability":15,"additionality":5,"agency":5},"sourceUrl":"https://humanityschecklist.org/blog/systemic-altruism/","sourceAccessedAt":"2026-10-26","interpretation":"Weights are this project's proposed interpretation of the practice, not percentages specified by Humanity's Checklist or empirically calibrated impact multipliers."},
   "charities": [
     {
@@ -11501,6 +11501,1655 @@
           "https://developmentgateway.org/about/",
           "https://developmentgateway.org/financials/",
           "https://www.irex.org/files/IREX_Annual_Impact_Report_2021.pdf"
+        ]
+      }
+    },
+    {
+      "id": "xiph-org-foundation",
+      "name": "Xiph.Org Foundation",
+      "category": "Justice & public goods",
+      "website": "https://www.xiph.org/",
+      "mechanism": "Keep multimedia protocols and codec implementations reusable",
+      "summary": "The nonprofit Xiph.Org Foundation supports open multimedia infrastructure. Opus is the scoped code example: a shared audio codec, not an assessment of every IETF participant or media service.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.xiph.org/",
+          "title": "Xiph.Org: nonprofit corporation and multimedia commons",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.xiph.org/about/",
+          "title": "Xiph.Org: open protocols and implementation approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=Xiph",
+          "title": "Xiph legal-name match in fixed September 8, 2026 IRS BMF snapshot; identity only",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/xiph/opus",
+          "title": "Opus: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/xiph/opus/blob/main/COPYING",
+          "title": "Opus: BSD-style grant, contributor notices and patent-license references",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Open implementations and interoperable formats can reduce proprietary control over the communication infrastructure many institutions depend on.",
+        "reach": "A shared audio codec can serve education, accessibility and public-interest communication across sectors, not just one charity’s workflow.",
+        "durability": "Redistributable code and specifications can persist, but compatibility, patent interpretation, security fixes and maintainer support remain necessary.",
+        "scalability": "A common implementation can be reused widely without rebuilding the codec for each institution; deployment, support and integration still cost resources.",
+        "additionality": "No current costed maintainer bottleneck, marginal funding allocation or counterfactual against other codec contributors was audited.",
+        "agency": "Open contribution and standards participation do not establish binding decision rights for affected communities over foundation priorities or deployments."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The visible website identifies a nonprofit corporation; the fixed September 8 IRS snapshot lists XIPH ORG FOUNDATION, EIN 65-1145050. That dated identity match is not a current tax-eligibility opinion. A historical 2003 tax statement remains in an HTML comment on the donation page and is not treated as a current visible claim. The Opus grant includes contributor and patent-license references; this is not patent clearance. Code, protocol specifications, media content, dependencies, trademarks and hosted services have distinct terms. General-purpose infrastructure can also support harmful uses; neither reuse nor adoption proves charity outcomes, security or current maintenance quality.",
+      "falsifiableClaim": "For a defined set of public-interest communication deployments, does funded Opus maintenance reduce independently measured integration failures or switching costs relative to comparable unsupported deployments, and which contributors caused that change?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Xiph.Org Foundation’s multimedia-commons stewardship, illustrated by the Opus implementation. The foundation is not the sole developer, the IETF itself or every organization using its formats.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared multimedia implementations can reduce duplicated codec work for public-interest implementers; Opus is one inspected example, not a charity-exclusive service.",
+        "sourceUrls": [
+          "https://www.xiph.org/",
+          "https://www.xiph.org/about/",
+          "https://github.com/xiph/opus"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Opus",
+            "repositoryUrl": "https://github.com/xiph/opus",
+            "licenseUrl": "https://github.com/xiph/opus/blob/main/COPYING",
+            "licenseLabel": "BSD-3-Clause-style grant with contributor and patent-license references",
+            "licenseBlobSha": "75711467a3eb220f35f72afdb55a4734ee5cdb47",
+            "role": "steward",
+            "scope": "The named Opus repository was not archived when checked. Xiph is a contributing steward, not sole author or IETF owner. COPYING’s BSD-style permission and linked patent statements do not settle all components, patents, media content, services, security or support.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Interoperable formats can reduce dependency on proprietary media gatekeepers and support coordination through shared communication infrastructure. This is a partial design interpretation, not verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.xiph.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "perl-and-raku-foundation",
+      "name": "The Perl and Raku Foundation",
+      "category": "Justice & public goods",
+      "website": "https://perlfoundation.org/",
+      "mechanism": "Fund maintenance and coordination for shared programming infrastructure",
+      "summary": "The nonprofit Yet Another Society, doing business as The Perl and Raku Foundation, funds language development and community coordination. The Perl 5 interpreter is the scoped software example; Raku and CPAN are not given blanket license findings.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://perlfoundation.org/",
+          "title": "TPRF: current maintenance grants, language support and community work",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://perlfoundation.org/legal.html",
+          "title": "TPRF: nonprofit structure and Yet Another Society doing-business-as identity; governance narrative may be historical",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Perl/perl5",
+          "title": "Perl 5: inspected repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/blob/blead/README",
+          "title": "Perl 5 README: GPL version 1 or later / Artistic choice",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/blob/blead/Artistic",
+          "title": "Perl 5: inspected Artistic License text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/Perl/perl5/blob/blead/Copying",
+          "title": "Perl 5: accompanying GPL version 1 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Funding maintainers and coordinating a reusable language toolchain can change the infrastructure available to many implementers rather than deliver one isolated application.",
+        "reach": "General-purpose text processing and system tooling can support many public-interest institutions, though charity-specific use and benefits were not measured.",
+        "durability": "Redistributable language code and accumulated expertise can endure, but compatibility, contributor capacity and security require continuing work.",
+        "scalability": "Shared interpreters and libraries can be reused without separate language development for each organization; migration and operational support remain substantial.",
+        "additionality": "A present marginal grant pipeline, replacement funders and the causal contribution of another foundation donation were not audited.",
+        "agency": "Contributor participation and an older meritocracy description do not demonstrate affected-community control over foundation grants or downstream software decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The legal page identifies Yet Another Society and foundation doing-business-as names; its explanatory governance essay is not assumed to describe today’s officers or decision rights. The current homepage documents maintenance support, not independently validated outcomes. Perl 5 README offers GPL-1.0-or-later or the supplied Artistic License; the checked Artistic file is the recorded snapshot, with Copying inspected separately. This does not license every CPAN module, Raku implementation, dependency, website or hosted service. Foundation support is not sole authorship, a security certification or proof that charities depend on this language.",
+      "falsifiableClaim": "Does a specified foundation-funded Perl maintenance grant resolve independently verified public-interest deployment bottlenecks that would otherwise remain unresolved, compared with similarly important unfunded issues?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Yet Another Society’s foundation support and Perl 5 maintenance model, not sole authorship of Perl or an audit of all Raku implementations, CPAN modules or commercial users.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Maintenance grants and language-community coordination can reduce duplicated infrastructure work; the Perl 5 interpreter is the checked example.",
+        "sourceUrls": [
+          "https://perlfoundation.org/",
+          "https://github.com/Perl/perl5",
+          "https://github.com/Perl/perl5/blob/blead/README"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Perl 5",
+            "repositoryUrl": "https://github.com/Perl/perl5",
+            "licenseUrl": "https://github.com/Perl/perl5/blob/blead/Artistic",
+            "licenseLabel": "Artistic License 1.0 (Perl); README alternatively permits GPL-1.0-or-later",
+            "licenseBlobSha": "4ece078a5d852aedbc843d0adc323e61c552eb0e",
+            "role": "steward",
+            "scope": "The Perl 5 repository was not archived when checked. The foundation funds and coordinates development; the interpreter has many independent authors. Artistic is the recorded file, paired with README’s dual-license statement and GPL version-1 Copying; other languages, modules, dependencies and services need separate checks.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Redistributable language infrastructure reduces reliance on a single proprietary supplier, while foundation grants and convenings coordinate shared maintenance. Neither establishes checklist affiliation or outcomes.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://perlfoundation.org/"
+        ]
+      }
+    },
+    {
+      "id": "ruby-central",
+      "name": "Ruby Central",
+      "category": "Justice & public goods",
+      "website": "https://rubycentral.org/",
+      "mechanism": "Maintain shared package distribution and developer coordination",
+      "summary": "Ruby Central Inc. supports RubyGems, Bundler and Ruby community infrastructure. The RubyGems code repository is the inspected example, not a security or availability certification for the hosted package registry.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://rubycentral.org/about/",
+          "title": "Ruby Central: current US nonprofit identity, Ruby Together merger and concluding RailsConf history",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ruby/rubygems",
+          "title": "RubyGems: current canonical repository after organization redirect",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ruby/rubygems/blob/master/LICENSE.txt",
+          "title": "RubyGems: MIT alternative and Ruby-style license conditions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ruby/rubygems/blob/master/MIT.txt",
+          "title": "RubyGems: inspected MIT alternative text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Maintaining a shared package toolchain can change how many institutions acquire and reuse software instead of building each application’s dependencies from scratch.",
+        "reach": "Language infrastructure is available across sectors and organizations, but nonprofit-specific uptake and benefits were not independently established.",
+        "durability": "Code and conventions persist, but a package registry requires ongoing reliable hosting, incident response and maintainer labor.",
+        "scalability": "Common packaging tools can be reused widely; package provenance, secure deployment and organizational migration still need local investment.",
+        "additionality": "No current package-infrastructure funding gap, alternative maintenance funding or marginal delivery capacity was audited.",
+        "agency": "Membership and board-election descriptions are not an audit of affected users’ binding authority over infrastructure priorities or registry decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current about page identifies Ruby Central Inc. as a US 501(c)(3), records Ruby Together’s 2022 merger and describes the final RailsConf in July 2025. No separate Ruby Together profile or ongoing future RailsConf program is inferred. The repository formerly under rubygems/rubygems resolves to ruby/rubygems; that current location is recorded. LICENSE.txt permits MIT or its alternative Ruby-style conditions, with MIT.txt inspected. Package contents, Bundler components, dependencies, trademarks, registry terms and operational security need separate review. Foundation support and source availability do not certify package safety, registry uptime or charity impact.",
+      "falsifiableClaim": "For participating public-interest teams, does a defined Ruby Central maintenance intervention reduce package-resolution failures or verified maintainer bottlenecks relative to a comparable period or toolchain without that support?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Ruby Central Inc.’s nonprofit software-infrastructure and community support, illustrated by RubyGems. Ruby Together is included only as a merged predecessor, not a second charity.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared package-management maintenance can save downstream implementers duplicated tooling work; RubyGems is one named code example, distinct from hosted registry operations.",
+        "sourceUrls": [
+          "https://rubycentral.org/about/",
+          "https://github.com/ruby/rubygems"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "RubyGems",
+            "repositoryUrl": "https://github.com/ruby/rubygems",
+            "licenseUrl": "https://github.com/ruby/rubygems/blob/master/LICENSE.txt",
+            "licenseLabel": "MIT alternative or Ruby-style conditions in LICENSE.txt",
+            "licenseBlobSha": "8a0a51dec1c81025c3ec6fd4916daca6c094f312",
+            "role": "steward",
+            "scope": "The current ruby/rubygems repository was not archived when checked and supersedes its redirected rubygems organization URL. Ruby Central supports shared maintenance, not sole authorship. LICENSE.txt and MIT.txt do not cover every hosted gem, service term, dependency, trademark, security control or support commitment.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable packaging code can reduce proprietary supplier dependence, while common distribution infrastructure coordinates shared development. This is partial alignment, not demonstrated mission outcomes or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://rubycentral.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "r-foundation",
+      "name": "R Foundation for Statistical Computing",
+      "category": "Justice & public goods",
+      "website": "https://www.r-project.org/foundation/",
+      "mechanism": "Sustain reusable statistical software and scientific collaboration",
+      "summary": "The R Foundation is a non-profit-oriented association seated in Vienna that supports R and statistical-computing collaboration. The inspected R source mirror illustrates software stewardship, not proof that any particular analysis or charity evaluation is valid.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.r-project.org/foundation/index.html",
+          "title": "R Foundation: public-interest support and copyright role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.r-project.org/foundation/Rfoundation-statutes.pdf",
+          "title": "R Foundation: November 17, 2025 statutes, Vienna seat and non-profit-oriented association objectives",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/r-devel/r-svn",
+          "title": "R source: inspected GitHub mirror of canonical SVN with patch-testing CI",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/r-devel/r-svn/blob/main/COPYING",
+          "title": "R source mirror: inspected GPL version 2 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/r-devel/r-svn/blob/main/doc/COPYRIGHTS",
+          "title": "R source copyright notice: whole distribution GPL version 2 or 3 and component exceptions",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 3,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Supporting shared statistical infrastructure can alter the tools available for research and institutional decisions rather than fund only individual analyses.",
+        "reach": "Statistical computing is useful across health, environment and public-interest institutions; actual reach to charities is not measured here.",
+        "durability": "Redistributable code and scientific methods can persist, while maintenance, package compatibility and training remain continuing needs.",
+        "scalability": "A common statistical environment can support many analyses with reusable methods, but data quality, expertise and local validation do not scale automatically.",
+        "additionality": "No current marginal support bottleneck, counterfactual R Core funding or causal effect of an additional foundation donation was audited.",
+        "agency": "Scientific collaboration and association membership do not establish affected communities’ binding control over R priorities, analytical uses or foundation budgets."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The November 2025 statutes identify the Vienna association and non-profit-oriented purpose, not US charitable deductibility. R is part of GNU, but this independent foundation’s scoped role is not all FSF activity. r-devel/r-svn describes itself as an SVN mirror with testing CI, not the canonical development system. Its COPYING contains GPL version 2; doc/COPYRIGHTS says R as a whole is GPL version 2 or 3, most files version 2 or later, with component exceptions. Add-on packages, data, documentation and commercial services require separate checks. Statistical software availability does not establish correct analyses, causal attribution, security or ethical data use.",
+      "falsifiableClaim": "Does a specified foundation-supported R maintenance or training intervention improve independently reproduced analyses in public-interest institutions relative to similar teams without it, after accounting for analyst skills and data quality?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The R Foundation association’s support, copyright and scientific-coordination role for R. It is not the whole GNU project, every R package, or a duplicate assessment of the Free Software Foundation.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "Shared statistical-computing code, scientific coordination and training can reduce duplicated analytical infrastructure; the inspected R mirror is a scoped example.",
+        "sourceUrls": [
+          "https://www.r-project.org/foundation/index.html",
+          "https://github.com/r-devel/r-svn",
+          "https://github.com/r-devel/r-svn/blob/main/doc/COPYRIGHTS"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "R source distribution (r-devel SVN mirror)",
+            "repositoryUrl": "https://github.com/r-devel/r-svn",
+            "licenseUrl": "https://github.com/r-devel/r-svn/blob/main/COPYING",
+            "licenseLabel": "GPL version 2 text; distribution GPL-2.0 OR GPL-3.0 per doc/COPYRIGHTS, with component exceptions",
+            "licenseBlobSha": "3912109b5cd65a68039d473c11c9f7ac2303e06d",
+            "role": "steward",
+            "scope": "The inspected GitHub repository was not archived and explicitly mirrors R’s SVN source with patch-testing CI. Foundation support is not sole authorship. The COPYING snapshot must be read with doc/COPYRIGHTS: R as a whole uses GPL 2 or 3, with file-level exceptions; packages, datasets, services and analytical validity remain separate.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Reusable statistical infrastructure can reduce supplier gatekeeping over analytical tools and make scientific collaboration easier. This does not establish that analyses are sound or that the checklist is explicitly adopted.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.r-project.org/foundation/index.html",
+          "https://www.r-project.org/foundation/Rfoundation-statutes.pdf"
+        ]
+      }
+    },
+    {
+      "id": "open-source-hardware-association",
+      "name": "Open Source Hardware Association",
+      "category": "Justice & public goods",
+      "website": "https://oshwa.org/",
+      "mechanism": "Make open-hardware documentation and reuse easier to recognize",
+      "summary": "OSHWA is a nonprofit association that supports open-hardware education, community standards and certification. The assessment concerns shared documentation and coordination, not a certification that particular hardware is safe or effective.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://oshwa.org/about/",
+          "title": "OSHWA: nonprofit open-hardware education and community mission",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://oshwa.org/documents-and-policies/",
+          "title": "OSHWA: nonprofit incorporation, member elections, disclosure index and explicit healthware safety limits",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Common documentation and openness criteria can change how designs are shared and procured rather than fund one closed product.",
+        "reach": "Shared standards and education can enable many hardware makers and public-interest implementers; implementation reach is not independently verified.",
+        "durability": "Published criteria can persist, but certification administration, standards updates and community support require continuing resources.",
+        "scalability": "Common criteria and teaching can be reused across projects, while hardware production, testing, regulation and repair capacity remain local constraints.",
+        "additionality": "No current costed certification or education bottleneck, alternative support or marginal funding contribution was audited.",
+        "agency": "Member board elections do not establish binding decision rights for communities affected by certified hardware or its deployment."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The association’s documents page describes nonprofit incorporation and publishes a disclosure index; this is not an independent financial or tax-eligibility audit. OSHWA explicitly says Open Healthware Certification does not guarantee safety and does not generally endorse outside products. Hardware documentation, certification marks, design files, educational content and software licenses are different. No named software repository license was checked, so no software-license badge is assigned. Openness is not regulatory approval, safe manufacture, environmental benefit, accessibility or demonstrated charity effectiveness.",
+      "falsifiableClaim": "Do public-interest hardware teams using OSHWA documentation criteria produce more independently reproducible and repairable designs than comparable teams, without increasing safety failures or excluding resource-constrained users?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Open Source Hardware Association’s nonprofit standards, educational and certification-support model. It does not assess every certified design, product maker or medical device.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared open-hardware criteria, educational convenings and certification guidance can help implementers document and reuse designs without reinventing an openness process.",
+        "sourceUrls": [
+          "https://oshwa.org/about/",
+          "https://oshwa.org/documents-and-policies/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Common openness criteria can challenge proprietary design gatekeeping and coordinate reusable documentation. The mapping concerns information access, not a finding of safe devices or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://oshwa.org/about/",
+          "https://oshwa.org/documents-and-policies/"
+        ]
+      }
+    },
+    {
+      "id": "open-robotics",
+      "name": "Open Robotics (Open Source Robotics Foundation)",
+      "category": "Justice & public goods",
+      "website": "https://www.openrobotics.org/",
+      "mechanism": "Steward reusable robotics software and simulation infrastructure",
+      "summary": "Open Source Robotics Foundation Inc. operates the Open Robotics nonprofit brand. Gazebo Sim is the inspected software example, separate from the commercial businesses acquired by Intrinsic and from physical-robot safety.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.openrobotics.org/",
+          "title": "Open Robotics: shared platforms and infrastructure",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.openrobotics.org/foundation",
+          "title": "Open Robotics: OSRF nonprofit identity and December 2022 commercial-business acquisition",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.openrobotics.org/donate",
+          "title": "OSRF: current nonprofit identity and EIN 45-5230545",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/gazebosim/gz-sim",
+          "title": "Gazebo Sim: inspected current repository and maintainer context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/gazebosim/gz-sim/blob/main/README.md",
+          "title": "Gazebo Sim README: simulator scope, maintainer and license pointer",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/gazebosim/gz-sim/blob/main/LICENSE",
+          "title": "Gazebo Sim: inspected Apache-2.0 text",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared simulation and robotics infrastructure can change implementers’ development costs and ability to interoperate instead of producing one proprietary robot.",
+        "reach": "General-purpose robotics tools span research, education and public-interest applications, though charity-specific uptake is not established.",
+        "durability": "Code and conventions can persist, but platform compatibility, integration and security depend on continuous maintenance.",
+        "scalability": "Common simulation libraries can be reused by many teams; physical deployment, hardware access, testing and safety remain resource-intensive.",
+        "additionality": "No present marginal foundation funding gap or counterfactual between OSRF support, corporate contributors and other platform maintainers was audited.",
+        "agency": "Open governance and developer participation do not establish binding rights for people affected by deployed robots or institutional automation."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The foundation page identifies OSRF as a California nonprofit public benefit corporation and US 501(c)(3). The OSRC and OSRC-SG commercial businesses were acquired by Intrinsic in December 2022; they are not treated as independent charities. Gazebo Sim’s README names a maintainer at Intrinsic, so nonprofit stewardship is not sole authorship or exclusive maintenance. Apache-2.0 in this repository does not settle every ROS/Gazebo component, model asset, dependency, patent question or hosted service. Simulation is not physical safety certification, validated accessibility, ethical deployment or demonstrated environmental benefit.",
+      "falsifiableClaim": "For a defined public-interest robotics use case, does foundation-supported Gazebo tooling reduce independently verified integration costs and field failures relative to comparable alternatives, after accounting for hardware, corporate contributions and safety testing?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The California nonprofit OSRF’s shared robotics-platform stewardship, illustrated by Gazebo Sim. This is not a score of Intrinsic, its acquired businesses, the whole robotics industry or every ROS deployment.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "shared_infrastructure",
+        "summary": "OSRF’s shared platform stewardship can reduce duplicated robotics development; Gazebo Sim is a named reusable simulator, not a charity-exclusive or safety-certified product.",
+        "sourceUrls": [
+          "https://www.openrobotics.org/",
+          "https://github.com/gazebosim/gz-sim",
+          "https://github.com/gazebosim/gz-sim/blob/main/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "Gazebo Sim",
+            "repositoryUrl": "https://github.com/gazebosim/gz-sim",
+            "licenseUrl": "https://github.com/gazebosim/gz-sim/blob/main/LICENSE",
+            "licenseLabel": "Apache-2.0",
+            "licenseBlobSha": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+            "role": "steward",
+            "scope": "The Gazebo Sim repository was not archived when checked. OSRF stewards shared robotics infrastructure; README identifies a maintainer at Intrinsic, not exclusive nonprofit authorship. Apache-2.0 covers the named library, not every robot, model asset, dependency, service, patent issue or physical safety requirement.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared robotics implementations can reduce proprietary platform dependency and coordinate interoperable development. That partial mechanism connection does not establish beneficial deployment or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.openrobotics.org/"
+        ]
+      }
+    },
+    {
+      "id": "one-army",
+      "name": "One Army Foundation",
+      "category": "Climate & environment",
+      "website": "https://www.onearmy.earth/",
+      "mechanism": "Make environmental projects easier to document and coordinate",
+      "summary": "One Army describes itself as a nonprofit foundation in the Netherlands. Its shared Community Platform code supports environmental project learning and collaboration; Precious Plastic, Project Kamp and Fixing Fashion are examples, not additional independent charities here.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.onearmy.earth/support",
+          "title": "One Army: Dutch nonprofit-foundation self-description and support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.onearmy.earth/community-platform",
+          "title": "One Army: reusable learning and community-coordination platform",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ONEARMY/community-platform",
+          "title": "One Army Community Platform: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ONEARMY/community-platform/blob/main/README.md",
+          "title": "Community Platform README: project links, scope and contributor context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/ONEARMY/community-platform/blob/main/LICENSE",
+          "title": "Community Platform: inspected MIT grant",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Reusable collaboration infrastructure and shared project knowledge can change the cost of starting environmental initiatives rather than deliver only individual repairs.",
+        "reach": "A common platform can support multiple environmental communities and project types; the number and outcomes of independent implementers were not verified.",
+        "durability": "Reusable code and documentation can persist, but moderation, hosting, translation and project support require ongoing work.",
+        "scalability": "One shared codebase can be adapted across communities, while practical skills, physical equipment, safety and local organization remain constraints.",
+        "additionality": "No current costed platform bottleneck, alternative maintainer support or marginal contribution of another foundation donation was audited.",
+        "agency": "Supporter voting and community participation descriptions do not establish binding affected-community rights over foundation priorities, platform governance or physical projects."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current support page identifies a nonprofit foundation in the Netherlands; this is not independent registry or tax-deductibility certification. The checked MIT license applies to the Community Platform repository, not automatically to machine plans, buildings, videos, member content, dependencies or hosted-service terms. The platform’s stated preference for usefulness over likes is an aim, not verified ranking behavior or an attention outcome. Project brands and local communities are not counted as extra charities. Recycling, construction, land use and repair activities still require safety, environmental and governance review; open documentation does not establish net benefit.",
+      "falsifiableClaim": "Do independent environmental groups using the shared Community Platform complete and sustain more safely replicated projects than comparable groups using existing tools, after accounting for moderation, hosting and training costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "One Army’s Dutch nonprofit-foundation support and shared Community Platform, not separate scores for its project brands, every recycling machine or all community-run deployments.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "A shared platform offers learning resources, questions, project maps and collaborative documentation that other environmental communities can adapt rather than build from scratch.",
+        "sourceUrls": [
+          "https://www.onearmy.earth/community-platform",
+          "https://github.com/ONEARMY/community-platform",
+          "https://github.com/ONEARMY/community-platform/blob/main/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "One Army Community Platform",
+            "repositoryUrl": "https://github.com/ONEARMY/community-platform",
+            "licenseUrl": "https://github.com/ONEARMY/community-platform/blob/main/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "76c79a516befdaff16af360051ce09bdf3228899",
+            "role": "maintainer",
+            "scope": "The Community Platform repository was not archived when checked; One Army is the named project organization alongside community contributors. Its MIT grant does not automatically cover community posts, hardware designs, videos, dependencies, hosted access, moderation, security or physical project safety.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "attention"
+        ],
+        "rationale": "Shared learning and project coordination address collaboration friction. The platform’s explicit usefulness-over-likes design aim is a limited Attention connection, not a demonstrated feed-incentive reform or organization-wide adoption of the checklist.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.onearmy.earth/community-platform"
+        ]
+      }
+    },
+    {
+      "id": "open-source-ecology",
+      "name": "Open Source Ecology",
+      "category": "Poverty & opportunity",
+      "website": "https://www.opensourceecology.org/",
+      "mechanism": "Share production designs, practical learning and open-enterprise methods",
+      "summary": "The Missouri nonprofit develops and publishes production-system and machine knowledge with an educational model. This assessment concerns reusable design and implementation capacity, not proof that all proposed machines or settlements are complete, safe or economically viable.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.opensourceecology.org/corporate-info/",
+          "title": "Open Source Ecology: Missouri nonprofit identity, EIN and open-enterprise model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.opensourceecology.org/community/",
+          "title": "Open Source Ecology: project and community background",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://wiki.opensourceecology.org/wiki/Institutional_Development",
+          "title": "OSE institutional-development wiki: founder-led nonprofit and separately owned leased land",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Sharing production designs and open-enterprise methods can reduce barriers to local production rather than only distribute finished goods.",
+        "reach": "Reusable knowledge can serve makers, educators and community implementers across multiple practical needs; adoption and outcomes were not independently established.",
+        "durability": "Published designs and learned skills can endure, while prototypes, documentation updates, equipment and organizational continuity require support.",
+        "scalability": "Design knowledge can be copied, but fabrication quality, finance, material inputs, land access and safety constrain expansion.",
+        "additionality": "No current costed project bottleneck, alternative design-development support or marginal funding effect was audited.",
+        "agency": "Community participation and open-design aspirations do not establish binding decision rights over nonprofit priorities, assets, land or local production sites."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The corporate page identifies a Missouri nonprofit, EIN 45-4997514, and a September 2013 IRS determination; this is not an independent current tax or financial audit. The official institutional wiki describes a founder-led organization with privately owned land leased to the nonprofit, not an already established community land trust. Community-editable statements are organization-reported, not assurance. Website CC BY-SA content terms do not establish a named software license; no software badge is assigned. Machine designs, construction, labor arrangements, product quality and environmental consequences need separate validation. Prototypes and abundance aspirations do not prove safe, viable or replicable production.",
+      "falsifiableClaim": "Can independent, resource-constrained teams reproduce a specified published machine safely at the documented full cost and reliability, and does sharing the design improve outcomes compared with available conventional equipment?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Open Source Ecology’s Missouri nonprofit education and shared-production knowledge model, not every similarly named international group, a separate land trust or a certified set of industrial products.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared machine documentation, practical education and open-enterprise methods can reduce duplicated design work for community implementers, subject to physical testing and local capacity.",
+        "sourceUrls": [
+          "https://www.opensourceecology.org/corporate-info/",
+          "https://www.opensourceecology.org/community/",
+          "https://wiki.opensourceecology.org/wiki/Institutional_Development"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Shared production knowledge can lower proprietary information barriers, while community learning coordinates implementation. This is a partial mechanism interpretation, not proof of distributed ownership or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.opensourceecology.org/corporate-info/",
+          "https://www.opensourceecology.org/community/"
+        ]
+      }
+    },
+    {
+      "id": "training-for-change",
+      "name": "Training for Change",
+      "category": "Justice & public goods",
+      "website": "https://www.trainingforchange.org/",
+      "mechanism": "Build reusable facilitation, training and organizing capacity",
+      "summary": "Training for Change Inc. supports organizers through facilitation resources, workshops and trainer development. The scoped model enables other groups to learn and coordinate; it is not a claim that every campaign or workshop achieves systemic change.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.trainingforchange.org/about/",
+          "title": "Training for Change: direct education, facilitation and organizer-capacity approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.trainingforchange.org/donate/",
+          "title": "Training for Change: current support model, Philadelphia identity and training activities",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=Training%20for%20Change",
+          "title": "Training for Change Inc.: identity match in fixed September 8, 2026 IRS BMF snapshot",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Developing facilitators and trainers can change how organizations learn and collaborate instead of providing only one isolated meeting or service.",
+        "reach": "Train-the-trainer methods and shared resources can travel across movements and organizations, although actual implementation breadth was not audited.",
+        "durability": "Skills and facilitation practices can persist, but turnover, adaptation, accessibility and trainer support require continuing effort.",
+        "scalability": "Reusable exercises and trainer development can spread through partner organizations; context, trust and skilled facilitation limit automatic replication.",
+        "additionality": "No present marginal scholarship or trainer-capacity bottleneck, replacement provider or funding counterfactual was audited.",
+        "agency": "Participant-centered education and attention to lived experience do not establish binding affected-community authority over the charity’s budget, strategy or partner campaigns."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current donation page identifies the Philadelphia organization and describes tax-deductible support; the fixed September 8 IRS snapshot lists Training for Change Inc., EIN 23-2933159, in Philadelphia. That dated identity match is not an independent current tax-eligibility or financial audit. Current workshop listings and testimonials do not prove attendance, sustained practice or causal campaign outcomes. Training documents, paid workshops and software have different access and rights; no named software license was inspected. This profile does not endorse all participants’ views or establish effectiveness, safe organizing practice or universally transferable methods.",
+      "falsifiableClaim": "Do organizations whose trainers complete a defined program sustain independently observed improvements in inclusive facilitation and coordinated action compared with similar organizations, after accounting for staff turnover and existing skills?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Training for Change Inc.’s Philadelphia-based nonprofit training and facilitation model, not the similarly named Teaching for Change or all campaigns run by workshop participants.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Facilitation exercises, trainer development and practical organizing education can make it easier for other organizations to build their own collaboration capacity.",
+        "sourceUrls": [
+          "https://www.trainingforchange.org/about/",
+          "https://www.trainingforchange.org/donate/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "The documented facilitation and train-the-trainer model targets cooperation and shared learning. It is a partial Coordination connection, not proof that campaigns succeed or that the checklist is explicitly adopted.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.trainingforchange.org/about/"
+        ]
+      }
+    },
+    {
+      "id": "350-org",
+      "name": "350.org",
+      "category": "Climate & environment",
+      "website": "https://350.org/",
+      "mechanism": "Support networked climate organizing and institutional change",
+      "summary": "The US nonprofit 350.org combines climate campaigns with organizing support for local groups. The assessment concerns its network-capacity and institutional-change model, not a causal attribution of divestment totals or all autonomous groups’ activities.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://350.org/about/who-we-are/",
+          "title": "350.org: current US nonprofit identity, organizing network and climate-change approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://350.org/",
+          "title": "350.org: current campaign and movement-support context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Campaigns seek changes in fossil-fuel financing, energy decisions and institutional rules rather than only individual emissions-related services.",
+        "reach": "A distributed organizing model can engage institutions and local groups across borders, though independently attributable reach is not measured.",
+        "durability": "Institutional policy or financing changes can persist, but organizing capacity, enforcement and political conditions require continuing work.",
+        "scalability": "Shared organizing support and network learning can spread across groups; local legitimacy, political context and implementation resources remain limiting.",
+        "additionality": "No current costed marginal organizing bottleneck, alternative funder contribution or counterfactual attribution of another donation was audited.",
+        "agency": "Local organizing and network participation do not establish binding affected-community control over the US nonprofit’s strategy, resources or partner decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current organization page identifies the US 501(c)(3); this is not independent tax-eligibility certification or an audit of every affiliated entity. Public campaign totals and organizational reach claims are not treated as causal impact estimates. The profile covers shared organizing capacity and institutional-change intent, not all autonomous groups or every policy position. No named software repository or license was checked; public campaign resources are not automatically open-source software. Political, distributional, rights and implementation trade-offs require case-specific review, and network size does not establish durable emissions reductions.",
+      "falsifiableClaim": "For a specified campaign and institutional decision, did 350.org’s documented support materially change the decision or implementation compared with plausible alternatives, and were resulting emissions and community trade-offs independently tracked?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The US 350.org nonprofit’s organizing and shared movement-support model. Separate national entities, the Dutch 350 Global entity and autonomous partner groups are not counted or scored as subsidiaries here.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Organizing support, shared campaign knowledge and network coordination can help local climate groups avoid rebuilding movement capacity in isolation.",
+        "sourceUrls": [
+          "https://350.org/about/who-we-are/",
+          "https://350.org/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "Networked organizing addresses coordination barriers and seeks to change concentrated institutional influence over energy and finance. This partial interpretation is not endorsement of every campaign, demonstrated effectiveness or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://350.org/about/who-we-are/"
+        ]
+      }
+    },
+    {
+      "id": "climate-interactive",
+      "name": "Climate Interactive (NVF-sponsored)",
+      "category": "Climate & environment",
+      "website": "https://www.climateinteractive.org/",
+      "mechanism": "Make climate-policy scenarios and system-dynamics tools easier to use",
+      "summary": "Climate Interactive identifies as a New Venture Fund project. It develops decision-support simulations and facilitator capacity; SDEverywhere is the inspected software toolkit, not a blanket license finding for En-ROADS, every model or underlying data.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.climateinteractive.org/strategy-and-impact/",
+          "title": "Climate Interactive: current decision-support, simulation and facilitator approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.climateinteractive.org/about/privacy-policy/",
+          "title": "Climate Interactive: current project-of-New-Venture-Fund identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.climateinteractive.org/ways-to-give/",
+          "title": "Climate Interactive: current NVF fiscal-sponsor identity and EIN",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/climateinteractive/SDEverywhere",
+          "title": "SDEverywhere: inspected current repository",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/climateinteractive/SDEverywhere/blob/main/README.md",
+          "title": "SDEverywhere README: testing, comparison and model deployment scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/climateinteractive/SDEverywhere/blob/main/LICENSE",
+          "title": "SDEverywhere: inspected MIT grant naming Climate Interactive / New Venture Fund",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 4,
+        "durability": 2,
+        "scalability": 4,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared scenario tools and systems learning can change institutional decision processes rather than only communicate one climate fact.",
+        "reach": "Decision-support tools can serve policymakers, educators and public-interest organizations across sectors; downstream policy effects were not independently established.",
+        "durability": "Reusable software and systems knowledge can persist, while model updates, facilitation, assumptions and policy implementation require ongoing support.",
+        "scalability": "Shared tooling can deploy interactive models on multiple platforms without rebuilding each interface, but validation and local decision processes remain costly.",
+        "additionality": "No current costed marginal project bottleneck, counterfactual model-development support or causal effect of an additional restricted gift was audited.",
+        "agency": "Interactive workshops and facilitator participation do not establish affected communities’ binding authority over model assumptions, project budgets or policy decisions."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected; named repository and license file checked",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current privacy and giving pages identify Climate Interactive as a project of New Venture Fund, US 501(c)(3), EIN 20-5806345; the initiative is not counted as independently incorporated or as all NVF. This scope excludes Multisolving Institute’s separate current program and does not add their historical shared work together. The SDEverywhere MIT grant covers the named toolkit, not automatically En-ROADS/C-ROADS model files, data, proprietary modeling tools, dependencies or services. SDEverywhere supports a subset of Vensim/Stella formats. Scenario outputs depend on assumptions and are not forecasts, causal policy evaluations, security findings or proof of beneficial decisions.",
+      "falsifiableClaim": "Do institutions using a defined Climate Interactive facilitation and simulation process make better independently evaluated climate decisions than comparable institutions, after accounting for model assumptions, prior preferences, facilitator effects and implementation?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Climate Interactive’s current NVF-sponsored climate decision-support and SDEverywhere work, not an independent incorporated charity, all New Venture Fund activity or Multisolving Institute’s separate current program.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "software",
+        "summary": "SDEverywhere supplies reusable testing, model-run comparison and deployment tooling for system-dynamics models; facilitator resources support use in institutional decisions.",
+        "sourceUrls": [
+          "https://www.climateinteractive.org/strategy-and-impact/",
+          "https://github.com/climateinteractive/SDEverywhere",
+          "https://github.com/climateinteractive/SDEverywhere/blob/main/README.md"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "openSource": {
+        "status": "license_verified",
+        "reviewedAt": "2026-10-27",
+        "projects": [
+          {
+            "name": "SDEverywhere",
+            "repositoryUrl": "https://github.com/climateinteractive/SDEverywhere",
+            "licenseUrl": "https://github.com/climateinteractive/SDEverywhere/blob/main/LICENSE",
+            "licenseLabel": "MIT",
+            "licenseBlobSha": "116b2a5a1be090f38b70dc31b62dfae9439ba55f",
+            "role": "maintainer",
+            "scope": "The SDEverywhere repository was not archived when checked. It names Climate Interactive / New Venture Fund in the MIT grant alongside another copyright holder. The toolkit’s license does not automatically cover every climate model, Vensim/Stella tool, dataset, dependency, hosted service, model validity or security requirement.",
+            "repositoryStatus": "not_archived"
+          }
+        ]
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination"
+        ],
+        "rationale": "Explicit policy scenarios can help groups explore possible futures, while shared facilitation supports coordinated decisions. This is a partial Vision/Coordination connection, not a validated forecast or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.climateinteractive.org/strategy-and-impact/"
+        ]
+      }
+    },
+    {
+      "id": "climate-outreach",
+      "name": "Climate Outreach",
+      "category": "Climate & environment",
+      "website": "https://climateoutreach.org/",
+      "mechanism": "Share climate-communication research and visual storytelling guidance",
+      "summary": "Climate Outreach is an England and Wales charity that turns communication research into guidance, training and Climate Visuals resources. This assessment concerns enabling other communicators, not proof that every image or message changes public behavior.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://climateoutreach.org/about-us/",
+          "title": "Climate Outreach: current communication-research and storytelling approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://climateoutreach.org/climate-visuals/",
+          "title": "Climate Visuals: practical research, image curation and training; varied image licenses",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://climateoutreach.org/privacy-notice/",
+          "title": "Climate Outreach: current charity and company identifiers, covered websites",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared communication research and guidance can change how organizations frame climate issues rather than only produce one message.",
+        "reach": "Reusable advice, training and visual resources can enable multiple nonprofit and public-interest communicators, though causal audience reach was not audited.",
+        "durability": "Published guidance and skills can persist, but evidence updates, cultural context, image rights and staff capacity require continuing work.",
+        "scalability": "Guidance and curated resources can be reused across organizations; ethical representation, local research and adaptation limit simple replication.",
+        "additionality": "No current costed marginal research or training bottleneck, replacement provider or counterfactual funding contribution was audited.",
+        "agency": "Audience research and ethical-photography aims do not establish binding authority for photographed people or affected communities over charity strategy, messaging or resource allocation."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current pages display England and Wales charity 1123315 and company limited by guarantee 06459313; this is not independent regulator or tax-eligibility certification. The profile does not conflate the separate climate-outreach.org domain. Climate Visuals describes editorial, commercial, NGO and open-licence sources, so neither all photographs nor all hosted access are assumed free or openly licensed. No software repository license was inspected. Testimonials and engagement claims do not establish lasting belief changes, ethical representation, policy effects or emissions outcomes; communication research is context-dependent and must not justify manipulative practices.",
+      "falsifiableClaim": "Do organizations applying a specified Climate Outreach guide improve independently tested audience understanding and ethical representation compared with credible alternatives, and does any change persist beyond immediate engagement metrics?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The organization using climateoutreach.org, charity 1123315 and company 06459313, including its communication-support and Climate Visuals work. It is not the unrelated similarly named climate-outreach.org group.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Communication guides, research-based training and Climate Visuals curation can help other organizations communicate climate issues without starting every evidence and rights-checking process from scratch.",
+        "sourceUrls": [
+          "https://climateoutreach.org/about-us/",
+          "https://climateoutreach.org/climate-visuals/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination"
+        ],
+        "rationale": "The work explicitly develops climate stories and shared communication practice, connecting partially to Story and Coordination. That connection is not proof of beneficial persuasion, source endorsement or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://climateoutreach.org/about-us/",
+          "https://climateoutreach.org/climate-visuals/"
+        ]
+      }
+    },
+    {
+      "id": "climate-advocacy-lab",
+      "name": "Climate Advocacy Lab (Partnership Project-sponsored)",
+      "category": "Climate & environment",
+      "website": "https://www.climateadvocacylab.org/",
+      "mechanism": "Share public-engagement research, training and movement learning",
+      "summary": "Climate Advocacy Lab identifies Partnership Project as its fiscal sponsor. Its resource library, training and practitioner learning support climate advocates; publicly available resources and membership-only access are kept distinct.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.climateadvocacylab.org/about-the-lab/",
+          "title": "Climate Advocacy Lab: current mission, practitioner support and Partnership Project fiscal sponsorship",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.climateadvocacylab.org/about-the-lab/frequently-asked-questions/",
+          "title": "Climate Advocacy Lab: resource access and membership eligibility limits",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://partnershipproject.org/",
+          "title": "Partnership Project: current environmental movement-infrastructure and fiscal-sponsor role",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Shared engagement research and practitioner learning can alter organizational methods rather than only fund individual campaign messages.",
+        "reach": "Training and common resources can support multiple advocacy organizations, though effective uptake and institutional consequences were not independently verified.",
+        "durability": "Research and learned methods can persist, but updates, context, staff turnover and ongoing facilitation require resources.",
+        "scalability": "Shared materials and peer learning can be reused across groups, while trust, local applicability and membership constraints limit reach.",
+        "additionality": "No current marginal training or research bottleneck, alternative provider capacity or funding counterfactual for this sponsored initiative was audited.",
+        "agency": "Practitioner membership and peer exchange do not establish affected communities’ binding rights over the initiative, sponsor, campaigns or research priorities."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current about page explicitly names Partnership Project as fiscal sponsor; no independent incorporation or all-sponsor score is inferred. The sponsor’s site describes fiscal sponsorship and movement infrastructure, not independent validation of this initiative’s impact. The FAQ excludes government employees, elected officials, political candidates and campaign affiliates from membership; public resources do not mean universal membership access. ‘Tools’ and public learning resources are not proof of an inspected open-source software license, so no code badge is assigned. Resource rights, privacy, political context and distributional consequences require separate review. Network scale and testimonials do not prove beneficial persuasion, emissions reduction or causal campaign effectiveness.",
+      "falsifiableClaim": "Do organizations using a specified Lab training or evidence resource improve independently assessed engagement quality and learning compared with similar organizations, after accounting for selection effects, prior expertise, political context and membership access?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The Partnership Project-sponsored Climate Advocacy Lab initiative’s public-engagement capacity model, not an independent charity, the whole fiscal sponsor or every member organization’s campaigns.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "A shared research library, practitioner training and peer learning can reduce duplicated public-engagement learning among eligible climate organizations; access rules still apply.",
+        "sourceUrls": [
+          "https://www.climateadvocacylab.org/about-the-lab/",
+          "https://www.climateadvocacylab.org/about-the-lab/frequently-asked-questions/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "coordination"
+        ],
+        "rationale": "The documented peer-learning and shared-research model targets coordination friction between climate organizations. It is a partial mechanism match, not endorsement of every campaign or verified checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.climateadvocacylab.org/about-the-lab/"
+        ]
+      }
+    },
+    {
+      "id": "multisolving-institute",
+      "name": "Multisolving Institute (NVF-sponsored)",
+      "category": "Climate & environment",
+      "website": "https://www.multisolving.org/",
+      "mechanism": "Help groups design and examine cross-sector co-benefits",
+      "summary": "Multisolving Institute is a current New Venture Fund project. It shares training and the FLOWER reflection tool to help groups consider climate, health, equity and other benefits together; co-benefits remain hypotheses to test.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.multisolving.org/about-us/",
+          "title": "Multisolving Institute: current mission and origins within Climate Interactive before 2022 launch",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.multisolving.org/privacy-policy/",
+          "title": "Multisolving Institute: current project-of-New-Venture-Fund identity; December 2025 policy",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.multisolving.org/flower/",
+          "title": "FLOWER: Facilitating Long-term, Whole-system, Equity-based Reflection; paper and online tools",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://newventurefund.org/2026/10/20/new-venture-fund-releases-latest-impact-report-a-home-for-a-better-future/",
+          "title": "New Venture Fund: October 2026 fiscal-sponsor self-description naming Multisolving Institute",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 3,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Cross-sector reflection and capacity building can change institutional planning habits and reveal linked effects rather than treat every need in isolation.",
+        "reach": "The framework can support groups across climate, health, equity and community planning, though actual institutional reach was not independently measured.",
+        "durability": "Reusable reflection materials and learned planning routines can persist, but facilitation, evidence updates and implementation need ongoing support.",
+        "scalability": "Paper and online formats permit reuse in different settings; skilled facilitation, locally credible evidence and trade-off resolution remain constraints.",
+        "additionality": "No current costed marginal training or tool-development bottleneck, alternative support or funding counterfactual for the sponsored project was audited.",
+        "agency": "FLOWER asks who should participate and how burdens and benefits should be shared; asking these questions does not establish binding affected-community decision rights."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The current privacy policy and NVF’s October 2026 report identify Multisolving Institute as an NVF project, not an independent incorporated charity. The 2022 launch distinguishes its current program from earlier Climate Interactive origins; neither historical shared work nor all NVF activity is scored twice. FLOWER means Facilitating Long-term, Whole-system, Equity-based Reflection. A reflection diagram, downloadable materials and an online app do not establish an inspected open-source software license, so no code badge is assigned. Co-benefits may conflict or fail to materialize; testimonials and tool use are not causal evidence of equitable outcomes, validated models or implemented policy.",
+      "falsifiableClaim": "Do teams using a defined FLOWER process identify and implement more independently verified cross-sector benefits, with fewer shifted burdens, than comparable planning teams after accounting for facilitation costs and pre-existing collaboration?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Multisolving Institute’s current NVF-sponsored cross-sector training and FLOWER practice. Its origins within Climate Interactive are historical, not a second claim on that project’s current climate-simulation or SDEverywhere work.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "FLOWER and facilitator learning provide a reusable paper or online process for groups to examine co-benefits, participation and distributional trade-offs across sectors.",
+        "sourceUrls": [
+          "https://www.multisolving.org/about-us/",
+          "https://www.multisolving.org/flower/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "vision",
+          "coordination"
+        ],
+        "rationale": "Shared reflection on possible cross-sector futures connects partially to Vision, while group facilitation addresses Coordination. The mapping does not verify co-benefits, agency or adoption of the checklist.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.multisolving.org/about-us/",
+          "https://www.multisolving.org/flower/"
+        ]
+      }
+    },
+    {
+      "id": "project-equity",
+      "name": "Project Equity",
+      "category": "Poverty & opportunity",
+      "website": "https://project-equity.org/",
+      "mechanism": "Build capacity for transitions to employee ownership",
+      "summary": "Project Equity is a US nonprofit supporting employee-ownership transitions, education and local implementation. The assessment concerns its capacity and ownership-change model, not investment returns or a claim that every employee-owned firm has democratic control.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://project-equity.org/about-us/mission-vision-core-values/",
+          "title": "Project Equity: current employee-ownership mission, values and nonprofit identity",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://project-equity.org/about-us/contact-us/",
+          "title": "Project Equity: current US 501(c)(3) self-description and EIN",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Employee-ownership transitions seek to alter ownership and economic incentives rather than only supplement individual incomes.",
+        "reach": "Shared transition support and regional learning can serve multiple firms and local economic institutions, though the scale of durable worker benefit was not audited.",
+        "durability": "Enforceable ownership arrangements can endure beyond one grant, but governance quality, finance and business survival determine durability.",
+        "scalability": "Transition methods can be reused, while valuation, financing, owner negotiations, worker participation and sector conditions require substantial local work.",
+        "additionality": "No current marginal transition-support funding gap or counterfactual between charitable subsidy, advisers and available financing was audited.",
+        "agency": "Employee ownership and self-determination aims do not establish actual worker voting rights in every supported firm or affected-community authority over the nonprofit."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current primary pages identify the US 501(c)(3), EIN 86-2938689; this is not independent current tax-eligibility or financial certification. Older fiscal-sponsor descriptions are not substituted for that current identity. The 2024 annual-report PDF could not be retrieved directly in this check, so its reported independence timeline is not used as verified evidence here. Employee ownership structures differ: ownership is not automatically democratic management, safe financing or equitable allocation. Business continuity, purchase price, debt, worker rights and distributional outcomes require separate review. No software license was inspected, and this is not legal or investment advice or a forecast of returns.",
+      "falsifiableClaim": "Do supported transitions produce independently verified, durable improvements in worker wealth and enforceable decision rights relative to plausible succession alternatives, after accounting for acquisition debt, business survival and adviser costs?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The current US nonprofit Project Equity, EIN 86-2938689, and its transition-support and shared-learning work. This is not an assessment of all employee-ownership funds, clients or ownership structures.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Transition guidance, business-adviser learning and shared employee-ownership knowledge can help local implementers avoid rebuilding every ownership-conversion process.",
+        "sourceUrls": [
+          "https://project-equity.org/about-us/mission-vision-core-values/",
+          "https://project-equity.org/about-us/contact-us/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "The model seeks to change ownership access and coordinate transitions among workers, owners and local institutions. This is a partial Gatekeepers/Coordination interpretation, not proof of worker power or checklist adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://project-equity.org/about-us/mission-vision-core-values/"
+        ]
+      }
+    },
+    {
+      "id": "democracy-at-work-institute",
+      "name": "Democracy at Work Institute",
+      "category": "Poverty & opportunity",
+      "website": "https://institute.coop/",
+      "mechanism": "Make worker-cooperative development and democratic management easier",
+      "summary": "The Democracy at Work Institute provides shared research, developer resources and technical assistance for worker cooperatives. It is a nonprofit distinct from the affiliated US Federation of Worker Cooperatives, not a second score for the federation’s membership work.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://institute.coop/about",
+          "title": "DAWI: separate organization incorporated in 2013 and distinction from USFWC",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://institute.coop/",
+          "title": "DAWI: current democratic-management, research and cooperative-development resources",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://institute.coop/node/3436",
+          "title": "DAWI: current registered 501(c)(3) self-description and technical-assistance scope",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 3,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "Worker-cooperative development seeks to change ownership and workplace decision rules rather than only provide conventional employment services.",
+        "reach": "Shared research and technical assistance can support multiple cooperative developers and institutions; actual attributable reach was not independently established.",
+        "durability": "Enforceable cooperative governance and ownership can persist, but business viability, participation and ongoing organizational support are necessary.",
+        "scalability": "Reusable development and management resources can spread, while local finance, legal arrangements, worker learning and market conditions constrain replication.",
+        "additionality": "No current marginal technical-assistance bottleneck, alternative cooperative-development capacity or funding counterfactual was audited.",
+        "agency": "A worker-democracy mission does not establish binding affected-community rights over the institute’s budget or verify actual participation and minority protections in supported cooperatives."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The about page distinguishes the institute’s separate 2013 incorporation from USFWC affiliation; the donation page self-identifies a registered 501(c)(3). Neither is an independent current tax-eligibility or governance audit. Historical or future-tense governance descriptions are not treated as verified current board arrangements. Shared resources and data tools are not a checked open-source software license, so no code badge is assigned. Cooperative formation and ownership do not guarantee viable firms, equitable jobs, safe debt or meaningful democratic practice. No client outcome, causal job effect or all-federation effectiveness is established.",
+      "falsifiableClaim": "Do developers using a defined DAWI assistance package create cooperatives with better independently verified survival, job quality and enforceable worker participation than comparable developers, after accounting for selection and financing differences?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The separately incorporated Democracy at Work Institute’s nonprofit research, education and cooperative-development capacity. It excludes the affiliated USFWC membership organization and does not score every supported cooperative.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared cooperative research, democratic-management guidance and technical assistance can reduce duplicated learning for worker-cooperative developers and local public-interest institutions.",
+        "sourceUrls": [
+          "https://institute.coop/",
+          "https://institute.coop/node/3436"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "gatekeepers",
+          "coordination"
+        ],
+        "rationale": "Cooperative development seeks broader access to ownership and coordinates shared workplace-management practice. This is partial editorial alignment, not verified governance quality, checklist affiliation or adoption.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://institute.coop/about",
+          "https://institute.coop/"
+        ]
+      }
+    },
+    {
+      "id": "center-for-economic-democracy",
+      "name": "Center for Economic Democracy",
+      "category": "Poverty & opportunity",
+      "website": "https://economicdemocracy.us/",
+      "mechanism": "Build shared economic-democracy learning and local coalitions",
+      "summary": "The Massachusetts nonprofit Center for Economic Democracy combines popular education, coalition support and resource movement toward community economic alternatives. The scope is its enabling model, not endorsement of all ideological positions or a claim of verified community control.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://economicdemocracy.us/",
+          "title": "CED: current education, narrative, coalition and economic-power approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://economicdemocracy.us/about-us/",
+          "title": "CED: current partner and community-organization support model",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://charities.systemicaltruism.com/api/registry?q=Center%20for%20Economic%20Democracy",
+          "title": "CED: legal-name/locality match in fixed September 8, 2026 IRS BMF snapshot",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The model explicitly seeks changes in economic ownership, resource allocation and institutional power rather than only individual relief.",
+        "reach": "Popular education and coalition infrastructure can enable several local organizations and trans-local networks, though attributable reach was not audited.",
+        "durability": "Shared knowledge and coalitions can endure, but organizing, resource flows and institutional follow-through require continuing work.",
+        "scalability": "Reusable learning and partnership methods can spread; local trust, capital, political context and actual ownership arrangements remain constraints.",
+        "additionality": "No current costed marginal coalition or education bottleneck, replacement support or funding counterfactual was audited.",
+        "agency": "Working with frontline organizations and collective-participation values do not establish binding community control over the nonprofit’s budget, strategy or partner assets."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "Current primary pages describe the organization and its Massachusetts partner work; the fixed September 8 IRS snapshot lists Center for Economic Democracy, EIN 47-3589804, in Jamaica Plain. That identity match is not an independent current tax-eligibility, financial or governance audit. The organization’s post-capitalist vision is its position, not an endorsement by this tracker or evidence of practical success. The website’s CC BY-NC-SA content terms are not an open-source software grant, and no code badge is assigned. Shared-power aspirations, regranting and coalition participation do not prove enforceable community ownership, durable economic benefit or causal policy change.",
+      "falsifiableClaim": "For a defined coalition or education intervention, does CED support lead to independently verified changes in enforceable community economic decision rights compared with plausible alternatives, and who bears the costs or unintended consequences?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "The Massachusetts Center for Economic Democracy nonprofit, matched by name and locality in the fixed IRS snapshot, and its current education and coalition-support work. Partner projects and their assets are not additional assessments.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Popular-education materials, partnership facilitation and coalition support can help community organizations coordinate economic-governance work rather than rebuild capacity separately.",
+        "sourceUrls": [
+          "https://economicdemocracy.us/",
+          "https://economicdemocracy.us/about-us/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "CED explicitly combines economic narratives, coalition organizing and changing concentrated economic power. These are partial Story, Coordination and Gatekeepers connections, not verified checklist adoption or endorsement of every proposed economic system.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://economicdemocracy.us/",
+          "https://economicdemocracy.us/about-us/"
+        ]
+      }
+    },
+    {
+      "id": "common-future",
+      "name": "Common Future",
+      "category": "Poverty & opportunity",
+      "website": "https://www.commonfuture.co/",
+      "mechanism": "Provide shared back-office capacity and community-wealth learning",
+      "summary": "Common Future supports economic-justice organizations with capital, operational capacity and narrative work. This assessment concerns the nonprofit’s enabling model, not investment performance, all regrant recipients or the separate Community Credit Lab entity.",
+      "externalEvaluator": null,
+      "evaluatorUrl": null,
+      "sources": [
+        {
+          "url": "https://www.commonfuture.co/",
+          "title": "Common Future: current back-office, capital-flow, organization-capacity and narrative approach",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://www.commonfuture.co/donate",
+          "title": "Common Future: current organization and support context",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        },
+        {
+          "url": "https://media.commonfuture.co/Public_Disclosure_Copy_2023_CF_Form_990_6d98521189.pdf?updated_at=2024-12-05T18%3A48%3A08.462Z",
+          "title": "Common Future: self-published 2023 Form 990, legal name, EIN 20-1544255 and website; historical identity evidence",
+          "type": "official",
+          "accessedAt": "2026-10-27"
+        }
+      ],
+      "scores": {
+        "depth": 4,
+        "reach": 3,
+        "durability": 2,
+        "scalability": 3,
+        "additionality": null,
+        "agency": null
+      },
+      "rationales": {
+        "depth": "The model seeks to change access to capital, ownership and economic influence while supporting organizational capacity rather than only distribute individual aid.",
+        "reach": "Shared back-office support, learning and narratives can enable multiple community-rooted institutions, though attributable reach was not independently established.",
+        "durability": "Operational knowledge and institutional relationships can persist, but capital access, partner continuity and narrative work require ongoing support.",
+        "scalability": "Common operational and learning methods can be reused; local legitimacy, finance, governance and partner-specific support constrain expansion.",
+        "additionality": "No current costed marginal back-office or partner-support bottleneck, replacement funder contribution or funding counterfactual was audited.",
+        "agency": "Community-rooted leadership, participatory language and shared-power aims do not establish binding affected-community authority over this nonprofit’s budgets, capital decisions or governance."
+      },
+      "evidenceLevel": "Organization reported; current primary mechanism sources inspected",
+      "confidence": "Moderate for documented design; low for systemic attribution",
+      "limitations": "The organization’s own 2023 Form 990 identifies Common Future, EIN 20-1544255, and commonfuture.co. This dated filing corroborates identity, not current tax eligibility, audited finances or present officer roles. Current primary pages describe capital and back-office support; claims of being a systems catalyst or large audience are not independent causal evidence. Community Credit Lab and recipient organizations are not counted as independent additions here, and regrants are not automatically additional impact. No named software license was inspected; playbooks and operational support do not establish open-source code, safe investments, equitable governance or financial returns. Political and distributional trade-offs need separate review.",
+      "falsifiableClaim": "Do organizations receiving a defined Common Future back-office and learning package sustain independently verified operational capacity and community economic decision rights better than comparable organizations, after accounting for grants, partner selection and other support?",
+      "scoreStatus": "editorial_hypothesis",
+      "lastReviewed": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "evaluationScope": "Common Future’s nonprofit organizational-support and learning model, with legal identity corroborated by its own dated disclosure. Community Credit Lab and partner enterprises are not counted as extra charities or assigned the same outcomes.",
+      "selectionStatement": "Illustrative, scoped inclusion; no independent evaluator recommendation verified in this batch",
+      "evaluatorLabel": null,
+      "selectionType": "illustrative",
+      "evaluatorStatus": "not_verified",
+      "tooling": {
+        "kind": "capacity",
+        "summary": "Shared back-office capacity, community-wealth learning and narrative resources can help smaller economic-justice organizations focus on their own work instead of rebuilding operational infrastructure.",
+        "sourceUrls": [
+          "https://www.commonfuture.co/"
+        ],
+        "reviewedAt": "2026-10-27"
+      },
+      "checklistAlignment": {
+        "basis": "editorial_mapping",
+        "sources": [
+          "story",
+          "coordination",
+          "gatekeepers"
+        ],
+        "rationale": "The current approach explicitly combines narratives, organizational coordination and shifting access to capital and ownership. These partial connections do not establish actual power transfer, checklist adoption or an effectiveness recommendation.",
+        "adoption": "not_verified",
+        "mappedAt": "2026-10-27",
+        "sourceUrls": [
+          "https://www.commonfuture.co/"
         ]
       }
     }

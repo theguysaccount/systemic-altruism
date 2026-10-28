@@ -4,7 +4,7 @@
 
 A beta charity tracker with a broad searchable IRS registry and an evidence-linked assessment cohort. It makes the proposed pathway to structural change visible: rules, incentives, institutions, knowledge and community power.
 
-**This is a working beta, not a validated effectiveness ranking.** The 155 profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations. One hundred and three assessments were added in six batches on 27 October, including 49 with named repository/license checks; earlier profiles retain their own review dates.
+**This is a working beta, not a validated effectiveness ranking.** The 173 profiles contain AI-assisted qualitative mechanism sketches with sources and uncertainty, without independent human validation yet. Scores are editorial hypotheses, not demonstrated impact, cost-effectiveness estimates or donation recommendations. One hundred and twenty-one assessments were added in seven batches on 27 October, including 56 with named repository/license checks; earlier profiles retain their own review dates.
 
 ## What works
 
@@ -12,7 +12,7 @@ A beta charity tracker with a broad searchable IRS registry and an evidence-link
 - [Charity outcome planner](https://charities.systemicaltruism.com/toolkit/): define a systemic mechanism, observable outcome, evidence plan, community role, stop rule and reviewer; export Markdown or JSON, or copy the plan. Drafts stay in browser-local storage. Optional full-cost scenarios are arithmetic assumptions, not measured or forecast impact.
 - Search more than a million IRS-listed 501(c)(3) organizations by name, city or EIN, with filing-address location and NTEE cause filters.
 - Inspect public identity and classification records; registry-only organizations have no systemic scores.
-- Search and filter 155 assessment profiles across five cause areas, with focused views for license-checked open-source projects, enabling tools and partial checklist-source matches. License checks apply only to named repositories, not whole organizations, security, outcomes or free hosted services. These descriptive tags do not change scores or establish explicit adoption of the checklist.
+- Search and filter 173 assessment profiles across five cause areas, with focused views for license-checked open-source projects, enabling tools and partial checklist-source matches. License checks apply only to named repositories, not whole organizations, security, outcomes or free hosted services. These descriptive tags do not change scores or establish explicit adoption of the checklist.
 - Default to Systemic Altruism practice weights (35/25/15/15/5/5), with linked provenance and an explicit numeric interpretation; the original balanced lens remains available unchanged.
 - Adjust six priority weights and share a reproducible view URL.
 - Compare up to three profiles side by side, including evidence gaps.
@@ -21,7 +21,7 @@ A beta charity tracker with a broad searchable IRS registry and an evidence-link
 - Read crawlable profiles with source links, rationales, limitations and a testable next question.
 - Inspect the method, selection coverage and licensing record.
 
-The current external-selection subset covers four GiveWell top programs, five Giving Green recommendations and ten ACE recommendations checked October 6, 2026. Three other profiles have historical program reviews; 133 are illustrative inclusions. Absence from this cohort implies nothing about another organization's value. Giving Green and ACE already analyze systemic mechanisms; this project builds on their legwork.
+The current external-selection subset covers four GiveWell top programs, five Giving Green recommendations and ten ACE recommendations checked October 6, 2026. Three other profiles have historical program reviews; 151 are illustrative inclusions. Absence from this cohort implies nothing about another organization's value. Giving Green and ACE already analyze systemic mechanisms; this project builds on their legwork.
 
 ## First-edition goal and review decisions
 

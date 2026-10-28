@@ -23,7 +23,7 @@ test('open-source filter requires inspected project licenses, not a generic tool
   assert.match(focusProfile(c,s=>s),/not a security audit/);
 });
 test('all inspected open-source projects have scoped roles, dated license snapshots and source links',()=>{
-  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,49);
+  const checked=data.charities.filter(hasVerifiedOpenSource);assert.equal(checked.length,56);
   for(const c of checked){
     assert.equal(c.openSource.reviewedAt,'2026-10-27');
     for(const p of c.openSource.projects){
@@ -33,6 +33,17 @@ test('all inspected open-source projects have scoped roles, dated license snapsh
     }
   }
   assert.ok(checked.some(c=>c.openSource.projects.some(p=>p.role==='fiscal_sponsor')));
+});
+test('fifth goal batch scopes mixed licenses, mirrors, transfers and non-code tools',()=>{
+  const get=id=>data.charities.find(c=>c.id===id);
+  assert.equal(data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-05'&&hasVerifiedOpenSource(c)).length,7);
+  assert.equal(get('ruby-central').openSource.projects[0].repositoryUrl,'https://github.com/ruby/rubygems');
+  assert.match(get('perl-and-raku-foundation').openSource.projects[0].licenseLabel,/GPL-1.0-or-later/);
+  assert.match(get('r-foundation').openSource.projects[0].scope,/mirrors R/);assert.match(get('r-foundation').limitations,/GPL version 2 or 3/);
+  assert.match(get('xiph-org-foundation').limitations,/patent clearance/);assert.equal(get('one-army').openSource.projects[0].licenseLabel,'MIT');
+  assert.match(get('climate-interactive').limitations,/not automatically En-ROADS/);
+  for(const id of ['open-source-hardware-association','open-source-ecology','climate-outreach','climate-advocacy-lab','multisolving-institute','center-for-economic-democracy']){assert.equal(hasVerifiedOpenSource(get(id)),false);assert.equal(matchesFocus(get(id),'tooling'),true);}
+  assert.match(get('open-source-hardware-association').limitations,/does not guarantee safety/);
 });
 test('canonical Tor GitLab license evidence is supported without accepting unrelated hosts or files',()=>{
   const c=data.charities.find(c=>c.id==='tor-project');assert.equal(hasVerifiedOpenSource(c),true);

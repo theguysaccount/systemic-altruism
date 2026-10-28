@@ -1920,169 +1920,118 @@
     {
       "id": "xiph-org-foundation",
       "name": "Xiph.Org Foundation",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/xiph-org-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "perl-and-raku-foundation",
       "name": "The Perl and Raku Foundation",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/perl-and-raku-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "ruby-central",
       "name": "Ruby Central",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/ruby-central/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "r-foundation",
       "name": "R Foundation for Statistical Computing",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/r-foundation/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "open-source-hardware-association",
       "name": "Open Source Hardware Association",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/open-source-hardware-association/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "open-robotics",
-      "name": "Open Robotics",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Open Robotics (Open Source Robotics Foundation)",
+      "status": "included",
+      "profilePath": "/charities/open-robotics/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "one-army",
       "name": "One Army Foundation",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/one-army/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "open-source-ecology",
       "name": "Open Source Ecology",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/open-source-ecology/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "training-for-change",
       "name": "Training for Change",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/training-for-change/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "beautiful-trouble",
       "name": "Beautiful Trouble",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "Current toolkit and organization pages and a linked fundraiser naming Beautiful Trouble Inc. were inspected, but the current nonprofit/fiscal relationship was not sufficiently resolved. This is an evidence gap, not a finding of ineligibility.",
+      "sourceUrls": [
+        "https://beautifultrouble.org/about",
+        "https://beautifultrouble.org/donate",
+        "https://givebutter.com/beautiful-trouble"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Resolve current nonprofit or fiscal-sponsor identity through current primary organizational or regulator evidence.",
+        "Separate the toolkit, fiscal-sponsorship service and named legal entity before attributing activities; inspect exact content/software rights before any badge."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2090,101 +2039,73 @@
     {
       "id": "350-org",
       "name": "350.org",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/350-org/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "climate-interactive",
-      "name": "Climate Interactive",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Climate Interactive (NVF-sponsored)",
+      "status": "included",
+      "profilePath": "/charities/climate-interactive/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "climate-outreach",
       "name": "Climate Outreach",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/climate-outreach/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "climate-advocacy-lab",
-      "name": "Climate Advocacy Lab",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Climate Advocacy Lab (Partnership Project-sponsored)",
+      "status": "included",
+      "profilePath": "/charities/climate-advocacy-lab/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "multisolving-institute",
-      "name": "Multisolving Institute",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "name": "Multisolving Institute (NVF-sponsored)",
+      "status": "included",
+      "profilePath": "/charities/multisolving-institute/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "center-for-workplace-democracy",
       "name": "Center for Workplace Democracy",
-      "status": "queued",
+      "status": "deferred",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
+      "decisionAt": "2026-10-27",
+      "reason": "The public worker-cooperative education site was located, but the current legal entity, nonprofit/fiscal relationship and active operating scope were not resolved. An old site is not evidence of dissolution.",
+      "sourceUrls": [
+        "https://workerdemocracy.org/",
+        "https://workerdemocracy.org/WhoWeAre.aspx"
+      ],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
+        "Obtain current primary legal identity or fiscal-sponsor disclosure and confirm the active operating organization.",
+        "Inspect current program and governance evidence before publishing an assessment."
       ],
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
@@ -2192,40 +2113,50 @@
     {
       "id": "project-equity",
       "name": "Project Equity",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/project-equity/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "democracy-at-work-institute",
       "name": "Democracy at Work Institute",
-      "status": "queued",
-      "priority": "software_or_systemic_capacity",
-      "discoveredAt": "2026-10-27",
-      "decisionAt": null,
-      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
-      "sourceUrls": [],
-      "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
-        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
-        "Check project ownership and actual licenses before any open-source classification."
-      ],
+      "status": "included",
+      "profilePath": "/charities/democracy-at-work-institute/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
       "independentHumanReview": "pending",
       "affectedCommunityReview": "pending"
     },
     {
       "id": "center-for-economic-democracy",
       "name": "Center for Economic Democracy",
+      "status": "included",
+      "profilePath": "/charities/center-for-economic-democracy/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "common-future",
+      "name": "Common Future",
+      "status": "included",
+      "profilePath": "/charities/common-future/",
+      "decisionAt": "2026-10-27",
+      "reviewBatch": "2026-10-27-goal-batch-05",
+      "reason": "Current primary mechanism and identity sources inspected; scoped preliminary assessment with explicit uncertainty, source limits and pending independent review.",
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "d-tree-international",
+      "name": "D-tree International",
       "status": "queued",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
@@ -2233,7 +2164,7 @@
       "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
       "sourceUrls": [],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
         "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
         "Check project ownership and actual licenses before any open-source classification."
       ],
@@ -2241,8 +2172,8 @@
       "affectedCommunityReview": "pending"
     },
     {
-      "id": "common-future",
-      "name": "Common Future",
+      "id": "baobab-health-trust",
+      "name": "Baobab Health Trust",
       "status": "queued",
       "priority": "software_or_systemic_capacity",
       "discoveredAt": "2026-10-27",
@@ -2250,7 +2181,517 @@
       "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
       "sourceUrls": [],
       "evidenceGaps": [
-        "Resolve current nonprofit identity and operating or fiscal relationship.",
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "jembi-health-systems",
+      "name": "Jembi Health Systems",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "msupply-foundation",
+      "name": "mSupply Foundation",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "jacaranda-health",
+      "name": "Jacaranda Health",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "muso",
+      "name": "Muso",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "living-goods",
+      "name": "Living Goods",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "digital-public-goods-alliance",
+      "name": "Digital Public Goods Alliance",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "foundation-for-public-code",
+      "name": "Foundation for Public Code",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "wikimedia-deutschland",
+      "name": "Wikimedia Deutschland",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "software-heritage",
+      "name": "Software Heritage",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "open-forum-europe",
+      "name": "OpenForum Europe",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "center-for-digital-democracy",
+      "name": "Center for Digital Democracy",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "5rights-foundation",
+      "name": "5Rights Foundation",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "reset-tech",
+      "name": "Reset Tech",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "accountable-tech",
+      "name": "Accountable Tech",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "algorithmic-justice-league",
+      "name": "Algorithmic Justice League",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "distributed-ai-research-institute",
+      "name": "Distributed AI Research Institute",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "ai-forensics",
+      "name": "AI Forensics",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "responsible-ai-collaborative",
+      "name": "Responsible AI Collaborative",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "partnership-on-ai",
+      "name": "Partnership on AI",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "ai-now-institute",
+      "name": "AI Now Institute",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "ada-lovelace-institute",
+      "name": "Ada Lovelace Institute",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "data-and-society",
+      "name": "Data & Society",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "center-for-countering-digital-hate",
+      "name": "Center for Countering Digital Hate",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "institute-for-strategic-dialogue",
+      "name": "Institute for Strategic Dialogue",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "full-fact",
+      "name": "Full Fact",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "africa-check",
+      "name": "Africa Check",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "chequeado",
+      "name": "Chequeado",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "idealist",
+      "name": "Idealist",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "taproot-foundation",
+      "name": "Taproot Foundation",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
+        "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
+        "Check project ownership and actual licenses before any open-source classification."
+      ],
+      "independentHumanReview": "pending",
+      "affectedCommunityReview": "pending"
+    },
+    {
+      "id": "statistics-without-borders",
+      "name": "Statistics Without Borders",
+      "status": "queued",
+      "priority": "software_or_systemic_capacity",
+      "discoveredAt": "2026-10-27",
+      "decisionAt": null,
+      "reason": "Unverified research lead only; no charitable-status, current-program, license or alignment claim is made.",
+      "sourceUrls": [],
+      "evidenceGaps": [
+        "Resolve current nonprofit identity and operating or fiscal relationship; check for overlap with existing parent/project assessments.",
         "Inspect current primary mechanism sources, potential harms and a counterfactual question.",
         "Check project ownership and actual licenses before any open-source classification."
       ],

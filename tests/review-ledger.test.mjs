@@ -5,7 +5,7 @@ import {inspectReviewLedger} from '../src/review-ledger.mjs';
 const data=JSON.parse(readFileSync(new URL('../data/charities.json',import.meta.url)));
 const ledger=JSON.parse(readFileSync(new URL('../data/review-ledger.json',import.meta.url)));
 test('review decisions cover the cohort exactly and never count queued/deferred/excluded leads',()=>{
-  assert.deepEqual(inspectReviewLedger(ledger,data),{included:155,queued:20,deferred:7,excluded:2,target:200,remaining:45});
+  assert.deepEqual(inspectReviewLedger(ledger,data),{included:173,queued:32,deferred:9,excluded:2,target:200,remaining:27});
   assert.equal(ledger.goal.status,'in_progress');
   assert.equal(ledger.entries.filter(e=>e.status==='included').length,data.charities.length);
 });
@@ -21,6 +21,6 @@ test('unscored candidates, required evidence gaps and honest completion are enfo
   const h=structuredClone(ledger);h.entries.find(e=>e.status==='included').independentHumanReview='complete';assert.throws(()=>inspectReviewLedger(h,data),/unsupported human/);
 });
 test('unresolved operating identities and sponsored examples cannot pad the profile count',()=>{
-  for(const id of ['code-for-all','shareable','public-lab','ehealth-africa','democratic-society','open-bioinformatics-foundation']){const e=ledger.entries.find(e=>e.id===id);assert.equal(e.status,'deferred');assert.ok(e.evidenceGaps.length);assert.equal(data.charities.some(c=>c.id===id),false);}
+  for(const id of ['code-for-all','shareable','public-lab','ehealth-africa','democratic-society','open-bioinformatics-foundation','beautiful-trouble','center-for-workplace-democracy']){const e=ledger.entries.find(e=>e.id===id);assert.equal(e.status,'deferred');assert.ok(e.evidenceGaps.length);assert.equal(data.charities.some(c=>c.id===id),false);}
   const example=ledger.entries.find(e=>e.id==='openrefine-as-independent-charity');assert.equal(example.status,'excluded');assert.equal(example.relatedProfileId,'code-for-science-and-society');
 });

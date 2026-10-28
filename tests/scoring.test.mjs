@@ -21,13 +21,28 @@ test('score order is deterministic and responds to priorities',()=>{
   assert.equal(ordered([b,a],{depth:3,agency:1})[0].id,'a');assert.equal(ordered([a,b],{depth:1,agency:3})[0].id,'b');
 });
 test('every public annotation has provenance, scope, uncertainty and six rationales',()=>{
-  assert.equal(data.charities.length,155);assert.equal(new Set(data.charities.map(c=>c.id)).size,155);
+  assert.equal(data.charities.length,173);assert.equal(new Set(data.charities.map(c=>c.id)).size,173);
   for(const c of data.charities){
     assert.match(c.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(c.scoreStatus,'editorial_hypothesis');assert.ok(c.limitations);assert.ok(c.evaluationScope);assert.ok(c.sources.length);
     for(const s of c.sources){assert.ok(s.title);assert.ok(['official','evaluation','research'].includes(s.type));assert.equal(new URL(s.url).protocol,'https:');assert.match(s.accessedAt,/^\d{4}-\d{2}-\d{2}$/);}
     for(const key of Object.keys(axes)){assert.ok(key in c.scores);assert.ok(c.rationales[key]?.length>10);const v=c.scores[key];assert.ok(v===null||(Number.isInteger(v)&&v>=0&&v<=4));}
     for(const weights of Object.values(presets)){const a=assess(c.scores,weights);assert.ok(a.lower>=0&&a.lower<=a.upper&&a.upper<=100);}
   }
+});
+test('fifth goal batch keeps eighteen identities and current program scopes distinct',()=>{
+  const batch=data.charities.filter(c=>c.reviewBatch==='2026-10-27-goal-batch-05');assert.equal(batch.length,18);
+  for(const c of batch){
+    assert.equal(c.lastReviewed,'2026-10-27');assert.equal(c.selectionType,'illustrative');assert.equal(c.evaluatorStatus,'not_verified');assert.equal(c.externalEvaluator,null);
+    assert.equal(c.scores.additionality,null);assert.equal(c.scores.agency,null);assert.ok(c.evaluationScope.length>70);assert.ok(c.falsifiableClaim.length>70);
+    assert.ok(c.sources.every(s=>s.type==='official'&&s.accessedAt==='2026-10-27'));assert.equal(c.checklistAlignment.adoption,'not_verified');
+    for(const k of Object.keys(axes))assert.ok(c.rationales[k].length>70);
+  }
+  const get=id=>batch.find(c=>c.id===id);
+  for(const id of ['climate-interactive','multisolving-institute']){assert.match(get(id).evaluationScope,/NVF-sponsored/);assert.match(get(id).limitations,/not.*independent/);}
+  assert.match(get('climate-advocacy-lab').evaluationScope,/Partnership Project-sponsored/);assert.match(get('climate-advocacy-lab').limitations,/government employees/);
+  assert.match(get('ruby-central').limitations,/final RailsConf in July 2025/);assert.match(get('open-robotics').limitations,/acquired by Intrinsic/);
+  assert.match(get('project-equity').limitations,/could not be retrieved/);assert.match(get('common-future').limitations,/dated filing/);
+  assert.match(get('democracy-at-work-institute').evaluationScope,/separately incorporated/);assert.match(get('open-source-ecology').limitations,/privately owned land/);
 });
 test('practice default is explicit, totals 100 and preserves the original lens',()=>{
   assert.equal(method.defaultPreset,'systemic');
