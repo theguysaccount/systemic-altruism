@@ -3,10 +3,15 @@ import {createHash} from 'node:crypto';
 import {method,presets} from '../src/scoring.mjs';
 import {hasVerifiedOpenSource} from '../src/focus.mjs';
 import {inspectReviewLedger} from '../src/review-ledger.mjs';
+import {inspectShareMp4} from '../src/share-motion.mjs';
 const routes=JSON.parse(await readFile('dist/routes.json','utf8'));
 const seen=new Set(),origin=process.env.CHECK_ORIGIN;
 const registry=JSON.parse(await readFile('data/registry/manifest.json','utf8'));
 const dataset=JSON.parse(await readFile('data/charities.json','utf8'));
+const motionManifest=JSON.parse(await readFile('social-motion/assessment-motion/manifest.json','utf8'));
+const motionPages=new Map(motionManifest.pages.map(p=>[p.path,p]));
+if(motionManifest.creativeReview?.status!=='representative_user_approved'||motionPages.size!==dataset.charities.length||motionManifest.pages.length!==motionPages.size)throw Error('Missing reviewed assessment motion coverage');
+const videoHashes=new Set();let videoCount=0;
 const ledger=JSON.parse(await readFile('dist/api/v1/review-ledger.json','utf8'));
 const ledgerSummary=inspectReviewLedger(ledger,dataset);
 if(JSON.stringify(ledger.summary)!==JSON.stringify(ledgerSummary))throw new Error('Stale public review-ledger summary');
@@ -51,6 +56,18 @@ for(const r of routes){
   const imageUrl=html.match(/property="og:image" content="([^"]+)"/)?.[1];
   if(!imageUrl?.startsWith('https://')||!imageUrl.endsWith(`/share/${r.card}.png`))throw new Error(`Invalid image URL: ${r.path}`);
   if(!html.includes(`name="twitter:image" content="${imageUrl}"`))throw new Error(`OG/Twitter mismatch: ${r.path}`);
+  let videoUrl,videoBytes,videoHash;
+  if(r.path.startsWith('/charities/')){
+    const p=motionPages.get(r.path);
+    if(!p||p.still!==`public/share/${r.card}.png`||p.stillSha256!==hash||p.file!==`charities-${r.path.split('/')[2]}-connections-v1.mp4`)throw Error('Stale still/video pairing: '+r.path);
+    videoUrl=new URL('/assets/assessment-motion/'+p.file,new URL(imageUrl).origin).href;
+    videoBytes=await readFile('dist/assets/assessment-motion/'+p.file);videoHash=createHash('sha256').update(videoBytes).digest('hex');
+    const info=inspectShareMp4(videoBytes);
+    if(videoHash!==p.videoSha256||videoHashes.has(videoHash)||videoBytes.length!==p.bytes||videoBytes.length>2_000_000||info.width!==1200||info.height!==630||info.duration!==6||info.fps!==24||info.frames!==144||p.pixelFormat!=='yuv420p')throw Error('Invalid or duplicate assessment video: '+r.path);
+    for(const [key,value] of [['og:video',videoUrl],['og:video:secure_url',videoUrl],['og:video:type','video/mp4'],['og:video:width','1200'],['og:video:height','630']])if(!html.includes(`property="${key}" content="${value}"`))throw Error('Missing video metadata: '+r.path);
+    if(!html.includes(`name="twitter:player:stream" content="${videoUrl}"`))throw Error('Missing direct stream: '+r.path);
+    videoHashes.add(videoHash);videoCount++;
+  }
   for(const match of html.matchAll(/(?:href|src)="(\/[^"#?]*)"/g)){
     let p=match[1];if(p==='')continue;if(p.endsWith('/'))p+='index.html';
     await access(`dist${p}`).catch(()=>{throw new Error(`Broken internal link ${p} in ${r.path}`)});
@@ -58,6 +75,17 @@ for(const r of routes){
   if(origin){
     const response=await fetch(origin+r.path);if(!response.ok)throw new Error(`Live page ${r.path}: ${response.status}`);
     const body=await response.text();if(!body.includes(`<title>${r.title.replaceAll('&','&amp;')}`))throw new Error(`Wrong live page: ${r.path}`);
+    if(!body.includes(`property="og:image" content="${imageUrl}"`)||!body.includes(`name="twitter:image" content="${imageUrl}"`))throw Error('Wrong live image metadata: '+r.path);
+    if(videoUrl){
+      for(const [key,value] of [['og:video',videoUrl],['og:video:secure_url',videoUrl],['og:video:type','video/mp4'],['og:video:width','1200'],['og:video:height','630']])if(!body.includes(`property="${key}" content="${value}"`))throw Error('Wrong live video metadata: '+r.path);
+      if(!body.includes(`name="twitter:player:stream" content="${videoUrl}"`))throw Error('Wrong live stream metadata: '+r.path);
+      const mediaPath=new URL(videoUrl).pathname,media=await fetch(origin+mediaPath);
+      if(!media.ok||!media.headers.get('content-type')?.includes('video/mp4')||media.headers.get('content-disposition')?.includes('attachment'))throw Error('Video is not publicly playable: '+r.path);
+      const liveVideo=Buffer.from(await media.arrayBuffer());
+      if(createHash('sha256').update(liveVideo).digest('hex')!==videoHash)throw Error('Wrong live video bytes: '+r.path);
+      const range=await fetch(origin+mediaPath,{headers:{Range:'bytes=0-63'}}),rangeBytes=Buffer.from(await range.arrayBuffer());
+      if(range.status!==206||range.headers.get('content-range')!==`bytes 0-63/${videoBytes.length}`||!rangeBytes.equals(videoBytes.subarray(0,64)))throw Error('Invalid video byte-range response: '+r.path);
+    }
     const liveImg=await fetch(origin+`/share/${r.card}.png`);if(!liveImg.ok||!liveImg.headers.get('content-type')?.includes('image/png'))throw new Error(`Live image: ${r.path}`);
     const bytes=Buffer.from(await liveImg.arrayBuffer());if(createHash('sha256').update(bytes).digest('hex')!==hash)throw new Error(`Live card content mismatch: ${r.path}`);
   }
@@ -77,4 +105,4 @@ if(origin){
   if(result.registryTotal!==registry.recordCount||result.results.length!==3||result.total<3)throw new Error('Live registry count/search mismatch');
   for(const row of result.results)if(row.state!=='NY'||row.ntee[0]!=='K'||row.systemicScores!==null)throw new Error('Live registry filter/assessment mismatch');
 }
-console.log(`${routes.length} pages: internal links, metadata and unique share images verified${origin?' live at '+origin:''}.`);
+console.log(`${routes.length} pages: internal links, metadata and unique share images; ${videoCount} paired assessment videos verified${origin?' live at '+origin:''}.`);
